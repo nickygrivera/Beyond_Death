@@ -296,8 +296,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  moveSpeed: 5
   attack: 0
+  moveSpeed: 5
+  dashSpeed: 12
+  dashCooldown: 0.25
 --- !u!1 &470393770
 GameObject:
   m_ObjectHideFlags: 0
