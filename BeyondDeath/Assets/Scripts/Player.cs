@@ -47,7 +47,7 @@ public class Player : Character
         _state = CharacterState.Idle;
     }
 
-    //codigo samurai 2�
+    //codigo samurai 2
     private void OnEnable()
     {
         if (InputManager.Instance != null)
@@ -73,14 +73,14 @@ public class Player : Character
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f) _movement.Normalize();
 
-        // Flip por rotaci�n en Y
+        //flippor rotacion en Y
         if (_state != CharacterState.Attack)
         {
             if (_movement.x < -0.01f) transform.rotation = Quaternion.Euler(0, 180, 0);
             else if (_movement.x > 0.01f) transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        // Animaciones Idle / Walk
+        //anim de idle o walk
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
             if (_movement == Vector2.zero && _state != CharacterState.Idle)
@@ -161,7 +161,7 @@ public class Player : Character
         _isAttack = true;
     }
 
-    // Overrides de Character
+    //overrides de character
     public override void TakeDamage(float dmg)
     {
         if (_state == CharacterState.Attack || _state == CharacterState.Die) return;
