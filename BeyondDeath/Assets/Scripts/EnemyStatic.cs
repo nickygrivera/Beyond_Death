@@ -31,4 +31,9 @@ public class EnemyStatic : Character
     {
         SetHealthMax(healthMax);
     }
+
+    public override void Attack()
+    {
+        
+    }
 }

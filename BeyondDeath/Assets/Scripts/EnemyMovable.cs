@@ -31,4 +31,9 @@ public class EnemyMovable : Character
     {
         SetHealthMax(healthMax);
     }
+
+    public override void Attack()
+    {
+        throw new System.NotImplementedException();
+    }
 }

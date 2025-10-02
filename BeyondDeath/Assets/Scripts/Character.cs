@@ -7,26 +7,27 @@ Si se quiere acceder a los valores de las variables privadas se hace con GetVari
  */
 
 /*
+ * IMPORTANTE 
+ * ============
 ANOTACIONES DE ESCRITURA EN EL CODIGO
-Variables locales camelCase
-Variables como parametro _camelCase
-Metodos CamelCase()
+- Variables locales camelCase
+- Variables como parametro _camelCase
+- Metodos CamelCase()
  */
 
-public class Character : MonoBehaviour
+public abstract class Character : MonoBehaviour
 {
-    private float healthMax;
-    private float healthActual;
-    private float damage;
+    [SerializeField] private float healthMax;
+    [SerializeField] private float healthActual;
+    [SerializeField] private float damage;
 
-    [SerializeField] protected Transform hitAnchor, bottomAnchor;
-    [SerializeField] protected Vector2 hitSize;
+    [SerializeField] public Transform hitAnchor;//punto desde donde sale el ataque ( modificar en la escena)
+    [SerializeField] public Transform bottomAnchor;//punto en los pies (amarillo) 
+    [SerializeField] public Vector2 hitSize;//área del golpe
 
-    //inicilaizamos vida
 
     //Getters y Setters
-    //protected porque nos interesa que lo usen player y enemigos pero solo ellos
-    protected float GetHealthActual()
+    public float GetHealthActual()
     {
         if (healthActual <= 0)
         {
@@ -35,35 +36,35 @@ public class Character : MonoBehaviour
         return healthActual;
     }
 
-    protected void SetHealthActual(float _healthActual)
+    public void SetHealthActual(float _healthActual)
     {
         healthActual = _healthActual;//se puede hacer lo del clamp para que no baje de 0
 
-        if (healthActual <= 0)
+        if (healthActual <= 0f)
         {
             Die();
         }
     }
-    protected float GetDamage()
+    public float GetDamage()//damage  base
     {
         return damage;
     }
 
-    protected void SetDamage(float _damage)
+    public void SetDamage(float _damage)
     {
         damage = _damage;
     }
     
-    protected void SetHealthMax(float _healtMax)
+    public void SetHealthMax(float _healtMax)//Cambiar para implementar la bar de vida y su logica
     {
         healthMax = _healtMax;
         healthActual = healthMax;
     }
-    protected float GetHealthMax()
+    public float GetHealthMax()
     {
         return healthMax;
     }
-    protected virtual void Die()//para el override
+    public virtual void Die()//para el override en los hijos
     {
 
     }
@@ -78,10 +79,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void Attack()
-    {
-
-    }//player y enemigos los implementan
+    public abstract void Attack();//player y enemigos los implementan
 
     private void OnDrawGizmos()
     {

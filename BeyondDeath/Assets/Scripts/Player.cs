@@ -4,8 +4,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /*
-Los metodos Die() y TakeDamage() usa los del padre 
-*/
+ * En el inspector y en las animaciones de prueba se cambian por las buenas
+ * En player (root) ,apartado de Animator se le pasa el de playerAesthetics
+ * En escena cambiar las Anchor para que coincidan con la del player
+ * 
+ * Al impotar las animaciones , se deberán cambiar por las que aparece en la zona de Animator.StringtoHash
+ * por ejemplo "Player_Idle" , siguiendo esa estructura para que el codigo funcione
+ * Solo esta implementado Walk por prueba
+ * En la zona de Animator no hay transiciones todavía
+ * */
 
 /*Depende del sistema de cambio de escenas igual habria que hacer esta clase un singlteon*/
 
@@ -15,8 +22,10 @@ public class Player : Character
     [SerializeField] private float moveSpeed = 5f;
 
    // [SerializeField] private bool clampDiagonal = true;//normaliza
-    [SerializeField] private Animator anim;//_anim
+    [SerializeField] private Animator anim;//_anim arrastrar aqui el animator de playerAesthetics
 
+
+    //nombre EXACTOS de los estados
     private readonly int IdleAnimState = Animator.StringToHash("Player_Idle");
     private readonly int WalkAnimState = Animator.StringToHash("Player_Walk");
     private readonly int Attack1AnimState = Animator.StringToHash("Player_Attack1");
@@ -26,13 +35,13 @@ public class Player : Character
 
  
     private Rigidbody2D _rb;
-    private Vector2 _movement;
+    private Vector2 _movement;//direccion del input
     private bool _isAttack = true;
 
     private CharacterState _state;
-    //velocity sale obsoleto y en esta versión solo me deja linearVelocity
+    //velocity sale obsoleto y en esta versión solo deja linearVelocity
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -41,14 +50,15 @@ public class Player : Character
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
 
+        //inicializamos la vida y el daño
         SetHealthMax(GetHealthMax());
         SetDamage(GetDamage());
 
         _state = CharacterState.Idle;
     }
 
-    //codigo samurai 2
-    private void OnEnable()
+    //codigo de la plantilla del character (samurai)
+    private void OnEnable()//suscripciones
     {
         if (InputManager.Instance != null)
         {
@@ -68,8 +78,12 @@ public class Player : Character
 
     private void Update()
     {
-        if (_state == CharacterState.Hurt || _state == CharacterState.Die) return;
+        if (_state == CharacterState.Hurt || _state == CharacterState.Die)
+        {
+            return;
+        }
 
+        //lectura de teclas y normaliza para evitar lo de la diagonal
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f) _movement.Normalize();
 
@@ -80,7 +94,7 @@ public class Player : Character
             else if (_movement.x > 0.01f) transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        //anim de idle o walk
+        //change anim de idle o walk
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
             if (_movement == Vector2.zero && _state != CharacterState.Idle)
@@ -106,7 +120,10 @@ public class Player : Character
             _rb.linearVelocity = _movement * moveSpeed;
     }
 
-    private void Attack1()
+    public override void Attack(){
+        Attack1();
+    }
+    private void Attack1()//ataque meele
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
 
@@ -131,7 +148,7 @@ public class Player : Character
         }
     }
 
-    private void Attack2()
+    private void Attack2()//ataque distancia
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
 
@@ -143,6 +160,7 @@ public class Player : Character
         StartCoroutine(WaitForAnimationToEnd(Attack2AnimState));
     }
 
+    //espera a que acabe las animaciones para estar en idle
     private IEnumerator WaitForAnimationToEnd(int animState)
     {
         var stateInfo = anim.GetCurrentAnimatorStateInfo(0);
@@ -184,9 +202,10 @@ public class Player : Character
         }
     }
 
-    protected override void Die()
+    public override void Die()
     {
         Debug.Log("Player muerto");
         //codigo reiniciar todas las escenas si muere 
+        //lanzar escena o UI de Game over
     }
 }

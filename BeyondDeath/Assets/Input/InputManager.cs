@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/*
+ * */
 public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
@@ -48,6 +50,7 @@ public class InputManager : MonoBehaviour
         AttackDistancePerformed?.Invoke();
     }
 
+    //lectura de evntos
     public Vector2 GetMovement()
     {
         return _inputSystemActions.Player.Move.ReadValue<Vector2>();

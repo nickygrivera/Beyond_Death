@@ -206,7 +206,6 @@ GameObject:
   - component: {fileID: 582271986}
   - component: {fileID: 582271985}
   - component: {fileID: 582271984}
-  - component: {fileID: 582271983}
   - component: {fileID: 582271982}
   m_Layer: 0
   m_Name: Player
@@ -270,28 +269,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &582271983
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582271981}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &582271984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,11 +281,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd11b2e07c39084493583b232546f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthMax: 100
+  healthActual: 100
   hitAnchor: {fileID: 720423519}
   bottomAnchor: {fileID: 81661554}
   hitSize: {x: 1, y: 1}
-  moveSpeed: 5
-  anim: {fileID: 582271983}
+  moveSpeed: 2
+  anim: {fileID: 1106557292}
 --- !u!50 &582271985
 Rigidbody2D:
   serializedVersion: 5
@@ -324,7 +303,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
