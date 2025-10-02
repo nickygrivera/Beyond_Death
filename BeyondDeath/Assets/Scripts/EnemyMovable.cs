@@ -6,9 +6,9 @@ Los metodos Die() y TakeDamage() usa los del padre
 
 public class EnemyMovable : Character
 {
-    [SerializedField] private float healthMax;
-    [SerializedField] private float healthActual;
-    [SerializedField] private float damage;
+    [SerializeField] private float healthMax;
+    [SerializeField] private float healthActual;
+    [SerializeField] private float damage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,14 +17,18 @@ public class EnemyMovable : Character
         SetDamage();
     }
 
-    override protected void Attack(_enemyHealth)
+    /*override protected void Attack(_enemyHealth)
     {
 
+    }*/
+
+    private void SetDamage()
+    {
+        SetDamage(damage);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetHealthMax()
     {
-
+        SetHealthMax(healthMax);
     }
 }

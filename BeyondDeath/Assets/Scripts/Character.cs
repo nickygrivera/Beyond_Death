@@ -19,47 +19,75 @@ public class Character : MonoBehaviour
     private float healthActual;
     private float damage;
 
-    public: //habria que revisar si esto es public o no porque no interesa que a esto acceda todo
-        
-        //Getters y Setters
-        float GetHealthActual()
-        {
-            if (healthActual <= 0)
-            {
-                Die();
-            }
-            return healthActual;
-        }
-        void SetHealthActual(float _healthActual)
-        {
-            healthActual = _healthActual;
-        }
-        float GetDamage()
-        {
-            return damage;
-        }
-        void SetDamage(float _damage)
-        {
-            damage = _damage;
-        }
-        void SetHealthMax(float _healtMax)
-        {
-            healthMax = _healtMax;
-            healthActual = healthMax;
-        }
-        float GetHealthMax()
-        {
-            return healthMax;
-        }
-    protected:
-        void Die()
-        {
-            
-        }
-        void TakeDamage(float _damage)
-        {
-            healthActual -= damage;
-        }
+    [SerializeField] protected Transform hitAnchor, bottomAnchor;
+    [SerializeField] protected Vector2 hitSize;
 
-        abstract void Attack(float _oponentHealth); 
+    //inicilaizamos vida
+
+    //Getters y Setters
+    //protected porque nos interesa que lo usen player y enemigos pero solo ellos
+    protected float GetHealthActual()
+    {
+        if (healthActual <= 0)
+        {
+            Die();
+        }
+        return healthActual;
+    }
+
+    protected void SetHealthActual(float _healthActual)
+    {
+        healthActual = _healthActual;//se puede hacer lo del clamp para que no baje de 0
+
+        if (healthActual <= 0)
+        {
+            Die();
+        }
+    }
+    protected float GetDamage()
+    {
+        return damage;
+    }
+
+    protected void SetDamage(float _damage)
+    {
+        damage = _damage;
+    }
+    
+    protected void SetHealthMax(float _healtMax)
+    {
+        healthMax = _healtMax;
+        healthActual = healthMax;
+    }
+    protected float GetHealthMax()
+    {
+        return healthMax;
+    }
+    protected virtual void Die()//para el override
+    {
+
+    }
+
+    public virtual void TakeDamage(float _damage)
+    {
+        healthActual -= _damage;
+        if (healthActual <= 0f)
+        {
+            healthActual = 0f;
+            Die();
+        }
+    }
+
+    public void Attack()
+    {
+
+    }//player y enemigos los implementan
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(hitAnchor.position, hitSize);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawCube(bottomAnchor.position, new Vector2(0.1f, 0.1f));
+    }
 }   
