@@ -12,7 +12,8 @@ public class InputManager : MonoBehaviour
     //acciones
     public Action AttackPerformed;
     public Action AttackDistancePerformed;
-
+    public Action DashPerformed;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -34,8 +35,9 @@ public class InputManager : MonoBehaviour
         //suscripciones 
         _inputSystemActions.Player.Attack.performed += AttackOnPerformed;
         _inputSystemActions.Player.AttackDistance.performed += AttackDistanceOnPerformed;
+        _inputSystemActions.Player.Dash.performed += DashOnPerformed;
 
-        // en caso de añadir pause y onpause
+        // en caso de aniadir pause y onpause
         // _input.Player.Pause.performed += PauseOnPerformed;
         // _input.UI.OnPause.performed += UnPauseOnPerformed;
     }
@@ -49,8 +51,13 @@ public class InputManager : MonoBehaviour
     {
         AttackDistancePerformed?.Invoke();
     }
-
-    //lectura de evntos
+    
+    private void DashOnPerformed(InputAction.CallbackContext obj)
+    {
+        DashPerformed?.Invoke();
+    }
+    
+    //lectura de eventos
     public Vector2 GetMovement()
     {
         return _inputSystemActions.Player.Move.ReadValue<Vector2>();

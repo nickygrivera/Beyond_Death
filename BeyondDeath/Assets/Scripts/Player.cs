@@ -20,10 +20,11 @@ using UnityEngine;
 public class Player : Character
 {
     [SerializeField] private float moveSpeed = 5f;
-
+    
    // [SerializeField] private bool clampDiagonal = true;//normaliza
     [SerializeField] private Animator anim;//_anim arrastrar aqui el animator de playerAesthetics
-
+    [SerializeField] private float dashSpeed = 16f;
+    [SerializeField] private float dashCooldown = 0.5f;
 
     //nombre EXACTOS de los estados
     private readonly int IdleAnimState = Animator.StringToHash("Player_Idle");
@@ -37,7 +38,9 @@ public class Player : Character
     private Rigidbody2D _rb;
     private Vector2 _movement;//direccion del input
     private bool _isAttack = true;
-
+    private bool _isDashing = false;
+    private bool _canDash = true;
+    
     private CharacterState _state;
     //velocity sale obsoleto y en esta versión solo deja linearVelocity
 
@@ -64,6 +67,7 @@ public class Player : Character
         {
             InputManager.Instance.AttackPerformed += Attack1;
             InputManager.Instance.AttackDistancePerformed += Attack2;
+            InputManager.Instance.DashPerformed += OnDashInput;
         }
     }
 
@@ -73,6 +77,7 @@ public class Player : Character
         {
             InputManager.Instance.AttackPerformed -= Attack1;
             InputManager.Instance.AttackDistancePerformed -= Attack2;
+            InputManager.Instance.DashPerformed -= OnDashInput;
         }
     }
 
@@ -109,14 +114,35 @@ public class Player : Character
             }
         }
     }
+    
+    //Dash del player
+    private void OnDashInput()
+    {
+        Debug.Log("Dash");
+        if (!_canDash || _state == CharacterState.Attack || _state == CharacterState.Hurt || _state == CharacterState.Die) 
+            return;
 
+        StartCoroutine(Dash());
+    }
+    
+    private IEnumerator Dash()
+    {
+        Debug.Log("Dashing");
+        _isDashing = true;
+        _canDash = false;
+        _rb.linearVelocity = _movement * dashSpeed;
+        yield return new WaitForSeconds(dashCooldown);
+        _isDashing = false;
+        _canDash = true;
+    }
+    
     private void FixedUpdate()
     {
         if (_state == CharacterState.Hurt || _state == CharacterState.Die) return;
 
         if (_state == CharacterState.Attack)
             _rb.linearVelocity = Vector2.zero;
-        else
+        else if(!_isDashing)
             _rb.linearVelocity = _movement * moveSpeed;
     }
 
