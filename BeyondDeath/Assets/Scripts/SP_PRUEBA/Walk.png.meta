@@ -1,400 +1,421 @@
 fileFormatVersion: 2
-guid: c3e52ec2e0099a045a106e5f2d7aa32c
+guid: 2704b417fe5182c4396ba73a138a180b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7258487276414520575
-    second: MeleeSpin_0
+      213: 4035959289877228764
+    second: Walk_0
   - first:
-      213: -607542591369125174
-    second: MeleeSpin_1
+      213: -982904232830982447
+    second: Walk_1
   - first:
-      213: -8351334981433154002
-    second: MeleeSpin_2
+      213: -350908408369970039
+    second: Walk_2
   - first:
-      213: -8903867747309675080
-    second: MeleeSpin_3
+      213: -5409570386352685021
+    second: Walk_3
   - first:
-      213: -3033951434128071256
-    second: MeleeSpin_4
+      213: 1553940418269799609
+    second: Walk_4
   - first:
-      213: -3912199340006043671
-    second: MeleeSpin_5
+      213: 2416434504916517810
+    second: Walk_5
   - first:
-      213: 4992345515910431426
-    second: MeleeSpin_6
+      213: -6428935122508569504
+    second: Walk_6
   - first:
-      213: -8221297721332400757
-    second: MeleeSpin_7
+      213: 7144598999076838305
+    second: Walk_7
   - first:
-      213: 5156094351560704148
-    second: MeleeSpin_8
+      213: 7500509103958437945
+    second: Walk_8
   - first:
-      213: 7747869686639679721
-    second: MeleeSpin_9
+      213: 1008816216748069464
+    second: Walk_9
   - first:
-      213: -6829117859020886958
-    second: MeleeSpin_10
+      213: 11406907883527339
+    second: Walk_10
   - first:
-      213: -2957681086030681012
-    second: MeleeSpin_11
+      213: 8030128826893041618
+    second: Walk_11
   - first:
-      213: 8095527708239623007
-    second: MeleeSpin_12
+      213: 2315132830120601726
+    second: Walk_12
   - first:
-      213: -3399384556870595499
-    second: MeleeSpin_13
+      213: 7929438602540414932
+    second: Walk_13
   - first:
-      213: -929842837164593134
-    second: MeleeSpin_14
+      213: 5250438378151091228
+    second: Walk_14
   - first:
-      213: 1371882629663705941
-    second: MeleeSpin_15
+      213: -1258472680374559522
+    second: Walk_15
   - first:
-      213: 6921337550486686582
-    second: MeleeSpin_16
+      213: 2155107402851330559
+    second: Walk_16
   - first:
-      213: 2073990762136009507
-    second: MeleeSpin_17
+      213: 7720552135500433751
+    second: Walk_17
   - first:
-      213: -984286631352461640
-    second: MeleeSpin_18
+      213: -8953822836050947745
+    second: Walk_18
   - first:
-      213: -1362512906057269725
-    second: MeleeSpin_19
+      213: -6148190078763333420
+    second: Walk_19
   - first:
-      213: 5282545416855406620
-    second: MeleeSpin_20
+      213: -404497435793420480
+    second: Walk_20
   - first:
-      213: -182674327772555574
-    second: MeleeSpin_21
+      213: 8198118753440594053
+    second: Walk_21
   - first:
-      213: 2540762086522248820
-    second: MeleeSpin_22
+      213: -7385022159944432617
+    second: Walk_22
   - first:
-      213: -3774021262390142426
-    second: MeleeSpin_23
+      213: 5662401404901316715
+    second: Walk_23
   - first:
-      213: -1095359343587608552
-    second: MeleeSpin_24
+      213: 2248310813953410568
+    second: Walk_24
   - first:
-      213: -8287248518774458488
-    second: MeleeSpin_25
+      213: -5250590731418792489
+    second: Walk_25
   - first:
-      213: 2840765854898900662
-    second: MeleeSpin_26
+      213: 7507361727851546712
+    second: Walk_26
   - first:
-      213: -6966411167701180720
-    second: MeleeSpin_27
+      213: 3754832148748575705
+    second: Walk_27
   - first:
-      213: 7675191110724882161
-    second: MeleeSpin_28
+      213: 7015882756945246565
+    second: Walk_28
   - first:
-      213: -2469003782296277921
-    second: MeleeSpin_29
+      213: -4001931175307991436
+    second: Walk_29
   - first:
-      213: 7115903074403582957
-    second: MeleeSpin_30
+      213: -3097320160809446444
+    second: Walk_30
   - first:
-      213: -1215827319786130191
-    second: MeleeSpin_31
+      213: 1304144291829279589
+    second: Walk_31
   - first:
-      213: -3986516473638703524
-    second: MeleeSpin_32
+      213: 937637902835717785
+    second: Walk_32
   - first:
-      213: 2050932531462249410
-    second: MeleeSpin_33
+      213: 6614135236904034709
+    second: Walk_33
   - first:
-      213: -3836751387434154295
-    second: MeleeSpin_34
+      213: -369673672436568812
+    second: Walk_34
   - first:
-      213: -4483828646571269819
-    second: MeleeSpin_35
+      213: 9138621309347725981
+    second: Walk_35
   - first:
-      213: -412024171636948459
-    second: MeleeSpin_36
+      213: -6283331680110137117
+    second: Walk_36
   - first:
-      213: -5554019100308381451
-    second: MeleeSpin_37
+      213: -3605214097684364088
+    second: Walk_37
   - first:
-      213: 7917022561471585745
-    second: MeleeSpin_38
+      213: 8558144679115943288
+    second: Walk_38
   - first:
-      213: 3632067410301457037
-    second: MeleeSpin_39
+      213: 8347420010395431765
+    second: Walk_39
   - first:
-      213: 8458137143382488298
-    second: MeleeSpin_40
+      213: -994556614448337891
+    second: Walk_40
   - first:
-      213: -5290396973246317733
-    second: MeleeSpin_41
+      213: 7651871491509458937
+    second: Walk_41
   - first:
-      213: -5476151079261522975
-    second: MeleeSpin_42
+      213: 2918358223302112576
+    second: Walk_42
   - first:
-      213: -7799336535393101582
-    second: MeleeSpin_43
+      213: -3215931543429482107
+    second: Walk_43
   - first:
-      213: 136112304021203016
-    second: MeleeSpin_44
+      213: -4663422930283795262
+    second: Walk_44
   - first:
-      213: 8863962849418977996
-    second: MeleeSpin_45
+      213: -3765711259066377437
+    second: Walk_45
   - first:
-      213: 566046066879233927
-    second: MeleeSpin_46
+      213: 4263555918420321852
+    second: Walk_46
   - first:
-      213: 122660252516746694
-    second: MeleeSpin_47
+      213: 1357580556310585830
+    second: Walk_47
   - first:
-      213: 7465891873517200036
-    second: MeleeSpin_48
+      213: 4074982500766230116
+    second: Walk_48
   - first:
-      213: 5082631514685838583
-    second: MeleeSpin_49
+      213: 2634213438411819671
+    second: Walk_49
   - first:
-      213: -2611536707959104452
-    second: MeleeSpin_50
+      213: 879367109842221326
+    second: Walk_50
   - first:
-      213: 5637384583755551883
-    second: MeleeSpin_51
+      213: 4906354552302675731
+    second: Walk_51
   - first:
-      213: 6250400106858305995
-    second: MeleeSpin_52
+      213: 1451013728428378312
+    second: Walk_52
   - first:
-      213: -4985019183769245562
-    second: MeleeSpin_53
+      213: 1880257145966204207
+    second: Walk_53
   - first:
-      213: 7963415022626649971
-    second: MeleeSpin_54
+      213: -564933847752290079
+    second: Walk_54
   - first:
-      213: -8599425406347343646
-    second: MeleeSpin_55
+      213: 5134623443317825054
+    second: Walk_55
   - first:
-      213: -1821273749002392404
-    second: MeleeSpin_56
+      213: -1643653770580207620
+    second: Walk_56
   - first:
-      213: -1612557868993779927
-    second: MeleeSpin_57
+      213: 4855853370587240024
+    second: Walk_57
   - first:
-      213: 4575757331026462461
-    second: MeleeSpin_58
+      213: 6367995825969469067
+    second: Walk_58
   - first:
-      213: -3990273902091894732
-    second: MeleeSpin_59
+      213: -2357405538626506849
+    second: Walk_59
   - first:
-      213: 7393990685099880637
-    second: MeleeSpin_60
+      213: -9112983964201928425
+    second: Walk_60
   - first:
-      213: -5340587771585054007
-    second: MeleeSpin_61
+      213: 3827565659469065273
+    second: Walk_61
   - first:
-      213: 8703666091802388579
-    second: MeleeSpin_62
+      213: 6496322580643873013
+    second: Walk_62
   - first:
-      213: -7381117691165254118
-    second: MeleeSpin_63
+      213: -2556029147006870160
+    second: Walk_63
   - first:
-      213: -8163353876306382606
-    second: MeleeSpin_64
+      213: -6786792946507991617
+    second: Walk_64
   - first:
-      213: -6795283902912092766
-    second: MeleeSpin_65
+      213: -2369857439753089023
+    second: Walk_65
   - first:
-      213: 8578559142135432725
-    second: MeleeSpin_66
+      213: 1543584800793404941
+    second: Walk_66
   - first:
-      213: 97096838588709641
-    second: MeleeSpin_67
+      213: 7370098504332349495
+    second: Walk_67
   - first:
-      213: 2417289805880949741
-    second: MeleeSpin_68
+      213: -7303472803343401651
+    second: Walk_68
   - first:
-      213: -3698895978828743689
-    second: MeleeSpin_69
+      213: -4074224501518041167
+    second: Walk_69
   - first:
-      213: 6915870243389401618
-    second: MeleeSpin_70
+      213: -289649694679024488
+    second: Walk_70
   - first:
-      213: -7571490921804292051
-    second: MeleeSpin_71
+      213: -8363186111098726552
+    second: Walk_71
   - first:
-      213: 7538242059518681599
-    second: MeleeSpin_72
+      213: 1632409291375690579
+    second: Walk_72
   - first:
-      213: -7755179835578726364
-    second: MeleeSpin_73
+      213: -5734240148807390168
+    second: Walk_73
   - first:
-      213: 1606529947178348420
-    second: MeleeSpin_74
+      213: -6773686695513934678
+    second: Walk_74
   - first:
-      213: -8398453563938384693
-    second: MeleeSpin_75
+      213: 2950762315184936249
+    second: Walk_75
   - first:
-      213: 412947266664849671
-    second: MeleeSpin_76
+      213: 6371978124317276375
+    second: Walk_76
   - first:
-      213: -690408080324258780
-    second: MeleeSpin_77
+      213: -5461622898756360919
+    second: Walk_77
   - first:
-      213: 583911739915883444
-    second: MeleeSpin_78
+      213: 8078514156517637044
+    second: Walk_78
   - first:
-      213: 6566189752984953617
-    second: MeleeSpin_79
+      213: -6900755564484927062
+    second: Walk_79
   - first:
-      213: -5787691235565387443
-    second: MeleeSpin_80
+      213: -9217945370024712126
+    second: Walk_80
   - first:
-      213: 5961977640653161795
-    second: MeleeSpin_81
+      213: 8997379958696392060
+    second: Walk_81
   - first:
-      213: 7993844680958771199
-    second: MeleeSpin_82
+      213: -8579611801594414922
+    second: Walk_82
   - first:
-      213: 4230968943883390074
-    second: MeleeSpin_83
+      213: 1293780185593428192
+    second: Walk_83
   - first:
-      213: 4813310868123744973
-    second: MeleeSpin_84
+      213: -5706850928481980528
+    second: Walk_84
   - first:
-      213: -121490113641962147
-    second: MeleeSpin_85
+      213: -6084228574034323684
+    second: Walk_85
   - first:
-      213: 4832313555566322090
-    second: MeleeSpin_86
+      213: -12018104144663456
+    second: Walk_86
   - first:
-      213: 618206121958282814
-    second: MeleeSpin_87
+      213: -1055994032989520182
+    second: Walk_87
   - first:
-      213: 9066721074447357969
-    second: MeleeSpin_88
+      213: -6312214684443092115
+    second: Walk_88
   - first:
-      213: -3702402220352177620
-    second: MeleeSpin_89
+      213: -5624858680536014825
+    second: Walk_89
   - first:
-      213: -6508315779397634970
-    second: MeleeSpin_90
+      213: 8652276801147021590
+    second: Walk_90
   - first:
-      213: 7768670894492951060
-    second: MeleeSpin_91
+      213: -6480489451187485749
+    second: Walk_91
   - first:
-      213: -6728765554493478739
-    second: MeleeSpin_92
+      213: 4433149493393637653
+    second: Walk_92
   - first:
-      213: 6876728367114972674
-    second: MeleeSpin_93
+      213: -6964237562088584537
+    second: Walk_93
   - first:
-      213: 84113098757623507
-    second: MeleeSpin_94
+      213: -5415229150704789164
+    second: Walk_94
   - first:
-      213: 6123709696531907781
-    second: MeleeSpin_95
+      213: 7763810786795827562
+    second: Walk_95
   - first:
-      213: 3880648358311799893
-    second: MeleeSpin_96
+      213: -7040390171675947480
+    second: Walk_96
   - first:
-      213: -213828230427326043
-    second: MeleeSpin_97
+      213: 7924307203060807442
+    second: Walk_97
   - first:
-      213: -1214014109080500324
-    second: MeleeSpin_98
+      213: 8205243117125002824
+    second: Walk_98
   - first:
-      213: 7340984593334194930
-    second: MeleeSpin_99
+      213: 517406396882381478
+    second: Walk_99
   - first:
-      213: 3469542070215719711
-    second: MeleeSpin_100
+      213: 4866340390220120849
+    second: Walk_100
   - first:
-      213: 2267223448413990995
-    second: MeleeSpin_101
+      213: -8105075915042799229
+    second: Walk_101
   - first:
-      213: -3169025262176011551
-    second: MeleeSpin_102
+      213: -4118429024342092599
+    second: Walk_102
   - first:
-      213: 8316744991278311779
-    second: MeleeSpin_103
+      213: 5960967108238393655
+    second: Walk_103
   - first:
-      213: -5881213611180467859
-    second: MeleeSpin_104
+      213: -8792032317586966710
+    second: Walk_104
   - first:
-      213: 8709038304921907179
-    second: MeleeSpin_105
+      213: 4246473342661148352
+    second: Walk_105
   - first:
-      213: 5750380689195275822
-    second: MeleeSpin_106
+      213: -2860084932143522099
+    second: Walk_106
   - first:
-      213: 7727342617848826691
-    second: MeleeSpin_107
+      213: 368526209793897083
+    second: Walk_107
   - first:
-      213: 2828625931167221534
-    second: MeleeSpin_108
+      213: -8580514052645431334
+    second: Walk_108
   - first:
-      213: 7166851662428198487
-    second: MeleeSpin_109
+      213: -8195124532523885833
+    second: Walk_109
   - first:
-      213: 2623474530219339935
-    second: MeleeSpin_110
+      213: 2068727090837968941
+    second: Walk_110
   - first:
-      213: -2676747779345993735
-    second: MeleeSpin_111
+      213: 6565321963167020246
+    second: Walk_111
   - first:
-      213: -1011669773804443786
-    second: MeleeSpin_112
+      213: 5915878418717124408
+    second: Walk_112
   - first:
-      213: 4140362988636568453
-    second: MeleeSpin_113
+      213: -8841979006077593681
+    second: Walk_113
   - first:
-      213: -8327906881981742431
-    second: MeleeSpin_114
+      213: -2868163726748290782
+    second: Walk_114
   - first:
-      213: 9016048386316659785
-    second: MeleeSpin_115
+      213: -4542182513450597632
+    second: Walk_115
   - first:
-      213: 8503620789764306730
-    second: MeleeSpin_116
+      213: 4861722137604162139
+    second: Walk_116
   - first:
-      213: 6927169864256728061
-    second: MeleeSpin_117
+      213: -8652622936834742736
+    second: Walk_117
   - first:
-      213: -2472629030859227481
-    second: MeleeSpin_118
+      213: 4561869690744792131
+    second: Walk_118
   - first:
-      213: 2576333395064388495
-    second: MeleeSpin_119
+      213: 982120465176542195
+    second: Walk_119
   - first:
-      213: -6604246734691847838
-    second: MeleeSpin_120
+      213: 2925343225914326510
+    second: Walk_120
   - first:
-      213: 3964749424243715953
-    second: MeleeSpin_121
+      213: -7484705483664178662
+    second: Walk_121
   - first:
-      213: -6452486125075867496
-    second: MeleeSpin_122
+      213: -589656918176988430
+    second: Walk_122
   - first:
-      213: -712599741006261334
-    second: MeleeSpin_123
+      213: 3934303850435245846
+    second: Walk_123
   - first:
-      213: 8236126851778841658
-    second: MeleeSpin_124
+      213: 7837060012389328808
+    second: Walk_124
   - first:
-      213: 2723364901584781847
-    second: MeleeSpin_125
+      213: -8742186747268411255
+    second: Walk_125
   - first:
-      213: -261941586064558059
-    second: MeleeSpin_126
+      213: 8368402500409687713
+    second: Walk_126
   - first:
-      213: -8042049389409603024
-    second: MeleeSpin_127
+      213: -4226610515755634096
+    second: Walk_127
   - first:
-      213: -6696174966491397064
-    second: MeleeSpin_128
+      213: -990995665896315882
+    second: Walk_128
   - first:
-      213: 7348898798847078947
-    second: MeleeSpin_129
+      213: -2152020670537847869
+    second: Walk_129
   - first:
-      213: -5740109210203791246
-    second: MeleeSpin_130
+      213: 8530816174618184001
+    second: Walk_130
+  - first:
+      213: -6357400150421945389
+    second: Walk_131
+  - first:
+      213: -8078773273031547265
+    second: Walk_132
+  - first:
+      213: 2010641050657363135
+    second: Walk_133
+  - first:
+      213: 6164432034152008989
+    second: Walk_134
+  - first:
+      213: 9156235454017857774
+    second: Walk_135
+  - first:
+      213: 3140396463178857400
+    second: Walk_136
+  - first:
+      213: 1775084234300046388
+    second: Walk_137
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -490,13 +511,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MeleeSpin_0
+      name: Walk_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 916
-        width: 50
-        height: 64
+        x: 0
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,20 +526,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffc416588b35bb460800000000000000
-      internalID: 7258487276414520575
+      spriteID: cdce119379b920830800000000000000
+      internalID: 4035959289877228764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_1
+      name: Walk_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 912
-        width: 52
-        height: 70
+        x: 128
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,20 +548,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac2e5876b339197f0800000000000000
-      internalID: -607542591369125174
+      spriteID: 1d6a1e1dec50c52f0800000000000000
+      internalID: -982904232830982447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_2
+      name: Walk_2
       rect:
         serializedVersion: 2
-        x: 314
-        y: 914
-        width: 46
-        height: 68
+        x: 256
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,20 +570,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e262267e4191a1c80800000000000000
-      internalID: -8351334981433154002
+      spriteID: 984096a69a2512bf0800000000000000
+      internalID: -350908408369970039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_3
+      name: Walk_3
       rect:
         serializedVersion: 2
-        x: 442
-        y: 919
-        width: 58
-        height: 71
+        x: 384
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,20 +592,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bd9c82657b1f6480800000000000000
-      internalID: -8903867747309675080
+      spriteID: 320c9fd05685de4b0800000000000000
+      internalID: -5409570386352685021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_4
+      name: Walk_4
       rect:
         serializedVersion: 2
-        x: 563
-        y: 904
-        width: 73
-        height: 76
+        x: 512
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,20 +614,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a56207ce3d35e5d0800000000000000
-      internalID: -3033951434128071256
+      spriteID: 9b4e719c394b09510800000000000000
+      internalID: 1553940418269799609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_5
+      name: Walk_5
       rect:
         serializedVersion: 2
-        x: 693
-        y: 902
-        width: 56
-        height: 91
+        x: 640
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,20 +636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ef0c609d6315b9c0800000000000000
-      internalID: -3912199340006043671
+      spriteID: 2b3cb802166e88120800000000000000
+      internalID: 2416434504916517810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_6
+      name: Walk_6
       rect:
         serializedVersion: 2
-        x: 812
-        y: 906
-        width: 63
-        height: 91
+        x: 768
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,20 +658,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c20bdfcbcf584540800000000000000
-      internalID: 4992345515910431426
+      spriteID: 06428da6195d7c6a0800000000000000
+      internalID: -6428935122508569504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_7
+      name: Walk_7
       rect:
         serializedVersion: 2
-        x: 917
-        y: 924
-        width: 72
-        height: 71
+        x: 896
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,20 +680,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8df04fd74518ed80800000000000000
-      internalID: -8221297721332400757
+      spriteID: 1ab169a9fe6b62360800000000000000
+      internalID: 7144598999076838305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_8
+      name: Walk_8
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 924
-        width: 59
-        height: 70
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,20 +702,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4908c2d9e702e8740800000000000000
-      internalID: 5156094351560704148
+      spriteID: 930b6086a49271860800000000000000
+      internalID: 7500509103958437945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_9
+      name: Walk_9
       rect:
         serializedVersion: 2
-        x: 1202
-        y: 925
-        width: 58
-        height: 56
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,20 +724,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e8dc261e66f58b60800000000000000
-      internalID: 7747869686639679721
+      spriteID: 8521ce21109000e00800000000000000
+      internalID: 1008816216748069464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_10
+      name: Walk_10
       rect:
         serializedVersion: 2
-        x: 1331
-        y: 926
-        width: 57
-        height: 51
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25ca8cb4d791a31a0800000000000000
-      internalID: -6829117859020886958
+      spriteID: bac1264b586882000800000000000000
+      internalID: 11406907883527339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_11
+      name: Walk_11
       rect:
         serializedVersion: 2
-        x: 1342
-        y: 971
-        width: 14
-        height: 7
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,20 +768,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4cef3409b434f6d0800000000000000
-      internalID: -2957681086030681012
+      spriteID: 2df75936f9fb07f60800000000000000
+      internalID: 8030128826893041618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_12
+      name: Walk_12
       rect:
         serializedVersion: 2
-        x: 1588
-        y: 922
-        width: 55
-        height: 53
+        x: 1536
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,20 +790,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5374f60f87195070800000000000000
-      internalID: 8095527708239623007
+      spriteID: e78ee2bfa01012020800000000000000
+      internalID: 2315132830120601726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_13
+      name: Walk_13
       rect:
         serializedVersion: 2
-        x: 1710
-        y: 917
-        width: 61
-        height: 62
+        x: 1664
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,20 +812,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55c87c891c5f2d0d0800000000000000
-      internalID: -3399384556870595499
+      spriteID: 4d7f0b4a5660b0e60800000000000000
+      internalID: 7929438602540414932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_14
+      name: Walk_14
       rect:
         serializedVersion: 2
-        x: 1837
-        y: 917
-        width: 62
-        height: 62
+        x: 1792
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -813,20 +834,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 210fcd9bdd88813f0800000000000000
-      internalID: -929842837164593134
+      spriteID: c1c16cc03ed4dd840800000000000000
+      internalID: 5250438378151091228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_15
+      name: Walk_15
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 923
-        width: 56
-        height: 45
+        x: 0
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,20 +856,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55b42aeabf7e90310800000000000000
-      internalID: 1371882629663705941
+      spriteID: edc9dbec3c1098ee0800000000000000
+      internalID: -1258472680374559522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_16
+      name: Walk_16
       rect:
         serializedVersion: 2
-        x: 40
-        y: 785
-        width: 53
-        height: 62
+        x: 128
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -857,20 +878,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67bc453d4d78d0060800000000000000
-      internalID: 6921337550486686582
+      spriteID: ff9a4cfb3ca78ed10800000000000000
+      internalID: 2155107402851330559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_17
+      name: Walk_17
       rect:
         serializedVersion: 2
-        x: 171
-        y: 787
-        width: 47
-        height: 60
+        x: 256
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -879,20 +900,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32bfe841c9b48cc10800000000000000
-      internalID: 2073990762136009507
+      spriteID: 75903621349e42b60800000000000000
+      internalID: 7720552135500433751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_18
+      name: Walk_18
       rect:
         serializedVersion: 2
-        x: 306
-        y: 784
-        width: 46
-        height: 62
+        x: 384
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b61215168c1752f0800000000000000
-      internalID: -984286631352461640
+      spriteID: f51176be191adb380800000000000000
+      internalID: -8953822836050947745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_19
+      name: Walk_19
       rect:
         serializedVersion: 2
-        x: 435
-        y: 778
-        width: 59
-        height: 75
+        x: 512
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -923,20 +944,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32e32981bb1671de0800000000000000
-      internalID: -1362512906057269725
+      spriteID: 4d80bb7a2bd3daaa0800000000000000
+      internalID: -6148190078763333420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_20
+      name: Walk_20
       rect:
         serializedVersion: 2
-        x: 563
-        y: 767
-        width: 48
-        height: 81
+        x: 640
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,20 +966,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c18c889811f5f4940800000000000000
-      internalID: 5282545416855406620
+      spriteID: 04f0afaa9bfe26af0800000000000000
+      internalID: -404497435793420480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_21
+      name: Walk_21
       rect:
         serializedVersion: 2
-        x: 683
-        y: 770
-        width: 75
-        height: 91
+        x: 768
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,20 +988,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac6988faaa2077df0800000000000000
-      internalID: -182674327772555574
+      spriteID: 5887b4d129195c170800000000000000
+      internalID: 8198118753440594053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_22
+      name: Walk_22
       rect:
         serializedVersion: 2
-        x: 796
-        y: 779
-        width: 79
-        height: 90
+        x: 896
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -989,20 +1010,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47e50f9f7a9924320800000000000000
-      internalID: 2540762086522248820
+      spriteID: 714cf1a1971238990800000000000000
+      internalID: -7385022159944432617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_23
+      name: Walk_23
       rect:
         serializedVersion: 2
-        x: 934
-        y: 791
-        width: 54
-        height: 78
+        x: 1024
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1011,20 +1032,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62ad67058abff9bc0800000000000000
-      internalID: -3774021262390142426
+      spriteID: b68d0dab314e49e40800000000000000
+      internalID: 5662401404901316715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_24
+      name: Walk_24
       rect:
         serializedVersion: 2
-        x: 1068
-        y: 789
-        width: 60
-        height: 70
+        x: 1152
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1033,20 +1054,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8183e000b708cc0f0800000000000000
-      internalID: -1095359343587608552
+      spriteID: 806cc52f5ca933f10800000000000000
+      internalID: 2248310813953410568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_25
+      name: Walk_25
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 783
-        width: 54
-        height: 72
+        x: 1280
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1055,20 +1076,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 887f0114167cdfc80800000000000000
-      internalID: -8287248518774458488
+      spriteID: 7dd03d07c872227b0800000000000000
+      internalID: -5250590731418792489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_26
+      name: Walk_26
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 843
-        width: 6
-        height: 6
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,20 +1098,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bece477e7d6c6720800000000000000
-      internalID: 2840765854898900662
+      spriteID: 85844fc37b18f2860800000000000000
+      internalID: 7507361727851546712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_27
+      name: Walk_27
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 838
-        width: 30
-        height: 13
+        x: 1536
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1099,20 +1120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0de5bddd3f5525f90800000000000000
-      internalID: -6966411167701180720
+      spriteID: 9d3206102f7db1430800000000000000
+      internalID: 3754832148748575705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_28
+      name: Walk_28
       rect:
         serializedVersion: 2
-        x: 1706
-        y: 781
-        width: 54
-        height: 65
+        x: 1664
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,20 +1142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fe0ef976a1c38a60800000000000000
-      internalID: 7675191110724882161
+      spriteID: 5697289123c6d5160800000000000000
+      internalID: 7015882756945246565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_29
+      name: Walk_29
       rect:
         serializedVersion: 2
-        x: 1833
-        y: 784
-        width: 55
-        height: 63
+        x: 1792
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1143,20 +1164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5c622f24265cbdd0800000000000000
-      internalID: -2469003782296277921
+      spriteID: 476a4389cc84678c0800000000000000
+      internalID: -4001931175307991436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_30
+      name: Walk_30
       rect:
         serializedVersion: 2
-        x: 1197
-        y: 824
-        width: 9
-        height: 12
+        x: 0
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1165,20 +1186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de38fedf424c0c260800000000000000
-      internalID: 7115903074403582957
+      spriteID: 4d31c4b59bb1405d0800000000000000
+      internalID: -3097320160809446444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_31
+      name: Walk_31
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 783
-        width: 43
-        height: 56
+        x: 128
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,20 +1208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f4beef8e73802fe0800000000000000
-      internalID: -1215827319786130191
+      spriteID: 56b6652e250491210800000000000000
+      internalID: 1304144291829279589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_32
+      name: Walk_32
       rect:
         serializedVersion: 2
-        x: 1457
-        y: 784
-        width: 47
-        height: 52
+        x: 256
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1209,20 +1230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5ea581836c0da8c0800000000000000
-      internalID: -3986516473638703524
+      spriteID: 996177e64b8230d00800000000000000
+      internalID: 937637902835717785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_33
+      name: Walk_33
       rect:
         serializedVersion: 2
-        x: 1583
-        y: 784
-        width: 49
-        height: 58
+        x: 384
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1231,20 +1252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb99146540667c10800000000000000
-      internalID: 2050932531462249410
+      spriteID: 5912f0c64f02acb50800000000000000
+      internalID: 6614135236904034709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_34
+      name: Walk_34
       rect:
         serializedVersion: 2
-        x: 41
-        y: 657
-        width: 42
-        height: 64
+        x: 512
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1253,20 +1274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c6008ce0fe11cac0800000000000000
-      internalID: -3836751387434154295
+      spriteID: 41daa97e0c7aedaf0800000000000000
+      internalID: -369673672436568812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_35
+      name: Walk_35
       rect:
         serializedVersion: 2
-        x: 163
-        y: 653
-        width: 49
-        height: 68
+        x: 640
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1275,20 +1296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 541266f2a9d36c1c0800000000000000
-      internalID: -4483828646571269819
+      spriteID: d928c7099a7e2de70800000000000000
+      internalID: 9138621309347725981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_36
+      name: Walk_36
       rect:
         serializedVersion: 2
-        x: 293
-        y: 651
-        width: 49
-        height: 68
+        x: 768
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,20 +1318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51284bae232384af0800000000000000
-      internalID: -412024171636948459
+      spriteID: 3e0b311a02f1dc8a0800000000000000
+      internalID: -6283331680110137117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_37
+      name: Walk_37
       rect:
         serializedVersion: 2
-        x: 427
-        y: 642
-        width: 55
-        height: 73
+        x: 896
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1319,20 +1340,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f062620e092ce2b0800000000000000
-      internalID: -5554019100308381451
+      spriteID: 8c40b4021e4b7fdc0800000000000000
+      internalID: -3605214097684364088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_38
+      name: Walk_38
       rect:
         serializedVersion: 2
-        x: 535
-        y: 639
-        width: 67
-        height: 84
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1341,20 +1362,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1dd544fc21aeedd60800000000000000
-      internalID: 7917022561471585745
+      spriteID: 87dea1f1e33a4c670800000000000000
+      internalID: 8558144679115943288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_39
+      name: Walk_39
       rect:
         serializedVersion: 2
-        x: 662
-        y: 647
-        width: 96
-        height: 88
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1363,20 +1384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d829a4fe012b76230800000000000000
-      internalID: 3632067410301457037
+      spriteID: 5537b9ed54ef7d370800000000000000
+      internalID: 8347420010395431765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_40
+      name: Walk_40
       rect:
         serializedVersion: 2
-        x: 795
-        y: 648
-        width: 59
-        height: 92
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1385,20 +1406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae4b9d43be6516570800000000000000
-      internalID: 8458137143382488298
+      spriteID: d1caace4700a232f0800000000000000
+      internalID: -994556614448337891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_41
+      name: Walk_41
       rect:
         serializedVersion: 2
-        x: 925
-        y: 660
-        width: 72
-        height: 84
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1407,20 +1428,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5bf9d88bfbb496b0800000000000000
-      internalID: -5290396973246317733
+      spriteID: 9f71c568498e03a60800000000000000
+      internalID: 7651871491509458937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_42
+      name: Walk_42
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 693
-        width: 7
-        height: 15
+        x: 1536
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1429,20 +1450,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e3be387b9dc004b0800000000000000
-      internalID: -5476151079261522975
+      spriteID: 045334b8757108820800000000000000
+      internalID: 2918358223302112576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_43
+      name: Walk_43
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 654
-        width: 78
-        height: 77
+        x: 1664
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1451,20 +1472,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f81b246eb033c390800000000000000
-      internalID: -7799336535393101582
+      spriteID: 58979ebcc47be53d0800000000000000
+      internalID: -3215931543429482107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_44
+      name: Walk_44
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 645
-        width: 66
-        height: 84
+        x: 1792
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1473,240 +1494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8486eba5b6193e100800000000000000
-      internalID: 136112304021203016
+      spriteID: 2cce5038d81384fb0800000000000000
+      internalID: -4663422930283795262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_45
+      name: Walk_45
       rect:
         serializedVersion: 2
-        x: 1326
-        y: 648
-        width: 49
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc2a0ed8f3f130b70800000000000000
-      internalID: 8863962849418977996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_46
-      rect:
-        serializedVersion: 2
-        x: 1459
-        y: 647
-        width: 45
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78ff7d616effad700800000000000000
-      internalID: 566046066879233927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_47
-      rect:
-        serializedVersion: 2
-        x: 1584
-        y: 647
-        width: 45
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c5025b89d6c3b100800000000000000
-      internalID: 122660252516746694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_48
-      rect:
-        serializedVersion: 2
-        x: 1706
-        y: 647
-        width: 38
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a2e77c5a1d2c9760800000000000000
-      internalID: 7465891873517200036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_49
-      rect:
-        serializedVersion: 2
-        x: 1833
-        y: 658
-        width: 40
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f41e050f62298640800000000000000
-      internalID: 5082631514685838583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_50
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 531
-        width: 37
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3c543c5335f1cbd0800000000000000
-      internalID: -2611536707959104452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_51
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 533
-        width: 33
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b84530929630c3e40800000000000000
-      internalID: 5637384583755551883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_52
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 528
-        width: 44
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc95a59f7c1edb650800000000000000
-      internalID: 6250400106858305995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_53
-      rect:
-        serializedVersion: 2
-        x: 410
-        y: 519
-        width: 54
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6882de0d677a1dab0800000000000000
-      internalID: -4985019183769245562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_54
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 526
-        width: 81
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 377bba665cbb38e60800000000000000
-      internalID: 7963415022626649971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_55
-      rect:
-        serializedVersion: 2
-        x: 655
+        x: 0
         y: 512
-        width: 74
-        height: 94
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1715,20 +1516,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e882369724b8a880800000000000000
-      internalID: -8599425406347343646
+      spriteID: 32bd8acbf818dbbc0800000000000000
+      internalID: -3765711259066377437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_56
+      name: Walk_46
       rect:
         serializedVersion: 2
-        x: 792
-        y: 520
-        width: 62
-        height: 90
+        x: 128
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1737,20 +1538,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cace7ffbc2989b6e0800000000000000
-      internalID: -1821273749002392404
+      spriteID: c36257db4813b2b30800000000000000
+      internalID: 4263555918420321852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_57
+      name: Walk_47
       rect:
         serializedVersion: 2
-        x: 920
-        y: 533
-        width: 82
-        height: 75
+        x: 256
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,20 +1560,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9276dde692b0f99e0800000000000000
-      internalID: -1612557868993779927
+      spriteID: 6e1aedcb25817d210800000000000000
+      internalID: 1357580556310585830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_58
+      name: Walk_48
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 523
-        width: 77
-        height: 83
+        x: 384
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1781,20 +1582,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df6c8369c0b508f30800000000000000
-      internalID: 4575757331026462461
+      spriteID: 466aa188efe3d8830800000000000000
+      internalID: 4074982500766230116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_59
+      name: Walk_49
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 526
-        width: 52
-        height: 79
+        x: 512
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1803,20 +1604,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4300d450703bf98c0800000000000000
-      internalID: -3990273902091894732
+      spriteID: 79ac8136a2b9e8420800000000000000
+      internalID: 2634213438411819671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_60
+      name: Walk_50
       rect:
         serializedVersion: 2
-        x: 1313
-        y: 528
-        width: 51
-        height: 49
+        x: 640
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1825,20 +1626,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db0fce16a5bbc9660800000000000000
-      internalID: 7393990685099880637
+      spriteID: e09be413ab3243c00800000000000000
+      internalID: 879367109842221326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_61
+      name: Walk_51
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 576
-        width: 17
-        height: 28
+        x: 768
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1847,20 +1648,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cab0e6a7bb62e5b0800000000000000
-      internalID: -5340587771585054007
+      spriteID: 3172f18687fd61440800000000000000
+      internalID: 4906354552302675731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_62
+      name: Walk_52
       rect:
         serializedVersion: 2
-        x: 1441
-        y: 528
-        width: 52
-        height: 53
+        x: 896
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1869,20 +1670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3686e7d4232a9c870800000000000000
-      internalID: 8703666091802388579
+      spriteID: 8c840375c49032410800000000000000
+      internalID: 1451013728428378312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_63
+      name: Walk_53
       rect:
         serializedVersion: 2
-        x: 1569
-        y: 528
-        width: 49
-        height: 62
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1891,20 +1692,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1e5eb41190019990800000000000000
-      internalID: -7381117691165254118
+      spriteID: f2594b789e3081a10800000000000000
+      internalID: 1880257145966204207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_64
+      name: Walk_54
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 528
-        width: 43
-        height: 68
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1913,20 +1714,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f033fa96e0f5be80800000000000000
-      internalID: -8163353876306382606
+      spriteID: 1e0512b98a3f828f0800000000000000
+      internalID: -564933847752290079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_65
+      name: Walk_55
       rect:
         serializedVersion: 2
-        x: 1826
-        y: 531
-        width: 39
-        height: 64
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1935,20 +1736,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a5aef21b4d42b1a0800000000000000
-      internalID: -6795283902912092766
+      spriteID: e1e1a5a31d8d14740800000000000000
+      internalID: 5134623443317825054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_66
+      name: Walk_56
       rect:
         serializedVersion: 2
-        x: 36
-        y: 410
-        width: 46
-        height: 63
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1957,20 +1758,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51689afa61a2d0770800000000000000
-      internalID: 8578559142135432725
+      spriteID: cf7d5d6aa919039e0800000000000000
+      internalID: -1643653770580207620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_67
+      name: Walk_57
       rect:
         serializedVersion: 2
-        x: 160
-        y: 409
-        width: 47
-        height: 68
+        x: 1536
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1979,20 +1780,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90bb4ec6f05f85100800000000000000
-      internalID: 97096838588709641
+      spriteID: 8565c33c9e4736340800000000000000
+      internalID: 4855853370587240024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_68
+      name: Walk_58
       rect:
         serializedVersion: 2
-        x: 284
-        y: 407
-        width: 42
-        height: 70
+        x: 1664
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2001,20 +1802,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: debf4b66540fb8120800000000000000
-      internalID: 2417289805880949741
+      spriteID: b869412f67aaf5850800000000000000
+      internalID: 6367995825969469067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_69
+      name: Walk_59
       rect:
         serializedVersion: 2
-        x: 400
-        y: 399
-        width: 53
-        height: 73
+        x: 1792
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2023,20 +1824,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fbbac074b1eaacc0800000000000000
-      internalID: -3698895978828743689
+      spriteID: f9fe0a61720d84fd0800000000000000
+      internalID: -2357405538626506849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_70
+      name: Walk_60
       rect:
         serializedVersion: 2
-        x: 424
-        y: 470
-        width: 6
-        height: 7
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2045,20 +1846,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21a6be1385b1aff50800000000000000
-      internalID: 6915870243389401618
+      spriteID: 719b9e10e5d288180800000000000000
+      internalID: -9112983964201928425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_71
+      name: Walk_61
       rect:
         serializedVersion: 2
-        x: 519
-        y: 404
-        width: 72
-        height: 72
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2067,20 +1868,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d20a2c14f19ace690800000000000000
-      internalID: -7571490921804292051
+      spriteID: 93c232f10be3e1530800000000000000
+      internalID: 3827565659469065273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_72
+      name: Walk_62
       rect:
         serializedVersion: 2
-        x: 662
-        y: 385
-        width: 59
-        height: 107
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2089,20 +1890,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff1258cb6373d9860800000000000000
-      internalID: 7538242059518681599
+      spriteID: 5f080a5d7f2972a50800000000000000
+      internalID: 6496322580643873013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_73
+      name: Walk_63
       rect:
         serializedVersion: 2
-        x: 790
-        y: 406
-        width: 67
-        height: 83
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2111,20 +1912,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 428ce0b3701106490800000000000000
-      internalID: -7755179835578726364
+      spriteID: 07d5c118809278cd0800000000000000
+      internalID: -2556029147006870160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_74
+      name: Walk_64
       rect:
         serializedVersion: 2
-        x: 935
-        y: 395
-        width: 72
-        height: 94
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2133,20 +1934,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48fa796a97a8b4610800000000000000
-      internalID: 1606529947178348420
+      spriteID: fb5b34be5c770d1a0800000000000000
+      internalID: -6786792946507991617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_75
+      name: Walk_65
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 392
-        width: 57
-        height: 96
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2155,20 +1956,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc4d6d20bf2b27b80800000000000000
-      internalID: -8398453563938384693
+      spriteID: 100533fe6339c1fd0800000000000000
+      internalID: -2369857439753089023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_76
+      name: Walk_66
       rect:
         serializedVersion: 2
-        x: 1171
-        y: 398
-        width: 58
-        height: 90
+        x: 768
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2177,20 +1978,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 701e684e9551bb500800000000000000
-      internalID: 412947266664849671
+      spriteID: d06abf3b23aeb6510800000000000000
+      internalID: 1543584800793404941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_77
+      name: Walk_67
       rect:
         serializedVersion: 2
-        x: 1331
-        y: 459
-        width: 26
-        height: 17
+        x: 896
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2199,20 +2000,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4249636428d2b66f0800000000000000
-      internalID: -690408080324258780
+      spriteID: 7301e5e8a89d74660800000000000000
+      internalID: 7370098504332349495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_78
+      name: Walk_68
       rect:
         serializedVersion: 2
-        x: 1684
-        y: 411
-        width: 61
-        height: 59
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2221,20 +2022,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b3dddd32a87a1800800000000000000
-      internalID: 583911739915883444
+      spriteID: d4d7df94e2ad4aa90800000000000000
+      internalID: -7303472803343401651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_79
+      name: Walk_69
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 410
-        width: 62
-        height: 66
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2243,20 +2044,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1136a7a8acacf1b50800000000000000
-      internalID: 6566189752984953617
+      spriteID: 1bff2dbe6627577c0800000000000000
+      internalID: -4074224501518041167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_80
+      name: Walk_70
       rect:
         serializedVersion: 2
-        x: 931
-        y: 462
-        width: 7
-        height: 6
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2265,20 +2066,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d41cb7a5c7dfdafa0800000000000000
-      internalID: -5787691235565387443
+      spriteID: 89c3b572325fafbf0800000000000000
+      internalID: -289649694679024488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_81
+      name: Walk_71
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 400
-        width: 55
-        height: 63
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2287,20 +2088,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34504f583133db250800000000000000
-      internalID: 5961977640653161795
+      spriteID: 867da71ca8effeb80800000000000000
+      internalID: -8363186111098726552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_82
+      name: Walk_72
       rect:
         serializedVersion: 2
-        x: 1556
-        y: 401
-        width: 56
-        height: 66
+        x: 1536
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2309,20 +2110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fff71365267dfee60800000000000000
-      internalID: 7993844680958771199
+      spriteID: 353ce740a9b77a610800000000000000
+      internalID: 1632409291375690579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_83
+      name: Walk_73
       rect:
         serializedVersion: 2
-        x: 1428
-        y: 399
-        width: 56
-        height: 59
+        x: 1664
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2331,20 +2132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7c01eb76db67ba30800000000000000
-      internalID: 4230968943883390074
+      spriteID: 82c6d8947f2eb60b0800000000000000
+      internalID: -5734240148807390168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_84
+      name: Walk_74
       rect:
         serializedVersion: 2
-        x: 170
-        y: 289
-        width: 45
-        height: 68
+        x: 1792
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2353,20 +2154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcafa088bb05cc240800000000000000
-      internalID: 4813310868123744973
+      spriteID: aa43a16c6d70ff1a0800000000000000
+      internalID: -6773686695513934678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_85
+      name: Walk_75
       rect:
         serializedVersion: 2
-        x: 292
-        y: 284
-        width: 44
-        height: 73
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2375,20 +2176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5526a4a261605ef0800000000000000
-      internalID: -121490113641962147
+      spriteID: 935153d11b633f820800000000000000
+      internalID: 2950762315184936249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_86
+      name: Walk_76
       rect:
         serializedVersion: 2
-        x: 406
-        y: 284
-        width: 55
-        height: 68
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2397,20 +2198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa1e5da7393df0340800000000000000
-      internalID: 4832313555566322090
+      spriteID: 7d8bd780850dd6850800000000000000
+      internalID: 6371978124317276375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_87
+      name: Walk_77
       rect:
         serializedVersion: 2
-        x: 436
-        y: 351
-        width: 7
-        height: 6
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2419,20 +2220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e369b49413f449800800000000000000
-      internalID: 618206121958282814
+      spriteID: 925ec7619ea6434b0800000000000000
+      internalID: -5461622898756360919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_88
+      name: Walk_78
       rect:
         serializedVersion: 2
-        x: 544
-        y: 276
-        width: 47
-        height: 79
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2441,20 +2242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1189bf797c673dd70800000000000000
-      internalID: 9066721074447357969
+      spriteID: 4bbb234d2d5ac1070800000000000000
+      internalID: 8078514156517637044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_89
+      name: Walk_79
       rect:
         serializedVersion: 2
-        x: 652
-        y: 277
-        width: 76
-        height: 92
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2463,20 +2264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2a7a48fbcc6e9cc0800000000000000
-      internalID: -3702402220352177620
+      spriteID: aa1631930679b30a0800000000000000
+      internalID: -6900755564484927062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_90
+      name: Walk_80
       rect:
         serializedVersion: 2
-        x: 790
-        y: 278
-        width: 82
-        height: 86
+        x: 640
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2485,20 +2286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6643feaf741dda5a0800000000000000
-      internalID: -6508315779397634970
+      spriteID: 24868b45687431080800000000000000
+      internalID: -9217945370024712126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_91
+      name: Walk_81
       rect:
         serializedVersion: 2
-        x: 939
-        y: 266
-        width: 50
-        height: 98
+        x: 768
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2507,20 +2308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4122b23b40ddfcb60800000000000000
-      internalID: 7768670894492951060
+      spriteID: c75315bf66d1ddc70800000000000000
+      internalID: 8997379958696392060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_92
+      name: Walk_82
       rect:
         serializedVersion: 2
-        x: 1052
-        y: 269
-        width: 56
-        height: 95
+        x: 896
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2529,20 +2330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da82883f06f9e92a0800000000000000
-      internalID: -6728765554493478739
+      spriteID: 6b8373fe5881fe880800000000000000
+      internalID: -8579611801594414922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_93
+      name: Walk_83
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 281
-        width: 53
-        height: 80
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2551,20 +2352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20e6db2f30c0f6f50800000000000000
-      internalID: 6876728367114972674
+      spriteID: 0e83cbb593e64f110800000000000000
+      internalID: 1293780185593428192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_94
+      name: Walk_84
       rect:
         serializedVersion: 2
-        x: 1823
-        y: 287
-        width: 58
-        height: 70
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2573,20 +2374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dec76cea64da2100800000000000000
-      internalID: 84113098757623507
+      spriteID: 09f29b511513dc0b0800000000000000
+      internalID: -5706850928481980528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_95
+      name: Walk_85
       rect:
         serializedVersion: 2
-        x: 39
-        y: 287
-        width: 50
-        height: 61
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2595,20 +2396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c446613689cbf450800000000000000
-      internalID: 6123709696531907781
+      spriteID: c171768f85a709ba0800000000000000
+      internalID: -6084228574034323684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_96
+      name: Walk_86
       rect:
         serializedVersion: 2
-        x: 1312
-        y: 279
-        width: 52
-        height: 63
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2617,20 +2418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55ca06f0f15dad530800000000000000
-      internalID: 3880648358311799893
+      spriteID: 06c6593199d45dff0800000000000000
+      internalID: -12018104144663456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_97
+      name: Walk_87
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 279
-        width: 49
-        height: 59
+        x: 1536
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2639,20 +2440,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a9cd6a7b54580df0800000000000000
-      internalID: -213828230427326043
+      spriteID: ace3aba950b5851f0800000000000000
+      internalID: -1055994032989520182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_98
+      name: Walk_88
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 281
-        width: 50
-        height: 60
+        x: 1664
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2661,20 +2462,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c97c1f39994f62fe0800000000000000
-      internalID: -1214014109080500324
+      spriteID: d6bd3c320328668a0800000000000000
+      internalID: -6312214684443092115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_99
+      name: Walk_89
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 287
-        width: 57
-        height: 63
+        x: 1792
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2683,20 +2484,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f2dc4be79a60e560800000000000000
-      internalID: 7340984593334194930
+      spriteID: 710e0e2f4dc70f1b0800000000000000
+      internalID: -5624858680536014825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_100
+      name: Walk_90
       rect:
         serializedVersion: 2
-        x: 48
-        y: 153
-        width: 41
-        height: 67
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2705,20 +2506,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1b3b74612a462030800000000000000
-      internalID: 3469542070215719711
+      spriteID: 619a8bea8ef031870800000000000000
+      internalID: 8652276801147021590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_101
+      name: Walk_91
       rect:
         serializedVersion: 2
-        x: 174
-        y: 155
-        width: 49
-        height: 74
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2727,20 +2528,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350f62dc6bbc67f10800000000000000
-      internalID: 2267223448413990995
+      spriteID: bc3cd43ed2da016a0800000000000000
+      internalID: -6480489451187485749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_102
+      name: Walk_92
       rect:
         serializedVersion: 2
-        x: 300
-        y: 162
-        width: 48
-        height: 69
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2749,20 +2550,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ea72c3705c5504d0800000000000000
-      internalID: -3169025262176011551
+      spriteID: 5114ee5f9f5b58d30800000000000000
+      internalID: 4433149493393637653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_103
+      name: Walk_93
       rect:
         serializedVersion: 2
-        x: 418
-        y: 162
-        width: 53
-        height: 68
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2771,20 +2572,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36927ac61830b6370800000000000000
-      internalID: 8316744991278311779
+      spriteID: 7aa074cd5de0a5f90800000000000000
+      internalID: -6964237562088584537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_104
+      name: Walk_94
       rect:
         serializedVersion: 2
-        x: 551
-        y: 156
-        width: 67
-        height: 75
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2793,20 +2594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d695561716bb16ea0800000000000000
-      internalID: -5881213611180467859
+      spriteID: 45996ee47cd39d4b0800000000000000
+      internalID: -5415229150704789164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_105
+      name: Walk_95
       rect:
         serializedVersion: 2
-        x: 653
-        y: 156
-        width: 98
-        height: 73
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2815,20 +2616,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: befe3242238bcd870800000000000000
-      internalID: 8709038304921907179
+      spriteID: a61bf42b6c89ebb60800000000000000
+      internalID: 7763810786795827562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_106
+      name: Walk_96
       rect:
         serializedVersion: 2
-        x: 811
-        y: 149
-        width: 64
-        height: 82
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2837,20 +2638,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2610ce15c47dcf40800000000000000
-      internalID: 5750380689195275822
+      spriteID: 82e8a11c0728b4e90800000000000000
+      internalID: -7040390171675947480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_107
+      name: Walk_97
       rect:
         serializedVersion: 2
-        x: 923
-        y: 134
-        width: 71
-        height: 97
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2859,20 +2660,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34bcd927b290d3b60800000000000000
-      internalID: 7727342617848826691
+      spriteID: 21732899a6bc8fd60800000000000000
+      internalID: 7924307203060807442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_108
+      name: Walk_98
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 149
-        width: 75
-        height: 80
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2881,20 +2682,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e174ea53c4c414720800000000000000
-      internalID: 2828625931167221534
+      spriteID: 84664fb4421eed170800000000000000
+      internalID: 8205243117125002824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_109
+      name: Walk_99
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 159
-        width: 48
-        height: 59
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2903,20 +2704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75653f88d95c57360800000000000000
-      internalID: 7166851662428198487
+      spriteID: 6aa60ba60623e2700800000000000000
+      internalID: 517406396882381478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_110
+      name: Walk_100
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 198
-        width: 18
-        height: 23
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2925,20 +2726,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f90320b7f24786420800000000000000
-      internalID: 2623474530219339935
+      spriteID: 113c43b4dc6b88340800000000000000
+      internalID: 4866340390220120849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_111
+      name: Walk_101
       rect:
         serializedVersion: 2
-        x: 1312
-        y: 158
-        width: 49
-        height: 60
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2947,20 +2748,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ff24c2a3184adad0800000000000000
-      internalID: -2676747779345993735
+      spriteID: 381cc46d56cf48f80800000000000000
+      internalID: -8105075915042799229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_112
+      name: Walk_102
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 157
-        width: 46
-        height: 59
+        x: 1536
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2969,20 +2770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 677e26663b3d5f1f0800000000000000
-      internalID: -1011669773804443786
+      spriteID: 9c45e6b6f9668d6c0800000000000000
+      internalID: -4118429024342092599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_113
+      name: Walk_103
       rect:
         serializedVersion: 2
-        x: 1569
-        y: 157
-        width: 49
-        height: 57
+        x: 1664
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2991,20 +2792,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58b7bda9336857930800000000000000
-      internalID: 4140362988636568453
+      spriteID: 731465c900c99b250800000000000000
+      internalID: 5960967108238393655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_114
+      name: Walk_104
       rect:
         serializedVersion: 2
-        x: 1712
-        y: 154
-        width: 40
-        height: 71
+        x: 1792
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3013,20 +2814,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a282f060d45d6c80800000000000000
-      internalID: -8327906881981742431
+      spriteID: a477978703d6cf580800000000000000
+      internalID: -8792032317586966710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_115
+      name: Walk_105
       rect:
         serializedVersion: 2
-        x: 1841
-        y: 153
-        width: 40
-        height: 75
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3035,20 +2836,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94c63200d307f1d70800000000000000
-      internalID: 9016048386316659785
+      spriteID: 0cebb71a1018eea30800000000000000
+      internalID: 4246473342661148352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_116
+      name: Walk_106
       rect:
         serializedVersion: 2
-        x: 54
-        y: 21
-        width: 42
-        height: 69
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3057,20 +2858,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a27378edd0ee20670800000000000000
-      internalID: 8503620789764306730
+      spriteID: dce532858efee48d0800000000000000
+      internalID: -2860084932143522099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_117
+      name: Walk_107
       rect:
         serializedVersion: 2
-        x: 184
-        y: 22
-        width: 37
-        height: 74
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3079,20 +2880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dfb20d13a40422060800000000000000
-      internalID: 6927169864256728061
+      spriteID: b72bf21a2a44d1500800000000000000
+      internalID: 368526209793897083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_118
+      name: Walk_108
       rect:
         serializedVersion: 2
-        x: 308
-        y: 27
-        width: 43
-        height: 72
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3101,20 +2902,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ae315a3ff47fadd0800000000000000
-      internalID: -2472629030859227481
+      spriteID: ad752dd3ee3ebe880800000000000000
+      internalID: -8580514052645431334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_119
+      name: Walk_109
       rect:
         serializedVersion: 2
-        x: 436
-        y: 28
-        width: 52
-        height: 71
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3123,20 +2924,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8bf9c3a299f0c320800000000000000
-      internalID: 2576333395064388495
+      spriteID: 7fa13d448a1154e80800000000000000
+      internalID: -8195124532523885833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_120
+      name: Walk_110
       rect:
         serializedVersion: 2
-        x: 551
-        y: 28
-        width: 83
-        height: 70
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3145,20 +2946,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 261b8a9e5900954a0800000000000000
-      internalID: -6604246734691847838
+      spriteID: d28df9a145895bc10800000000000000
+      internalID: 2068727090837968941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_121
+      name: Walk_111
       rect:
         serializedVersion: 2
-        x: 682
-        y: 22
-        width: 75
-        height: 76
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3167,20 +2968,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17f2b7f589e950730800000000000000
-      internalID: 3964749424243715953
+      spriteID: 6d4f3aa7a85bc1b50800000000000000
+      internalID: 6565321963167020246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_122
+      name: Walk_112
       rect:
         serializedVersion: 2
-        x: 810
-        y: 11
-        width: 62
-        height: 92
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3189,20 +2990,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89857b45e0a2476a0800000000000000
-      internalID: -6452486125075867496
+      spriteID: 837a802041c691250800000000000000
+      internalID: 5915878418717124408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_123
+      name: Walk_113
       rect:
         serializedVersion: 2
-        x: 924
-        y: 19
-        width: 76
-        height: 85
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3211,20 +3012,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa35942af465c16f0800000000000000
-      internalID: -712599741006261334
+      spriteID: fa79847d0fafa4580800000000000000
+      internalID: -8841979006077593681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_124
+      name: Walk_114
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 30
-        width: 74
-        height: 71
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3233,20 +3034,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3c855d1cb99c4270800000000000000
-      internalID: 8236126851778841658
+      spriteID: 221f185694c3238d0800000000000000
+      internalID: -2868163726748290782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_125
+      name: Walk_115
       rect:
         serializedVersion: 2
-        x: 1197
-        y: 29
-        width: 53
-        height: 59
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3255,20 +3056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7124ab0f2f55bc520800000000000000
-      internalID: 2723364901584781847
+      spriteID: 00349ccc11de6f0c0800000000000000
+      internalID: -4542182513450597632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_126
+      name: Walk_116
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 29
-        width: 52
-        height: 59
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3277,20 +3078,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51838bae3856d5cf0800000000000000
-      internalID: -261941586064558059
+      spriteID: b528c80968e487340800000000000000
+      internalID: 4861722137604162139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_127
+      name: Walk_117
       rect:
         serializedVersion: 2
-        x: 1450
-        y: 27
-        width: 53
-        height: 56
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3299,20 +3100,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 032f71e50b6e46090800000000000000
-      internalID: -8042049389409603024
+      spriteID: 03661925845bbe780800000000000000
+      internalID: -8652622936834742736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_128
+      name: Walk_118
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 26
-        width: 49
-        height: 61
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3321,20 +3122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 834ca6888586213a0800000000000000
-      internalID: -6696174966491397064
+      spriteID: 344e67c50540f4f30800000000000000
+      internalID: 4561869690744792131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MeleeSpin_129
+      name: Walk_119
       rect:
         serializedVersion: 2
-        x: 1719
-        y: 21
-        width: 45
-        height: 69
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3343,30 +3144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 322339b75888cf560800000000000000
-      internalID: 7348898798847078947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MeleeSpin_130
-      rect:
-        serializedVersion: 2
-        x: 1846
-        y: 21
-        width: 44
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 270ead1f5190750b0800000000000000
-      internalID: -5740109210203791246
+      spriteID: 3fb3d7d0c5131ad00800000000000000
+      internalID: 982120465176542195
       vertices: []
       indices: 
       edges: []
@@ -3375,7 +3154,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dda754669b8dfee488ffb69cbb4a1643
     internalID: 0
     vertices: []
     indices: 
@@ -3385,137 +3164,126 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MeleeSpin_0: 7258487276414520575
-      MeleeSpin_1: -607542591369125174
-      MeleeSpin_10: -6829117859020886958
-      MeleeSpin_100: 3469542070215719711
-      MeleeSpin_101: 2267223448413990995
-      MeleeSpin_102: -3169025262176011551
-      MeleeSpin_103: 8316744991278311779
-      MeleeSpin_104: -5881213611180467859
-      MeleeSpin_105: 8709038304921907179
-      MeleeSpin_106: 5750380689195275822
-      MeleeSpin_107: 7727342617848826691
-      MeleeSpin_108: 2828625931167221534
-      MeleeSpin_109: 7166851662428198487
-      MeleeSpin_11: -2957681086030681012
-      MeleeSpin_110: 2623474530219339935
-      MeleeSpin_111: -2676747779345993735
-      MeleeSpin_112: -1011669773804443786
-      MeleeSpin_113: 4140362988636568453
-      MeleeSpin_114: -8327906881981742431
-      MeleeSpin_115: 9016048386316659785
-      MeleeSpin_116: 8503620789764306730
-      MeleeSpin_117: 6927169864256728061
-      MeleeSpin_118: -2472629030859227481
-      MeleeSpin_119: 2576333395064388495
-      MeleeSpin_12: 8095527708239623007
-      MeleeSpin_120: -6604246734691847838
-      MeleeSpin_121: 3964749424243715953
-      MeleeSpin_122: -6452486125075867496
-      MeleeSpin_123: -712599741006261334
-      MeleeSpin_124: 8236126851778841658
-      MeleeSpin_125: 2723364901584781847
-      MeleeSpin_126: -261941586064558059
-      MeleeSpin_127: -8042049389409603024
-      MeleeSpin_128: -6696174966491397064
-      MeleeSpin_129: 7348898798847078947
-      MeleeSpin_13: -3399384556870595499
-      MeleeSpin_130: -5740109210203791246
-      MeleeSpin_14: -929842837164593134
-      MeleeSpin_15: 1371882629663705941
-      MeleeSpin_16: 6921337550486686582
-      MeleeSpin_17: 2073990762136009507
-      MeleeSpin_18: -984286631352461640
-      MeleeSpin_19: -1362512906057269725
-      MeleeSpin_2: -8351334981433154002
-      MeleeSpin_20: 5282545416855406620
-      MeleeSpin_21: -182674327772555574
-      MeleeSpin_22: 2540762086522248820
-      MeleeSpin_23: -3774021262390142426
-      MeleeSpin_24: -1095359343587608552
-      MeleeSpin_25: -8287248518774458488
-      MeleeSpin_26: 2840765854898900662
-      MeleeSpin_27: -6966411167701180720
-      MeleeSpin_28: 7675191110724882161
-      MeleeSpin_29: -2469003782296277921
-      MeleeSpin_3: -8903867747309675080
-      MeleeSpin_30: 7115903074403582957
-      MeleeSpin_31: -1215827319786130191
-      MeleeSpin_32: -3986516473638703524
-      MeleeSpin_33: 2050932531462249410
-      MeleeSpin_34: -3836751387434154295
-      MeleeSpin_35: -4483828646571269819
-      MeleeSpin_36: -412024171636948459
-      MeleeSpin_37: -5554019100308381451
-      MeleeSpin_38: 7917022561471585745
-      MeleeSpin_39: 3632067410301457037
-      MeleeSpin_4: -3033951434128071256
-      MeleeSpin_40: 8458137143382488298
-      MeleeSpin_41: -5290396973246317733
-      MeleeSpin_42: -5476151079261522975
-      MeleeSpin_43: -7799336535393101582
-      MeleeSpin_44: 136112304021203016
-      MeleeSpin_45: 8863962849418977996
-      MeleeSpin_46: 566046066879233927
-      MeleeSpin_47: 122660252516746694
-      MeleeSpin_48: 7465891873517200036
-      MeleeSpin_49: 5082631514685838583
-      MeleeSpin_5: -3912199340006043671
-      MeleeSpin_50: -2611536707959104452
-      MeleeSpin_51: 5637384583755551883
-      MeleeSpin_52: 6250400106858305995
-      MeleeSpin_53: -4985019183769245562
-      MeleeSpin_54: 7963415022626649971
-      MeleeSpin_55: -8599425406347343646
-      MeleeSpin_56: -1821273749002392404
-      MeleeSpin_57: -1612557868993779927
-      MeleeSpin_58: 4575757331026462461
-      MeleeSpin_59: -3990273902091894732
-      MeleeSpin_6: 4992345515910431426
-      MeleeSpin_60: 7393990685099880637
-      MeleeSpin_61: -5340587771585054007
-      MeleeSpin_62: 8703666091802388579
-      MeleeSpin_63: -7381117691165254118
-      MeleeSpin_64: -8163353876306382606
-      MeleeSpin_65: -6795283902912092766
-      MeleeSpin_66: 8578559142135432725
-      MeleeSpin_67: 97096838588709641
-      MeleeSpin_68: 2417289805880949741
-      MeleeSpin_69: -3698895978828743689
-      MeleeSpin_7: -8221297721332400757
-      MeleeSpin_70: 6915870243389401618
-      MeleeSpin_71: -7571490921804292051
-      MeleeSpin_72: 7538242059518681599
-      MeleeSpin_73: -7755179835578726364
-      MeleeSpin_74: 1606529947178348420
-      MeleeSpin_75: -8398453563938384693
-      MeleeSpin_76: 412947266664849671
-      MeleeSpin_77: -690408080324258780
-      MeleeSpin_78: 583911739915883444
-      MeleeSpin_79: 6566189752984953617
-      MeleeSpin_8: 5156094351560704148
-      MeleeSpin_80: -5787691235565387443
-      MeleeSpin_81: 5961977640653161795
-      MeleeSpin_82: 7993844680958771199
-      MeleeSpin_83: 4230968943883390074
-      MeleeSpin_84: 4813310868123744973
-      MeleeSpin_85: -121490113641962147
-      MeleeSpin_86: 4832313555566322090
-      MeleeSpin_87: 618206121958282814
-      MeleeSpin_88: 9066721074447357969
-      MeleeSpin_89: -3702402220352177620
-      MeleeSpin_9: 7747869686639679721
-      MeleeSpin_90: -6508315779397634970
-      MeleeSpin_91: 7768670894492951060
-      MeleeSpin_92: -6728765554493478739
-      MeleeSpin_93: 6876728367114972674
-      MeleeSpin_94: 84113098757623507
-      MeleeSpin_95: 6123709696531907781
-      MeleeSpin_96: 3880648358311799893
-      MeleeSpin_97: -213828230427326043
-      MeleeSpin_98: -1214014109080500324
-      MeleeSpin_99: 7340984593334194930
+      Walk_0: 4035959289877228764
+      Walk_1: -982904232830982447
+      Walk_10: 11406907883527339
+      Walk_100: 4866340390220120849
+      Walk_101: -8105075915042799229
+      Walk_102: -4118429024342092599
+      Walk_103: 5960967108238393655
+      Walk_104: -8792032317586966710
+      Walk_105: 4246473342661148352
+      Walk_106: -2860084932143522099
+      Walk_107: 368526209793897083
+      Walk_108: -8580514052645431334
+      Walk_109: -8195124532523885833
+      Walk_11: 8030128826893041618
+      Walk_110: 2068727090837968941
+      Walk_111: 6565321963167020246
+      Walk_112: 5915878418717124408
+      Walk_113: -8841979006077593681
+      Walk_114: -2868163726748290782
+      Walk_115: -4542182513450597632
+      Walk_116: 4861722137604162139
+      Walk_117: -8652622936834742736
+      Walk_118: 4561869690744792131
+      Walk_119: 982120465176542195
+      Walk_12: 2315132830120601726
+      Walk_13: 7929438602540414932
+      Walk_14: 5250438378151091228
+      Walk_15: -1258472680374559522
+      Walk_16: 2155107402851330559
+      Walk_17: 7720552135500433751
+      Walk_18: -8953822836050947745
+      Walk_19: -6148190078763333420
+      Walk_2: -350908408369970039
+      Walk_20: -404497435793420480
+      Walk_21: 8198118753440594053
+      Walk_22: -7385022159944432617
+      Walk_23: 5662401404901316715
+      Walk_24: 2248310813953410568
+      Walk_25: -5250590731418792489
+      Walk_26: 7507361727851546712
+      Walk_27: 3754832148748575705
+      Walk_28: 7015882756945246565
+      Walk_29: -4001931175307991436
+      Walk_3: -5409570386352685021
+      Walk_30: -3097320160809446444
+      Walk_31: 1304144291829279589
+      Walk_32: 937637902835717785
+      Walk_33: 6614135236904034709
+      Walk_34: -369673672436568812
+      Walk_35: 9138621309347725981
+      Walk_36: -6283331680110137117
+      Walk_37: -3605214097684364088
+      Walk_38: 8558144679115943288
+      Walk_39: 8347420010395431765
+      Walk_4: 1553940418269799609
+      Walk_40: -994556614448337891
+      Walk_41: 7651871491509458937
+      Walk_42: 2918358223302112576
+      Walk_43: -3215931543429482107
+      Walk_44: -4663422930283795262
+      Walk_45: -3765711259066377437
+      Walk_46: 4263555918420321852
+      Walk_47: 1357580556310585830
+      Walk_48: 4074982500766230116
+      Walk_49: 2634213438411819671
+      Walk_5: 2416434504916517810
+      Walk_50: 879367109842221326
+      Walk_51: 4906354552302675731
+      Walk_52: 1451013728428378312
+      Walk_53: 1880257145966204207
+      Walk_54: -564933847752290079
+      Walk_55: 5134623443317825054
+      Walk_56: -1643653770580207620
+      Walk_57: 4855853370587240024
+      Walk_58: 6367995825969469067
+      Walk_59: -2357405538626506849
+      Walk_6: -6428935122508569504
+      Walk_60: -9112983964201928425
+      Walk_61: 3827565659469065273
+      Walk_62: 6496322580643873013
+      Walk_63: -2556029147006870160
+      Walk_64: -6786792946507991617
+      Walk_65: -2369857439753089023
+      Walk_66: 1543584800793404941
+      Walk_67: 7370098504332349495
+      Walk_68: -7303472803343401651
+      Walk_69: -4074224501518041167
+      Walk_7: 7144598999076838305
+      Walk_70: -289649694679024488
+      Walk_71: -8363186111098726552
+      Walk_72: 1632409291375690579
+      Walk_73: -5734240148807390168
+      Walk_74: -6773686695513934678
+      Walk_75: 2950762315184936249
+      Walk_76: 6371978124317276375
+      Walk_77: -5461622898756360919
+      Walk_78: 8078514156517637044
+      Walk_79: -6900755564484927062
+      Walk_8: 7500509103958437945
+      Walk_80: -9217945370024712126
+      Walk_81: 8997379958696392060
+      Walk_82: -8579611801594414922
+      Walk_83: 1293780185593428192
+      Walk_84: -5706850928481980528
+      Walk_85: -6084228574034323684
+      Walk_86: -12018104144663456
+      Walk_87: -1055994032989520182
+      Walk_88: -6312214684443092115
+      Walk_89: -5624858680536014825
+      Walk_9: 1008816216748069464
+      Walk_90: 8652276801147021590
+      Walk_91: -6480489451187485749
+      Walk_92: 4433149493393637653
+      Walk_93: -6964237562088584537
+      Walk_94: -5415229150704789164
+      Walk_95: 7763810786795827562
+      Walk_96: -7040390171675947480
+      Walk_97: 7924307203060807442
+      Walk_98: 8205243117125002824
+      Walk_99: 517406396882381478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,7 @@ using UnityEngine;
  * Al impotar las animaciones , se deberán cambiar por las que aparece en la zona de Animator.StringtoHash
  * por ejemplo "Player_Idle" , siguiendo esa estructura para que el codigo funcione
  * Solo esta implementado Walk por prueba
- * En la zona de Animator no hay transiciones todavía
+ * En la zona de Animator no hay transiciones todo lo hace por crossfadeIn
  * */
 
 /*Depende del sistema de cambio de escenas igual habria que hacer esta clase un singlteon*/

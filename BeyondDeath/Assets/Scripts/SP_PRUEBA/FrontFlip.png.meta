@@ -1,370 +1,481 @@
 fileFormatVersion: 2
-guid: c8c8731b775e6ad48a7cc667a675cde5
+guid: 37344c0f1d8a9744980f8d33f86d11d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: 8471284121543850762
+    second: FrontFlip_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: -5316296518032136385
+    second: FrontFlip_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: -385859983790490490
+    second: FrontFlip_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: 5848231405602646409
+    second: FrontFlip_3
   - first:
-      213: 7264182050183361747
-    second: Idle_4
+      213: 4260660784292922535
+    second: FrontFlip_4
   - first:
-      213: -2834552850196481573
-    second: Idle_5
+      213: -4067617094869684252
+    second: FrontFlip_5
   - first:
-      213: 3278449094680734212
-    second: Idle_6
+      213: -9198654894410529515
+    second: FrontFlip_6
   - first:
-      213: 3384493420599841878
-    second: Idle_7
+      213: -8549989934755969481
+    second: FrontFlip_7
   - first:
-      213: -2331352242086191015
-    second: Idle_8
+      213: -566877665638674353
+    second: FrontFlip_8
   - first:
-      213: -3914248031228685145
-    second: Idle_9
+      213: 7014268490095524985
+    second: FrontFlip_9
   - first:
-      213: 7132915409514813599
-    second: Idle_10
+      213: -8480898039182459878
+    second: FrontFlip_10
   - first:
-      213: -2055793278435719954
-    second: Idle_11
+      213: -3851762255885414818
+    second: FrontFlip_11
   - first:
-      213: -1133706752296058015
-    second: Idle_12
+      213: 5422826462559046205
+    second: FrontFlip_12
   - first:
-      213: -7873313509577613512
-    second: Idle_13
+      213: -2242777676625595096
+    second: FrontFlip_13
   - first:
-      213: 719741960001666856
-    second: Idle_14
+      213: -3331938669276885945
+    second: FrontFlip_14
   - first:
-      213: -2017107389029466533
-    second: Idle_15
+      213: 7237448509450102117
+    second: FrontFlip_15
   - first:
-      213: -7851968663669621680
-    second: Idle_16
+      213: -3707188490791940320
+    second: FrontFlip_16
   - first:
-      213: -216799431487514718
-    second: Idle_17
+      213: 5825818756069483423
+    second: FrontFlip_17
   - first:
-      213: 3610992343889596186
-    second: Idle_18
+      213: 4144434420276566953
+    second: FrontFlip_18
   - first:
-      213: 6538181465538999060
-    second: Idle_19
+      213: -2149456471656855637
+    second: FrontFlip_19
   - first:
-      213: 6239617922696411994
-    second: Idle_20
+      213: 1665259483841183356
+    second: FrontFlip_20
   - first:
-      213: 3604202040009161566
-    second: Idle_21
+      213: 2804313555213681207
+    second: FrontFlip_21
   - first:
-      213: 7714808819881066536
-    second: Idle_22
+      213: 8138788823310068840
+    second: FrontFlip_22
   - first:
-      213: 4839914909742284145
-    second: Idle_23
+      213: 4681631548427416750
+    second: FrontFlip_23
   - first:
-      213: 5540120679197756244
-    second: Idle_24
+      213: -2558248264026084765
+    second: FrontFlip_24
   - first:
-      213: 3244912566212535839
-    second: Idle_25
+      213: 4291701860122353579
+    second: FrontFlip_25
   - first:
-      213: 6059227464253780763
-    second: Idle_26
+      213: 583006570643463935
+    second: FrontFlip_26
   - first:
-      213: 7058787313458793172
-    second: Idle_27
+      213: 2018337778823504441
+    second: FrontFlip_27
   - first:
-      213: 3195378521950649799
-    second: Idle_28
+      213: -7007534182395671052
+    second: FrontFlip_28
   - first:
-      213: -4270365825416692982
-    second: Idle_29
+      213: 5695828639685915575
+    second: FrontFlip_29
   - first:
-      213: -7216628340827019732
-    second: Idle_30
+      213: -3169513459309141769
+    second: FrontFlip_30
   - first:
-      213: 1885325910487202945
-    second: Idle_31
+      213: 2791702588756010868
+    second: FrontFlip_31
   - first:
-      213: 750087330491524381
-    second: Idle_32
+      213: 2001104043973050295
+    second: FrontFlip_32
   - first:
-      213: -7683432258075436140
-    second: Idle_33
+      213: -7143570763526410885
+    second: FrontFlip_33
   - first:
-      213: 1317710789496429972
-    second: Idle_34
+      213: 7856914609759768753
+    second: FrontFlip_34
   - first:
-      213: 774006559481001889
-    second: Idle_35
+      213: 1571079743567900566
+    second: FrontFlip_35
   - first:
-      213: 8313299692241884766
-    second: Idle_36
+      213: -8722830611207508695
+    second: FrontFlip_36
   - first:
-      213: -3429032328405847642
-    second: Idle_37
+      213: -6704464433858326296
+    second: FrontFlip_37
   - first:
-      213: 5878331790293146832
-    second: Idle_38
+      213: 5445540589099479114
+    second: FrontFlip_38
   - first:
-      213: -7494887683080363229
-    second: Idle_39
+      213: 6708102373977185367
+    second: FrontFlip_39
   - first:
-      213: 5839236649619201568
-    second: Idle_40
+      213: 6657998614444716155
+    second: FrontFlip_40
   - first:
-      213: -9174209862642985646
-    second: Idle_41
+      213: -143942187550692339
+    second: FrontFlip_41
   - first:
-      213: 4707629632511264188
-    second: Idle_42
+      213: 2693483827348621106
+    second: FrontFlip_42
   - first:
-      213: 308403639172225460
-    second: Idle_43
+      213: 4619362680465195817
+    second: FrontFlip_43
   - first:
-      213: 1119258323398344762
-    second: Idle_44
+      213: -329478465826468827
+    second: FrontFlip_44
   - first:
-      213: 5185639874396174505
-    second: Idle_45
+      213: 52656138729852430
+    second: FrontFlip_45
   - first:
-      213: 545520964135320136
-    second: Idle_46
+      213: 6455100081879470250
+    second: FrontFlip_46
   - first:
-      213: -7122084843328742839
-    second: Idle_47
+      213: -469844595864163748
+    second: FrontFlip_47
   - first:
-      213: 8495982032082249768
-    second: Idle_48
+      213: -9086213654017193879
+    second: FrontFlip_48
   - first:
-      213: 3766982947956743131
-    second: Idle_49
+      213: 6977771950772832440
+    second: FrontFlip_49
   - first:
-      213: 4046111051055838813
-    second: Idle_50
+      213: 7152266260163078671
+    second: FrontFlip_50
   - first:
-      213: -5180174801563621762
-    second: Idle_51
+      213: -8598655348793664572
+    second: FrontFlip_51
   - first:
-      213: 2550334051978892028
-    second: Idle_52
+      213: 8259219027327372289
+    second: FrontFlip_52
   - first:
-      213: 8291452858112019083
-    second: Idle_53
+      213: 2507962644148269132
+    second: FrontFlip_53
   - first:
-      213: 2739151600620731505
-    second: Idle_54
+      213: 6376414920106497707
+    second: FrontFlip_54
   - first:
-      213: 2400121242577987812
-    second: Idle_55
+      213: 3540893772401148924
+    second: FrontFlip_55
   - first:
-      213: 6823895481303151423
-    second: Idle_56
+      213: -8809388267655585208
+    second: FrontFlip_56
   - first:
-      213: 283280350632519434
-    second: Idle_57
+      213: 1237556570403875395
+    second: FrontFlip_57
   - first:
-      213: 5444502502913439492
-    second: Idle_58
+      213: -8229739002690307305
+    second: FrontFlip_58
   - first:
-      213: 6114682773562076683
-    second: Idle_59
+      213: 2927578968051552221
+    second: FrontFlip_59
   - first:
-      213: -4046700097180270455
-    second: Idle_60
+      213: -7703022991412341479
+    second: FrontFlip_60
   - first:
-      213: -4969296209721932670
-    second: Idle_61
+      213: -7882371742943897534
+    second: FrontFlip_61
   - first:
-      213: 8805020787178123352
-    second: Idle_62
+      213: 1704259240206542013
+    second: FrontFlip_62
   - first:
-      213: 898865423463113687
-    second: Idle_63
+      213: -4111404011956239674
+    second: FrontFlip_63
   - first:
-      213: -6648222155857818671
-    second: Idle_64
+      213: -7290756208105662424
+    second: FrontFlip_64
   - first:
-      213: -1958651123729565798
-    second: Idle_65
+      213: -1479542565904593517
+    second: FrontFlip_65
   - first:
-      213: -470230318245739609
-    second: Idle_66
+      213: -674463298412030946
+    second: FrontFlip_66
   - first:
-      213: 2453356142873231291
-    second: Idle_67
+      213: 2418566535777294526
+    second: FrontFlip_67
   - first:
-      213: 3962547521348890520
-    second: Idle_68
+      213: 8914524840214752001
+    second: FrontFlip_68
   - first:
-      213: 9164227227003695759
-    second: Idle_69
+      213: -960423970686826624
+    second: FrontFlip_69
   - first:
-      213: 3789941211524577323
-    second: Idle_70
+      213: -4791339422848454740
+    second: FrontFlip_70
   - first:
-      213: 1302643514129481177
-    second: Idle_71
+      213: 2129986597073992070
+    second: FrontFlip_71
   - first:
-      213: -8843197024859232419
-    second: Idle_72
+      213: -6768690448498037785
+    second: FrontFlip_72
   - first:
-      213: 5882150082860749911
-    second: Idle_73
+      213: -1489195149142115857
+    second: FrontFlip_73
   - first:
-      213: 3426107050914229206
-    second: Idle_74
+      213: 3126649166805688892
+    second: FrontFlip_74
   - first:
-      213: 2193129102838481471
-    second: Idle_75
+      213: -4153556266484425927
+    second: FrontFlip_75
   - first:
-      213: -4413189216323236449
-    second: Idle_76
+      213: 4277994523508794934
+    second: FrontFlip_76
   - first:
-      213: -6743914308921617072
-    second: Idle_77
+      213: 7755029585818364014
+    second: FrontFlip_77
   - first:
-      213: -4972784034585016309
-    second: Idle_78
+      213: -5295899943271993904
+    second: FrontFlip_78
   - first:
-      213: 6618079967019659225
-    second: Idle_79
+      213: -1411415145976605679
+    second: FrontFlip_79
   - first:
-      213: 5733147304867166660
-    second: Idle_80
+      213: 8941816266380989210
+    second: FrontFlip_80
   - first:
-      213: -4252134725211002686
-    second: Idle_81
+      213: 8636550818501036123
+    second: FrontFlip_81
   - first:
-      213: -812958224049423905
-    second: Idle_82
+      213: -7341455802168632598
+    second: FrontFlip_82
   - first:
-      213: 3296113864815260767
-    second: Idle_83
+      213: 171314440648288719
+    second: FrontFlip_83
   - first:
-      213: 5892158628580360215
-    second: Idle_84
+      213: 8541252791202725516
+    second: FrontFlip_84
   - first:
-      213: 8977217689831862909
-    second: Idle_85
+      213: 2556949607041598
+    second: FrontFlip_85
   - first:
-      213: -856760475672269900
-    second: Idle_86
+      213: -3694430771162732576
+    second: FrontFlip_86
   - first:
-      213: 8257702671320135651
-    second: Idle_87
+      213: -5183711401660050290
+    second: FrontFlip_87
   - first:
-      213: 3966340010376509528
-    second: Idle_88
+      213: -6938881785930110019
+    second: FrontFlip_88
   - first:
-      213: -8825391931523659755
-    second: Idle_89
+      213: 2041652667173910201
+    second: FrontFlip_89
   - first:
-      213: -4830518926494163111
-    second: Idle_90
+      213: 5993441149198090852
+    second: FrontFlip_90
   - first:
-      213: -8125677507241511661
-    second: Idle_91
+      213: -3268193024106727685
+    second: FrontFlip_91
   - first:
-      213: -6406973664072637680
-    second: Idle_92
+      213: 7589594593510289783
+    second: FrontFlip_92
   - first:
-      213: -4192288227208270853
-    second: Idle_93
+      213: 4652973950750381450
+    second: FrontFlip_93
   - first:
-      213: 4070988416741402747
-    second: Idle_94
+      213: -6080379704228924034
+    second: FrontFlip_94
   - first:
-      213: -2561483592110440501
-    second: Idle_95
+      213: 3035154701404100132
+    second: FrontFlip_95
   - first:
-      213: 2467508910581213889
-    second: Idle_96
+      213: -7771654513468391031
+    second: FrontFlip_96
   - first:
-      213: 7487301326302646847
-    second: Idle_97
+      213: 6230380236652385340
+    second: FrontFlip_97
   - first:
-      213: -6718785235544682162
-    second: Idle_98
+      213: -1823831532096127241
+    second: FrontFlip_98
   - first:
-      213: -7127175318507248824
-    second: Idle_99
+      213: -8880060096560483758
+    second: FrontFlip_99
   - first:
-      213: -8484025176680134377
-    second: Idle_100
+      213: 3121923651100160190
+    second: FrontFlip_100
   - first:
-      213: -6336057584539261830
-    second: Idle_101
+      213: -1491589262606346035
+    second: FrontFlip_101
   - first:
-      213: -2418804962519659643
-    second: Idle_102
+      213: -7312997815665152919
+    second: FrontFlip_102
   - first:
-      213: -6213168482952996385
-    second: Idle_103
+      213: -1537519857074652096
+    second: FrontFlip_103
   - first:
-      213: 6525878001055947828
-    second: Idle_104
+      213: -9090313208570353777
+    second: FrontFlip_104
   - first:
-      213: 8290412262564167745
-    second: Idle_105
+      213: -56122253924265546
+    second: FrontFlip_105
   - first:
-      213: 1604258445437288664
-    second: Idle_106
+      213: -4185897980450056481
+    second: FrontFlip_106
   - first:
-      213: 4069379908063443478
-    second: Idle_107
+      213: -563056820798290437
+    second: FrontFlip_107
   - first:
-      213: 2371094208897105265
-    second: Idle_108
+      213: -2266172647837459476
+    second: FrontFlip_108
   - first:
-      213: -5437488377573354879
-    second: Idle_109
+      213: 8859833835448435047
+    second: FrontFlip_109
   - first:
-      213: -584120949430484134
-    second: Idle_110
+      213: -5181177882653792480
+    second: FrontFlip_110
   - first:
-      213: 5050135769923193823
-    second: Idle_111
+      213: -4465908663041383463
+    second: FrontFlip_111
   - first:
-      213: -403321863009747836
-    second: Idle_112
+      213: -9017980659520762952
+    second: FrontFlip_112
   - first:
-      213: 1760871578101051063
-    second: Idle_113
+      213: 7732940897251593581
+    second: FrontFlip_113
   - first:
-      213: -7016600170542048168
-    second: Idle_114
+      213: 8138258105393941917
+    second: FrontFlip_114
   - first:
-      213: -6311206777300828082
-    second: Idle_115
+      213: -812510494920381496
+    second: FrontFlip_115
   - first:
-      213: 7486523042666818927
-    second: Idle_116
+      213: 5325547706189564776
+    second: FrontFlip_116
   - first:
-      213: 2094772878972015894
-    second: Idle_117
+      213: 367724801056974019
+    second: FrontFlip_117
   - first:
-      213: 4697875522729893321
-    second: Idle_118
+      213: 7482587476303537153
+    second: FrontFlip_118
   - first:
-      213: 5168861233571073440
-    second: Idle_119
+      213: 7691777413589550390
+    second: FrontFlip_119
   - first:
-      213: -4774505902988694865
-    second: Idle_120
+      213: -3193011410328818178
+    second: FrontFlip_120
+  - first:
+      213: -237537584127299235
+    second: FrontFlip_121
+  - first:
+      213: -6148182080873456737
+    second: FrontFlip_122
+  - first:
+      213: 9111446775345555413
+    second: FrontFlip_123
+  - first:
+      213: 5060327800904242991
+    second: FrontFlip_124
+  - first:
+      213: 2042303507812242355
+    second: FrontFlip_125
+  - first:
+      213: 728469981570966552
+    second: FrontFlip_126
+  - first:
+      213: -2089821349490435836
+    second: FrontFlip_127
+  - first:
+      213: -3539301879198735620
+    second: FrontFlip_128
+  - first:
+      213: 7041756184030417718
+    second: FrontFlip_129
+  - first:
+      213: -3271867513507320963
+    second: FrontFlip_130
+  - first:
+      213: 2469169306997616400
+    second: FrontFlip_131
+  - first:
+      213: -2371798190470911530
+    second: FrontFlip_132
+  - first:
+      213: -8687333459282836969
+    second: FrontFlip_133
+  - first:
+      213: 6193303160900854367
+    second: FrontFlip_134
+  - first:
+      213: 3410065819971433707
+    second: FrontFlip_135
+  - first:
+      213: -941908133627516702
+    second: FrontFlip_136
+  - first:
+      213: -7185896093524917973
+    second: FrontFlip_137
+  - first:
+      213: 3317855820916949283
+    second: FrontFlip_138
+  - first:
+      213: 2505348893561947688
+    second: FrontFlip_139
+  - first:
+      213: 4574430761164164765
+    second: FrontFlip_140
+  - first:
+      213: -6470227101291311364
+    second: FrontFlip_141
+  - first:
+      213: 669257784992896748
+    second: FrontFlip_142
+  - first:
+      213: -520843932757030306
+    second: FrontFlip_143
+  - first:
+      213: 2956439580852133257
+    second: FrontFlip_144
+  - first:
+      213: 2566362431813106204
+    second: FrontFlip_145
+  - first:
+      213: 73602081228136627
+    second: FrontFlip_146
+  - first:
+      213: 3644743959635369709
+    second: FrontFlip_147
+  - first:
+      213: -645183802263129339
+    second: FrontFlip_148
+  - first:
+      213: 4320691467467885042
+    second: FrontFlip_149
+  - first:
+      213: 9183025234757058836
+    second: FrontFlip_150
+  - first:
+      213: 2671704504540934992
+    second: FrontFlip_151
+  - first:
+      213: -4423609404155148714
+    second: FrontFlip_152
+  - first:
+      213: -7417052640957912344
+    second: FrontFlip_153
+  - first:
+      213: 6443245805519826148
+    second: FrontFlip_154
+  - first:
+      213: 5372019832293345520
+    second: FrontFlip_155
+  - first:
+      213: -5833593253492122427
+    second: FrontFlip_156
+  - first:
+      213: -3552741720028713919
+    second: FrontFlip_157
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -460,2663 +571,2641 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: FrontFlip_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 917
-        width: 49
-        height: 60
+        x: 0
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: a0b3708960c009570800000000000000
+      internalID: 8471284121543850762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: FrontFlip_1
       rect:
         serializedVersion: 2
-        x: 172
-        y: 917
-        width: 49
-        height: 61
+        x: 128
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: f376c0adb78b836b0800000000000000
+      internalID: -5316296518032136385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: FrontFlip_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 917
-        width: 49
-        height: 61
+        x: 256
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
+      spriteID: 68c312d936625aaf0800000000000000
+      internalID: -385859983790490490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: FrontFlip_3
       rect:
         serializedVersion: 2
-        x: 428
-        y: 916
-        width: 50
-        height: 62
+        x: 384
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
+      spriteID: 989aa376a77192150800000000000000
+      internalID: 5848231405602646409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: FrontFlip_4
       rect:
         serializedVersion: 2
-        x: 556
-        y: 916
-        width: 50
-        height: 61
+        x: 512
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d4b2fc561f8fc460800000000000000
-      internalID: 7264182050183361747
+      spriteID: 7a4873cc868e02b30800000000000000
+      internalID: 4260660784292922535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: FrontFlip_5
       rect:
         serializedVersion: 2
-        x: 684
-        y: 916
-        width: 49
-        height: 61
+        x: 640
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd9b7fa6335a9a8d0800000000000000
-      internalID: -2834552850196481573
+      spriteID: 4ef6cf9adcbec87c0800000000000000
+      internalID: -4067617094869684252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_6
+      name: FrontFlip_6
       rect:
         serializedVersion: 2
-        x: 812
-        y: 916
-        width: 49
-        height: 61
+        x: 768
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40a65a6e4146f7d20800000000000000
-      internalID: 3278449094680734212
+      spriteID: 515804f2c10d75080800000000000000
+      internalID: -9198654894410529515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_7
+      name: FrontFlip_7
       rect:
         serializedVersion: 2
-        x: 940
-        y: 916
-        width: 49
-        height: 61
+        x: 896
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 654108f85d228fe20800000000000000
-      internalID: 3384493420599841878
+      spriteID: 73684b14475585980800000000000000
+      internalID: -8549989934755969481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_8
+      name: FrontFlip_8
       rect:
         serializedVersion: 2
-        x: 1068
-        y: 917
-        width: 49
-        height: 61
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9506424ec7f55afd0800000000000000
-      internalID: -2331352242086191015
+      spriteID: f40118c34cb0228f0800000000000000
+      internalID: -566877665638674353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: FrontFlip_9
       rect:
         serializedVersion: 2
-        x: 1196
-        y: 917
-        width: 50
-        height: 62
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a497d7772ccda9c0800000000000000
-      internalID: -3914248031228685145
+      spriteID: 97cfb5f4700b75160800000000000000
+      internalID: 7014268490095524985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_10
+      name: FrontFlip_10
       rect:
         serializedVersion: 2
-        x: 1324
-        y: 917
-        width: 50
-        height: 62
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f985a0de5c43df260800000000000000
-      internalID: 7132915409514813599
+      spriteID: a1cf836ca2ccd4a80800000000000000
+      internalID: -8480898039182459878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_11
+      name: FrontFlip_11
       rect:
         serializedVersion: 2
-        x: 1452
-        y: 916
-        width: 50
-        height: 62
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee40433c7ea5873e0800000000000000
-      internalID: -2055793278435719954
+      spriteID: e5e41b2c2aacb8ac0800000000000000
+      internalID: -3851762255885414818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_12
+      name: FrontFlip_12
       rect:
         serializedVersion: 2
-        x: 1580
-        y: 916
-        width: 50
-        height: 61
+        x: 1536
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1638ee527b34440f0800000000000000
-      internalID: -1133706752296058015
+      spriteID: d3a8b63bfefb14b40800000000000000
+      internalID: 5422826462559046205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_13
+      name: FrontFlip_13
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 916
-        width: 50
-        height: 61
+        x: 1664
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83f9750e31f5cb290800000000000000
-      internalID: -7873313509577613512
+      spriteID: 8253e8af59d00e0e0800000000000000
+      internalID: -2242777676625595096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_14
+      name: FrontFlip_14
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 917
-        width: 50
-        height: 59
+        x: 1792
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82fb7dfcf790df900800000000000000
-      internalID: 719741960001666856
+      spriteID: 74c0d540f6392c1d0800000000000000
+      internalID: -3331938669276885945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_15
+      name: FrontFlip_15
       rect:
         serializedVersion: 2
-        x: 40
-        y: 785
-        width: 53
-        height: 62
+        x: 0
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5e351b448bc104e0800000000000000
-      internalID: -2017107389029466533
+      spriteID: 56524fdd215907460800000000000000
+      internalID: 7237448509450102117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_16
+      name: FrontFlip_16
       rect:
         serializedVersion: 2
-        x: 168
-        y: 785
-        width: 53
-        height: 62
+        x: 128
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05c39761a14380390800000000000000
-      internalID: -7851968663669621680
+      spriteID: 02f0eea85bb6d8cc0800000000000000
+      internalID: -3707188490791940320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_17
+      name: FrontFlip_17
       rect:
         serializedVersion: 2
-        x: 296
-        y: 784
-        width: 52
-        height: 63
+        x: 256
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a71ea2d016cdfcf0800000000000000
-      internalID: -216799431487514718
+      spriteID: f936459ca4779d050800000000000000
+      internalID: 5825818756069483423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_18
+      name: FrontFlip_18
       rect:
         serializedVersion: 2
-        x: 424
-        y: 784
-        width: 52
-        height: 63
+        x: 384
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1fc138a762dc1230800000000000000
-      internalID: 3610992343889596186
+      spriteID: 9ab9c77a52df38930800000000000000
+      internalID: 4144434420276566953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_19
+      name: FrontFlip_19
       rect:
         serializedVersion: 2
-        x: 553
-        y: 785
-        width: 51
-        height: 62
+        x: 512
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 413be72f6694cba50800000000000000
-      internalID: 6538181465538999060
+      spriteID: ba78ab23ab89b22e0800000000000000
+      internalID: -2149456471656855637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_20
+      name: FrontFlip_20
       rect:
         serializedVersion: 2
-        x: 681
-        y: 784
-        width: 51
-        height: 63
+        x: 640
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5bfa781173979650800000000000000
-      internalID: 6239617922696411994
+      spriteID: c7e34397da03c1710800000000000000
+      internalID: 1665259483841183356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_21
+      name: FrontFlip_21
       rect:
         serializedVersion: 2
-        x: 809
-        y: 784
-        width: 52
-        height: 63
+        x: 768
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5bfb75d8a2b40230800000000000000
-      internalID: 3604202040009161566
+      spriteID: 7320351125ceae620800000000000000
+      internalID: 2804313555213681207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_22
+      name: FrontFlip_22
       rect:
         serializedVersion: 2
-        x: 937
-        y: 784
-        width: 52
-        height: 63
+        x: 896
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 820cf033fb1801b60800000000000000
-      internalID: 7714808819881066536
+      spriteID: 86ce05b4059c2f070800000000000000
+      internalID: 8138788823310068840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_23
+      name: FrontFlip_23
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 785
-        width: 53
-        height: 62
+        x: 1024
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d3e4aa7f4da2340800000000000000
-      internalID: 4839914909742284145
+      spriteID: ea43745c61f78f040800000000000000
+      internalID: 4681631548427416750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_24
+      name: FrontFlip_24
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 785
-        width: 54
-        height: 62
+        x: 1152
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45bc068a76672ec40800000000000000
-      internalID: 5540120679197756244
+      spriteID: 36a277f02c64f7cd0800000000000000
+      internalID: -2558248264026084765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_25
+      name: FrontFlip_25
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 784
-        width: 53
-        height: 63
+        x: 1280
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f16ac4469ce380d20800000000000000
-      internalID: 3244912566212535839
+      spriteID: bafd9767a103f8b30800000000000000
+      internalID: 4291701860122353579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_26
+      name: FrontFlip_26
       rect:
         serializedVersion: 2
-        x: 1449
-        y: 784
-        width: 51
-        height: 63
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b13332c8643b61450800000000000000
-      internalID: 6059227464253780763
+      spriteID: ffe1ce81361471800800000000000000
+      internalID: 583006570643463935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_27
+      name: FrontFlip_27
       rect:
         serializedVersion: 2
-        x: 1577
-        y: 784
-        width: 51
-        height: 63
+        x: 1536
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4dacebb99a9d5f160800000000000000
-      internalID: 7058787313458793172
+      spriteID: 932a6872483920c10800000000000000
+      internalID: 2018337778823504441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_28
+      name: FrontFlip_28
       rect:
         serializedVersion: 2
-        x: 1704
-        y: 784
-        width: 52
-        height: 63
+        x: 1664
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cdf7cbf5d3485c20800000000000000
-      internalID: 3195378521950649799
+      spriteID: 4fd06e2e9cc30ce90800000000000000
+      internalID: -7007534182395671052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_29
+      name: FrontFlip_29
       rect:
         serializedVersion: 2
-        x: 1832
-        y: 784
-        width: 53
-        height: 63
+        x: 1792
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0bf11b38ec9cb4c0800000000000000
-      internalID: -4270365825416692982
+      spriteID: 7b3b9f158f5ab0f40800000000000000
+      internalID: 5695828639685915575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_30
+      name: FrontFlip_30
       rect:
         serializedVersion: 2
-        x: 41
-        y: 658
-        width: 39
-        height: 63
+        x: 0
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c262df462c269db90800000000000000
-      internalID: -7216628340827019732
+      spriteID: 7f02f033d40a304d0800000000000000
+      internalID: -3169513459309141769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_31
+      name: FrontFlip_31
       rect:
         serializedVersion: 2
-        x: 169
-        y: 658
-        width: 38
-        height: 63
+        x: 128
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18cfd6c3de50a2a10800000000000000
-      internalID: 1885325910487202945
+      spriteID: 4772751a6be1eb620800000000000000
+      internalID: 2791702588756010868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_32
+      name: FrontFlip_32
       rect:
         serializedVersion: 2
-        x: 297
-        y: 658
-        width: 38
-        height: 63
+        x: 256
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d15e774f378d86a00800000000000000
-      internalID: 750087330491524381
+      spriteID: 7bf7c93968955cb10800000000000000
+      internalID: 2001104043973050295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_33
+      name: FrontFlip_33
       rect:
         serializedVersion: 2
-        x: 425
-        y: 658
-        width: 38
-        height: 63
+        x: 384
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49bd2a1e117fe5590800000000000000
-      internalID: -7683432258075436140
+      spriteID: b7d64242d30fcdc90800000000000000
+      internalID: -7143570763526410885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_34
+      name: FrontFlip_34
       rect:
         serializedVersion: 2
-        x: 553
-        y: 658
-        width: 38
-        height: 63
+        x: 512
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49d52a44bf2794210800000000000000
-      internalID: 1317710789496429972
+      spriteID: 1b0de49b53e590d60800000000000000
+      internalID: 7856914609759768753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_35
+      name: FrontFlip_35
       rect:
         serializedVersion: 2
-        x: 681
-        y: 658
-        width: 39
-        height: 63
+        x: 640
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a7ffaf6dd2ddba00800000000000000
-      internalID: 774006559481001889
+      spriteID: 69f2d2de3b89dc510800000000000000
+      internalID: 1571079743567900566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_36
+      name: FrontFlip_36
       rect:
         serializedVersion: 2
-        x: 809
-        y: 658
-        width: 39
-        height: 64
+        x: 768
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e56117b3606ce5370800000000000000
-      internalID: 8313299692241884766
+      spriteID: 92da21f46c742f680800000000000000
+      internalID: -8722830611207508695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_37
+      name: FrontFlip_37
       rect:
         serializedVersion: 2
-        x: 937
-        y: 658
-        width: 39
-        height: 64
+        x: 896
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a1f90ed341a960d0800000000000000
-      internalID: -3429032328405847642
+      spriteID: 8e052a28e15f4f2a0800000000000000
+      internalID: -6704464433858326296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_38
+      name: FrontFlip_38
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 658
-        width: 39
-        height: 63
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dc1f485e97049150800000000000000
-      internalID: 5878331790293146832
+      spriteID: a40fe376052729b40800000000000000
+      internalID: 5445540589099479114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_39
+      name: FrontFlip_39
       rect:
         serializedVersion: 2
-        x: 1193
-        y: 658
-        width: 39
-        height: 63
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3236b82ac5fccf790800000000000000
-      internalID: -7494887683080363229
+      spriteID: 75c5ddd6197f71d50800000000000000
+      internalID: 6708102373977185367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_40
+      name: FrontFlip_40
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 658
-        width: 39
-        height: 63
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02e9ef39bc2290150800000000000000
-      internalID: 5839236649619201568
+      spriteID: b703509d676f56c50800000000000000
+      internalID: 6657998614444716155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_41
+      name: FrontFlip_41
       rect:
         serializedVersion: 2
-        x: 1449
-        y: 658
-        width: 38
-        height: 63
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 255974aacb8aea080800000000000000
-      internalID: -9174209862642985646
+      spriteID: d0c29d2d75d900ef0800000000000000
+      internalID: -143942187550692339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_42
+      name: FrontFlip_42
       rect:
         serializedVersion: 2
-        x: 1577
-        y: 658
-        width: 38
-        height: 63
+        x: 1536
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb5cfeb653cd45140800000000000000
-      internalID: 4707629632511264188
+      spriteID: 237cf51354d216520800000000000000
+      internalID: 2693483827348621106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_43
+      name: FrontFlip_43
       rect:
         serializedVersion: 2
-        x: 1705
-        y: 658
-        width: 39
-        height: 64
+        x: 1664
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b95c40d97ba74400800000000000000
-      internalID: 308403639172225460
+      spriteID: 92303d922e54b1040800000000000000
+      internalID: 4619362680465195817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_44
+      name: FrontFlip_44
       rect:
         serializedVersion: 2
-        x: 1833
-        y: 658
-        width: 39
-        height: 64
+        x: 1792
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a30ce0ad387688f00800000000000000
-      internalID: 1119258323398344762
+      spriteID: 52cc54bb4157d6bf0800000000000000
+      internalID: -329478465826468827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_45
+      name: FrontFlip_45
       rect:
         serializedVersion: 2
-        x: 37
-        y: 531
-        width: 38
-        height: 64
+        x: 0
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a83c76bdf717f740800000000000000
-      internalID: 5185639874396174505
+      spriteID: e0e8c3caa721bb000800000000000000
+      internalID: 52656138729852430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_46
+      name: FrontFlip_46
       rect:
         serializedVersion: 2
-        x: 165
-        y: 531
-        width: 38
-        height: 64
+        x: 128
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84a70d43d64129700800000000000000
-      internalID: 545520964135320136
+      spriteID: aa0550ae25f159950800000000000000
+      internalID: 6455100081879470250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_47
+      name: FrontFlip_47
       rect:
         serializedVersion: 2
-        x: 292
-        y: 531
-        width: 39
-        height: 64
+        x: 256
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94a5235c195492d90800000000000000
-      internalID: -7122084843328742839
+      spriteID: c5a21e354d6ca79f0800000000000000
+      internalID: -469844595864163748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_48
+      name: FrontFlip_48
       rect:
         serializedVersion: 2
-        x: 419
-        y: 531
-        width: 40
-        height: 64
+        x: 384
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8282d5005aac7e570800000000000000
-      internalID: 8495982032082249768
+      spriteID: 968400f82d847e180800000000000000
+      internalID: -9086213654017193879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_49
+      name: FrontFlip_49
       rect:
         serializedVersion: 2
-        x: 548
-        y: 531
-        width: 39
-        height: 65
+        x: 512
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdb5ae76803074430800000000000000
-      internalID: 3766982947956743131
+      spriteID: 8b8cf719e9606d060800000000000000
+      internalID: 6977771950772832440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_50
+      name: FrontFlip_50
       rect:
         serializedVersion: 2
-        x: 676
-        y: 531
-        width: 39
-        height: 65
+        x: 640
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5637ff409ca62830800000000000000
-      internalID: 4046111051055838813
+      spriteID: f0a2800f444f14360800000000000000
+      internalID: 7152266260163078671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_51
+      name: FrontFlip_51
       rect:
         serializedVersion: 2
-        x: 804
-        y: 531
-        width: 39
-        height: 65
+        x: 768
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e76ee56b6725c18b0800000000000000
-      internalID: -5180174801563621762
+      spriteID: 4cb142594807ba880800000000000000
+      internalID: -8598655348793664572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_52
+      name: FrontFlip_52
       rect:
         serializedVersion: 2
-        x: 932
-        y: 531
-        width: 39
-        height: 65
+        x: 896
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf2d8cade4b946320800000000000000
-      internalID: 2550334051978892028
+      spriteID: 10ccef532f3ae9270800000000000000
+      internalID: 8259219027327372289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_53
+      name: FrontFlip_53
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 531
-        width: 39
-        height: 64
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8a0aa7c178211370800000000000000
-      internalID: 8291452858112019083
+      spriteID: c403862bcb21ec220800000000000000
+      internalID: 2507962644148269132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_54
+      name: FrontFlip_54
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 531
-        width: 39
-        height: 64
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17cf0fc3edb630620800000000000000
-      internalID: 2739151600620731505
+      spriteID: ba6d27d06939d7850800000000000000
+      internalID: 6376414920106497707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_55
+      name: FrontFlip_55
       rect:
         serializedVersion: 2
-        x: 1316
-        y: 531
-        width: 39
-        height: 64
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e8eab1cd81fe4120800000000000000
-      internalID: 2400121242577987812
+      spriteID: cf30d532028c32130800000000000000
+      internalID: 3540893772401148924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_56
+      name: FrontFlip_56
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 531
-        width: 40
-        height: 64
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f33b77329c853be50800000000000000
-      internalID: 6823895481303151423
+      spriteID: 84225e17b04ceb580800000000000000
+      internalID: -8809388267655585208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_57
+      name: FrontFlip_57
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 531
-        width: 40
-        height: 64
+        x: 1536
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a07ac4f5af96ee300800000000000000
-      internalID: 283280350632519434
+      spriteID: 34aaf58d42fac2110800000000000000
+      internalID: 1237556570403875395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_58
+      name: FrontFlip_58
       rect:
         serializedVersion: 2
-        x: 1699
-        y: 531
-        width: 40
-        height: 64
+        x: 1664
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40771e02e22ce8b40800000000000000
-      internalID: 5444502502913439492
+      spriteID: 71b7776eaf71acd80800000000000000
+      internalID: -8229739002690307305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_59
+      name: FrontFlip_59
       rect:
         serializedVersion: 2
-        x: 1828
-        y: 531
-        width: 39
-        height: 64
+        x: 1792
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0e2e58e597bbd450800000000000000
-      internalID: 6114682773562076683
+      spriteID: ddf0e9a7f89d0a820800000000000000
+      internalID: 2927578968051552221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_60
+      name: FrontFlip_60
       rect:
         serializedVersion: 2
-        x: 38
-        y: 412
-        width: 45
-        height: 64
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9800803b3bb37d7c0800000000000000
-      internalID: -4046700097180270455
+      spriteID: 9155334d66d591590800000000000000
+      internalID: -7703022991412341479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_61
+      name: FrontFlip_61
       rect:
         serializedVersion: 2
-        x: 166
-        y: 412
-        width: 45
-        height: 63
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28444dbfc63890bb0800000000000000
-      internalID: -4969296209721932670
+      spriteID: 248904299a03c9290800000000000000
+      internalID: -7882371742943897534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_62
+      name: FrontFlip_62
       rect:
         serializedVersion: 2
-        x: 294
-        y: 412
-        width: 45
-        height: 65
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 850bea341c7b13a70800000000000000
-      internalID: 8805020787178123352
+      spriteID: db420b9dfbeb6a710800000000000000
+      internalID: 1704259240206542013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_63
+      name: FrontFlip_63
       rect:
         serializedVersion: 2
-        x: 422
-        y: 412
-        width: 45
-        height: 64
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d3666a1759697c00800000000000000
-      internalID: 898865423463113687
+      spriteID: 6c28b3395db51f6c0800000000000000
+      internalID: -4111404011956239674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_64
+      name: FrontFlip_64
       rect:
         serializedVersion: 2
-        x: 550
-        y: 412
-        width: 45
-        height: 64
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1db863c4c25ccb3a0800000000000000
-      internalID: -6648222155857818671
+      spriteID: 82853e75bd702da90800000000000000
+      internalID: -7290756208105662424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_65
+      name: FrontFlip_65
       rect:
         serializedVersion: 2
-        x: 678
-        y: 412
-        width: 45
-        height: 66
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a97fd2b2e2971d4e0800000000000000
-      internalID: -1958651123729565798
+      spriteID: 39dcf2110eb977be0800000000000000
+      internalID: -1479542565904593517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_66
+      name: FrontFlip_66
       rect:
         serializedVersion: 2
-        x: 806
-        y: 412
-        width: 45
-        height: 65
+        x: 768
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a3085654086979f0800000000000000
-      internalID: -470230318245739609
+      spriteID: e14dc1c1433d3a6f0800000000000000
+      internalID: -674463298412030946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_67
+      name: FrontFlip_67
       rect:
         serializedVersion: 2
-        x: 934
-        y: 412
-        width: 45
-        height: 64
+        x: 896
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbf3b7bd9621c0220800000000000000
-      internalID: 2453356142873231291
+      spriteID: eb817ae3379709120800000000000000
+      internalID: 2418566535777294526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_68
+      name: FrontFlip_68
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 412
-        width: 45
-        height: 57
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89fea97e9fbcdf630800000000000000
-      internalID: 3962547521348890520
+      spriteID: 10b656a6c11c6bb70800000000000000
+      internalID: 8914524840214752001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_69
+      name: FrontFlip_69
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 469
-        width: 6
-        height: 6
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f82b48adb10ed2f70800000000000000
-      internalID: 9164227227003695759
+      spriteID: 0870179bc73eba2f0800000000000000
+      internalID: -960423970686826624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_70
+      name: FrontFlip_70
       rect:
         serializedVersion: 2
-        x: 1190
-        y: 412
-        width: 45
-        height: 63
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b283980b373989430800000000000000
-      internalID: 3789941211524577323
+      spriteID: cafeac63e2eb18db0800000000000000
+      internalID: -4791339422848454740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_71
+      name: FrontFlip_71
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 412
-        width: 45
-        height: 64
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dd77a8df5be31210800000000000000
-      internalID: 1302643514129481177
+      spriteID: 68930fe568b3f8d10800000000000000
+      internalID: 2129986597073992070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_72
+      name: FrontFlip_72
       rect:
         serializedVersion: 2
-        x: 1446
-        y: 412
-        width: 45
-        height: 65
+        x: 1536
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d57697eb827a64580800000000000000
-      internalID: -8843197024859232419
+      spriteID: 7ebe1be26e7c012a0800000000000000
+      internalID: -6768690448498037785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_73
+      name: FrontFlip_73
       rect:
         serializedVersion: 2
-        x: 1574
-        y: 412
-        width: 45
-        height: 63
+        x: 1664
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 754137cd55891a150800000000000000
-      internalID: 5882150082860749911
+      spriteID: fe93626e6e0555be0800000000000000
+      internalID: -1489195149142115857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_74
+      name: FrontFlip_74
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 412
-        width: 45
-        height: 64
+        x: 1792
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6db2434e53afb8f20800000000000000
-      internalID: 3426107050914229206
+      spriteID: c3269bcf9d6146b20800000000000000
+      internalID: 3126649166805688892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_75
+      name: FrontFlip_75
       rect:
         serializedVersion: 2
-        x: 1830
-        y: 412
-        width: 45
-        height: 65
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f324241ac4f8f6e10800000000000000
-      internalID: 2193129102838481471
+      spriteID: 93b1995059a9b56c0800000000000000
+      internalID: -4153556266484425927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_76
+      name: FrontFlip_76
       rect:
         serializedVersion: 2
-        x: 39
-        y: 286
-        width: 51
-        height: 64
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9d08723ac331c2c0800000000000000
-      internalID: -4413189216323236449
+      spriteID: 636eec47a5d7e5b30800000000000000
+      internalID: 4277994523508794934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_77
+      name: FrontFlip_77
       rect:
         serializedVersion: 2
-        x: 167
-        y: 286
-        width: 51
-        height: 65
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0559d05baadc862a0800000000000000
-      internalID: -6743914308921617072
+      spriteID: e68295502566f9b60800000000000000
+      internalID: 7755029585818364014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_78
+      name: FrontFlip_78
       rect:
         serializedVersion: 2
-        x: 295
-        y: 286
-        width: 51
-        height: 64
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0883d9744f1dfab0800000000000000
-      internalID: -4972784034585016309
+      spriteID: 0dde24b7f0f2186b0800000000000000
+      internalID: -5295899943271993904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_79
+      name: FrontFlip_79
       rect:
         serializedVersion: 2
-        x: 423
-        y: 286
-        width: 50
-        height: 67
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dfe5597aa428db50800000000000000
-      internalID: 6618079967019659225
+      spriteID: 11455791765a96ce0800000000000000
+      internalID: -1411415145976605679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_80
+      name: FrontFlip_80
       rect:
         serializedVersion: 2
-        x: 552
-        y: 286
-        width: 49
-        height: 66
+        x: 640
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c97897291b309f40800000000000000
-      internalID: 5733147304867166660
+      spriteID: a13d27cb486b71c70800000000000000
+      internalID: 8941816266380989210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_81
+      name: FrontFlip_81
       rect:
         serializedVersion: 2
-        x: 679
-        y: 286
-        width: 50
-        height: 67
+        x: 768
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c8e1b60ff16df4c0800000000000000
-      internalID: -4252134725211002686
+      spriteID: b580d5506313bd770800000000000000
+      internalID: 8636550818501036123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_82
+      name: FrontFlip_82
       rect:
         serializedVersion: 2
-        x: 807
-        y: 286
-        width: 50
-        height: 65
+        x: 896
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd93d4e6dcac7b4f0800000000000000
-      internalID: -812958224049423905
+      spriteID: aea128938d8ed1a90800000000000000
+      internalID: -7341455802168632598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_83
+      name: FrontFlip_83
       rect:
         serializedVersion: 2
-        x: 935
-        y: 286
-        width: 50
-        height: 66
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f54bd83b8162ebd20800000000000000
-      internalID: 3296113864815260767
+      spriteID: fc96cbb7391a06200800000000000000
+      internalID: 171314440648288719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_84
+      name: FrontFlip_84
       rect:
         serializedVersion: 2
-        x: 1063
-        y: 286
-        width: 51
-        height: 66
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71009c00e0725c150800000000000000
-      internalID: 5892158628580360215
+      spriteID: c8eb37cf820a88670800000000000000
+      internalID: 8541252791202725516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_85
+      name: FrontFlip_85
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 286
-        width: 51
-        height: 65
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d72f7c1fceb759c70800000000000000
-      internalID: 8977217689831862909
+      spriteID: e3a49093885190000800000000000000
+      internalID: 2556949607041598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_86
+      name: FrontFlip_86
       rect:
         serializedVersion: 2
-        x: 1319
-        y: 286
-        width: 50
-        height: 65
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bba5fdf2ec2c14f0800000000000000
-      internalID: -856760475672269900
+      spriteID: 0e7a29d99cebabcc0800000000000000
+      internalID: -3694430771162732576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_87
+      name: FrontFlip_87
       rect:
         serializedVersion: 2
-        x: 1447
-        y: 286
-        width: 50
-        height: 64
+        x: 1536
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e7b4d014d0499270800000000000000
-      internalID: 8257702671320135651
+      spriteID: e8419e5d1f1cf08b0800000000000000
+      internalID: -5183711401660050290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_88
+      name: FrontFlip_88
       rect:
         serializedVersion: 2
-        x: 1576
-        y: 286
-        width: 49
-        height: 65
+        x: 1664
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85839e099354b0730800000000000000
-      internalID: 3966340010376509528
+      spriteID: dbb253b87c324bf90800000000000000
+      internalID: -6938881785930110019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_89
+      name: FrontFlip_89
       rect:
         serializedVersion: 2
-        x: 1703
-        y: 286
-        width: 50
-        height: 65
+        x: 1792
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5180fe51cc8e58580800000000000000
-      internalID: -8825391931523659755
+      spriteID: 9b631ad9848655c10800000000000000
+      internalID: 2041652667173910201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_90
+      name: FrontFlip_90
       rect:
         serializedVersion: 2
-        x: 1831
-        y: 286
-        width: 51
-        height: 64
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95f938921ac86fcb0800000000000000
-      internalID: -4830518926494163111
+      spriteID: 462492878fafc2350800000000000000
+      internalID: 5993441149198090852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_91
+      name: FrontFlip_91
       rect:
         serializedVersion: 2
-        x: 51
-        y: 152
-        width: 38
-        height: 66
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 315fc7ddb5bcb3f80800000000000000
-      internalID: -8125677507241511661
+      spriteID: bf675bc92cb05a2d0800000000000000
+      internalID: -3268193024106727685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_92
+      name: FrontFlip_92
       rect:
         serializedVersion: 2
-        x: 180
-        y: 152
-        width: 37
-        height: 67
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 013eaabe56bd517a0800000000000000
-      internalID: -6406973664072637680
+      spriteID: 771f7674218a35960800000000000000
+      internalID: 7589594593510289783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_93
+      name: FrontFlip_93
       rect:
         serializedVersion: 2
-        x: 308
-        y: 152
-        width: 38
-        height: 65
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfbe23da11002d5c0800000000000000
-      internalID: -4192288227208270853
+      spriteID: a855f9bd72fa29040800000000000000
+      internalID: 4652973950750381450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_94
+      name: FrontFlip_94
       rect:
         serializedVersion: 2
-        x: 436
-        y: 152
-        width: 39
-        height: 67
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78e990656e0f7830800000000000000
-      internalID: 4070988416741402747
+      spriteID: e75b0fdcfd62e9ba0800000000000000
+      internalID: -6080379704228924034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_95
+      name: FrontFlip_95
       rect:
         serializedVersion: 2
-        x: 564
-        y: 152
-        width: 39
-        height: 66
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcff34a8e38c37cd0800000000000000
-      internalID: -2561483592110440501
+      spriteID: 4265c87be190f1a20800000000000000
+      internalID: 3035154701404100132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_96
+      name: FrontFlip_96
       rect:
         serializedVersion: 2
-        x: 692
-        y: 152
-        width: 40
-        height: 65
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1caed4fd74a5e3220800000000000000
-      internalID: 2467508910581213889
+      spriteID: 981c7af5569852490800000000000000
+      internalID: -7771654513468391031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_97
+      name: FrontFlip_97
       rect:
         serializedVersion: 2
-        x: 819
-        y: 152
-        width: 41
-        height: 66
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f32949803ec38e760800000000000000
-      internalID: 7487301326302646847
+      spriteID: c349745b0d1c67650800000000000000
+      internalID: 6230380236652385340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_98
+      name: FrontFlip_98
       rect:
         serializedVersion: 2
-        x: 947
-        y: 152
-        width: 40
-        height: 67
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4158390d6412c2a0800000000000000
-      internalID: -6718785235544682162
+      spriteID: 7fef04772e270b6e0800000000000000
+      internalID: -1823831532096127241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_99
+      name: FrontFlip_99
       rect:
         serializedVersion: 2
-        x: 1075
-        y: 152
-        width: 39
-        height: 66
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 843a1782fcf271d90800000000000000
-      internalID: -7127175318507248824
+      spriteID: 25234680460b3c480800000000000000
+      internalID: -8880060096560483758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_100
+      name: FrontFlip_100
       rect:
         serializedVersion: 2
-        x: 1203
-        y: 152
-        width: 38
-        height: 67
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71982865d00b24a80800000000000000
-      internalID: -8484025176680134377
+      spriteID: eb037bf150d435b20800000000000000
+      internalID: 3121923651100160190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_101
+      name: FrontFlip_101
       rect:
         serializedVersion: 2
-        x: 1331
-        y: 152
-        width: 39
-        height: 66
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a742e1d523dc118a0800000000000000
-      internalID: -6336057584539261830
+      spriteID: dc8df8be77fcc4be0800000000000000
+      internalID: -1491589262606346035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_102
+      name: FrontFlip_102
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 152
-        width: 39
-        height: 67
+        x: 1536
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58b4014b3bdae6ed0800000000000000
-      internalID: -2418804962519659643
+      spriteID: 96c221a8b33038a90800000000000000
+      internalID: -7312997815665152919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_103
+      name: FrontFlip_103
       rect:
         serializedVersion: 2
-        x: 1588
-        y: 152
-        width: 40
-        height: 66
+        x: 1664
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd91febfe2466c9a0800000000000000
-      internalID: -6213168482952996385
+      spriteID: 04cb4fb06d1a9aae0800000000000000
+      internalID: -1537519857074652096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_104
+      name: FrontFlip_104
       rect:
         serializedVersion: 2
-        x: 1715
-        y: 152
-        width: 40
-        height: 68
+        x: 1792
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43cd9746773909a50800000000000000
-      internalID: 6525878001055947828
+      spriteID: f876f12ac48b8d180800000000000000
+      internalID: -9090313208570353777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_105
+      name: FrontFlip_105
       rect:
         serializedVersion: 2
-        x: 1843
-        y: 152
-        width: 39
-        height: 67
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1400eaf37067d0370800000000000000
-      internalID: 8290412262564167745
+      spriteID: 6b199de7b1d983ff0800000000000000
+      internalID: -56122253924265546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_106
+      name: FrontFlip_106
       rect:
         serializedVersion: 2
-        x: 52
-        y: 20
-        width: 44
-        height: 70
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d0c5307e88734610800000000000000
-      internalID: 1604258445437288664
+      spriteID: fd6df31f6f3b8e5c0800000000000000
+      internalID: -4185897980450056481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_107
+      name: FrontFlip_107
       rect:
         serializedVersion: 2
-        x: 180
-        y: 20
-        width: 44
-        height: 69
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61abb344777597830800000000000000
-      internalID: 4069379908063443478
+      spriteID: bf505fffdce9f28f0800000000000000
+      internalID: -563056820798290437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_108
+      name: FrontFlip_108
       rect:
         serializedVersion: 2
-        x: 308
-        y: 20
-        width: 45
-        height: 69
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d3c42de91d7e020800000000000000
-      internalID: 2371094208897105265
+      spriteID: ceb11f5cbffec80e0800000000000000
+      internalID: -2266172647837459476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_109
+      name: FrontFlip_109
       rect:
         serializedVersion: 2
-        x: 436
-        y: 20
-        width: 45
-        height: 69
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 182dc6031292a84b0800000000000000
-      internalID: -5437488377573354879
+      spriteID: 76104e29ee374fa70800000000000000
+      internalID: 8859833835448435047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_110
+      name: FrontFlip_110
       rect:
         serializedVersion: 2
-        x: 564
-        y: 21
-        width: 45
-        height: 68
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a53055f5719c4e7f0800000000000000
-      internalID: -584120949430484134
+      spriteID: 0276f42ba22c818b0800000000000000
+      internalID: -5181177882653792480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_111
+      name: FrontFlip_111
       rect:
         serializedVersion: 2
-        x: 692
-        y: 21
-        width: 45
-        height: 69
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdb04c9d9bfa51640800000000000000
-      internalID: 5050135769923193823
+      spriteID: 9d3241c7bb7e502c0800000000000000
+      internalID: -4465908663041383463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_112
+      name: FrontFlip_112
       rect:
         serializedVersion: 2
-        x: 820
-        y: 21
-        width: 45
-        height: 69
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48cb72907ec176af0800000000000000
-      internalID: -403321863009747836
+      spriteID: 8bb0ce59e52b9d280800000000000000
+      internalID: -9017980659520762952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_113
+      name: FrontFlip_113
       rect:
         serializedVersion: 2
-        x: 948
-        y: 20
-        width: 44
-        height: 70
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7be6bcbee5fdf6810800000000000000
-      internalID: 1760871578101051063
+      spriteID: d6d85c176cce05b60800000000000000
+      internalID: 7732940897251593581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_114
+      name: FrontFlip_114
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 20
-        width: 45
-        height: 70
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85c55e7025700ae90800000000000000
-      internalID: -7016600170542048168
+      spriteID: d9d0376e0a6e0f070800000000000000
+      internalID: 8138258105393941917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_115
+      name: FrontFlip_115
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 20
-        width: 44
-        height: 70
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4042fecfd61a68a0800000000000000
-      internalID: -6311206777300828082
+      spriteID: 8cb6efd720269b4f0800000000000000
+      internalID: -812510494920381496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_116
+      name: FrontFlip_116
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 20
-        width: 45
-        height: 70
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6daee0ca0975e760800000000000000
-      internalID: 7486523042666818927
+      spriteID: 86b43dd3c6528e940800000000000000
+      internalID: 5325547706189564776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_117
+      name: FrontFlip_117
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 21
-        width: 45
-        height: 69
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615df38b5d0221d10800000000000000
-      internalID: 2094772878972015894
+      spriteID: 3c42a1e12cb6a1500800000000000000
+      internalID: 367724801056974019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_118
+      name: FrontFlip_118
       rect:
         serializedVersion: 2
-        x: 1588
-        y: 21
-        width: 45
-        height: 68
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cd5153c5e4323140800000000000000
-      internalID: 4697875522729893321
+      spriteID: 104ebdd4aad77d760800000000000000
+      internalID: 7482587476303537153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_119
+      name: FrontFlip_119
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 21
-        width: 45
-        height: 69
+        x: 1792
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ad8a48f7eb7bb740800000000000000
-      internalID: 5168861233571073440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_120
-      rect:
-        serializedVersion: 2
-        x: 1844
-        y: 20
-        width: 44
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: faa6a5a7d2c8dbdb0800000000000000
-      internalID: -4774505902988694865
+      spriteID: 635c06c0eceaeba60800000000000000
+      internalID: 7691777413589550390
       vertices: []
       indices: 
       edges: []
@@ -3125,7 +3214,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a85ac8b2b47dc7489a5a65ae7b230be
     internalID: 0
     vertices: []
     indices: 
@@ -3135,127 +3224,126 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_0: 4723107735738678597
-      Idle_1: -7385789195546760866
-      Idle_10: 7132915409514813599
-      Idle_100: -8484025176680134377
-      Idle_101: -6336057584539261830
-      Idle_102: -2418804962519659643
-      Idle_103: -6213168482952996385
-      Idle_104: 6525878001055947828
-      Idle_105: 8290412262564167745
-      Idle_106: 1604258445437288664
-      Idle_107: 4069379908063443478
-      Idle_108: 2371094208897105265
-      Idle_109: -5437488377573354879
-      Idle_11: -2055793278435719954
-      Idle_110: -584120949430484134
-      Idle_111: 5050135769923193823
-      Idle_112: -403321863009747836
-      Idle_113: 1760871578101051063
-      Idle_114: -7016600170542048168
-      Idle_115: -6311206777300828082
-      Idle_116: 7486523042666818927
-      Idle_117: 2094772878972015894
-      Idle_118: 4697875522729893321
-      Idle_119: 5168861233571073440
-      Idle_12: -1133706752296058015
-      Idle_120: -4774505902988694865
-      Idle_13: -7873313509577613512
-      Idle_14: 719741960001666856
-      Idle_15: -2017107389029466533
-      Idle_16: -7851968663669621680
-      Idle_17: -216799431487514718
-      Idle_18: 3610992343889596186
-      Idle_19: 6538181465538999060
-      Idle_2: 3234629978573100161
-      Idle_20: 6239617922696411994
-      Idle_21: 3604202040009161566
-      Idle_22: 7714808819881066536
-      Idle_23: 4839914909742284145
-      Idle_24: 5540120679197756244
-      Idle_25: 3244912566212535839
-      Idle_26: 6059227464253780763
-      Idle_27: 7058787313458793172
-      Idle_28: 3195378521950649799
-      Idle_29: -4270365825416692982
-      Idle_3: 6373048116405451881
-      Idle_30: -7216628340827019732
-      Idle_31: 1885325910487202945
-      Idle_32: 750087330491524381
-      Idle_33: -7683432258075436140
-      Idle_34: 1317710789496429972
-      Idle_35: 774006559481001889
-      Idle_36: 8313299692241884766
-      Idle_37: -3429032328405847642
-      Idle_38: 5878331790293146832
-      Idle_39: -7494887683080363229
-      Idle_4: 7264182050183361747
-      Idle_40: 5839236649619201568
-      Idle_41: -9174209862642985646
-      Idle_42: 4707629632511264188
-      Idle_43: 308403639172225460
-      Idle_44: 1119258323398344762
-      Idle_45: 5185639874396174505
-      Idle_46: 545520964135320136
-      Idle_47: -7122084843328742839
-      Idle_48: 8495982032082249768
-      Idle_49: 3766982947956743131
-      Idle_5: -2834552850196481573
-      Idle_50: 4046111051055838813
-      Idle_51: -5180174801563621762
-      Idle_52: 2550334051978892028
-      Idle_53: 8291452858112019083
-      Idle_54: 2739151600620731505
-      Idle_55: 2400121242577987812
-      Idle_56: 6823895481303151423
-      Idle_57: 283280350632519434
-      Idle_58: 5444502502913439492
-      Idle_59: 6114682773562076683
-      Idle_6: 3278449094680734212
-      Idle_60: -4046700097180270455
-      Idle_61: -4969296209721932670
-      Idle_62: 8805020787178123352
-      Idle_63: 898865423463113687
-      Idle_64: -6648222155857818671
-      Idle_65: -1958651123729565798
-      Idle_66: -470230318245739609
-      Idle_67: 2453356142873231291
-      Idle_68: 3962547521348890520
-      Idle_69: 9164227227003695759
-      Idle_7: 3384493420599841878
-      Idle_70: 3789941211524577323
-      Idle_71: 1302643514129481177
-      Idle_72: -8843197024859232419
-      Idle_73: 5882150082860749911
-      Idle_74: 3426107050914229206
-      Idle_75: 2193129102838481471
-      Idle_76: -4413189216323236449
-      Idle_77: -6743914308921617072
-      Idle_78: -4972784034585016309
-      Idle_79: 6618079967019659225
-      Idle_8: -2331352242086191015
-      Idle_80: 5733147304867166660
-      Idle_81: -4252134725211002686
-      Idle_82: -812958224049423905
-      Idle_83: 3296113864815260767
-      Idle_84: 5892158628580360215
-      Idle_85: 8977217689831862909
-      Idle_86: -856760475672269900
-      Idle_87: 8257702671320135651
-      Idle_88: 3966340010376509528
-      Idle_89: -8825391931523659755
-      Idle_9: -3914248031228685145
-      Idle_90: -4830518926494163111
-      Idle_91: -8125677507241511661
-      Idle_92: -6406973664072637680
-      Idle_93: -4192288227208270853
-      Idle_94: 4070988416741402747
-      Idle_95: -2561483592110440501
-      Idle_96: 2467508910581213889
-      Idle_97: 7487301326302646847
-      Idle_98: -6718785235544682162
-      Idle_99: -7127175318507248824
+      FrontFlip_0: 8471284121543850762
+      FrontFlip_1: -5316296518032136385
+      FrontFlip_10: -8480898039182459878
+      FrontFlip_100: 3121923651100160190
+      FrontFlip_101: -1491589262606346035
+      FrontFlip_102: -7312997815665152919
+      FrontFlip_103: -1537519857074652096
+      FrontFlip_104: -9090313208570353777
+      FrontFlip_105: -56122253924265546
+      FrontFlip_106: -4185897980450056481
+      FrontFlip_107: -563056820798290437
+      FrontFlip_108: -2266172647837459476
+      FrontFlip_109: 8859833835448435047
+      FrontFlip_11: -3851762255885414818
+      FrontFlip_110: -5181177882653792480
+      FrontFlip_111: -4465908663041383463
+      FrontFlip_112: -9017980659520762952
+      FrontFlip_113: 7732940897251593581
+      FrontFlip_114: 8138258105393941917
+      FrontFlip_115: -812510494920381496
+      FrontFlip_116: 5325547706189564776
+      FrontFlip_117: 367724801056974019
+      FrontFlip_118: 7482587476303537153
+      FrontFlip_119: 7691777413589550390
+      FrontFlip_12: 5422826462559046205
+      FrontFlip_13: -2242777676625595096
+      FrontFlip_14: -3331938669276885945
+      FrontFlip_15: 7237448509450102117
+      FrontFlip_16: -3707188490791940320
+      FrontFlip_17: 5825818756069483423
+      FrontFlip_18: 4144434420276566953
+      FrontFlip_19: -2149456471656855637
+      FrontFlip_2: -385859983790490490
+      FrontFlip_20: 1665259483841183356
+      FrontFlip_21: 2804313555213681207
+      FrontFlip_22: 8138788823310068840
+      FrontFlip_23: 4681631548427416750
+      FrontFlip_24: -2558248264026084765
+      FrontFlip_25: 4291701860122353579
+      FrontFlip_26: 583006570643463935
+      FrontFlip_27: 2018337778823504441
+      FrontFlip_28: -7007534182395671052
+      FrontFlip_29: 5695828639685915575
+      FrontFlip_3: 5848231405602646409
+      FrontFlip_30: -3169513459309141769
+      FrontFlip_31: 2791702588756010868
+      FrontFlip_32: 2001104043973050295
+      FrontFlip_33: -7143570763526410885
+      FrontFlip_34: 7856914609759768753
+      FrontFlip_35: 1571079743567900566
+      FrontFlip_36: -8722830611207508695
+      FrontFlip_37: -6704464433858326296
+      FrontFlip_38: 5445540589099479114
+      FrontFlip_39: 6708102373977185367
+      FrontFlip_4: 4260660784292922535
+      FrontFlip_40: 6657998614444716155
+      FrontFlip_41: -143942187550692339
+      FrontFlip_42: 2693483827348621106
+      FrontFlip_43: 4619362680465195817
+      FrontFlip_44: -329478465826468827
+      FrontFlip_45: 52656138729852430
+      FrontFlip_46: 6455100081879470250
+      FrontFlip_47: -469844595864163748
+      FrontFlip_48: -9086213654017193879
+      FrontFlip_49: 6977771950772832440
+      FrontFlip_5: -4067617094869684252
+      FrontFlip_50: 7152266260163078671
+      FrontFlip_51: -8598655348793664572
+      FrontFlip_52: 8259219027327372289
+      FrontFlip_53: 2507962644148269132
+      FrontFlip_54: 6376414920106497707
+      FrontFlip_55: 3540893772401148924
+      FrontFlip_56: -8809388267655585208
+      FrontFlip_57: 1237556570403875395
+      FrontFlip_58: -8229739002690307305
+      FrontFlip_59: 2927578968051552221
+      FrontFlip_6: -9198654894410529515
+      FrontFlip_60: -7703022991412341479
+      FrontFlip_61: -7882371742943897534
+      FrontFlip_62: 1704259240206542013
+      FrontFlip_63: -4111404011956239674
+      FrontFlip_64: -7290756208105662424
+      FrontFlip_65: -1479542565904593517
+      FrontFlip_66: -674463298412030946
+      FrontFlip_67: 2418566535777294526
+      FrontFlip_68: 8914524840214752001
+      FrontFlip_69: -960423970686826624
+      FrontFlip_7: -8549989934755969481
+      FrontFlip_70: -4791339422848454740
+      FrontFlip_71: 2129986597073992070
+      FrontFlip_72: -6768690448498037785
+      FrontFlip_73: -1489195149142115857
+      FrontFlip_74: 3126649166805688892
+      FrontFlip_75: -4153556266484425927
+      FrontFlip_76: 4277994523508794934
+      FrontFlip_77: 7755029585818364014
+      FrontFlip_78: -5295899943271993904
+      FrontFlip_79: -1411415145976605679
+      FrontFlip_8: -566877665638674353
+      FrontFlip_80: 8941816266380989210
+      FrontFlip_81: 8636550818501036123
+      FrontFlip_82: -7341455802168632598
+      FrontFlip_83: 171314440648288719
+      FrontFlip_84: 8541252791202725516
+      FrontFlip_85: 2556949607041598
+      FrontFlip_86: -3694430771162732576
+      FrontFlip_87: -5183711401660050290
+      FrontFlip_88: -6938881785930110019
+      FrontFlip_89: 2041652667173910201
+      FrontFlip_9: 7014268490095524985
+      FrontFlip_90: 5993441149198090852
+      FrontFlip_91: -3268193024106727685
+      FrontFlip_92: 7589594593510289783
+      FrontFlip_93: 4652973950750381450
+      FrontFlip_94: -6080379704228924034
+      FrontFlip_95: 3035154701404100132
+      FrontFlip_96: -7771654513468391031
+      FrontFlip_97: 6230380236652385340
+      FrontFlip_98: -1823831532096127241
+      FrontFlip_99: -8880060096560483758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
