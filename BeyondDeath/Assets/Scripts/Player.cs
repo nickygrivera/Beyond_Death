@@ -4,28 +4,32 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /*
- * En el inspector y en las animaciones de prueba se cambian por las buenas
+ * En el inspector y en las animaciones de prueba se cambian por clips de animacion
+ * Hay 3 tipos de clips de animaciones:
+ *
+ * Es decir que cada accion como por ejemplo idle puede estar en der(es la misma animacion para izquierda  pero con Flip , 
+ * ya lo hace el codigo solo),front y back.
+ *
+ * Al impotar las animaciones , se deberán cambiar por las que aparece en la zona de Animator.StringtoHash
+ * por ejemplo "Player_Idle" , siguiendo esa estructura para que el codigo funcione
+ * Estan implementado todas las animaciones segun la direccion del raton y tambien segun la tecla.
+ * 
  * En player (root) ,apartado de Animator se le pasa el de playerAesthetics
  * En escena cambiar las Anchor para que coincidan con la del player
- * 
- * Al impotar las animaciones , se deberán cambiar por las que aparece en la zona de Animator.StringtoHash
- * por ejemplo "Play    er_Idle" , siguiendo esa estructura para que el codigo funcione
- * Solo esta implementado Walk por prueba
  * En la zona de Animator no hay transiciones todo lo hace por crossfadeIn
  * */
 
-/*Depende del sistema de cambio de escenas igual habria que hacer esta clase un singlteon*/
+
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
 public class Player : Character
 {
 
     [SerializeField] private float moveSpeed = 5f;
-    
-   //[SerializeField] private bool clampDiagonal = true;//normaliza
+
     [SerializeField] private Animator anim;//_anim arrastrar aqui el animator de playerAesthetics
     [SerializeField] private SpriteRenderer spriteRenderer;//para que rote visualmente al caminar (ARREGLO DEL SALTO)
-    //[SerializeField] private bool rotateToMouse = true;//para seguri la posicion segun el ratón
+
 
     [SerializeField] private float dashSpeed = 16f;
     [SerializeField] private float dashCooldown = 0.5f;
@@ -64,19 +68,19 @@ public class Player : Character
     private readonly int HitFrontAnimState = Animator.StringToHash("Player_Hit_Front");
     private readonly int HitBackAnimState = Animator.StringToHash("Player_Hit_Back");
 
-
+    //variables del codigo
     private Rigidbody2D _rb;
     private Vector2 _movement;//direccion del input
-    private Vector2 _animDir = Vector2.right;
+    private Vector2 _animDir = Vector2.right;//direccion del raton
+    private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
 
     private bool _isAttack = true;
     private bool _isDashing = false;
     private bool _canDash = true;
-    
-    private CharacterState _state;
-    //velocity sale obsoleto y en esta versión solo deja linearVelocity
 
-   
+    private CharacterState _state;
+
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -100,7 +104,6 @@ public class Player : Character
     }
 
 
-
     //codigo de la plantilla del character (samurai)
     private void OnEnable()//suscripciones
     {
@@ -122,9 +125,8 @@ public class Player : Character
         }
     }
 
-    
-    
-    private void Update()
+
+    private void Update()//primero lee la entrada de teclado y luego la direccion del raton
     {
         if (_state == CharacterState.Hurt || _state == CharacterState.Die)
         {
@@ -138,11 +140,11 @@ public class Player : Character
             _movement.Normalize();//corrige la diagonal
         }
 
-        //dir del ratón
+        //dir del ratón para decidir front o back
         if (InputManager.Instance != null)
         {
             Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
-            
+
             Vector2 dir = (Vector2)(mouseWorld - transform.position);
             if (dir.sqrMagnitude > 0.0001f)
             {
@@ -151,7 +153,7 @@ public class Player : Character
         }
 
 
-        //cambio flip visualmente no por player(root)
+        //cambio flip visualmente no por player(root) , depende de si hay movimiento o no
         if (_state != CharacterState.Attack && _state != CharacterState.Dash)
         {
             float x;
@@ -170,67 +172,81 @@ public class Player : Character
 
             if (x < -0.01f)
             {
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = true;//izq
             }
             else if (x > 0.01f)
             {
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = false;//der
             }
         }
 
-        //change anim de idle o walk por  crossfade
+        //elige la direccion y luego reproduce el clip de ese lado 
+
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
             bool isMoving = !IsNearlyZero(_movement);
 
-            if (!isMoving && _state != CharacterState.Idle)
+            if (!isMoving)
             {
-                //mov idle segun raton
-                _state = CharacterState.Idle;
-
+                //idle se decide por raton
+                int idleTarget;
                 bool aimVertical = IsVerticalDominant(_animDir);
                 if (aimVertical)
                 {
-                    if (_animDir.y >= 0f)
-                    {
-                        // mirando arriba
-                        CrossFadeSafe(IdleBackAnimState, IdleAnimState, 0.2f);
-                    }
-                    else
-                    {
-                        // mirando abajo
-                        CrossFadeSafe(IdleFrontAnimState, IdleAnimState, 0.2f);
-                    }
+                    idleTarget = (_animDir.y >= 0f) ? IdleBackAnimState : IdleFrontAnimState;
                 }
                 else
                 {
-                    //mov horizontal segun flipX
-                    CrossFadeSafe(IdleFrontAnimState, IdleAnimState, 0.2f);
+
+                    idleTarget = IdleAnimState; //flipX a la izq
+                }
+
+                //si no esta en idle
+                if (_state != CharacterState.Idle)
+                {
+                    _state = CharacterState.Idle;
+                    CrossFadeSafe(idleTarget, IdleAnimState, 0.2f);
+                    _currentLocomotionHash = idleTarget;
+                }
+                else
+                {
+                    // en idle mira la dir de  raton(arriba o abajo)
+                    if (_currentLocomotionHash != idleTarget)
+                    {
+                        CrossFadeSafe(idleTarget, IdleAnimState, 0.2f);
+                        _currentLocomotionHash = idleTarget;
+                    }
                 }
             }
-            else if (isMoving && _state != CharacterState.Walk)
+            else
             {
-                //movimiento por teclado
-                _state = CharacterState.Walk;
-
+                //walk se decide por movimiento del teclado
+                int walkTarget;
                 bool moveVertical = IsVerticalDominant(_movement);
                 if (moveVertical)
                 {
-                    if (_movement.y >= 0f)
-                    {
-                        //hacia arriba
-                        CrossFadeSafe(WalkBackAnimState, WalkAnimState, 0.2f);
-                    }
-                    else
-                    {
-                        //hacia abajo
-                        CrossFadeSafe(WalkFrontAnimState, WalkAnimState, 0.2f);
-                    }
+                    walkTarget = (_movement.y >= 0f) ? WalkBackAnimState : WalkFrontAnimState;
                 }
                 else
                 {
-                    //caminando horizontal,flipX se encarga de izq/der
-                    CrossFadeSafe(WalkFrontAnimState, WalkAnimState, 0.2f);
+                    //
+                    walkTarget = WalkAnimState; //flipXva a la izq
+                }
+
+                if (_state != CharacterState.Walk)
+                {
+                    _state = CharacterState.Walk;
+                    CrossFadeSafe(walkTarget, WalkAnimState, 0.2f);
+                    _currentLocomotionHash = walkTarget;
+                }
+                else
+                {
+                    // en walk, cambia de vertical a horizontal o alrevés
+                    if (_currentLocomotionHash != walkTarget)
+                    {
+                        CrossFadeSafe(walkTarget, WalkAnimState, 0.1f);
+                        _currentLocomotionHash = walkTarget;
+                    }
                 }
             }
         }
@@ -246,7 +262,7 @@ public class Player : Character
         }
         if (_state == CharacterState.Attack)
         {
-            _rb.linearVelocity = Vector2.zero;
+            _rb.linearVelocity = Vector2.zero;//durante el ataque no se mueve el player
         }
         else if (!_isDashing)
         {
@@ -254,9 +270,8 @@ public class Player : Character
         }
 
     }
-    
-    
-    
+
+    //DASH
     //En la animacion de prueba del dash hace un frontflip
     //Dash del player
     private void OnDashInput()
@@ -269,16 +284,16 @@ public class Player : Character
 
         StartCoroutine(Dash());
     }
-    
-    
-    
+
+
+
     private IEnumerator Dash()
     {
         Debug.Log("Dashing");
         _isDashing = true;
         _canDash = false;
 
-        //anim del dash
+        //anim del dash segun dir
         _state = CharacterState.Dash;
 
         bool verticalDominant = Mathf.Abs(_animDir.y) >= Mathf.Abs(_animDir.x);
@@ -295,11 +310,11 @@ public class Player : Character
             {
                 dashTarget = DashFrontAnimState;
             }
-                
+
         }
         else
         {
-            dashTarget = DashFrontAnimState;
+            dashTarget = DashAnimState;
         }
 
         CrossFadeSafe(dashTarget, DashAnimState, 0f);
@@ -326,10 +341,12 @@ public class Player : Character
 
         _canDash = true;
     }
-    
-    
 
-    public override void Attack(){
+
+    //ATTACKS
+
+    public override void Attack()
+    {
         Attack1();
     }
 
@@ -342,6 +359,7 @@ public class Player : Character
         _isAttack = false;
         _rb.linearVelocity = Vector2.zero;
 
+        //elige animacion segun dir del raton
         bool verticalDominant = false;
         if (Mathf.Abs(_animDir.y) >= Mathf.Abs(_animDir.x))
         {
@@ -363,7 +381,7 @@ public class Player : Character
         }
         else
         {
-            atk1Target = Attack1FrontAnimState;
+            atk1Target = Attack1AnimState;////
         }
 
         CrossFadeSafe(atk1Target, Attack1AnimState, 0f);
@@ -390,18 +408,20 @@ public class Player : Character
             float angleDeg = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 
             Collider2D[] results = Physics2D.OverlapBoxAll(center, hitSize, angleDeg);
-            
+
             foreach (var col in results)
             {
                 col.GetComponent<ITriggerEnter>()?.HitByPlayer(gameObject);
             }
 
 
-            StartCoroutine(WaitForAnimationToEnd(atk1Target)); 
+            StartCoroutine(WaitForAnimationToEnd(atk1Target));
         }
     }
 
     private void Attack2()//ataque distancia
+                          //SOLO HACE LA ANIMACION
+                          //HAY QUE AÑADIR EL PROYECTIL AQUI
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
 
@@ -421,43 +441,15 @@ public class Player : Character
         }
         else
         {
-            atk2Target = Attack2FrontAnimState;
+            atk2Target = Attack2AnimState;
         }
 
         CrossFadeSafe(atk2Target, Attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
     }
 
-    //espera a que acabe las animaciones para estar en idle
-    private IEnumerator WaitForAnimationToEnd(int preferredState, int fallbackState)
-    {
-        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
 
-        //espera al fallback
-        while (stateInfo.shortNameHash != preferredState && stateInfo.shortNameHash != fallbackState)
-        {
-            yield return null;
-            stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        }
-
-        //espera a normalozarla
-        while (stateInfo.normalizedTime < 1f)
-        {
-            yield return null;
-            stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        }
-
-        _state = CharacterState.Idle;
-        anim.CrossFadeInFixedTime(IdleAnimState, 0f);
-        _isAttack = true;
-    }
-
-    //ref de 1 parametro
-    private IEnumerator WaitForAnimationToEnd(int animState)
-    {
-        return WaitForAnimationToEnd(animState, animState);
-    }
-
+    //TAKEDAMAGE O HIT
     //overrides de character
     public override void TakeDamage(float dmg)
     {
@@ -531,7 +523,7 @@ public class Player : Character
             }
             else
             {
-                hitTarget = HitFrontAnimState;//horizontal
+                hitTarget = HitAnimState;//horizontal
             }
 
             CrossFadeSafe(hitTarget, HitAnimState, 0f);
@@ -541,6 +533,8 @@ public class Player : Character
         }
     }
 
+
+    //DEATH
     public override void Die()
     {
         Debug.Log("Player muerto");
@@ -548,8 +542,39 @@ public class Player : Character
         //TODO:lanzar escena o UI de Game over
     }
 
+    //ANIMACIONES
+    //espera a que acabe las animaciones (espera al fallback),para estar en idle
+    private IEnumerator WaitForAnimationToEnd(int preferredState, int fallbackState)
+    {
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
 
-    //estado con fallback
+        //espera al fallback
+        while (stateInfo.shortNameHash != preferredState && stateInfo.shortNameHash != fallbackState)
+        {
+            yield return null;
+            stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        }
+
+        //espera a normalizarla y que la animacion finalice
+        while (stateInfo.normalizedTime < 1f)
+        {
+            yield return null;
+            stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        }
+        //al acabar , vuelve a idle
+        _state = CharacterState.Idle;
+        anim.CrossFadeInFixedTime(IdleAnimState, 0f);
+        _isAttack = true;
+    }
+
+    //ref de 1 parametro cuando no hay fallback
+    private IEnumerator WaitForAnimationToEnd(int animState)
+    {
+        return WaitForAnimationToEnd(animState, animState);
+    }
+
+
+    //cambia la animacion en caso de que no haya clip, para no colapsar (lo hace en caso de que falte o falle algun clip)
     private void CrossFadeSafe(int preferredStateHash, int fallbackStateHash, float fade)
     {
         if (anim && anim.runtimeAnimatorController && anim.HasState(0, preferredStateHash))
@@ -561,17 +586,17 @@ public class Player : Character
         {
             anim.CrossFadeInFixedTime(fallbackStateHash, fade);
         }
-            
+
     }
 
     //Helpers para la dir del raton
     private bool IsNearlyZero(Vector2 v)
     {
-        return v.sqrMagnitude < 0.0001f;
+        return v.sqrMagnitude < 0.0001f;//comprueba si el player esta quieto o no (cerca de 0)
     }
 
-    private bool IsVerticalDominant(Vector2 v)
-    {
+    private bool IsVerticalDominant(Vector2 v)//determina si se apunta mas arriba que a la izq/der
+    {//para poder decidir entre las animaciones
         return Mathf.Abs(v.y) >= Mathf.Abs(v.x);
     }
 
