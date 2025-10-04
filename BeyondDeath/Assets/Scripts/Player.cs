@@ -78,8 +78,6 @@ public class Player : Character
         }
     }
 
-
-
     private void OnDisable()
     {
         if (InputManager.Instance != null)
@@ -90,8 +88,8 @@ public class Player : Character
         }
     }
 
-
-
+    
+    
     private void Update()
     {
         if (_state == CharacterState.Hurt || _state == CharacterState.Die)
@@ -120,7 +118,6 @@ public class Player : Character
             else if (_movement.x > 0.01f) spriteRenderer.flipX = false;
         }
 
-
         //change anim de idle o walk por  rossfade
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
@@ -137,8 +134,8 @@ public class Player : Character
         }
     }
 
-
-
+    
+    
     private void FixedUpdate()
     {
         if (_state == CharacterState.Hurt || _state == CharacterState.Die)
@@ -155,8 +152,9 @@ public class Player : Character
         }
 
     }
-
-
+    
+    
+    
     //En la animacion de prueba del dash hace un frontflip
     //Dash del player
     private void OnDashInput()
@@ -169,6 +167,8 @@ public class Player : Character
 
         StartCoroutine(Dash());
     }
+    
+    
     
     private IEnumerator Dash()
     {

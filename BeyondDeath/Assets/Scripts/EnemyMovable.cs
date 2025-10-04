@@ -1,26 +1,35 @@
+using System;
 using UnityEngine;
 
 /*
 Los metodos Die() y TakeDamage() usa los del padre 
 */
 
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class EnemyMovable : Character
 {
-    [SerializeField] private float healthMax;
+    [SerializeField] private float healthMax = 100f;
     [SerializeField] private float healthActual;
-    [SerializeField] private float damage;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private float damage = 17f;
+    [SerializeField] private float speed = 4f;
+    
+    private float _distance;
+    private void Start()
     {
         SetHealthMax();
         SetDamage();
     }
 
+    private void Update()
+    {
+
+    }
+
     /*override protected void Attack(_enemyHealth)
     {
 
-    }*/
+    }
+    */
 
     private void SetDamage()
     {

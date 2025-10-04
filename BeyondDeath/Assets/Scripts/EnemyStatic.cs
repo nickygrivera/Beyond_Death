@@ -6,9 +6,9 @@ Los metodos Die() y TakeDamage() usa los del padre
 
 public class EnemyStatic : Character
 {
-    [SerializeField] private float healthMax;
+    [SerializeField] private float healthMax = 70f;
     [SerializeField] private float healthActual;
-    [SerializeField] private float damage;
+    [SerializeField] private float damage = 12f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

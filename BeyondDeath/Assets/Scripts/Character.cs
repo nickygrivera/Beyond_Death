@@ -20,10 +20,12 @@ public abstract class Character : MonoBehaviour
     [SerializeField] private float healthMax;
     [SerializeField] private float healthActual;
     [SerializeField] private float damage;
-
+    [SerializeField] private float attackDistance;
+    [SerializeField] private float attackCooldown;
+    
     [SerializeField] public Transform hitAnchor;//punto desde donde sale el ataque ( modificar en la escena)
     [SerializeField] public Transform bottomAnchor;//punto en los pies (amarillo) 
-    [SerializeField] public Vector2 hitSize;//área del golpe
+    [SerializeField] public Vector2 hitSize;//area del golpe
 
 
     //Getters y Setters
