@@ -233,6 +233,7 @@ MonoBehaviour:
   hitSize: {x: 1, y: 1}
   moveSpeed: 2
   anim: {fileID: 1106557292}
+  spriteRenderer: {fileID: 1106557291}
   dashSpeed: 16
   dashCooldown: 0.5
 --- !u!50 &582271985

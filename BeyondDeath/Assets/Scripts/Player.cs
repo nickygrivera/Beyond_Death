@@ -19,12 +19,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
 public class Player : Character
 {
+
     [SerializeField] private float moveSpeed = 5f;
     
    // [SerializeField] private bool clampDiagonal = true;//normaliza
     [SerializeField] private Animator anim;//_anim arrastrar aqui el animator de playerAesthetics
+    [SerializeField] private SpriteRenderer spriteRenderer;//para que rote visualmente al caminar (ARREGLO DEL SALTO)
+
     [SerializeField] private float dashSpeed = 16f;
     [SerializeField] private float dashCooldown = 0.5f;
+
 
     //nombre EXACTOS de los estados
     private readonly int IdleAnimState = Animator.StringToHash("Player_Idle");
@@ -33,8 +37,9 @@ public class Player : Character
     private readonly int Attack2AnimState = Animator.StringToHash("Player_Attack2");
     private readonly int HitAnimState = Animator.StringToHash("Player_Hit");
     private readonly int DeathAnimState = Animator.StringToHash("Player_Death");
+    private readonly int DashAnimState = Animator.StringToHash("Player_Dash");
 
- 
+
     private Rigidbody2D _rb;
     private Vector2 _movement;//direccion del input
     private bool _isAttack = true;
@@ -60,6 +65,8 @@ public class Player : Character
         _state = CharacterState.Idle;
     }
 
+
+
     //codigo de la plantilla del character (samurai)
     private void OnEnable()//suscripciones
     {
@@ -71,6 +78,8 @@ public class Player : Character
         }
     }
 
+
+
     private void OnDisable()
     {
         if (InputManager.Instance != null)
@@ -80,6 +89,8 @@ public class Player : Character
             InputManager.Instance.DashPerformed -= OnDashInput;
         }
     }
+
+
 
     private void Update()
     {
@@ -92,14 +103,25 @@ public class Player : Character
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f) _movement.Normalize();
 
+        /*
+         * 
         //flippor rotacion en Y
         if (_state != CharacterState.Attack)
         {
             if (_movement.x < -0.01f) transform.rotation = Quaternion.Euler(0, 180, 0);
             else if (_movement.x > 0.01f) transform.rotation = Quaternion.Euler(0, 0, 0);
         }
+        */
 
-        //change anim de idle o walk
+        //cambio flip visualmente no por player(root)
+        if (_state != CharacterState.Attack && _state != CharacterState.Dash)
+        {
+            if (_movement.x < -0.01f) spriteRenderer.flipX = true;
+            else if (_movement.x > 0.01f) spriteRenderer.flipX = false;
+        }
+
+
+        //change anim de idle o walk por  rossfade
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
             if (_movement == Vector2.zero && _state != CharacterState.Idle)
@@ -114,13 +136,36 @@ public class Player : Character
             }
         }
     }
-    
+
+
+
+    private void FixedUpdate()
+    {
+        if (_state == CharacterState.Hurt || _state == CharacterState.Die)
+        {
+            return;
+        }
+        if (_state == CharacterState.Attack)
+        {
+            _rb.linearVelocity = Vector2.zero;
+        }
+        else if (!_isDashing)
+        {
+            _rb.linearVelocity = _movement * moveSpeed;
+        }
+
+    }
+
+
+    //En la animacion de prueba del dash hace un frontflip
     //Dash del player
     private void OnDashInput()
     {
         Debug.Log("Dash");
-        if (!_canDash || _state == CharacterState.Attack || _state == CharacterState.Hurt || _state == CharacterState.Die) 
+        if (!_canDash || _state == CharacterState.Attack || _state == CharacterState.Hurt || _state == CharacterState.Die)
+        {
             return;
+        }
 
         StartCoroutine(Dash());
     }
@@ -130,25 +175,41 @@ public class Player : Character
         Debug.Log("Dashing");
         _isDashing = true;
         _canDash = false;
-        _rb.linearVelocity = _movement * dashSpeed;
+
+        //anim del dash
+        _state = CharacterState.Dash;
+        anim.CrossFadeInFixedTime(DashAnimState, 0f);
+
+
+        _rb.linearVelocity = _movement * dashSpeed;//dash
         yield return new WaitForSeconds(dashCooldown);
         _isDashing = false;
+
+        //vuelve a idle o walk segun teclado
+        if (_movement == Vector2.zero)
+        {
+            _state = CharacterState.Idle;
+            anim.CrossFadeInFixedTime(IdleAnimState, 0.1f);
+            _rb.linearVelocity = Vector2.zero;
+        }
+        else
+        {
+            _state = CharacterState.Walk;
+            anim.CrossFadeInFixedTime(WalkAnimState, 0.1f);
+            _rb.linearVelocity = _movement * moveSpeed;
+        }
+
+
         _canDash = true;
     }
     
-    private void FixedUpdate()
-    {
-        if (_state == CharacterState.Hurt || _state == CharacterState.Die) return;
-
-        if (_state == CharacterState.Attack)
-            _rb.linearVelocity = Vector2.zero;
-        else if(!_isDashing)
-            _rb.linearVelocity = _movement * moveSpeed;
-    }
+    
 
     public override void Attack(){
         Attack1();
     }
+
+
     private void Attack1()//ataque meele
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
@@ -168,7 +229,9 @@ public class Player : Character
 
             Collider2D[] results = Physics2D.OverlapBoxAll(center, hitSize, 0);
             foreach (var col in results)
+            {
                 col.GetComponent<ITriggerEnter>()?.HitByPlayer(gameObject);
+            }
 
             StartCoroutine(WaitForAnimationToEnd(Attack1AnimState));
         }
@@ -205,10 +268,15 @@ public class Player : Character
         _isAttack = true;
     }
 
+
+
     //overrides de character
     public override void TakeDamage(float dmg)
     {
-        if (_state == CharacterState.Attack || _state == CharacterState.Die) return;
+        if (_state == CharacterState.Attack || _state == CharacterState.Die)
+        {
+            return;
+        }
 
         SetHealthActual(GetHealthActual() - dmg);
 
@@ -231,7 +299,7 @@ public class Player : Character
     public override void Die()
     {
         Debug.Log("Player muerto");
-        //codigo reiniciar todas las escenas si muere 
-        //lanzar escena o UI de Game over
+        //TODO:codigo reiniciar todas las escenas si muere 
+        //TODO:lanzar escena o UI de Game over
     }
 }
