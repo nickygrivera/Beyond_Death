@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 81661553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.73, y: -0.373, z: 0}
+  m_LocalPosition: {x: -0.755, y: -0.373, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -228,6 +228,8 @@ MonoBehaviour:
   healthMax: 100
   healthActual: 100
   damage: 0
+  attackDistance: 0
+  attackCooldown: 0
   hitAnchor: {fileID: 720423519}
   bottomAnchor: {fileID: 81661554}
   hitSize: {x: 1, y: 1}
@@ -647,7 +649,7 @@ Transform:
   m_GameObject: {fileID: 1106557289}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.568, y: 0, z: 0}
+  m_LocalPosition: {x: -0.743, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -770,7 +772,7 @@ Transform:
   m_GameObject: {fileID: 1163633028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.752, y: -0.42, z: 0}
+  m_LocalPosition: {x: -0.709, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

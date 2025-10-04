@@ -79,4 +79,17 @@ public class InputManager : MonoBehaviour
         _inputSystemActions.Player.Disable();
         _inputSystemActions.UI.Enable();
     }
+
+    public Vector3 GetPointerWorldPosition(Camera cam = null)
+    {
+        if (cam == null)
+        {
+            cam = Camera.main;
+        }
+        Vector2 screen = _inputSystemActions.Player.Look.ReadValue<Vector2>();
+
+        float z = Mathf.Abs(cam.transform.position.z);
+        return cam.ScreenToWorldPoint(new Vector3(screen.x, screen.y, z));
+    }
+
 }
