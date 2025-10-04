@@ -16,6 +16,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Input/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMovable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -105,6 +106,7 @@
       <workItem from="1759428052711" duration="2981000" />
       <workItem from="1759573510817" duration="347000" />
       <workItem from="1759573908653" duration="2341000" />
+      <workItem from="1759616192994" duration="1682000" />
     </task>
     <servers />
   </component>

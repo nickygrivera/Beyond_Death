@@ -66,6 +66,27 @@ public abstract class Character : MonoBehaviour
     {
         return healthMax;
     }
+
+    public float GetAttackDistance()
+    {
+        return attackDistance;
+    }
+
+    public void SetAttackDistance(float newAttackDistance)
+    {
+        attackDistance = newAttackDistance;
+    }
+    
+    public float GetAttackCooldown()
+    {
+        return attackDistance;
+    }
+
+    public void SetAttackCooldown(float newAttackCooldown)
+    {
+        attackDistance = newAttackCooldown;
+    }
+    
     public virtual void Die()//para el override en los hijos
     {
 
@@ -80,9 +101,9 @@ public abstract class Character : MonoBehaviour
             Die();
         }
     }
-
+    
     public abstract void Attack();//player y enemigos los implementan
-
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
