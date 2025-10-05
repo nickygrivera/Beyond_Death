@@ -70,7 +70,7 @@ public class EnemyMovable : Character
         if (!_isAttacking)
             UpdateRotation();
 
-        float distance = Vector2.Distance(hitAnchor.position, player.transform.position);
+        float distance = Vector2.Distance(transform.position, player.transform.position);
         
         if (distance <= GetAttackDistance())
         {
@@ -96,9 +96,9 @@ public class EnemyMovable : Character
                 );
         }
         else
-        {
             sprite.flipX = false;
-        }
+        
+        //Rotación vertical
     }
     
     private void MoveToPlayer()
@@ -153,7 +153,7 @@ public class EnemyMovable : Character
         _attackCoroutine = null;
         
         //Hacer que el enemigo pueda volver a moverse
-        float distance = Vector2.Distance(hitAnchor.position, player.transform.position);
+        float distance = Vector2.Distance(transform.position, player.transform.position);
         if (distance > GetAttackDistance())
         {
             _state = CharacterState.Walk;
