@@ -31,10 +31,6 @@ public abstract class Character : MonoBehaviour
     //Getters y Setters
     public float GetHealthActual()
     {
-        if (healthActual <= 0)
-        {
-            Die();
-        }
         return healthActual;
     }
 
@@ -84,7 +80,7 @@ public abstract class Character : MonoBehaviour
 
     public void SetAttackCooldown(float newAttackCooldown)
     {
-        attackDistance = newAttackCooldown;
+        attackCooldown = newAttackCooldown;
     }
     
     public virtual void Die()//para el override en los hijos

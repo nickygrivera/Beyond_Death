@@ -411,8 +411,7 @@ public class Player : Character
             {
                 col.GetComponent<ITriggerEnter>()?.HitByPlayer(gameObject);
             }
-
-
+            
             StartCoroutine(WaitForAnimationToEnd(atk1Target));
         }
     }

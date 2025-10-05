@@ -17,7 +17,7 @@ public class EnemyMovable : Character
     private Rigidbody2D _rb;    //El rb y anim se podrian mover a character ya que lo tienen todos
     
     private bool _isAttacking;
-    private bool _canAttack;
+    private bool _canAttack = true;
     private bool _isDead;
     private CharacterState _state;
     
@@ -67,19 +67,19 @@ public class EnemyMovable : Character
     {
         if(_isDead || player == null) return;
         
-        float distance = Vector2.Distance(transform.position, player.transform.position);
+        float distance = Vector2.Distance(hitAnchor.position, player.transform.position);
 
         if (!_isAttacking)
         {
             if (player.transform.position.x < transform.position.x)
             {
                 sprite.flipX = true;
-                //hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
+                hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
             }
             else
             {
                 sprite.flipX = false;
-                //hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
+                hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
             }
         }
 
@@ -101,10 +101,7 @@ public class EnemyMovable : Character
         _rb.linearVelocity = direction * speed;
 
         if (_state != CharacterState.Walk)
-        {
             _state = CharacterState.Walk;
-            anim.SetBool(WalkAnimState, true);
-        }
     }
 
 
@@ -145,7 +142,7 @@ public class EnemyMovable : Character
         _canAttack = true;
         
         //Hacer que el enemigo pueda volver a moverse
-        float distance = Vector2.Distance(transform.position, player.transform.position);
+        float distance = Vector2.Distance(hitAnchor.position, player.transform.position);
         if (distance > GetAttackDistance())
         {
             _state = CharacterState.Walk;
