@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 /*
@@ -37,36 +35,36 @@ public class Player : Character
 
     //nombre EXACTOS de los estados
     //Estados de izquierda y derecha
-    private readonly int IdleAnimState = Animator.StringToHash("Player_Idle");
-    private readonly int WalkAnimState = Animator.StringToHash("Player_Walk");
-    private readonly int Attack1AnimState = Animator.StringToHash("Player_Attack1");
-    private readonly int Attack2AnimState = Animator.StringToHash("Player_Attack2");
-    private readonly int HitAnimState = Animator.StringToHash("Player_Hit");
-    private readonly int DeathAnimState = Animator.StringToHash("Player_Death");
-    private readonly int DashAnimState = Animator.StringToHash("Player_Dash");
+    private readonly int _idleAnimState = Animator.StringToHash("Player_Idle");
+    private readonly int _walkAnimState = Animator.StringToHash("Player_Walk");
+    private readonly int _attack1AnimState = Animator.StringToHash("Player_Attack1");
+    private readonly int _attack2AnimState = Animator.StringToHash("Player_Attack2");
+    private readonly int _hitAnimState = Animator.StringToHash("Player_Hit");
+    private readonly int _deathAnimState = Animator.StringToHash("Player_Death");
+    private readonly int _dashAnimState = Animator.StringToHash("Player_Dash");
 
 
     //Estados de front y bacj (w y s)
-    private readonly int IdleFrontAnimState = Animator.StringToHash("Player_Idle_Front");
-    private readonly int IdleBackAnimState = Animator.StringToHash("Player_Idle_Back");
+    private readonly int _idleFrontAnimState = Animator.StringToHash("Player_Idle_Front");
+    private readonly int _idleBackAnimState = Animator.StringToHash("Player_Idle_Back");
 
-    private readonly int WalkFrontAnimState = Animator.StringToHash("Player_Walk_Front");
-    private readonly int WalkBackAnimState = Animator.StringToHash("Player_Walk_Back");
+    private readonly int _walkFrontAnimState = Animator.StringToHash("Player_Walk_Front");
+    private readonly int _walkBackAnimState = Animator.StringToHash("Player_Walk_Back");
 
-    private readonly int Attack1FrontAnimState = Animator.StringToHash("Player_Attack1_Front");
-    private readonly int Attack1BackAnimState = Animator.StringToHash("Player_Attack1_Back");
+    private readonly int _attack1FrontAnimState = Animator.StringToHash("Player_Attack1_Front");
+    private readonly int _attack1BackAnimState = Animator.StringToHash("Player_Attack1_Back");
 
-    private readonly int Attack2FrontAnimState = Animator.StringToHash("Player_Attack2_Front");
-    private readonly int Attack2BackAnimState = Animator.StringToHash("Player_Attack2_Back");
+    private readonly int _attack2FrontAnimState = Animator.StringToHash("Player_Attack2_Front");
+    private readonly int _attack2BackAnimState = Animator.StringToHash("Player_Attack2_Back");
 
-    private readonly int DashFrontAnimState = Animator.StringToHash("Player_Dash_Front");
-    private readonly int DashBackAnimState = Animator.StringToHash("Player_Dash_Back");
+    private readonly int _dashFrontAnimState = Animator.StringToHash("Player_Dash_Front");
+    private readonly int _dashBackAnimState = Animator.StringToHash("Player_Dash_Back");
 
-    private readonly int DeathFrontAnimState = Animator.StringToHash("Player_Death_Front");
-    private readonly int DeathBackAnimState = Animator.StringToHash("Player_Death_Back");
+    private readonly int _deathFrontAnimState = Animator.StringToHash("Player_Death_Front");
+    private readonly int _deathBackAnimState = Animator.StringToHash("Player_Death_Back");
 
-    private readonly int HitFrontAnimState = Animator.StringToHash("Player_Hit_Front");
-    private readonly int HitBackAnimState = Animator.StringToHash("Player_Hit_Back");
+    private readonly int _hitFrontAnimState = Animator.StringToHash("Player_Hit_Front");
+    private readonly int _hitBackAnimState = Animator.StringToHash("Player_Hit_Back");
 
     //variables del codigo
     private Rigidbody2D _rb;
@@ -75,7 +73,7 @@ public class Player : Character
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
 
     private bool _isAttack = true;
-    private bool _isDashing = false;
+    private bool _isDashing;
     private bool _canDash = true;
 
     private CharacterState _state;
@@ -145,7 +143,7 @@ public class Player : Character
         {
             Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
 
-            Vector2 dir = (Vector2)(mouseWorld - transform.position);
+            Vector2 dir = mouseWorld - transform.position;
             if (dir.sqrMagnitude > 0.0001f)
             {
                 _animDir = dir.normalized;
@@ -193,19 +191,19 @@ public class Player : Character
                 bool aimVertical = IsVerticalDominant(_animDir);
                 if (aimVertical)
                 {
-                    idleTarget = (_animDir.y >= 0f) ? IdleBackAnimState : IdleFrontAnimState;
+                    idleTarget = (_animDir.y >= 0f) ? _idleBackAnimState : _idleFrontAnimState;
                 }
                 else
                 {
 
-                    idleTarget = IdleAnimState; //flipX a la izq
+                    idleTarget = _idleAnimState; //flipX a la izq
                 }
 
                 //si no esta en idle
                 if (_state != CharacterState.Idle)
                 {
                     _state = CharacterState.Idle;
-                    CrossFadeSafe(idleTarget, IdleAnimState, 0.2f);
+                    CrossFadeSafe(idleTarget, _idleAnimState, 0.2f);
                     _currentLocomotionHash = idleTarget;
                 }
                 else
@@ -213,7 +211,7 @@ public class Player : Character
                     // en idle mira la dir de  raton(arriba o abajo)
                     if (_currentLocomotionHash != idleTarget)
                     {
-                        CrossFadeSafe(idleTarget, IdleAnimState, 0.2f);
+                        CrossFadeSafe(idleTarget, _idleAnimState, 0.2f);
                         _currentLocomotionHash = idleTarget;
                     }
                 }
@@ -225,18 +223,18 @@ public class Player : Character
                 bool moveVertical = IsVerticalDominant(_movement);
                 if (moveVertical)
                 {
-                    walkTarget = (_movement.y >= 0f) ? WalkBackAnimState : WalkFrontAnimState;
+                    walkTarget = (_movement.y >= 0f) ? _walkBackAnimState : _walkFrontAnimState;
                 }
                 else
                 {
                     //
-                    walkTarget = WalkAnimState; //flipXva a la izq
+                    walkTarget = _walkAnimState; //flipXva a la izq
                 }
 
                 if (_state != CharacterState.Walk)
                 {
                     _state = CharacterState.Walk;
-                    CrossFadeSafe(walkTarget, WalkAnimState, 0.2f);
+                    CrossFadeSafe(walkTarget, _walkAnimState, 0.2f);
                     _currentLocomotionHash = walkTarget;
                 }
                 else
@@ -244,7 +242,7 @@ public class Player : Character
                     // en walk, cambia de vertical a horizontal o alrevés
                     if (_currentLocomotionHash != walkTarget)
                     {
-                        CrossFadeSafe(walkTarget, WalkAnimState, 0.1f);
+                        CrossFadeSafe(walkTarget, _walkAnimState, 0.1f);
                         _currentLocomotionHash = walkTarget;
                     }
                 }
@@ -301,21 +299,21 @@ public class Player : Character
         {
             if (_animDir.y >= 0f)
             {
-                dashTarget = DashBackAnimState;
+                dashTarget = _dashBackAnimState;
             }
 
             else
             {
-                dashTarget = DashFrontAnimState;
+                dashTarget = _dashFrontAnimState;
             }
 
         }
         else
         {
-            dashTarget = DashAnimState;
+            dashTarget = _dashAnimState;
         }
 
-        CrossFadeSafe(dashTarget, DashAnimState, 0f);
+        CrossFadeSafe(dashTarget, _dashAnimState, 0f);
 
 
         _rb.linearVelocity = _movement * dashSpeed;//dash
@@ -326,13 +324,13 @@ public class Player : Character
         if (_movement == Vector2.zero)
         {
             _state = CharacterState.Idle;
-            anim.CrossFadeInFixedTime(IdleAnimState, 0.1f);
+            anim.CrossFadeInFixedTime(_idleAnimState, 0.1f);
             _rb.linearVelocity = Vector2.zero;
         }
         else
         {
             _state = CharacterState.Walk;
-            anim.CrossFadeInFixedTime(WalkAnimState, 0.1f);
+            anim.CrossFadeInFixedTime(_walkAnimState, 0.1f);
             _rb.linearVelocity = _movement * moveSpeed;
         }
 
@@ -364,25 +362,25 @@ public class Player : Character
             verticalDominant = true;
         }
 
-        int atk1Target = Attack1AnimState;
+        int atk1Target;
 
         if (verticalDominant)
         {
             if (_animDir.y >= 0f)
             {
-                atk1Target = Attack1BackAnimState;
+                atk1Target = _attack1BackAnimState;
             }
             else
             {
-                atk1Target = Attack1FrontAnimState;
+                atk1Target = _attack1FrontAnimState;
             }
         }
         else
         {
-            atk1Target = Attack1AnimState;////
+            atk1Target = _attack1AnimState;////
         }
 
-        CrossFadeSafe(atk1Target, Attack1AnimState, 0f);
+        CrossFadeSafe(atk1Target, _attack1AnimState, 0f);
 
         //hitbox melee
         if (hitAnchor)
@@ -432,16 +430,16 @@ public class Player : Character
         if (verticalDominant)
         {
             if (_animDir.y >= 0f)
-                atk2Target = Attack2BackAnimState;
+                atk2Target = _attack2BackAnimState;
             else
-                atk2Target = Attack2FrontAnimState;
+                atk2Target = _attack2FrontAnimState;
         }
         else
         {
-            atk2Target = Attack2AnimState;
+            atk2Target = _attack2AnimState;
         }
 
-        CrossFadeSafe(atk2Target, Attack2AnimState, 0f);
+        CrossFadeSafe(atk2Target, _attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
     }
 
@@ -450,10 +448,7 @@ public class Player : Character
     //overrides de character
     public override void TakeDamage(float dmg)
     {
-        if (_state == CharacterState.Attack)
-        {
-            return;
-        }
+        
         if (_state == CharacterState.Die)
         {
             return;
@@ -472,25 +467,25 @@ public class Player : Character
                 verticalDominant = true;
             }
 
-            int deathTarget = DeathAnimState;
+            int deathTarget;
 
             if (verticalDominant)
             {
                 if (_animDir.y >= 0f)
                 {
-                    deathTarget = DeathBackAnimState;
+                    deathTarget = _deathBackAnimState;
                 }
                 else
                 {
-                    deathTarget = DeathFrontAnimState;
+                    deathTarget = _deathFrontAnimState;
                 }
             }
             else
             {
-                deathTarget = DeathFrontAnimState;
+                deathTarget = _deathFrontAnimState;
             }
 
-            CrossFadeSafe(deathTarget, DeathAnimState, 0f);
+            CrossFadeSafe(deathTarget, _deathAnimState, 0f);
         }
         else
         {
@@ -505,28 +500,28 @@ public class Player : Character
                 verticalDominant = true;
             }
 
-            int hitTarget = HitAnimState; // fallback genérico
+            int hitTarget; // fallback genérico
 
             if (verticalDominant)
             {
                 if (_animDir.y >= 0f)
                 {
-                    hitTarget = HitBackAnimState;//arriba
+                    hitTarget = _hitBackAnimState;//arriba
                 }
                 else
                 {
-                    hitTarget = HitFrontAnimState;//abajo
+                    hitTarget = _hitFrontAnimState;//abajo
                 }
             }
             else
             {
-                hitTarget = HitAnimState;//horizontal
+                hitTarget = _hitAnimState;//horizontal
             }
 
-            CrossFadeSafe(hitTarget, HitAnimState, 0f);
+            CrossFadeSafe(hitTarget, _hitAnimState, 0f);
 
             //espera al hit segun fallback
-            StartCoroutine(WaitForAnimationToEnd(hitTarget, HitAnimState));
+            StartCoroutine(WaitForAnimationToEnd(hitTarget, _hitAnimState));
         }
     }
 
@@ -560,7 +555,7 @@ public class Player : Character
         }
         //al acabar , vuelve a idle
         _state = CharacterState.Idle;
-        anim.CrossFadeInFixedTime(IdleAnimState, 0f);
+        anim.CrossFadeInFixedTime(_idleAnimState, 0f);
         _isAttack = true;
     }
 

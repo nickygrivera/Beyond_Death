@@ -53,14 +53,15 @@ public abstract class Character : MonoBehaviour
         damage = _damage;
     }
     
+    public float GetHealthMax()
+    {
+        return healthMax;
+    }
+    
     public void SetHealthMax(float _healtMax)//Cambiar para implementar la bar de vida y su logica
     {
         healthMax = _healtMax;
         healthActual = healthMax;
-    }
-    public float GetHealthMax()
-    {
-        return healthMax;
     }
 
     public float GetAttackDistance()
