@@ -276,7 +276,6 @@ public class Player : Character
     //Dash del player
     private void OnDashInput()
     {
-        Debug.Log("Dash");
         if (!_canDash || _state == CharacterState.Attack || _state == CharacterState.Hurt || _state == CharacterState.Die)
         {
             return;
@@ -289,7 +288,6 @@ public class Player : Character
 
     private IEnumerator Dash()
     {
-        Debug.Log("Dashing");
         _isDashing = true;
         _canDash = false;
 

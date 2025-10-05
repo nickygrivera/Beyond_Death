@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 /*
@@ -24,7 +25,7 @@ public class EnemyMovable : Character
     //Estados de izquierda y derecha
     private readonly int IdleAnimState = Animator.StringToHash("EnemyMelee_Idle");
     private readonly int WalkAnimState = Animator.StringToHash("EnemyMelee_Walk");
-    private readonly int Attack1AnimState = Animator.StringToHash("EnemyMelee_Attack");
+    private readonly int AttackAnimState = Animator.StringToHash("EnemyMelee_Attack");
     private readonly int HitAnimState = Animator.StringToHash("EnemyMelee_Hit");
     private readonly int DeathAnimState = Animator.StringToHash("EnemyMelee_Death");
     
@@ -35,8 +36,8 @@ public class EnemyMovable : Character
     private readonly int WalkFrontAnimState = Animator.StringToHash("EnemyMelee_Walk_Front");
     private readonly int WalkBackAnimState = Animator.StringToHash("EnemyMelee_Walk_Back");
 
-    private readonly int Attack1FrontAnimState = Animator.StringToHash("EnemyMelee_Attack_Front");
-    private readonly int Attack1BackAnimState = Animator.StringToHash("EnemyMelee_Attack_Back");
+    private readonly int AttackFrontAnimState = Animator.StringToHash("EnemyMelee_Attack_Front");
+    private readonly int AttackBackAnimState = Animator.StringToHash("EnemyMelee_Attack_Back");
 
     private readonly int DeathFrontAnimState = Animator.StringToHash("EnemyMelee_Death_Front");
     private readonly int DeathBackAnimState = Animator.StringToHash("EnemyMelee_Death_Back");
@@ -53,7 +54,7 @@ public class EnemyMovable : Character
 
     private void Start()
     {
-        //Esto se puede hacer en el editor, por si acaso
+        //Esto se puede hacer en el editor
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
         
@@ -70,10 +71,16 @@ public class EnemyMovable : Character
 
         if (!_isAttacking)
         {
-            if(player.transform.position.x < transform.position.x)
+            if (player.transform.position.x < transform.position.x)
+            {
                 sprite.flipX = true;
+                //hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
+            }
             else
+            {
                 sprite.flipX = false;
+                //hitAnchor.localPosition = new Vector2(-Mathf.Abs(hitAnchor.localPosition.x), hitAnchor.localPosition.y);
+            }
         }
 
         if (distance <= GetAttackDistance())
@@ -88,19 +95,102 @@ public class EnemyMovable : Character
 
     private void MoveToPlayer()
     {
+        if(_isAttacking || _state == CharacterState.Hurt || _state == CharacterState.Die) return;
         
+        Vector2 direction = (player.transform.position - transform.position).normalized;
+        _rb.linearVelocity = direction * speed;
+
+        if (_state != CharacterState.Walk)
+        {
+            _state = CharacterState.Walk;
+            anim.SetBool(WalkAnimState, true);
+        }
     }
 
 
     public override void Attack()
     {
-        throw new System.NotImplementedException();
+        StartCoroutine(AttackRoutine());
     }
-    
-    
-    /*override protected void Attack(_enemyHealth)
-    {
 
+    private IEnumerator AttackRoutine()
+    {
+        _isAttacking = true;
+        _canAttack = false;
+        _rb.linearVelocity = Vector2.zero;
+        _state = CharacterState.Attack;
+        
+        anim.CrossFadeInFixedTime(AttackAnimState, 0f);
+        
+        yield return new WaitForSeconds(0.15f); //Delay para permitir la animación antes del danio
+
+        if (hitAnchor != null)
+        {
+            Vector2 center = hitAnchor.position;
+            Collider2D[] hits = Physics2D.OverlapBoxAll(center, hitSize, 0);
+            foreach (Collider2D col in hits)
+            {
+                if ((col.CompareTag("Player")))
+                {
+                    Character playerChar = col.GetComponentInParent<Character>();
+                    if(playerChar != null)
+                        playerChar.TakeDamage(GetDamage());
+                }
+            }
+        }
+        
+        //Fin de animación de ataque
+        yield return new WaitForSeconds(GetAttackCooldown());
+        _isAttacking = false;
+        _canAttack = true;
+        
+        //Hacer que el enemigo pueda volver a moverse
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+        if (distance > GetAttackDistance())
+        {
+            _state = CharacterState.Walk;
+            anim.CrossFadeInFixedTime(WalkFrontAnimState, 0.1f);
+        }
+        else
+        {
+            _state = CharacterState.Idle;
+            anim.CrossFadeInFixedTime(IdleAnimState, 0.1f);
+        }
     }
-    */
+
+    public override void TakeDamage(float dmg)
+    {
+        if (_isDead)
+            return;
+        SetHealthActual(GetHealthActual() - dmg);
+
+        if (GetHealthActual() <= 0f)
+            Die();
+        else
+        {
+            _state = CharacterState.Hurt;
+            anim.CrossFadeInFixedTime(HitAnimState, 0.1f);
+            _rb.linearVelocity = Vector2.zero;
+            StartCoroutine(Recover());
+        }
+    }
+
+    private IEnumerator Recover()
+    {
+        yield return new WaitForSeconds(0.4f);
+        if (!_isDead)
+        {
+            _state = CharacterState.Idle;
+            anim.CrossFadeInFixedTime(IdleAnimState, 0.1f);
+        }
+    }
+
+    public override void Die()
+    {
+        _isDead = true;
+        _state = CharacterState.Die;
+        _rb.linearVelocity = Vector2.zero;
+        anim.CrossFadeInFixedTime(DeathAnimState, 0.1f);
+        Debug.Log("Enemy melee muerto");
+    }
 }
