@@ -86,7 +86,13 @@ public abstract class Character : MonoBehaviour
     
     public virtual void Die()//para el override en los hijos
     {
+        //si hay animacion de muerte habria que hacer play antes
+        if (gameObject.CompareTag("Player"))
+        {
+            //sacar pantalla de game over o cargar escena de game over
+        }
 
+        Destroy(this.gameObject);
     }
 
     public virtual void TakeDamage(float _damage)
