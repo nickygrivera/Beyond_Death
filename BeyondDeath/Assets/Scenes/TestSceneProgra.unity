@@ -236,7 +236,7 @@ MonoBehaviour:
   moveSpeed: 2
   anim: {fileID: 1106557292}
   spriteRenderer: {fileID: 1106557291}
-  dashSpeed: 16
+  dashSpeed: 11
   dashCooldown: 0.5
 --- !u!50 &582271985
 Rigidbody2D:
@@ -994,7 +994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210261338}
   - component: {fileID: 1210261337}
-  - component: {fileID: 1210261340}
+  - component: {fileID: 1210261343}
   - component: {fileID: 1210261339}
   - component: {fileID: 1210261341}
   - component: {fileID: 1210261342}
@@ -1105,8 +1105,54 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1210261340
-BoxCollider2D:
+--- !u!114 &1210261341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210261336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1365eb02027dd4a4fab95954ae87fc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 100
+  healthActual: 100
+  damage: 17
+  attackDistance: 1.3
+  attackCooldown: 0.5
+  hitAnchor: {fileID: 747620624}
+  bottomAnchor: {fileID: 949823740}
+  hitSize: {x: 1, y: 1}
+  player: {fileID: 1106557289}
+  speed: 1
+  anim: {fileID: 1210261342}
+  sprite: {fileID: 1210261337}
+--- !u!95 &1210261342
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210261336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 262c9ebc58cc89f49904eafe335ceed5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &1210261343
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1140,63 +1186,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1210261341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210261336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1365eb02027dd4a4fab95954ae87fc07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthMax: 100
-  healthActual: 100
-  damage: 17
-  attackDistance: 0.6
-  attackCooldown: 0.5
-  hitAnchor: {fileID: 747620624}
-  bottomAnchor: {fileID: 949823740}
-  hitSize: {x: 1, y: 1}
-  player: {fileID: 582271981}
-  speed: 1
-  anim: {fileID: 1210261342}
-  sprite: {fileID: 1210261337}
---- !u!95 &1210261342
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210261336}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 262c9ebc58cc89f49904eafe335ceed5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Radius: 0.5
 --- !u!1 &1524694706
 GameObject:
   m_ObjectHideFlags: 0

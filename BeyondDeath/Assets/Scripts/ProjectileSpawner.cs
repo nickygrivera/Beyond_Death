@@ -16,6 +16,7 @@ public class ProjectileSpawner : MonoBehaviour
 
     private bool _canSpawn = true;
 
+    /*
     private void Start()
     {
         InputManager.Instance.FirePerformed += OnFirePerformed;
@@ -58,4 +59,5 @@ public class ProjectileSpawner : MonoBehaviour
         projectile.gameObject.SetActive(false);
         projectile.transform.SetParent(projectilePool);
     }
+    */
 }

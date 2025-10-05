@@ -15,6 +15,7 @@ public class EnemyMovable : Character
     
     private Rigidbody2D _rb;    //El rb y anim se podrian mover a character ya que lo tienen todos
     private Coroutine _attackCoroutine;
+    private Vector2 _hitAnchorBasePos;
     
     private bool _isAttacking;
     private bool _canAttack = true;
@@ -61,6 +62,9 @@ public class EnemyMovable : Character
         SetHealthMax(100f);
         SetDamage(17f);
         _state = CharacterState.Idle;
+        
+        if(hitAnchor != null)
+            _hitAnchorBasePos = hitAnchor.localPosition;
     }
 
     private void Update()
@@ -89,16 +93,15 @@ public class EnemyMovable : Character
         //Rotacion horizontal
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            sprite.flipX = direction.x < 0;
-            hitAnchor.localPosition = new Vector2(
-                sprite.flipX ? -Mathf.Abs(hitAnchor.localPosition.x) : Mathf.Abs(hitAnchor.localPosition.x), 
-                hitAnchor.localPosition.y
-                );
+            bool facingLeft = direction.x < 0;
+            transform.localScale = new Vector3(facingLeft ? -1 : 1, 1, 1);
+            
         }
         else
             sprite.flipX = false;
         
         //Rotación vertical
+        
     }
     
     private void MoveToPlayer()
@@ -157,7 +160,6 @@ public class EnemyMovable : Character
         if (distance > GetAttackDistance())
         {
             _state = CharacterState.Walk;
-            anim.CrossFadeInFixedTime(_walkFrontAnimState, 0.1f);
         }
         else
         {
