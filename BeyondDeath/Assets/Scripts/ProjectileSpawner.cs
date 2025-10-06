@@ -1,6 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
+/*
+ Este codigo es el que se encarga de instanciar los proyectiles
+ */
 public class ProjectileSpawner : MonoBehaviour
 {
     [SerializeField] private Transform projectilePool;
@@ -22,6 +25,7 @@ public class ProjectileSpawner : MonoBehaviour
         InputManager.Instance.AttackDistancePerformed += OnAttackDistance;
     }
 
+    //gestiona si necesita crear nuevas instancias o reactivar instancias "durmientes" o si esta en cooldown
     private void OnAttackDistance()
     {
         if (!_canSpawn) return;
@@ -45,12 +49,14 @@ public class ProjectileSpawner : MonoBehaviour
         StartCoroutine(DestroyProjectile(projectile.GetComponent<Proyectile>()));
     }
 
+    //lo que gestiona cada cuanto se puede disparar
     private IEnumerator SpawnCooldown()
     {
-        yield return new WaitForSeconds(fireRate);
+        yield return new WaitForSeconds(fireRate); //fireRate es lo que lo limita, si se quiere cambiar modificar la variable
         _canSpawn = true;
     }
 
+    //gestiona la vida util del proyectil
     private IEnumerator DestroyProjectile(Proyectile projectile)
     {
         yield return new WaitForSeconds(projectileLifeTime);
