@@ -15,6 +15,9 @@ public class Proyectile : MonoBehaviour
 
     private Rigidbody2D _rb;
     private Animator _anim;
+    
+    //para guardar el personaje que dispara
+    private Character _owner;
 
     private void Awake()
     {
@@ -37,6 +40,8 @@ public class Proyectile : MonoBehaviour
     {
         _rb.linearVelocity = Vector2.zero; //detiene el movimiento
         projectile.SetActive(false);
+        //elimina el owner para poder reutilizarlo
+        _owner = null;
     }
 
     //activa los proyectiles cuando se demandan
@@ -49,14 +54,26 @@ public class Proyectile : MonoBehaviour
     //la funcion que gestiona las colisiones
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.gameObject.GetComponentInParent<Character>()) //para evitar que haga daño al ser disparado
+        Character targetCharacter = other.gameObject.GetComponent<Character>();
+        
+        //verifica que no es el mismo objeto
+        if (targetCharacter == null)
         {
-            other.gameObject.GetComponent<Character>().TakeDamage(damage);
-            if (explosionPrefab != null)
-            {
-                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            }
-            DestroyProjectile();
+            targetCharacter = other.gameObject.GetComponentInParent<Character>();
         }
+
+        //no es character o es el owner (no hace nada)
+        if (targetCharacter == null || targetCharacter == _owner)
+        {
+            return;
+        }
+
+        //si es character y es diferente al owner
+        targetCharacter.TakeDamage(damage);
+        if (explosionPrefab != null)
+        {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        }
+        DestroyProjectile();
     }
 }
