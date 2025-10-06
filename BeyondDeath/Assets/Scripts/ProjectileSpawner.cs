@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ProjectileSpawner : MonoBehaviour
@@ -15,14 +16,13 @@ public class ProjectileSpawner : MonoBehaviour
     [SerializeField] private float fireRate;
 
     private bool _canSpawn = true;
-
-    /*
+    
     private void Start()
     {
-        InputManager.Instance.FirePerformed += OnFirePerformed;
+        InputManager.Instance.AttackDistancePerformed += OnAttackDistance;
     }
 
-    private void attackDistancePerdormed()
+    private void OnAttackDistance()
     {
         if (!_canSpawn) return;
 
@@ -42,7 +42,7 @@ public class ProjectileSpawner : MonoBehaviour
             projectile.SetActive(true);
         }
         projectile.transform.SetParent(activeProjectilePool);
-        StartCoroutine(DestroyProjectile(projectile.GetComponent<Projectile>()));
+        StartCoroutine(DestroyProjectile(projectile.GetComponent<Proyectile>()));
     }
 
     private IEnumerator SpawnCooldown()
@@ -51,7 +51,7 @@ public class ProjectileSpawner : MonoBehaviour
         _canSpawn = true;
     }
 
-    private IEnumerator DestroyProjectile(Projectile projectile)
+    private IEnumerator DestroyProjectile(Proyectile projectile)
     {
         yield return new WaitForSeconds(projectileLifeTime);
         projectile.DestroyProjectile();
@@ -59,5 +59,4 @@ public class ProjectileSpawner : MonoBehaviour
         projectile.gameObject.SetActive(false);
         projectile.transform.SetParent(projectilePool);
     }
-    */
 }
