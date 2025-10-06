@@ -44,7 +44,7 @@ public class Player : Character
     private readonly int _dashAnimState = Animator.StringToHash("Player_Dash");
 
 
-    //Estados de front y bacj (w y s)
+    //Estados de front y back (w y s)
     private readonly int _idleFrontAnimState = Animator.StringToHash("Player_Idle_Front");
     private readonly int _idleBackAnimState = Animator.StringToHash("Player_Idle_Back");
 
