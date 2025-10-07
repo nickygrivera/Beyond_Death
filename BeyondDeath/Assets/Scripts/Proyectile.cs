@@ -18,6 +18,7 @@ public class Proyectile : MonoBehaviour
     
     //para guardar el personaje que dispara
     private Character _owner;
+    private LayerMask mask;
 
     private void Awake()
     {
@@ -48,28 +49,25 @@ public class Proyectile : MonoBehaviour
     private void ActivateProjectile()
     {
         projectile.SetActive(true);
+        _owner = transform.root.GetComponent<Character>();
+        //si lo instancia el player solo interactua con layer enemy
+        if (_owner.CompareTag("Player"))
+        {
+            mask = LayerMask.GetMask("Enemy");
+        }
+        //si lo instancia el enemy solo interactua con layer player
+        else if (_owner.CompareTag("Enemy"))
+        {
+            mask = LayerMask.GetMask("Player");
+        }
+        
         _rb.linearVelocity = transform.up * speed;
     }
 
     //la funcion que gestiona las colisiones
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Character targetCharacter = other.gameObject.GetComponent<Character>();
-        
-        //verifica que no es el mismo objeto
-        if (targetCharacter == null)
-        {
-            targetCharacter = other.gameObject.GetComponentInParent<Character>();
-        }
-
-        //no es character o es el owner (no hace nada)
-        if (targetCharacter == null || targetCharacter == _owner)
-        {
-            return;
-        }
-
-        //si es character y es diferente al owner
-        targetCharacter.TakeDamage(damage);
+        other.gameObject.GetComponent<Character>().TakeDamage(damage);
         if (explosionPrefab != null)
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
