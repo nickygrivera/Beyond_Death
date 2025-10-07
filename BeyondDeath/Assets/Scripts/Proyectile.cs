@@ -15,7 +15,7 @@ public class Proyectile : MonoBehaviour
 
     private Rigidbody2D _rb;
     private Animator _anim;
-    
+
     //para guardar el personaje que dispara
     private Character _owner;
     private LayerMask mask;
@@ -49,7 +49,7 @@ public class Proyectile : MonoBehaviour
     private void ActivateProjectile()
     {
         projectile.SetActive(true);
-        _owner = transform.root.GetComponent<Character>();
+        /*_owner = transform.root.GetComponent<Character>();
         //si lo instancia el player solo interactua con layer enemy
         if (_owner.CompareTag("Player"))
         {
@@ -59,9 +59,9 @@ public class Proyectile : MonoBehaviour
         else if (_owner.CompareTag("Enemy"))
         {
             mask = LayerMask.GetMask("Player");
-        }
-        
-        _rb.linearVelocity = transform.up * speed;
+        }*/
+
+        _rb.linearVelocity = transform.forward * speed;
     }
 
     //la funcion que gestiona las colisiones
@@ -72,6 +72,7 @@ public class Proyectile : MonoBehaviour
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
+
         DestroyProjectile();
     }
 }
