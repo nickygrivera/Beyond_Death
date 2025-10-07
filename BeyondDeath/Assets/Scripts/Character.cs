@@ -76,7 +76,7 @@ public abstract class Character : MonoBehaviour
     
     public float GetAttackCooldown()
     {
-        return attackDistance;
+        return attackCooldown;
     }
 
     public void SetAttackCooldown(float newAttackCooldown)

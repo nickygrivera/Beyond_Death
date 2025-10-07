@@ -1,25 +1,24 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class EnemyMovable : Character
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private float speed = 4f;
+    [SerializeField] private float speed = 3f;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
 
     private enum FacingDirection { Left, Right, Up, Down}
     private FacingDirection _facingDirection;
-
-    private Rigidbody2D _rb;    //El rb y anim se podrian mover a character ya que lo tienen todos
+    private CharacterState _state;
+    
+    private Rigidbody2D _rb;
     private Coroutine _attackCoroutine;
     
     private bool _isAttacking;
     private bool _canAttack = true;
     private bool _isDead;
-    private CharacterState _state;
     
     //nombre EXACTOS de los estados
     //Estados de izquierda y derecha
@@ -45,14 +44,14 @@ public class EnemyMovable : Character
     private readonly int _hitFrontAnimState = Animator.StringToHash("EnemyMelee_Hit_Front");
     private readonly int _hitBackAnimState = Animator.StringToHash("EnemyMelee_Hit_Back");
 
+    //Inicializar enemy
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         if(anim == null) anim = GetComponent<Animator>();
         if(sprite == null) sprite = GetComponent<SpriteRenderer>();
     }
-
-    //Inicializar enemy
+    
     private void Start()
     {
         SetHealthMax(100f);
@@ -60,7 +59,7 @@ public class EnemyMovable : Character
         _state = CharacterState.Idle;
     }
 
-    //Calcular posicion hacia el player y moverse hacia el
+    //Calcular posicion hacia el player y moverse hasta el
     private void Update()
     {
         if(_isDead || player == null) return;
@@ -81,26 +80,30 @@ public class EnemyMovable : Character
             MoveToPlayer();
     }
     
-    //Rotar enemy en el eje x
+    //Rotar enemy en base a la direccion en la que esta el player
     private void UpdateRotation()
          {
              Vector2 direction = (player.transform.position - transform.position).normalized;
              
-             
+             //Rotacion horizontal
              if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
              {
-                 //Rotacion horizontal
                  _facingDirection = direction.x < 0 ? FacingDirection.Left : FacingDirection.Right;
-                 Debug.Log("Rotacion horizontal enemy");
-                 //transform.localScale = new Vector3(_facingDirection == FacingDirection.Left ? -1 : 1, 1, 1);
-                 
+                 if (_facingDirection == FacingDirection.Left)
+                 {
+                     anim.CrossFadeInFixedTime(_walkAnimState, 0.1f);
+                 }
+                 else
+                 {
+                     anim.CrossFadeInFixedTime(_walkAnimState, 0.1f);
+                 }
              }
+             //Rotacion vertical
              else
              {
-                 //Vertical
                  _facingDirection = direction.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-                 Debug.Log("Rotacion vertical enemy");
-                 //transform.localScale = new Vector3(1, _facingDirection == FacingDirection.Down ? -1 : 1, 1);
+                 anim.CrossFadeInFixedTime(_facingDirection == FacingDirection.Up
+                     ? _walkFrontAnimState : _walkBackAnimState, 0.1f);
              }
          }
     
@@ -134,6 +137,7 @@ public class EnemyMovable : Character
         switch (_facingDirection)
         {
             case FacingDirection.Left:
+                //TODO: Animacion ataque izquierda
             case FacingDirection.Right:
                 anim.CrossFadeInFixedTime(_attackAnimState, 0f);
                 break;
@@ -201,7 +205,21 @@ public class EnemyMovable : Character
         else
         {
             _state = CharacterState.Idle;
-            anim.CrossFadeInFixedTime(_idleAnimState, 0.1f);
+            switch (_facingDirection)
+            {
+                case FacingDirection.Left:
+                    //TODO: Animacion Idle izquierda
+                    break;
+                case FacingDirection.Right:
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0.1f);
+                    break;
+                case FacingDirection.Up:
+                    anim.CrossFadeInFixedTime(_idleFrontAnimState, 0.1f);
+                    break;
+                case FacingDirection.Down:
+                    anim.CrossFadeInFixedTime(_idleBackAnimState, 0.1f);
+                    break;
+            }
         }
     }
 
@@ -226,6 +244,21 @@ public class EnemyMovable : Character
         else
         {
             _state = CharacterState.Hurt;
+            switch (_facingDirection)
+            {
+                case FacingDirection.Left:
+                    //TODO: Animacion hit izquierda
+                    break;
+                case FacingDirection.Right:
+                    anim.CrossFadeInFixedTime(_hitAnimState, 0.1f);
+                    break;
+                case FacingDirection.Up:
+                    anim.CrossFadeInFixedTime(_hitFrontAnimState, 0.1f);
+                    break;
+                case FacingDirection.Down:
+                    anim.CrossFadeInFixedTime(_hitBackAnimState, 0.1f);
+                    break;
+            }
             anim.CrossFadeInFixedTime(_hitAnimState, 0.1f);
             _rb.linearVelocity = Vector2.zero;
             StartCoroutine(Recover());
@@ -236,11 +269,22 @@ public class EnemyMovable : Character
     private IEnumerator Recover()
     {
         yield return new WaitForSeconds(0.4f);
-        if (!_isDead)
-        {
             _state = CharacterState.Idle;
-            anim.CrossFadeInFixedTime(_idleAnimState, 0.1f);
-        }
+            switch (_facingDirection)
+            {
+                case FacingDirection.Left:
+                    //TODO: Animacion Idle izquierda
+                    break;
+                case FacingDirection.Right:
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0.1f);
+                    break;
+                case FacingDirection.Up:
+                    anim.CrossFadeInFixedTime(_idleFrontAnimState, 0.1f);
+                    break;
+                case FacingDirection.Down:
+                    anim.CrossFadeInFixedTime(_idleBackAnimState, 0.1f);
+                    break;
+            }
     }
 
     //El enemy muere
@@ -249,7 +293,21 @@ public class EnemyMovable : Character
         _isDead = true;
         _state = CharacterState.Die;
         _rb.linearVelocity = Vector2.zero;
-        anim.CrossFadeInFixedTime(_deathAnimState, 0.1f);
+        switch (_facingDirection)
+        {
+            case FacingDirection.Left:
+                //TODO: Animacion muerte izquierda
+                break;
+            case FacingDirection.Right:
+                anim.CrossFadeInFixedTime(_deathAnimState, 0.1f);
+                break;
+            case FacingDirection.Up:
+                anim.CrossFadeInFixedTime(_deathFrontAnimState, 0.1f);
+                break;
+            case FacingDirection.Down:
+                anim.CrossFadeInFixedTime(_deathBackAnimState, 0.1f);
+                break;
+        }
         Debug.Log("Enemy melee muerto");
     }
 }

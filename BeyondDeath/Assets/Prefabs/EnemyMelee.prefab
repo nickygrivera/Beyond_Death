@@ -272,8 +272,8 @@ MonoBehaviour:
   hitSize: {x: 1.35, y: 1.35}
   player: {fileID: 0}
   speed: 1
-  anim: {fileID: 7354026199052388120}
-  sprite: {fileID: 5519204368739539889}
+  anim: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!95 &7354026199052388120
 Animator:
   serializedVersion: 7
