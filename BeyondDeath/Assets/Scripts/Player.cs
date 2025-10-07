@@ -493,7 +493,7 @@ public class Player : Character
             _isAttack = false;
             _rb.linearVelocity = Vector2.zero;
 
-            // === NUEVO: elegir Hit Front / Back según el ratón ===
+            //elegir front o back segun el raton
             bool verticalDominant = false;
             if (Mathf.Abs(_animDir.y) >= Mathf.Abs(_animDir.x))
             {
