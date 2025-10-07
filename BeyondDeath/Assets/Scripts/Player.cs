@@ -71,6 +71,7 @@ public class Player : Character
     private Vector2 _movement;//direccion del input
     private Vector2 _animDir = Vector2.right;//direccion del raton
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
+    bool isMoving;
 
     private bool _isAttack = true;
     private bool _isDashing;
@@ -155,7 +156,7 @@ public class Player : Character
         if (_state != CharacterState.Attack && _state != CharacterState.Dash)
         {
             float x;
-            bool isMoving = !IsNearlyZero(_movement);
+            isMoving = !IsNearlyZero(_movement);
 
             if (isMoving)
             {
@@ -182,7 +183,7 @@ public class Player : Character
 
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
-            bool isMoving = !IsNearlyZero(_movement);
+            isMoving = !IsNearlyZero(_movement);
 
             if (!isMoving)
             {
