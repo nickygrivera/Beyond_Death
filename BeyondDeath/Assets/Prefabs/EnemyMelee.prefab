@@ -266,7 +266,7 @@ MonoBehaviour:
   healthActual: 100
   damage: 17
   attackDistance: 1.6
-  attackCooldown: 0.5
+  attackCooldown: 1.2
   hitAnchor: {fileID: 5874937377646356399}
   bottomAnchor: {fileID: 2786749322739463451}
   hitSize: {x: 1.35, y: 1.35}
