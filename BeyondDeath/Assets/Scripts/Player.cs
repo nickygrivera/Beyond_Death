@@ -449,7 +449,12 @@ public class Player : Character
     //overrides de character
     public override void TakeDamage(float dmg)
     {
-        
+
+        if (_state == CharacterState.Dash || _isDashing)
+        {
+            return;
+        }
+
         if (_state == CharacterState.Die)
         {
             return;
@@ -554,10 +559,16 @@ public class Player : Character
             yield return null;
             stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         }
-        //al acabar , vuelve a idle
-        _state = CharacterState.Idle;
-        anim.CrossFadeInFixedTime(_idleAnimState, 0f);
-        _isAttack = true;
+        //si muere ,deja el loop y no vuelve a idle
+        if (_state != CharacterState.Die)
+        {
+            _state = CharacterState.Idle;
+            anim.CrossFadeInFixedTime(_idleAnimState, 0f);
+            _isAttack = true;
+        }//cambiara esto
+        //cuando muere hace loop de la anim de death , se puede hacer una corutina 
+        //que pare o congele la animacion , lo ideal seria ir con la logica de volver al inicio.
+
     }
 
     //ref de 1 parametro cuando no hay fallback
