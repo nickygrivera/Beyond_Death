@@ -71,6 +71,8 @@ public class Player : Character
     private Vector2 _movement;//direccion del input
     private Vector2 _animDir = Vector2.right;//direccion del raton
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
+    private Vector2 rawMove;//mira la direccion y prioriza las 4 dir
+
     bool isMoving;
 
     private bool _isAttack = true;
@@ -132,12 +134,38 @@ public class Player : Character
             return;
         }
 
+        /* //8 DIRECCIONES
+         * 
         //lectura de teclas y normaliza para evitar lo de la diagonal
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f)
         {
             _movement.Normalize();//corrige la diagonal
+        }*/
+
+
+        if (InputManager.Instance != null)
+        {
+            rawMove = InputManager.Instance.GetMovement();
         }
+        else
+        {
+            rawMove = Vector2.zero;
+        }
+
+        //mira el eje que mas predomina para los 4 card
+        if (Mathf.Abs(rawMove.x) > Mathf.Abs(rawMove.y))
+        {
+            rawMove.y = 0f;//horizontal
+        }
+        else if (Mathf.Abs(rawMove.y) > 0f)
+        {
+            rawMove.x = 0f;//vertical
+        }
+
+        _movement = rawMove.normalized;//normaliza en ese eje
+
+
 
         //dir del ratón para decidir front o back
         if (InputManager.Instance != null)
@@ -408,9 +436,20 @@ public class Player : Character
 
             foreach (var col in results)
             {
-                col.GetComponent<ITriggerEnter>()?.HitByPlayer(gameObject);
+                if (col.CompareTag("Enemy"))
+                {
+                    //mira si es un character
+                    Character enemyChar = col.GetComponentInParent<Character>();
+
+                    if (enemyChar != null)
+                    {
+                        //enemigo recibe danio
+                        enemyChar.TakeDamage(GetDamage());
+
+                    }
+                }
             }
-            
+
             StartCoroutine(WaitForAnimationToEnd(atk1Target));
         }
     }
