@@ -132,12 +132,29 @@ public class Player : Character
             return;
         }
 
+        /*
         //lectura de teclas y normaliza para evitar lo de la diagonal
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f)
         {
             _movement.Normalize();//corrige la diagonal
+        }*/
+
+        Vector2 rawMove = (InputManager.Instance != null) ? InputManager.Instance.GetMovement() : Vector2.zero;
+
+        //mira el eje que mas predomina para los 4 card
+        if (Mathf.Abs(rawMove.x) > Mathf.Abs(rawMove.y))
+        {
+            rawMove.y = 0f;//horizontal
         }
+        else if (Mathf.Abs(rawMove.y) > 0f)
+        {
+            rawMove.x = 0f;//vertical
+        }
+        
+        _movement = rawMove.normalized;//normaliza en ese eje
+
+
 
         //dir del ratón para decidir front o back
         if (InputManager.Instance != null)
