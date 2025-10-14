@@ -27,6 +27,8 @@ public abstract class Character : MonoBehaviour
     [SerializeField] public Transform bottomAnchor;//punto en los pies (amarillo) 
     [SerializeField] public Vector2 hitSize;//area del golpe
 
+    private bool _hasDied;
+
 
     //Getters y Setters
     public float GetHealthActual()
@@ -89,6 +91,13 @@ public abstract class Character : MonoBehaviour
         //si hay animacion de muerte habria que hacer play antes
         if (gameObject.CompareTag("Player"))
         {
+            //para que reviva una vez
+            if (!_hasDied)
+            {
+                SetHealthMax(healthMax*0.8f); //por lo que se reestablece la vida
+                _hasDied = true;
+            }
+            
             //sacar pantalla de game over o cargar escena de game over
         }
 

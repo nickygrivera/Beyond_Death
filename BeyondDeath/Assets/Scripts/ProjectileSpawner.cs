@@ -46,7 +46,7 @@ public class ProjectileSpawner : MonoBehaviour
             projectile.SetActive(true);
         }
         projectile.transform.SetParent(activeProjectilePool);
-        StartCoroutine(DestroyProjectile(projectile.GetComponent<Proyectile>()));
+        StartCoroutine(DestroyProjectile(projectile.GetComponent<Projectile>()));
     }
 
     //lo que gestiona cada cuanto se puede disparar
@@ -57,7 +57,7 @@ public class ProjectileSpawner : MonoBehaviour
     }
 
     //gestiona la vida util del proyectil
-    private IEnumerator DestroyProjectile(Proyectile projectile)
+    private IEnumerator DestroyProjectile(Projectile projectile)
     {
         yield return new WaitForSeconds(projectileLifeTime);
         projectile.DestroyProjectile();
