@@ -71,6 +71,8 @@ public class Player : Character
     private Vector2 _movement;//direccion del input
     private Vector2 _animDir = Vector2.right;//direccion del raton
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
+    private Vector2 rawMove;//mira la direccion y prioriza las 4 dir
+
     bool isMoving;
 
     private bool _isAttack = true;
@@ -132,7 +134,8 @@ public class Player : Character
             return;
         }
 
-        /*
+        /* //8 DIRECCIONES
+         * 
         //lectura de teclas y normaliza para evitar lo de la diagonal
         _movement = InputManager.Instance != null ? InputManager.Instance.GetMovement() : Vector2.zero;
         if (_movement.sqrMagnitude > 1f)
@@ -140,7 +143,15 @@ public class Player : Character
             _movement.Normalize();//corrige la diagonal
         }*/
 
-        Vector2 rawMove = (InputManager.Instance != null) ? InputManager.Instance.GetMovement() : Vector2.zero;
+
+        if (InputManager.Instance != null)
+        {
+            rawMove = InputManager.Instance.GetMovement();
+        }
+        else
+        {
+            rawMove = Vector2.zero;
+        }
 
         //mira el eje que mas predomina para los 4 card
         if (Mathf.Abs(rawMove.x) > Mathf.Abs(rawMove.y))
