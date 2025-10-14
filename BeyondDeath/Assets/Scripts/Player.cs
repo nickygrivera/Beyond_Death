@@ -408,7 +408,18 @@ public class Player : Character
 
             foreach (var col in results)
             {
-                col.GetComponent<ITriggerEnter>()?.HitByPlayer(gameObject);
+                if (col.CompareTag("Enemy"))
+                {
+                    //mira si es un character
+                    Character enemyChar = col.GetComponentInParent<Character>();
+
+                    if (enemyChar != null)
+                    {
+                        //enemigo recibe danio
+                        enemyChar.TakeDamage(GetDamage());
+
+                    }
+                }
             }
             
             StartCoroutine(WaitForAnimationToEnd(atk1Target));
