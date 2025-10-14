@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    [SerializeField] private string _gameScene;
-
+ 
     private void Awake()
     {
         if (Instance == null)
@@ -26,7 +25,7 @@ public class UIManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void LoadGame()
+    public void LoadGame(string _gameScene)
     {
         SceneManager.LoadScene(_gameScene);
     }
