@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3405476699513616623}
   - component: {fileID: 825701268926208572}
-  - component: {fileID: -407464118394078097}
   - component: {fileID: -2380164091812741110}
+  - component: {fileID: 488863386952353304}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5122068093936902183}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7201556, w: 0.6938126}
-  m_LocalPosition: {x: 0.72, y: -0.82612, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70888436, w: 0.70532477}
+  m_LocalPosition: {x: 0.7199192, y: -0.8299433, z: 0}
   m_LocalScale: {x: 0.56159, y: 0.56159, z: 0.56159}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -92.135}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.288}
 --- !u!212 &825701268926208572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,22 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-407464118394078097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5122068093936902183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ca5b5724de29242ad7ecdb5b604d63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  damage: 10
-  projectile: {fileID: 5122068093936902183}
-  explosionPrefab: {fileID: 4512595485385902885, guid: 3de6d4dacc2b8d540a780b06ddd3a2ad, type: 3}
 --- !u!50 &-2380164091812741110
 Rigidbody2D:
   serializedVersion: 5
@@ -113,14 +97,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5122068093936902183}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -132,3 +116,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &488863386952353304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5122068093936902183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a709eea5a1aab7c4a858dba6d7401d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  damage: 10
+  projectile: {fileID: 5122068093936902183}
+  explosionPrefab: {fileID: 4512595485385902885, guid: 3de6d4dacc2b8d540a780b06ddd3a2ad, type: 3}

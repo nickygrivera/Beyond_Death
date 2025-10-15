@@ -53,7 +53,7 @@ public class Projectile : MonoBehaviour
         
         /*poner owner y layerMap*/
         
-        _rb.linearVelocity = transform.forward * speed;
+        _rb.linearVelocity = transform.right * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
