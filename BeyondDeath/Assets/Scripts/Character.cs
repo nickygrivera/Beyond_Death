@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /*
@@ -86,6 +87,16 @@ public abstract class Character : MonoBehaviour
         attackCooldown = newAttackCooldown;
     }
     
+    public bool GetHasDied()
+    {
+        return _hasDied;
+    }
+
+    public void SetHasDied(bool hasDied)
+    {
+        _hasDied = hasDied;
+    }
+
     public virtual void Die()//para el override en los hijos
     {
         //si hay animacion de muerte habria que hacer play antes
@@ -123,4 +134,4 @@ public abstract class Character : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawCube(bottomAnchor.position, new Vector2(0.1f, 0.1f));
     }
-}   
+}

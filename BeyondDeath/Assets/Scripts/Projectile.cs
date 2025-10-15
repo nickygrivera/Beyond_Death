@@ -1,68 +1,56 @@
-using System;
 using UnityEngine;
-
-/*
- El proyectil como tal lo que lo dispara y lo gestiona es el Spawner
- IMPORTANTE los proyectiles NO se destruyen, se desactivan 
- */
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float damage;
-    
-    [SerializeField] private GameObject projectile;
-    [SerializeField] private GameObject explosionPrefab;
-    
+    private Vector2 _direction;
+    private float _speed;
+    private float _damage;
     private Rigidbody2D _rb;
-    private Animator _anim;
-    
-    //para guardar el personaje que dispara
-    private Character _owner;
-    private LayerMask mask;
+    [SerializeField] private float lifeTime = 3f;
+
+    //Inicializacion desde el enemigo
+    public void Init(Vector2 direction, float speed, float damage)
+    {
+        _direction = direction.normalized;
+        _speed = speed;
+        _damage = damage;
+    }
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _anim = GetComponent<Animator>();
-    }
-    
-    void Start()
-    {
-        ActivateProjectile();
     }
 
-    private void OnEnable()
+    private void Start()
     {
-        ActivateProjectile();
+        if (_rb != null)
+            _rb.linearVelocity = _direction * _speed;
+        Destroy(gameObject, lifeTime);
     }
 
-    //se llama destroy pero lo que hace es desactivarlo para revisarlo cuando se necesite
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Los proyectiles hacen danio al jugador
+        if (collision.CompareTag("Player"))
+        {
+            Character playerChar = collision.GetComponentInParent<Character>();
+            if (playerChar != null)
+                playerChar.TakeDamage(_damage);
+            Destroy(gameObject);
+        }
+        
+        //TODO: Los proyectiles danian a otros enemigos
+        
+        //Se destruyen si choca con algo que no sea enemigo o jugador
+        else if (!collision.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void DestroyProjectile()
     {
-        _rb.linearVelocity = Vector2.zero; //detiene el movimiento
-        projectile.SetActive(false);
-        //elimina el owner para poder reutilizarlo
-        _owner = null;
-    }
-    
-    //activa los proyectiles cuando se demandan
-    private void ActivateProjectile()
-    {
-        projectile.SetActive(true);
-        
-        /*poner owner y layerMap*/
-        
-        _rb.linearVelocity = transform.right * speed;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        other.gameObject.GetComponent<Character>().TakeDamage(damage);
-        if (explosionPrefab != null)
-        {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        }
-        DestroyProjectile();
+        //gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

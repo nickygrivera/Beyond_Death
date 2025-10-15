@@ -124,7 +124,7 @@ public class EnemyMovable : Character
                      _facingDirection = FacingDirection.DownLeft;
                      sprite.flipX = true;
                      anim.CrossFadeInFixedTime(_walkDownRightAnimState, 0.1f);
-                 }
+                 } 
              //Horizontales
              } else if (absX > absY)
              {
