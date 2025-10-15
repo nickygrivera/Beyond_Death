@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: 7e0d3ec9e6a010549b361e400815f2b8
+guid: 875c820f64390f240b24b09c1ba35a46
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6519938298016937865
-    second: ciclocaminar_izquierda1_0
+      213: 3472477817372104575
+    second: Player_Attack1_F_0
   - first:
-      213: -3373460647304877766
-    second: ciclocaminar_izquierda1_1
+      213: 1308623166771782096
+    second: Player_Attack1_F_1
   - first:
-      213: 8559032212204345610
-    second: ciclocaminar_izquierda1_2
+      213: -8817299408457823879
+    second: Player_Attack1_F_2
   - first:
-      213: 6101465430021328936
-    second: ciclocaminar_izquierda1_3
+      213: 6131799685236116531
+    second: Player_Attack1_F_3
   - first:
-      213: 4324474234389942204
-    second: ciclocaminar_izquierda1_4
+      213: -8929173503382525281
+    second: Player_Attack1_F_4
   - first:
-      213: -8345083132231452185
-    second: ciclocaminar_izquierda1_5
+      213: -5501286515649131874
+    second: Player_Attack1_F_5
   - first:
-      213: 6793418288222317847
-    second: ciclocaminar_izquierda1_6
+      213: -5698435921355956931
+    second: Player_Attack1_F_6
   - first:
-      213: -7738001961348377885
-    second: ciclocaminar_izquierda1_7
+      213: 6885607429354820485
+    second: Player_Attack1_F_7
+  - first:
+      213: 7429875745800286097
+    second: Player_Attack1_F_8
+  - first:
+      213: 4035285677333597225
+    second: Player_Attack1_F_9
+  - first:
+      213: 8547039427903661526
+    second: Player_Attack1_F_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,177 +130,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ciclocaminar_izquierda1_0
+      name: Player_Attack1_F_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 642
-        width: 312
-        height: 413
+        x: 109
+        y: 1005
+        width: 233
+        height: 479
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7784c3d79a68485a0800000000000000
-      internalID: -6519938298016937865
+      spriteID: f7753ea4d28b03030800000000000000
+      internalID: 3472477817372104575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ciclocaminar_izquierda1_1
+      name: Player_Attack1_F_2
       rect:
         serializedVersion: 2
-        x: 523
-        y: 638
-        width: 254
+        x: 449
+        y: 1006
+        width: 230
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9790c9077e8a2a580800000000000000
+      internalID: -8817299408457823879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack1_F_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1006
+        width: 272
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cc9587357881550800000000000000
+      internalID: 6131799685236116531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack1_F_4
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1006
+        width: 321
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aed09e104351480800000000000000
+      internalID: -8929173503382525281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack1_F_5
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1005
+        width: 358
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a4613af0187a3b0800000000000000
+      internalID: -5501286515649131874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack1_F_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 511
+        width: 379
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d904c98b61be0b0800000000000000
+      internalID: -5698435921355956931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Attack1_F_7
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 511
+        width: 444
         height: 458
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3922a52a6f0f21d0800000000000000
-      internalID: -3373460647304877766
+      spriteID: 5831c79b9779e8f50800000000000000
+      internalID: 6885607429354820485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ciclocaminar_izquierda1_2
+      name: Player_Attack1_F_8
       rect:
         serializedVersion: 2
-        x: 879
-        y: 642
-        width: 132
-        height: 454
+        x: 1031
+        y: 511
+        width: 472
+        height: 459
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a09d095037ac7c670800000000000000
-      internalID: 8559032212204345610
+      spriteID: 19f67b920a83c1760800000000000000
+      internalID: 7429875745800286097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ciclocaminar_izquierda1_3
+      name: Player_Attack1_F_9
       rect:
         serializedVersion: 2
-        x: 1113
-        y: 642
-        width: 272
-        height: 441
+        x: 1545
+        y: 511
+        width: 443
+        height: 461
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8205fbd4b72cca450800000000000000
-      internalID: 6101465430021328936
+      spriteID: 92cc0b491f6300830800000000000000
+      internalID: 4035285677333597225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ciclocaminar_izquierda1_4
+      name: Player_Attack1_F_10
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 633
-        width: 322
-        height: 443
+        x: 109
+        y: 3
+        width: 384
+        height: 482
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbf4425776e930c30800000000000000
-      internalID: 4324474234389942204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ciclocaminar_izquierda1_5
-      rect:
-        serializedVersion: 2
-        x: 872
-        y: 81
-        width: 211
-        height: 475
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e97d3afa1f403c80800000000000000
-      internalID: -8345083132231452185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ciclocaminar_izquierda1_6
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 79
-        width: 147
-        height: 457
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71d2228a0f1174e50800000000000000
-      internalID: 6793418288222317847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ciclocaminar_izquierda1_7
-      rect:
-        serializedVersion: 2
-        x: 1478
-        y: 79
-        width: 464
-        height: 447
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e2dd8eb6381d9490800000000000000
-      internalID: -7738001961348377885
+      spriteID: 6d5a475531f2d9670800000000000000
+      internalID: 8547039427903661526
       vertices: []
       indices: 
       edges: []
@@ -300,7 +353,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c1f0da025400d164893f81c522a36cbc
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +363,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ciclocaminar_izquierda1_0: -6519938298016937865
-      ciclocaminar_izquierda1_1: -3373460647304877766
-      ciclocaminar_izquierda1_2: 8559032212204345610
-      ciclocaminar_izquierda1_3: 6101465430021328936
-      ciclocaminar_izquierda1_4: 4324474234389942204
-      ciclocaminar_izquierda1_5: -8345083132231452185
-      ciclocaminar_izquierda1_6: 6793418288222317847
-      ciclocaminar_izquierda1_7: -7738001961348377885
+      Player_Attack1_F_0: 3472477817372104575
+      Player_Attack1_F_1: 1308623166771782096
+      Player_Attack1_F_10: 8547039427903661526
+      Player_Attack1_F_2: -8817299408457823879
+      Player_Attack1_F_3: 6131799685236116531
+      Player_Attack1_F_4: -8929173503382525281
+      Player_Attack1_F_5: -5501286515649131874
+      Player_Attack1_F_6: -5698435921355956931
+      Player_Attack1_F_7: 6885607429354820485
+      Player_Attack1_F_8: 7429875745800286097
+      Player_Attack1_F_9: 4035285677333597225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

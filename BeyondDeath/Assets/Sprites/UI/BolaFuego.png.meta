@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 379afeb54ab9c074da2f1256b0588f9c
+guid: f632fd54a9d7b52409baffd38368cade
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4170335152230521781
-    second: ataquedistancia_0
-  - first:
-      213: 8555088372839247271
-    second: ataquedistancia_1
-  - first:
-      213: -6146502027443622114
-    second: ataquedistancia_2
-  - first:
-      213: -6236813100386700258
-    second: ataquedistancia_3
+      213: 6293972708541611500
+    second: BolaFuego_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ataquedistancia_0
+      name: BolaFuego_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 146
-        width: 412
-        height: 481
+        x: 14
+        y: 102
+        width: 1127
+        height: 1094
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bb560fb9b100e930800000000000000
-      internalID: 4170335152230521781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ataquedistancia_1
-      rect:
-        serializedVersion: 2
-        x: 569
-        y: 146
-        width: 366
-        height: 484
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ad682d5c87c9b670800000000000000
-      internalID: 8555088372839247271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ataquedistancia_2
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 146
-        width: 282
-        height: 515
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1f210bb8fc33baa0800000000000000
-      internalID: -6146502027443622114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ataquedistancia_3
-      rect:
-        serializedVersion: 2
-        x: 1330
-        y: 146
-        width: 240
-        height: 488
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e14b2fc77836279a0800000000000000
-      internalID: -6236813100386700258
+      spriteID: ced30aed4dea85750800000000000000
+      internalID: 6293972708541611500
       vertices: []
       indices: 
       edges: []
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ataquedistancia_0: 4170335152230521781
-      ataquedistancia_1: 8555088372839247271
-      ataquedistancia_2: -6146502027443622114
-      ataquedistancia_3: -6236813100386700258
+      BolaFuego_0: 6293972708541611500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
