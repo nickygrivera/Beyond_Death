@@ -326,16 +326,7 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            if (_animDir.y >= 0f)
-            {
-                dashTarget = _dashBackAnimState;
-            }
-
-            else
-            {
-                dashTarget = _dashFrontAnimState;
-            }
-
+            dashTarget = (_animDir.y >= 0f) ? _dashBackAnimState : _dashFrontAnimState;
         }
         else
         {
@@ -395,14 +386,8 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            if (_animDir.y >= 0f)
-            {
-                atk1Target = _attack1BackAnimState;
-            }
-            else
-            {
-                atk1Target = _attack1FrontAnimState;
-            }
+            atk1Target = (_animDir.y >= 0f) ? _attack1BackAnimState : _attack1FrontAnimState;
+
         }
         else
         {
@@ -423,12 +408,18 @@ public class Player : Character
             else
             {
                 if (spriteRenderer.flipX)
+                {
                     forward = Vector2.left;
+                }
                 else
+                {
                     forward = Vector2.right;
+                }
+                  
             }
 
             float forwardOffset = 0.4f;
+
             Vector2 center = (Vector2)hitAnchor.position + forward * forwardOffset;
             float angleDeg = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 
@@ -470,9 +461,14 @@ public class Player : Character
         if (verticalDominant)
         {
             if (_animDir.y >= 0f)
+            {
                 atk2Target = _attack2BackAnimState;
+            }
             else
+            {
                 atk2Target = _attack2FrontAnimState;
+            }
+               
         }
         else
         {
@@ -516,14 +512,8 @@ public class Player : Character
 
             if (verticalDominant)
             {
-                if (_animDir.y >= 0f)
-                {
-                    deathTarget = _deathBackAnimState;
-                }
-                else
-                {
-                    deathTarget = _deathFrontAnimState;
-                }
+                deathTarget = (_animDir.y >= 0f) ? _deathBackAnimState : _deathFrontAnimState;
+
             }
             else
             {
@@ -549,14 +539,8 @@ public class Player : Character
 
             if (verticalDominant)
             {
-                if (_animDir.y >= 0f)
-                {
-                    hitTarget = _hitBackAnimState;//arriba
-                }
-                else
-                {
-                    hitTarget = _hitFrontAnimState;//abajo
-                }
+                hitTarget = (_animDir.y >= 0f) ? _hitBackAnimState : _hitFrontAnimState; // arriba : abajo
+
             }
             else
             {
@@ -589,6 +573,7 @@ public class Player : Character
         while (stateInfo.shortNameHash != preferredState && stateInfo.shortNameHash != fallbackState)
         {
             yield return null;
+
             stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         }
 
@@ -596,18 +581,18 @@ public class Player : Character
         while (stateInfo.normalizedTime < 1f)
         {
             yield return null;
+
             stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         }
         //si muere ,deja el loop y no vuelve a idle
         if (_state != CharacterState.Die)
         {
             _state = CharacterState.Idle;
+
             anim.CrossFadeInFixedTime(_idleAnimState, 0f);
             _isAttack = true;
-        }//cambiara esto
-        //cuando muere hace loop de la anim de death , se puede hacer una corutina 
-        //que pare o congele la animacion , lo ideal seria ir con la logica de volver al inicio.
-
+        }
+        
     }
 
     //ref de 1 parametro cuando no hay fallback
