@@ -23,23 +23,15 @@ public class EnemyStatic : Character
     private bool _canAttack = true;
     
     //nombre EXACTOS de los estados
-    //Estados de izquierda y derecha
     private readonly int _idleAnimState = Animator.StringToHash("EnemyDistance_Idle");
-    private readonly int _walkAnimState = Animator.StringToHash("EnemyDistance_Walk");
     private readonly int _attackAnimState = Animator.StringToHash("EnemyDistance_Attack");
     private readonly int _hitAnimState = Animator.StringToHash("EnemyDistance_Hit");
     private readonly int _deathAnimState = Animator.StringToHash("EnemyDistance_Death");
-    
-    //Estados de front y back (w y s)
+
     private readonly int _idleFrontAnimState = Animator.StringToHash("EnemyDistance_Idle_Front");
     private readonly int _idleBackAnimState = Animator.StringToHash("EnemyDistance_Idle_Back");
     private readonly int _idleUpRightAnimState = Animator.StringToHash("EnemyDistance_Idle_UpRight");
     private readonly int _idleDownRightAnimState = Animator.StringToHash("EnemyDistance_Idle_DownRight");
-    
-    private readonly int _walkFrontAnimState = Animator.StringToHash("EnemyDistance_Walk_Front");
-    private readonly int _walkBackAnimState = Animator.StringToHash("EnemyDistance_Walk_Back");
-    private readonly int _walkUpRightAnimState = Animator.StringToHash("EnemyDistance_Walk_UpRight");
-    private readonly int _walkDownRightAnimState = Animator.StringToHash("EnemyDistance_Walk_DownRight");
     
     private readonly int _attackFrontAnimState = Animator.StringToHash("EnemyDistance_Attack_Front");
     private readonly int _attackBackAnimState = Animator.StringToHash("EnemyDistance_Attack_Back");
@@ -103,39 +95,32 @@ public class EnemyStatic : Character
                  {
                      _facingDirection = FacingDirection.UpRight;
                      sprite.flipX = false;
-                     anim.CrossFadeInFixedTime(_walkUpRightAnimState, 0.1f);
                  }
                  else if (direction.x < 0 && direction.y > 0)
                  {
                      _facingDirection = FacingDirection.UpLeft;
                      sprite.flipX = true;
-                     anim.CrossFadeInFixedTime(_walkUpRightAnimState, 0.1f);
                  }
                  else if (direction.x > 0 && direction.y < 0)
                  {
                      _facingDirection = FacingDirection.DownRight;
                      sprite.flipX = false;
-                     anim.CrossFadeInFixedTime(_walkDownRightAnimState, 0.1f);
                  }
                  else if (direction.x < 0 && direction.y < 0)
                  {
                      _facingDirection = FacingDirection.DownLeft;
                      sprite.flipX = true;
-                     anim.CrossFadeInFixedTime(_walkDownRightAnimState, 0.1f);
                  }
              //Horizontales
              } else if (absX > absY)
              {
                  _facingDirection = direction.x < 0 ? FacingDirection.Left : FacingDirection.Right;
                  sprite.flipX = _facingDirection == FacingDirection.Left;
-                 anim.CrossFadeInFixedTime(_walkAnimState, 0.1f);
              }
              //verticales
              else
              {
                  _facingDirection = direction.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-                 anim.CrossFadeInFixedTime(_facingDirection == FacingDirection.Up
-                     ? _walkFrontAnimState : _walkBackAnimState, 0.1f);
              }
          }
     
@@ -256,7 +241,6 @@ public class EnemyStatic : Character
         }
         
         SetHealthActual(GetHealthActual() - dmg);
-        Debug.Log("Vida enemy: "+ GetHealthActual());
         
         if (GetHealthActual() <= 0f)
             Die();
@@ -380,7 +364,6 @@ public class EnemyStatic : Character
                 anim.CrossFadeInFixedTime(_deathDownRightAnimState, 0.1f);
                 break;
         }
-        Debug.Log("Enemy Distance muerto");
         Destroy(gameObject, 2f);    //Tiempo de espera de 2 segundos antes de que se destruya el gameobject
     }
 }

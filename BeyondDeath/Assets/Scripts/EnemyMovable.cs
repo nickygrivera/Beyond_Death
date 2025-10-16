@@ -301,7 +301,6 @@ public class EnemyMovable : Character
         }
         
         SetHealthActual(GetHealthActual() - dmg);
-        Debug.Log("Vida enemy: "+ GetHealthActual());
         
         if (GetHealthActual() <= 0f)
             Die();
@@ -425,7 +424,6 @@ public class EnemyMovable : Character
                 anim.CrossFadeInFixedTime(_deathDownRightAnimState, 0.1f);
                 break;
         }
-        Debug.Log("Enemy melee muerto");
         Destroy(gameObject, 2f);
     }
 }

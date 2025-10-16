@@ -683,7 +683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1287024119082005626, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5386573537401214815, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -781,6 +781,10 @@ PrefabInstance:
     - target: {fileID: 3320818141726798343, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
       propertyPath: m_Name
       value: EnemyDistance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320818141726798343, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3320818141726798343, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
       propertyPath: m_TagString
@@ -922,6 +926,10 @@ PrefabInstance:
     - target: {fileID: 8292354405366153554, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
       propertyPath: m_Name
       value: EnemyMelee
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292354405366153554, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8292354405366153554, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
       propertyPath: m_IsActive

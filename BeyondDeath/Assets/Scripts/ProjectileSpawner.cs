@@ -7,11 +7,17 @@ using UnityEngine;
 public class ProjectileSpawner : MonoBehaviour
 {
     [SerializeField] private Transform projectilePool;
+
     [SerializeField] private Transform activeProjectilePool;
+
     [SerializeField] private Transform spawnPoint;
+
     [SerializeField] private GameObject projectilePrefab;
+
     [SerializeField] private float projectileLifeTime, despawnLifetime;
+
     [SerializeField] private float fireRate;
+
     [SerializeField] private float projectileSpeed = 10f;
     [SerializeField] private float projectileDamage = 1f;
 
@@ -68,7 +74,7 @@ public class ProjectileSpawner : MonoBehaviour
     Projectile projScript = projectile.GetComponent<Projectile>();
     if (projScript != null)
     {
-        projScript.Init(direction, projectileSpeed, projectileDamage);
+        projScript.Init(direction, projectileSpeed, projectileDamage, gameObject.layer);
         StartCoroutine(DestroyProjectile(projScript));
     }
 }

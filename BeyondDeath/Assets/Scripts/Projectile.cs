@@ -7,13 +7,15 @@ public class Projectile : MonoBehaviour
     private float _damage;
     private Rigidbody2D _rb;
     [SerializeField] private float lifeTime = 3f;
+    private int _ownerLayer;
 
-    //Inicializacion desde el enemigo
-    public void Init(Vector2 direction, float speed, float damage)
+    //Inicializacion desde el enemigo o player
+    public void Init(Vector2 direction, float speed, float damage, int ownerLayer)
     {
         _direction = direction.normalized;
         _speed = speed;
         _damage = damage;
+        _ownerLayer = ownerLayer;
         if (_rb != null)
         {
             _rb.linearVelocity = _direction * _speed;
@@ -33,17 +35,19 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Los proyectiles hacen danio al jugador
-        if (collision.CompareTag("Player"))
+        // Evita que el proyectil dañe al owner
+        if (collision.gameObject.layer == _ownerLayer)
+            return;
+        // Los proyectiles hacen daño si el layer es Player o Enemy
+        if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerLayer") || collision.gameObject.layer == LayerMask.NameToLayer("EnemyLayer"))
         {
-            Character playerChar = collision.GetComponentInParent<Character>();
-            if (playerChar != null)
-                playerChar.TakeDamage(_damage);
+            Character character = collision.GetComponentInParent<Character>();
+            if (character != null)
+                character.TakeDamage(_damage);
             DestroyProjectile();
         }
-        //TODO: Los proyectiles danian a otros enemigos
         //Se destruyen si choca con algo que no sea enemigo o jugador
-        else if (!collision.CompareTag("Enemy"))
+        else
         {
             DestroyProjectile();
         }
@@ -51,6 +55,7 @@ public class Projectile : MonoBehaviour
 
     public void DestroyProjectile()
     {
-        gameObject.SetActive(false);
+        if (gameObject.activeSelf)
+            gameObject.SetActive(false);
     }
 }

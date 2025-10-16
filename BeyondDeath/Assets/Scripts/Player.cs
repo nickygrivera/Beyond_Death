@@ -73,73 +73,29 @@ public class Player : Character
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
     private Vector2 _rawMove;//mira la direccion y prioriza las 4 dir
 
-    bool _isMoving;
-
-    bool _isAttack = true;
-    bool _isDashing;
-    bool _canDash = true;
+    private bool _isMoving;
+    private bool _isAttack = true;
+    private bool _isDashing;
+    private bool _canDash = true;
 
     private CharacterState _state;
 
     
     //GETTERS PARA LECTURA DE DATOS
-    public float CurrentHealth
-    {
-        get
-        {
-            return GetHealthActual();
-        }
-    }
+    public float CurrentHealth => GetHealthActual();
 
-    public float MaxHealth
-    {
-        get
-        {
-            return GetHealthMax();
-        }
-    }
+    public float MaxHealth => GetHealthMax();
 
-    public float DashCooldown
-    {
-        get
-        {
-            return dashCooldown;
-        }
-    }
+    public float DashCooldown => dashCooldown;
 
-    public bool CanDash
-    {
-        get
-        {
-            return _canDash;
-        }
-    }
+    public bool CanDash => _canDash;
 
-    public bool IsDashing
-    {
-        get
-        {
-            return _isDashing;
-        }
-    }
+    public bool IsDashing => _isDashing;
 
-    public bool IsAttacking
-    {
-        get
-        {
-            return _state == CharacterState.Attack;
-        }
-    }
+    public bool IsAttacking => _state == CharacterState.Attack;
 
-    public bool IsDead
-    {
-        get
-        {
-            return _state == CharacterState.Die;
-        }
-    }
+    public bool IsDead => _state == CharacterState.Die;
 
-    
 
     private void Awake()
     {

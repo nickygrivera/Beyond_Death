@@ -7,14 +7,13 @@
     <list default="true" id="ab9f2aea-2811-4ea8-8746-1d160fd8bc04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyDistance Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyDistance Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestSceneProgra.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestSceneProgra.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyStatic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectileSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectileSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +151,8 @@
       <workItem from="1760539349283" duration="532000" />
       <workItem from="1760549976834" duration="6405000" />
       <workItem from="1760601273478" duration="3011000" />
+      <workItem from="1760613031736" duration="2127000" />
+      <workItem from="1760615314836" duration="1118000" />
     </task>
     <servers />
   </component>
