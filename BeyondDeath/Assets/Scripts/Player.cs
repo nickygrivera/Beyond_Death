@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+
 /*
  * En el inspector y en las animaciones de prueba se cambian por clips de animacion
  * Hay 3 tipos de clips de animaciones:
@@ -43,7 +44,6 @@ public class Player : Character
     private readonly int _deathAnimState = Animator.StringToHash("Player_Death");
     private readonly int _dashAnimState = Animator.StringToHash("Player_Dash");
 
-
     //Estados de front y back (w y s)
     private readonly int _idleFrontAnimState = Animator.StringToHash("Player_Idle_Front");
     private readonly int _idleBackAnimState = Animator.StringToHash("Player_Idle_Back");
@@ -73,11 +73,11 @@ public class Player : Character
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
     private Vector2 _rawMove;//mira la direccion y prioriza las 4 dir
 
-    private bool _isMoving;
+    bool _isMoving;
 
-    private bool _isAttack = true;
-    private bool _isDashing;
-    private bool _canDash = true;
+    bool _isAttack = true;
+    bool _isDashing;
+    bool _canDash = true;
 
     private CharacterState _state;
 
@@ -221,7 +221,7 @@ public class Player : Character
         {
             _rawMove.x = 0f;//vertical
         }
-        
+
         _movement = _rawMove.normalized;//normaliza en ese eje
 
 
@@ -336,9 +336,7 @@ public class Player : Character
                 }
             }
         }
-
     }
-
 
     private void FixedUpdate()
     {
@@ -354,6 +352,7 @@ public class Player : Character
         {
             _rb.linearVelocity = _movement * moveSpeed;
         }
+
 
     }
 
@@ -385,7 +384,16 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            dashTarget = (_animDir.y >= 0f) ? _dashBackAnimState : _dashFrontAnimState;
+            if (_animDir.y >= 0f)
+            {
+                dashTarget = _dashBackAnimState;
+            }
+
+            else
+            {
+                dashTarget = _dashFrontAnimState;
+            }
+
         }
         else
         {
@@ -445,8 +453,14 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            atk1Target = (_animDir.y >= 0f) ? _attack1BackAnimState : _attack1FrontAnimState;
-
+            if (_animDir.y >= 0f)
+            {
+                atk1Target = _attack1BackAnimState;
+            }
+            else
+            {
+                atk1Target = _attack1FrontAnimState;
+            }
         }
         else
         {
@@ -474,7 +488,7 @@ public class Player : Character
                 {
                     forward = Vector2.right;
                 }
-                  
+
             }
 
             float forwardOffset = 0.4f;
@@ -499,10 +513,11 @@ public class Player : Character
                     }
                 }
             }
-            
+
             StartCoroutine(WaitForAnimationToEnd(atk1Target));
         }
     }
+
 
     //Ataque a distancia
     private void Attack2()
@@ -531,7 +546,9 @@ public class Player : Character
         {
             atk2Target = _attack2AnimState;
         }
-
+        /*
+        //ESTO NO ESTABA EN EL SCRIPT DEL MAIN
+        //------------------------------------------------
         //Calcular direccion hacia el puntero del raton justo antes de disparar
         Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
         Vector2 shootDir = (mouseWorld - transform.position).sqrMagnitude > 0.0001f ? (mouseWorld - transform.position).normalized : Vector2.right;
@@ -545,6 +562,8 @@ public class Player : Character
         
         CrossFadeSafe(atk2Target, _attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
+        //-------------------------------------------------
+        */
     }
 
 
@@ -580,7 +599,14 @@ public class Player : Character
 
             if (verticalDominant)
             {
-                deathTarget = (_animDir.y >= 0f) ? _deathBackAnimState : _deathFrontAnimState;
+                if (_animDir.y >= 0f)
+                {
+                    deathTarget = _deathBackAnimState;
+                }
+                else
+                {
+                    deathTarget = _deathFrontAnimState;
+                }
 
             }
             else
@@ -598,6 +624,7 @@ public class Player : Character
 
             //elegir front o back segun el raton
             bool verticalDominant = false;
+
             if (Mathf.Abs(_animDir.y) >= Mathf.Abs(_animDir.x))
             {
                 verticalDominant = true;
@@ -607,7 +634,14 @@ public class Player : Character
 
             if (verticalDominant)
             {
-                hitTarget = (_animDir.y >= 0f) ? _hitBackAnimState : _hitFrontAnimState; // arriba : abajo
+                if (_animDir.y >= 0f)
+                {
+                    hitTarget = _hitBackAnimState;//arriba
+                }
+                else
+                {
+                    hitTarget = _hitFrontAnimState;//abajo
+                }
 
             }
             else
@@ -660,8 +694,9 @@ public class Player : Character
             anim.CrossFadeInFixedTime(_idleAnimState, 0f);
             _isAttack = true;
         }
-        
+
     }
+
 
     //ref de 1 parametro cuando no hay fallback
     private IEnumerator WaitForAnimationToEnd(int animState)
