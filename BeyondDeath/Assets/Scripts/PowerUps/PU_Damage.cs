@@ -14,8 +14,26 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
     private float damageIncial;// = GetDamage();
     private GameObject gameO = null;
     
-    public void HitByPlayer(GameObject player)
+    
+    private void OnEnable()//suscripciones
     {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.WarScreamPerformed += WarScream;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.WarScreamPerformed += WarScream;
+        }
+    }
+
+    private void WarScream()
+    {
+        //no podemos pasarle parametros
         var ch=player.GetComponent<Character>();
 
         if (ch == null)
@@ -27,11 +45,9 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
         StartCoroutine(ApplyDamage(ch));
 
         //poner audio
-        Destroy(gameObject);    
-
+        Destroy(gameObject);
     }
 
-    
     private IEnumerator ApplyDamage (Character ch)
     {
         damageIncial=ch.GetDamage();
@@ -52,9 +68,6 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
         }
         
         yield return new WaitForSeconds(coolDown);
-    }//corrutina para que lo mantenga durante 6 segundos
+    }
     
 }
-
-
-//HACERR PICKUPS- Con collider 2d(isTrigger true),rg kinematic

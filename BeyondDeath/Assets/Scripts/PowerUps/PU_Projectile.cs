@@ -11,9 +11,25 @@ public class PU_Projectile : MonoBehaviour, ITriggerEnter
     //PARA EL PROYECTIL , EL PICKUP DEBE TENER ISTRIGGER Y COLLIDER2D
     //Projectil + hearthquake cuando explota
     
-    public void HitByPlayer(GameObject player)
+    private void OnEnable()//suscripciones
     {
-        throw new System.NotImplementedException();
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.FireBallPerformed += FireBall;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.FireBallPerformed += FireBall;
+        }
+    }
+
+    private void FireBall()
+    {
+        ApplyProjectile();
     }
 
     private IEnumerator ApplyProjectile()

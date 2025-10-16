@@ -14,9 +14,26 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
     //poner aqui  el audio
     [SerializeField] private GameObject quakeP;
 
-    //hacerlo corrutina
-    public void HitByPlayer(GameObject player)
+    
+    private void OnEnable()//suscripciones
     {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.HearthquakePerformed += Hearthquake;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.HearthquakePerformed += Hearthquake;
+        }
+    }
+
+    private void Hearthquake()
+    {
+        //no deja pasarle un player
         ApplyHearthquake(player);
     }
     
