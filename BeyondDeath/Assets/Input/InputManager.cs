@@ -11,8 +11,10 @@ public class InputManager : MonoBehaviour
     
     //acciones
     public Action AttackPerformed;
-    public Action AttackDistancePerformed;
+    public Action AttackDistancePerformed; //bola de fuego
     public Action DashPerformed;
+    public Action WarScreamPerformed;
+    public Action HearthquakePerformed;
     
     private void Awake()
     {
@@ -36,6 +38,8 @@ public class InputManager : MonoBehaviour
         _inputSystemActions.Player.Attack.performed += AttackOnPerformed;
         _inputSystemActions.Player.AttackDistance.performed += AttackDistanceOnPerformed;
         _inputSystemActions.Player.Dash.performed += DashOnPerformed;
+        _inputSystemActions.Player.Hearthquake.performed += HearthquakeOnPerformed;
+        _inputSystemActions.Player.WarScream.performed += WarScreamOnPerformed;
 
         // en caso de aniadir pause y onpause
         // _input.Player.Pause.performed += PauseOnPerformed;
@@ -55,6 +59,16 @@ public class InputManager : MonoBehaviour
     private void DashOnPerformed(InputAction.CallbackContext obj)
     {
         DashPerformed?.Invoke();
+    }
+    
+    private void HearthquakeOnPerformed(InputAction.CallbackContext obj)
+    {
+        HearthquakePerformed?.Invoke();
+    }
+    
+    private void WarScreamOnPerformed(InputAction.CallbackContext obj)
+    {
+        WarScreamPerformed?.Invoke();
     }
     
     //lectura de eventos

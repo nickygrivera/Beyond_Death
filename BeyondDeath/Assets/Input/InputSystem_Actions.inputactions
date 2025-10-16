@@ -67,15 +67,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "FireBall",
-                    "type": "Button",
-                    "id": "1a0db726-86fe-4a0c-9758-70f003ced520",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -313,7 +304,7 @@
                 {
                     "name": "",
                     "id": "90f4c9ce-8f9a-4cff-85bc-ac126d4b50b5",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/f1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -373,17 +364,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "WarScream",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "62daf87c-1164-4fae-bbf1-5b96329bcb58",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "FireBall",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

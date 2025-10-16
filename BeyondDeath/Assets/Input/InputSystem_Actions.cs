@@ -153,15 +153,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""FireBall"",
-                    ""type"": ""Button"",
-                    ""id"": ""1a0db726-86fe-4a0c-9758-70f003ced520"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -399,7 +390,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""90f4c9ce-8f9a-4cff-85bc-ac126d4b50b5"",
-                    ""path"": ""<Mouse>/rightButton"",
+                    ""path"": ""<Keyboard>/f1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -459,17 +450,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""WarScream"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""62daf87c-1164-4fae-bbf1-5b96329bcb58"",
-                    ""path"": ""<Keyboard>/3"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""FireBall"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1064,7 +1044,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Hearthquake = m_Player.FindAction("Hearthquake", throwIfNotFound: true);
         m_Player_WarScream = m_Player.FindAction("WarScream", throwIfNotFound: true);
-        m_Player_FireBall = m_Player.FindAction("FireBall", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1165,7 +1144,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Hearthquake;
     private readonly InputAction m_Player_WarScream;
-    private readonly InputAction m_Player_FireBall;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1205,10 +1183,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/WarScream".
         /// </summary>
         public InputAction @WarScream => m_Wrapper.m_Player_WarScream;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/FireBall".
-        /// </summary>
-        public InputAction @FireBall => m_Wrapper.m_Player_FireBall;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1256,9 +1230,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @WarScream.started += instance.OnWarScream;
             @WarScream.performed += instance.OnWarScream;
             @WarScream.canceled += instance.OnWarScream;
-            @FireBall.started += instance.OnFireBall;
-            @FireBall.performed += instance.OnFireBall;
-            @FireBall.canceled += instance.OnFireBall;
         }
 
         /// <summary>
@@ -1291,9 +1262,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @WarScream.started -= instance.OnWarScream;
             @WarScream.performed -= instance.OnWarScream;
             @WarScream.canceled -= instance.OnWarScream;
-            @FireBall.started -= instance.OnFireBall;
-            @FireBall.performed -= instance.OnFireBall;
-            @FireBall.canceled -= instance.OnFireBall;
         }
 
         /// <summary>
@@ -1643,13 +1611,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnWarScream(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "FireBall" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnFireBall(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
