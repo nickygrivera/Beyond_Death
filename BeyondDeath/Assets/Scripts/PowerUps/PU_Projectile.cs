@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PU_Projectile : MonoBehaviour, ITriggerEnter
@@ -14,6 +15,10 @@ public class PU_Projectile : MonoBehaviour, ITriggerEnter
     {
         throw new System.NotImplementedException();
     }
-    
-    private IEnumerator ApplyProjectile(GameObject player)
+
+    private IEnumerator ApplyProjectile()
+    {
+        
+        yield return new WaitForSeconds(coolDown);
+    }
 }
