@@ -37,12 +37,13 @@ public abstract class Character : MonoBehaviour
         return healthActual;
     }
 
-    public void SetHealthActual(float _healthActual)
+    public void SetHealthActual(float newHealthActual)
     {
-        healthActual = _healthActual;//se puede hacer lo del clamp para que no baje de 0
+        healthActual = newHealthActual;//se puede hacer lo del clamp para que no baje de 0
 
         if (healthActual <= 0f)
         {
+            healthActual = 0f;
             Die();
         }
     }
@@ -51,9 +52,9 @@ public abstract class Character : MonoBehaviour
         return damage;
     }
 
-    public void SetDamage(float _damage)
+    public void SetDamage(float newDamage)
     {
-        damage = _damage;
+        damage = newDamage;
     }
     
     public float GetHealthMax()
@@ -61,9 +62,9 @@ public abstract class Character : MonoBehaviour
         return healthMax;
     }
     
-    public void SetHealthMax(float _healtMax)//Cambiar para implementar la bar de vida y su logica
+    public void SetHealthMax(float newHealtMax)//Cambiar para implementar la bar de vida y su logica
     {
-        healthMax = _healtMax;
+        healthMax = newHealtMax;
         healthActual = healthMax;
     }
 
@@ -99,20 +100,18 @@ public abstract class Character : MonoBehaviour
 
     public virtual void Die()//para el override en los hijos
     {
-        //si hay animacion de muerte habria que hacer play antes
-        if (gameObject.CompareTag("Player"))
+        //Si hay animacion de muerte habria que hacer play antes
+        if (gameObject.CompareTag("Player") && !_hasDied)
         {
-            //para que reviva una vez
-            if (!_hasDied)
-            {
-                SetHealthMax(healthMax*0.8f); //por lo que se reestablece la vida
-                _hasDied = true;
-            }
-            
-            //sacar pantalla de game over o cargar escena de game over
+            SetHealthMax(healthMax*0.5f); //Por lo que se reestablece la vida
+            SetHasDied(true);
+            Debug.Log("Player has died but revived");
+            return;
+            //TODO: Sacar pantalla de game over o cargar escena de game over
         }
 
-        Destroy(this.gameObject);
+        Debug.Log("Player has died definitively");
+        Destroy(gameObject, 3f);//destruye el objeto despues de 3 segundos
     }
 
     public virtual void TakeDamage(float _damage)
