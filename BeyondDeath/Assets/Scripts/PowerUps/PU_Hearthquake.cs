@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
@@ -6,7 +8,6 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
     [SerializeField] private float radio = 2.5f;
     [SerializeField] private float damage = 25f;
     [SerializeField] private float force=6f;
-    [SerializeField] private float duration = 6f;
     [SerializeField] private float coolDown;
 
 
@@ -15,6 +16,11 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
 
     //hacerlo corrutina
     public void HitByPlayer(GameObject player)
+    {
+        ApplyHearthquake(player);
+    }
+    
+    private IEnumerator ApplyHearthquake(GameObject player)
     {
         Vector3 center=player.transform.position;
 
@@ -46,6 +52,8 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
             }
         }
         Destroy(gameObject);
+        
+        yield return new WaitForSeconds(coolDown);
     }
 
     /*prueba visual
