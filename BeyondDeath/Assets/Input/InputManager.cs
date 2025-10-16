@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 /*
  * */
 public class InputManager : MonoBehaviour
@@ -107,8 +108,23 @@ public class InputManager : MonoBehaviour
         {
             cam = Camera.main;
         }
+        /*
+         if (cam == null){
+            return Vector3.zero;
+        }
+         * */
         Vector2 screen = _inputSystemActions.Player.Look.ReadValue<Vector2>();
 
+        /*
+        // Ray para soportar camaras con perspectiva
+        Ray ray = cam.ScreenPointToRay(new Vector3(screen.x, screen.y, 0f));
+        Plane plane = new Plane(Vector3.forward, new Vector3(0f, 0f, worldZ));
+
+        if (plane.Raycast(ray, out float enter)){
+            return ray.GetPoint(enter);
+        ç
+
+        */
         float z = Mathf.Abs(cam.transform.position.z);
         return cam.ScreenToWorldPoint(new Vector3(screen.x, screen.y, z));
     }

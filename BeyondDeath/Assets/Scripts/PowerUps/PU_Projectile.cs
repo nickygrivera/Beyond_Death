@@ -3,13 +3,38 @@ using UnityEngine;
 
 public class PU_Projectile : MonoBehaviour
 {
+
+
+
+
     [SerializeField] private float coolDown;
     /*Solo hacer onda expansiva, y se le mete la componente proyectil para que lo instacie con esta habilidad*/
-    //Pasarle el spawner
-    //Hay una animacion de fireSword  o fireBallpara probar
+    [SerializeField] private ProjectileSpawner projectileSpawner;
+    [SerializeField] private Transform spawnPoint;
+
+    //poner audio
+    [SerializeField] private GameObject fireP;
 
     //Projectil + hearthquake cuando explota
-    
+
+    private bool _onCooldown;
+
+    //lectura para la UI
+    public bool IsOnCooldown => _onCooldown;
+    public float Cooldown => coolDown;
+
+    private void Awake()
+    {
+        if (projectileSpawner == null)
+        {
+            projectileSpawner = GetComponent<ProjectileSpawner>();//fallback por si no se ha asignado el player
+        }
+        if (spawnPoint == null && projectileSpawner != null)
+        {
+            spawnPoint = projectileSpawner.transform;//fallback por si no se ha asignado el player
+        }
+    }
+
     private void OnEnable()//suscripciones
     {
         if (InputManager.Instance != null)
@@ -28,12 +53,37 @@ public class PU_Projectile : MonoBehaviour
 
     private void FireBall()
     {
-        ApplyProjectile();
+        if (_onCooldown || projectileSpawner == null || spawnPoint == null)//si esta en cooldown o ya se esta ejecutando, salir
+        {
+            return;
+        }
+
+        //se le vuelve a calcular la posicion ya que no depende de un player fijo 
+        //y calcula cuando se esta dando a la tecla en el momento ,la ultima posicion que se actualizo de otra clase
+        Vector3 mouseWorld =InputManager.Instance.GetPointerWorldPosition();
+        Vector2 direction = (mouseWorld - spawnPoint.position);//.normalized;
+
+        if(direction.sqrMagnitude < 0.0001f)
+        {
+            direction=Vector2.right;
+        }
+        direction.Normalize();
+
+        if (fireP != null)
+        {
+            Instantiate(fireP, spawnPoint.position, Quaternion.identity);
+        }
+
+        projectileSpawner.SpawnProjectile(direction);//llamar al spawner para que cree el proyectil
+        StartCoroutine(ApplyProjectile());//iniciar el cooldown
+
+
     }
 
     private IEnumerator ApplyProjectile()
     {
-        
+        _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
+        _onCooldown = false;
     }
 }

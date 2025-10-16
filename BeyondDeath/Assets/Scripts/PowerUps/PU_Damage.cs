@@ -8,14 +8,18 @@ public class PU_Damage : MonoBehaviour
     [SerializeField] private float coolDown;
     //poner audio
     [SerializeField] private GameObject auraP;
-
-    // Agregar referencia al jugador
     [SerializeField] private GameObject player;
 
     private float damageIncial;
     private GameObject gameO = null;
     bool _onCooldown;
     private bool _isrunning;
+
+    //lectura para la UI
+    public bool IsOnCooldown => _onCooldown;
+    public bool IsRunning => _isrunning;
+    public float Cooldown => coolDown;
+    public float Duration => duration;
 
     private void Awake()
     {
@@ -43,7 +47,23 @@ public class PU_Damage : MonoBehaviour
 
     private void WarScream()
     {
-        var ch = player.GetComponent<Character>();
+        if(_onCooldown || _isrunning)//si esta en cooldown o ya se esta ejecutando, salir
+        {
+            return;
+        }
+        //fallback por si no se ha asignado el player
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+        //si sigue siendo null, salir
+        if (player == null)
+        {
+            return;
+        }
+
+
+        var ch = player.GetComponent<Character>();//coger el componente character del player
 
         if (ch == null)
         {
@@ -60,6 +80,7 @@ public class PU_Damage : MonoBehaviour
 
         _isrunning = true;
         damageIncial = ch.GetDamage();
+
         ch.SetDamage(damageIncial * damageInc);
 
         if (auraP != null)
@@ -76,9 +97,9 @@ public class PU_Damage : MonoBehaviour
             Destroy(gameO);
         }
         _isrunning = false;
-        _onCooldown = true;
+        _onCooldown = true;//poner en cooldown
 
         yield return new WaitForSeconds(coolDown);
-        _onCooldown = false;
+        _onCooldown = false;//quitar cooldown
     }
 }
