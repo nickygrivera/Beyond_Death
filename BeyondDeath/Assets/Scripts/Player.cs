@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-
 /*
  * En el inspector y en las animaciones de prueba se cambian por clips de animacion
  * Hay 3 tipos de clips de animaciones:
@@ -82,19 +81,19 @@ public class Player : Character
 
     
     //GETTERS PARA LECTURA DE DATOS
-    public float CurrentHealth => GetHealthActual();
+    public float currentHealth => GetHealthActual();
 
-    public float MaxHealth => GetHealthMax();
+    public float maxHealth => GetHealthMax();
 
-    public float DashCooldown => dashCooldown;
+    public float playerDashCooldown => dashCooldown;
 
-    public bool CanDash => _canDash;
+    public bool canDash => _canDash;
 
-    public bool IsDashing => _isDashing;
+    public bool isDashing => _isDashing;
 
-    public bool IsAttacking => _state == CharacterState.Attack;
+    public bool isAttacking => _state == CharacterState.Attack;
 
-    public bool IsDead => _state == CharacterState.Die;
+    public bool isDead => _state == CharacterState.Die;
 
 
     private void Awake()
@@ -340,16 +339,7 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            if (_animDir.y >= 0f)
-            {
-                dashTarget = _dashBackAnimState;
-            }
-
-            else
-            {
-                dashTarget = _dashFrontAnimState;
-            }
-
+            dashTarget = _animDir.y >= 0f ? _dashBackAnimState : _dashFrontAnimState;
         }
         else
         {
@@ -489,14 +479,7 @@ public class Player : Character
 
         if (verticalDominant)
         {
-            if (_animDir.y >= 0f)
-            {
-                atk2Target = _attack2BackAnimState;
-            }
-            else
-            {
-                atk2Target = _attack2FrontAnimState;
-            }
+            atk2Target = _animDir.y >= 0f ? _attack2BackAnimState : _attack2FrontAnimState;
         }
         else
         {

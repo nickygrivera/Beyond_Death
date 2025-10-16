@@ -787,6 +787,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3320818141726798343, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320818141726798343, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -933,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8292354405366153554, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8292354405366153554, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
       propertyPath: m_TagString
