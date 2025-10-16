@@ -71,9 +71,9 @@ public class Player : Character
     private Vector2 _movement;//direccion del input
     private Vector2 _animDir = Vector2.right;//direccion del raton
     private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
-    private Vector2 rawMove;//mira la direccion y prioriza las 4 dir
+    private Vector2 _rawMove;//mira la direccion y prioriza las 4 dir
 
-    bool isMoving;
+    private bool _isMoving;
 
     private bool _isAttack = true;
     private bool _isDashing;
@@ -205,24 +205,24 @@ public class Player : Character
 
         if (InputManager.Instance != null)
         {
-            rawMove = InputManager.Instance.GetMovement();
+            _rawMove = InputManager.Instance.GetMovement();
         }
         else
         {
-            rawMove = Vector2.zero;
+            _rawMove = Vector2.zero;
         }
 
         //mira el eje que mas predomina para los 4 card
-        if (Mathf.Abs(rawMove.x) > Mathf.Abs(rawMove.y))
+        if (Mathf.Abs(_rawMove.x) > Mathf.Abs(_rawMove.y))
         {
-            rawMove.y = 0f;//horizontal
+            _rawMove.y = 0f;//horizontal
         }
-        else if (Mathf.Abs(rawMove.y) > 0f)
+        else if (Mathf.Abs(_rawMove.y) > 0f)
         {
-            rawMove.x = 0f;//vertical
+            _rawMove.x = 0f;//vertical
         }
         
-        _movement = rawMove.normalized;//normaliza en ese eje
+        _movement = _rawMove.normalized;//normaliza en ese eje
 
 
 
@@ -243,9 +243,9 @@ public class Player : Character
         if (_state != CharacterState.Attack && _state != CharacterState.Dash)
         {
             float x;
-            isMoving = !IsNearlyZero(_movement);
+            _isMoving = !IsNearlyZero(_movement);
 
-            if (isMoving)
+            if (_isMoving)
             {
                 //flip depende de la dirección de movimiento(en movimiento)
                 x = _movement.x;
@@ -270,9 +270,9 @@ public class Player : Character
 
         if (_state == CharacterState.Idle || _state == CharacterState.Walk)
         {
-            isMoving = !IsNearlyZero(_movement);
+            _isMoving = !IsNearlyZero(_movement);
 
-            if (!isMoving)
+            if (!_isMoving)
             {
                 //idle se decide por raton
                 int idleTarget;
@@ -504,9 +504,8 @@ public class Player : Character
         }
     }
 
-    private void Attack2()//ataque distancia
-                          //SOLO HACE LA ANIMACION
-                          //HAY QUE AÑADIR EL PROYECTIL AQUI
+    //Ataque a distancia
+    private void Attack2()
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
 
@@ -527,13 +526,23 @@ public class Player : Character
             {
                 atk2Target = _attack2FrontAnimState;
             }
-               
         }
         else
         {
             atk2Target = _attack2AnimState;
         }
 
+        //Calcular direccion hacia el puntero del raton justo antes de disparar
+        Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
+        Vector2 shootDir = (mouseWorld - transform.position).sqrMagnitude > 0.0001f ? (mouseWorld - transform.position).normalized : Vector2.right;
+        
+        //Llamada al spawner
+        ProjectileSpawner spawner = GetComponent<ProjectileSpawner>();
+        if (spawner != null)
+        {
+            spawner.SpawnProjectile(shootDir);
+        }
+        
         CrossFadeSafe(atk2Target, _attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
     }
@@ -618,7 +627,7 @@ public class Player : Character
     public override void Die()
     {
         Debug.Log("Player muerto");
-        //TODO:codigo reiniciar todas las escenas si muere 
+        //TODO:codigo reiniciar todas las escenas si muere
         //TODO:lanzar escena o UI de Game over
     }
 

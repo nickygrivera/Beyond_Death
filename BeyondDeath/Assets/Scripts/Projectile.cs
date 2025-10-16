@@ -14,6 +14,10 @@ public class Projectile : MonoBehaviour
         _direction = direction.normalized;
         _speed = speed;
         _damage = damage;
+        if (_rb != null)
+        {
+            _rb.linearVelocity = _direction * _speed;
+        }
     }
 
     private void Awake()
@@ -21,11 +25,10 @@ public class Projectile : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
+    private void OnDisable()
     {
         if (_rb != null)
-            _rb.linearVelocity = _direction * _speed;
-        Destroy(gameObject, lifeTime);
+            _rb.linearVelocity = Vector2.zero;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,21 +39,18 @@ public class Projectile : MonoBehaviour
             Character playerChar = collision.GetComponentInParent<Character>();
             if (playerChar != null)
                 playerChar.TakeDamage(_damage);
-            Destroy(gameObject);
+            DestroyProjectile();
         }
-        
         //TODO: Los proyectiles danian a otros enemigos
-        
         //Se destruyen si choca con algo que no sea enemigo o jugador
         else if (!collision.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            DestroyProjectile();
         }
     }
 
     public void DestroyProjectile()
     {
-        //gameObject.SetActive(false);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

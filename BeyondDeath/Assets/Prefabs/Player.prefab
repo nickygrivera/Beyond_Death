@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 5386573537401214815}
   - component: {fileID: 4545156729217015178}
   - component: {fileID: 637797555152055380}
-  - component: {fileID: 7772503357513954019}
   - component: {fileID: 5725166432978744575}
+  - component: {fileID: 7772503357513954019}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -135,25 +135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7772503357513954019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287024119082005626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3724002dfaa577644827ffc03ce83ab5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePool: {fileID: 0}
-  activeProjectilePool: {fileID: 0}
-  spawnPoint: {fileID: 5731543371505043663}
-  projectilePrefab: {fileID: 5122068093936902183, guid: 6a456310b40ddb348aca7cff3753e8e5, type: 3}
-  projectileLifeTime: 2
-  despawnLifetime: 2
-  fireRate: 1
 --- !u!114 &5725166432978744575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +160,27 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6545831926018213262}
   dashSpeed: 11
   dashCooldown: 0.5
+--- !u!114 &7772503357513954019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287024119082005626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3724002dfaa577644827ffc03ce83ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePool: {fileID: 0}
+  activeProjectilePool: {fileID: 0}
+  spawnPoint: {fileID: 5731543371505043663}
+  projectilePrefab: {fileID: 5122068093936902183, guid: 6a456310b40ddb348aca7cff3753e8e5, type: 3}
+  projectileLifeTime: 2
+  despawnLifetime: 2
+  fireRate: 1
+  projectileSpeed: 10
+  projectileDamage: 1
 --- !u!1 &2141932575217902698
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 6790050427004134237}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.69, y: -0.11, z: 0}
+  m_LocalPosition: {x: -0.69, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

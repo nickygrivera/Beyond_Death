@@ -8,7 +8,7 @@ public class EnemyStatic : Character
     [SerializeField] private float speed = 3f;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
-    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private ProjectileSpawner projectileSpawner;
     [SerializeField] private float projectileSpeed = 4f;
     [SerializeField] private float attackRange = 12f;
 
@@ -157,7 +157,7 @@ public class EnemyStatic : Character
         Vector2 shootDirection = (player.transform.position - transform.position).normalized;
         Vector3 spawnPosition = transform.position + (Vector3)(shootDirection * range);
 
-        // Animación según dirección
+        //Animación según dirección
         switch (_facingDirection)
         {
             case FacingDirection.Left:
@@ -194,24 +194,12 @@ public class EnemyStatic : Character
 
         yield return new WaitForSeconds(0.15f); //Delay para permitir la animación antes del disparo
 
-        // Instanciar proyectil
-        if (projectilePrefab != null)
+        //Disparar proyectil usando el spawner
+        if (projectileSpawner != null)
         {
-            GameObject proj = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
-            Projectile projectileScript = proj.GetComponent<Projectile>();
-            if (projectileScript != null)
-            {
-                projectileScript.Init(shootDirection, projectileSpeed, GetDamage());
-            }
-            else
-            {
-                Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
-                if (projRb != null)
-                    projRb.linearVelocity = shootDirection * projectileSpeed;
-            }
+            projectileSpawner.SpawnProjectile(shootDirection);
         }
 
-        // Fin de animación de ataque
         yield return new WaitForSeconds(GetAttackCooldown());
         _isAttacking = false;
         _canAttack = true;
