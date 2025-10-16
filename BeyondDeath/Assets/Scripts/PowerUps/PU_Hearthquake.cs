@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
+public class PU_Hearthquake : MonoBehaviour
 {
 
     [SerializeField] private float radio = 2.5f;
@@ -13,8 +13,17 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
 
     //poner aqui  el audio
     [SerializeField] private GameObject quakeP;
+    [SerializeField] private GameObject player; 
 
-    
+    private bool _onCooldown;
+
+    private void Awake()
+    {
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+    }
     private void OnEnable()//suscripciones
     {
         if (InputManager.Instance != null)
@@ -27,14 +36,28 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
     {
         if (InputManager.Instance != null)
         {
-            InputManager.Instance.HearthquakePerformed += Hearthquake;
+            InputManager.Instance.HearthquakePerformed -= Hearthquake;
         }
     }
 
     private void Hearthquake()
     {
-        //no deja pasarle un player
-        ApplyHearthquake(player);
+        if (_onCooldown)
+        {
+            return;
+        }
+
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+            
+        if (player == null)
+        {
+            return;
+        }
+
+        StartCoroutine(ApplyHearthquake(player));
     }
     
     private IEnumerator ApplyHearthquake(GameObject player)
@@ -68,9 +91,10 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
                 }
             }
         }
-        Destroy(gameObject);
         
+        _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
+        _onCooldown = false;
     }
 
     /*prueba visual

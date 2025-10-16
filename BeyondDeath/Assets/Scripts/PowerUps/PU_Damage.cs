@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PU_Damage : MonoBehaviour,ITriggerEnter
+public class PU_Damage : MonoBehaviour
 {
     [SerializeField] private float damageInc = 1.5f;
     [SerializeField] private float duration = 6f;
@@ -9,13 +9,23 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
     //poner audio
     [SerializeField] private GameObject auraP;
 
+    // Agregar referencia al jugador
+    [SerializeField] private GameObject player;
 
-    
-    private float damageIncial;// = GetDamage();
+    private float damageIncial;
     private GameObject gameO = null;
-    
-    
-    private void OnEnable()//suscripciones
+    bool _onCooldown;
+    private bool _isrunning;
+
+    private void Awake()
+    {
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+    }
+
+    private void OnEnable()
     {
         if (InputManager.Instance != null)
         {
@@ -27,36 +37,35 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
     {
         if (InputManager.Instance != null)
         {
-            InputManager.Instance.WarScreamPerformed += WarScream;
+            InputManager.Instance.WarScreamPerformed -= WarScream;
         }
     }
 
     private void WarScream()
     {
-        //no podemos pasarle parametros
-        var ch=player.GetComponent<Character>();
+        var ch = player.GetComponent<Character>();
 
         if (ch == null)
         {
-            Destroy(gameObject);
             return;
         }
 
         StartCoroutine(ApplyDamage(ch));
 
         //poner audio
-        Destroy(gameObject);
     }
 
-    private IEnumerator ApplyDamage (Character ch)
+    private IEnumerator ApplyDamage(Character ch)
     {
-        damageIncial=ch.GetDamage();
-        ch.SetDamage(damageIncial*damageInc);
 
-       if(auraP != null)
-       {
-            gameO=Instantiate(auraP,ch.transform.position,Quaternion.identity,ch.transform);
-       }
+        _isrunning = true;
+        damageIncial = ch.GetDamage();
+        ch.SetDamage(damageIncial * damageInc);
+
+        if (auraP != null)
+        {
+            gameO = Instantiate(auraP, ch.transform.position, Quaternion.identity, ch.transform);
+        }
 
         yield return new WaitForSeconds(duration);
 
@@ -66,8 +75,10 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
         {
             Destroy(gameO);
         }
-        
+        _isrunning = false;
+        _onCooldown = true;
+
         yield return new WaitForSeconds(coolDown);
+        _onCooldown = false;
     }
-    
 }
