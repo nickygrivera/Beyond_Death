@@ -3,21 +3,28 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    [SerializeField] Player _player;
+    private UIManager _uiM;
 
     [Header("HUD Components")]
     [SerializeField] private Image _healthBar;
     [SerializeField] private Text _healthIndicator;
+    [SerializeField] private GameObject _barraVidaFantasmal;
 
+    private void Start()
+    {
+        _uiM = UIManager.Instance;
+        _barraVidaFantasmal.SetActive(false);
+    }
 
     private void Update()
     {
-        UpdateHealth();
-    }
+        _uiM.UpdateHealth(_healthBar, _healthIndicator);
+        //_uiM.UpdateCooldown();
 
-    private void UpdateHealth()
-    {
-        _healthBar.fillAmount = _player.GetHealthActual() / _player.GetHealthMax();
-        _healthIndicator.text = _player.GetHealthActual().ToString()+" / " + _player.GetHealthMax();
+        /*if (_uiM._player.hasRevived)
+        {
+            _barraVidaFantasmal.SetActive(true);
+        }*/
+
     }
 }
