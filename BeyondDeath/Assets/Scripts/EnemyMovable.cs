@@ -9,7 +9,8 @@ public class EnemyMovable : Character
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
 
-    private enum FacingDirection { Left, Right, Up, Down, UpLeft, UpRight, DownLeft, DownRight }
+    //private enum FacingDirection { Left, Right, Up, Down, UpLeft, UpRight, DownLeft, DownRight }
+    private enum FacingDirection { Left, Right, Up, Down }
     private FacingDirection _facingDirection;
     private CharacterState _state;
     
@@ -18,7 +19,6 @@ public class EnemyMovable : Character
     
     private bool _isAttacking;
     private bool _canAttack = true;
-    private bool _isDead;
     
     //nombre EXACTOS de los estados
     //Estados de izquierda y derecha
@@ -73,7 +73,7 @@ public class EnemyMovable : Character
     //Calcular posicion hacia el player y moverse hasta el
     private void Update()
     {
-        if(_isDead || player == null) return;
+        if(GetHasDied() || player == null) return;
 
         if (!_isAttacking)
             UpdateRotation();
@@ -172,11 +172,9 @@ public class EnemyMovable : Character
         Vector2 moveDir;
         // --- CÓDIGO ORIGINAL (comentado) ---
         // _rb.linearVelocity = direction * speed;
+        
         // --- SOLO 4 DIRECCIONES ---
-        if (absX > absY)
-            moveDir = new Vector2(Mathf.Sign(direction.x), 0);
-        else
-            moveDir = new Vector2(0, Mathf.Sign(direction.y));
+        moveDir = absX > absY ? new Vector2(Mathf.Sign(direction.x), 0) : new Vector2(0, Mathf.Sign(direction.y));
         _rb.linearVelocity = moveDir * speed;
         _state = CharacterState.Walk;
     }
@@ -323,7 +321,7 @@ public class EnemyMovable : Character
     //Recibir danio si el player le ataca
     public override void TakeDamage(float dmg)
     {
-        if (_isDead)
+        if (GetHasDied())
             return;
 
         if (_isAttacking)
@@ -425,7 +423,7 @@ public class EnemyMovable : Character
     //El enemy muere
     public override void Die()
     {
-        _isDead = true;
+        SetHasDied(true);
         _state = CharacterState.Die;
         _rb.linearVelocity = Vector2.zero;
         

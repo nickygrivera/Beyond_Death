@@ -594,16 +594,7 @@ public class Player : Character
             StartCoroutine(WaitForAnimationToEnd(hitTarget, _hitAnimState));
         }
     }
-
-
-    //DEATH
-    public override void Die()
-    {
-        Debug.Log("Player muerto");
-        //TODO:codigo reiniciar todas las escenas si muere
-        //TODO:lanzar escena o UI de Game over
-    }
-
+    
     //ANIMACIONES
     //espera a que acabe las animaciones (espera al fallback),para estar en idle
     private IEnumerator WaitForAnimationToEnd(int preferredState, int fallbackState)
