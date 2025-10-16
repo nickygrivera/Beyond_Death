@@ -81,7 +81,7 @@ public class Player : Character
 
     private CharacterState _state;
 
-
+    
     //GETTERS PARA LECTURA DE DATOS
     public float CurrentHealth
     {
@@ -139,7 +139,7 @@ public class Player : Character
         }
     }
 
-
+    
 
     private void Awake()
     {
@@ -546,7 +546,7 @@ public class Player : Character
         {
             atk2Target = _attack2AnimState;
         }
-        /*
+        
         //ESTO NO ESTABA EN EL SCRIPT DEL MAIN
         //------------------------------------------------
         //Calcular direccion hacia el puntero del raton justo antes de disparar
@@ -563,7 +563,7 @@ public class Player : Character
         CrossFadeSafe(atk2Target, _attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
         //-------------------------------------------------
-        */
+        
     }
 
 
