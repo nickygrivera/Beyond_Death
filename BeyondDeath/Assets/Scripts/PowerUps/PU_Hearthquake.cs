@@ -6,11 +6,14 @@ public class PU_Hearthquake : MonoBehaviour, ITriggerEnter
     [SerializeField] private float radio = 2.5f;
     [SerializeField] private float damage = 25f;
     [SerializeField] private float force=6f;
+    [SerializeField] private float duration = 6f;
+    [SerializeField] private float coolDown;
 
 
     //poner aqui  el audio
     [SerializeField] private GameObject quakeP;
 
+    //hacerlo corrutina
     public void HitByPlayer(GameObject player)
     {
         Vector3 center=player.transform.position;

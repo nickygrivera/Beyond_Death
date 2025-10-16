@@ -5,6 +5,7 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
 {
     [SerializeField] private float damageInc = 1.5f;
     [SerializeField] private float duration = 6f;
+    [SerializeField] private float coolDown;
     //poner audio
     [SerializeField] private GameObject auraP;
 
@@ -49,6 +50,8 @@ public class PU_Damage : MonoBehaviour,ITriggerEnter
         {
             Destroy(gameO);
         }
+        
+        yield return new WaitForSeconds(coolDown);
     }//corrutina para que lo mantenga durante 6 segundos
     
 }
