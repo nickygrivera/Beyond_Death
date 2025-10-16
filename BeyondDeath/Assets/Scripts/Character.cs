@@ -105,12 +105,10 @@ public abstract class Character : MonoBehaviour
         {
             SetHealthMax(healthMax*0.5f); //Por lo que se reestablece la vida
             SetHasDied(true);
-            Debug.Log("Player has died but revived");
             return;
             //TODO: Sacar pantalla de game over o cargar escena de game over
         }
-
-        Debug.Log("Player has died definitively");
+        
         Destroy(gameObject, 3f);//destruye el objeto despues de 3 segundos
     }
 

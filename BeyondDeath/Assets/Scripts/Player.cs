@@ -291,6 +291,25 @@ public class Player : Character
                 }
             }
         }
+        
+        //Hitbox melee
+        if(hitAnchor != null)
+        {
+            Vector2 forward;
+            
+            if (_animDir.sqrMagnitude > 0.0001f)
+            {
+                forward = _animDir;
+            }
+            //Direccion del sprite si no hay raton
+            else
+            {
+                forward = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            }
+            
+            const float offset = 0.5f;
+            hitAnchor.position = forward * offset;
+        }
     }
 
     private void FixedUpdate()
@@ -416,7 +435,7 @@ public class Player : Character
         CrossFadeSafe(atk1Target, _attack1AnimState, 0f);
 
         //hitbox melee
-        if (hitAnchor)
+        if (hitAnchor != null)
         {
             Vector2 forward;
 

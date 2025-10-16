@@ -685,6 +685,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4749645716582614235, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5386573537401214815, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.984
@@ -725,10 +729,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5725166432978744575, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 6421897223827294578}
     - target: {fileID: 6790050427004134237, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_Name
       value: ProjectileSpawner
@@ -856,11 +856,6 @@ GameObject:
 --- !u!4 &5262644057634544547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5386573537401214815, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
-  m_PrefabInstance: {fileID: 272572181935885564}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &6421897223827294578 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6545831926018213262, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
   m_PrefabInstance: {fileID: 272572181935885564}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6576753840651310090

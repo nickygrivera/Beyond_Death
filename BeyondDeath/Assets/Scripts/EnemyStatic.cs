@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyStatic : Character
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private float speed = 3f;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private ProjectileSpawner projectileSpawner;
@@ -30,23 +29,23 @@ public class EnemyStatic : Character
 
     private readonly int _idleFrontAnimState = Animator.StringToHash("EnemyDistance_Idle_Front");
     private readonly int _idleBackAnimState = Animator.StringToHash("EnemyDistance_Idle_Back");
-    private readonly int _idleUpRightAnimState = Animator.StringToHash("EnemyDistance_Idle_UpRight");
-    private readonly int _idleDownRightAnimState = Animator.StringToHash("EnemyDistance_Idle_DownRight");
+    //private readonly int _idleUpRightAnimState = Animator.StringToHash("EnemyDistance_Idle_UpRight");
+    //private readonly int _idleDownRightAnimState = Animator.StringToHash("EnemyDistance_Idle_DownRight");
     
     private readonly int _attackFrontAnimState = Animator.StringToHash("EnemyDistance_Attack_Front");
     private readonly int _attackBackAnimState = Animator.StringToHash("EnemyDistance_Attack_Back");
-    private readonly int _attackUpRightAnimState = Animator.StringToHash("EnemyDistance_Attack_UpRight");
-    private readonly int _attackDownRightAnimState = Animator.StringToHash("EnemyDistance_Attack_DownRight");
+    //private readonly int _attackUpRightAnimState = Animator.StringToHash("EnemyDistance_Attack_UpRight");
+    //private readonly int _attackDownRightAnimState = Animator.StringToHash("EnemyDistance_Attack_DownRight");
     
     private readonly int _deathFrontAnimState = Animator.StringToHash("EnemyDistance_Death_Front");
     private readonly int _deathBackAnimState = Animator.StringToHash("EnemyDistance_Death_Back");
-    private readonly int _deathUpRightAnimState = Animator.StringToHash("EnemyDistance_Death_UpRight");
-    private readonly int _deathDownRightAnimState = Animator.StringToHash("EnemyDistance_Death_DownRight");
+    //private readonly int _deathUpRightAnimState = Animator.StringToHash("EnemyDistance_Death_UpRight");
+    //private readonly int _deathDownRightAnimState = Animator.StringToHash("EnemyDistance_Death_DownRight");
     
     private readonly int _hitFrontAnimState = Animator.StringToHash("EnemyDistance_Hit_Front");
     private readonly int _hitBackAnimState = Animator.StringToHash("EnemyDistance_Hit_Back");
-    private readonly int _hitUpRightAnimState = Animator.StringToHash("EnemyDistance_Hit_UpRight");
-    private readonly int _hitDownRightAnimState = Animator.StringToHash("EnemyDistance_Hit_DownRight");
+    //private readonly int _hitUpRightAnimState = Animator.StringToHash("EnemyDistance_Hit_UpRight");
+    //private readonly int _hitDownRightAnimState = Animator.StringToHash("EnemyDistance_Hit_DownRight");
     
     
     //Inicializar enemy
@@ -159,6 +158,7 @@ public class EnemyStatic : Character
             case FacingDirection.Down:
                 anim.CrossFadeInFixedTime(_attackBackAnimState, 0f);
                 break;
+            /*
             case FacingDirection.UpLeft:
                 sprite.flipX = true;
                 anim.CrossFadeInFixedTime(_attackUpRightAnimState, 0f);
@@ -175,6 +175,7 @@ public class EnemyStatic : Character
                 sprite.flipX = false;
                 anim.CrossFadeInFixedTime(_attackDownRightAnimState, 0f);
                 break;
+            */
         }
 
         yield return new WaitForSeconds(0.15f); //Delay para permitir la animación antes del disparo
@@ -208,6 +209,7 @@ public class EnemyStatic : Character
             case FacingDirection.Down:
                 anim.CrossFadeInFixedTime(_idleBackAnimState, 0.1f);
                 break;
+            /*
             case FacingDirection.UpLeft:
                 sprite.flipX = true;
                 anim.CrossFadeInFixedTime(_idleUpRightAnimState, 0.1f);
@@ -224,6 +226,7 @@ public class EnemyStatic : Character
                 sprite.flipX = false;
                 anim.CrossFadeInFixedTime(_idleDownRightAnimState, 0.1f);
                 break;
+            */
         }
     }
 
@@ -263,6 +266,7 @@ public class EnemyStatic : Character
                 case FacingDirection.Down:
                     anim.CrossFadeInFixedTime(_hitBackAnimState, 0.1f);
                     break;
+                /*
                 case FacingDirection.UpLeft:
                     sprite.flipX = true;
                     anim.CrossFadeInFixedTime(_hitUpRightAnimState, 0.1f);
@@ -279,6 +283,7 @@ public class EnemyStatic : Character
                     sprite.flipX = false;
                     anim.CrossFadeInFixedTime(_hitDownRightAnimState, 0.1f);
                     break;
+                */
             }
             _rb.linearVelocity = Vector2.zero;
             StartCoroutine(Recover());
@@ -306,6 +311,7 @@ public class EnemyStatic : Character
                 case FacingDirection.Down:
                     anim.CrossFadeInFixedTime(_idleBackAnimState, 0.1f);
                     break;
+                /*
                 case FacingDirection.UpLeft:
                     sprite.flipX = true;
                     anim.CrossFadeInFixedTime(_idleUpRightAnimState, 0.1f);
@@ -322,6 +328,7 @@ public class EnemyStatic : Character
                     sprite.flipX = false;
                     anim.CrossFadeInFixedTime(_idleDownRightAnimState, 0.1f);
                     break;
+                */
             }
     }
 
@@ -347,6 +354,7 @@ public class EnemyStatic : Character
             case FacingDirection.Down:
                 anim.CrossFadeInFixedTime(_deathBackAnimState, 0.1f);
                 break;
+            /*
             case FacingDirection.UpLeft:
                 sprite.flipX = true;
                 anim.CrossFadeInFixedTime(_deathUpRightAnimState, 0.1f);
@@ -363,6 +371,7 @@ public class EnemyStatic : Character
                 sprite.flipX = false;
                 anim.CrossFadeInFixedTime(_deathDownRightAnimState, 0.1f);
                 break;
+            */
         }
         Destroy(gameObject, 2f);    //Tiempo de espera de 2 segundos antes de que se destruya el gameobject
     }

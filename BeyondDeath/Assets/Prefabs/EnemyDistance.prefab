@@ -178,16 +178,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1477ee9ce228a2548af8e49f5284af71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthMax: 100
-  healthActual: 100
-  damage: 20
+  healthMax: 70
+  healthActual: 70
+  damage: 12
   attackDistance: 15
   attackCooldown: 3
   hitAnchor: {fileID: 902495155422237946}
   bottomAnchor: {fileID: 8911835701385922126}
   hitSize: {x: 1, y: 1}
   player: {fileID: 0}
-  speed: 0
   anim: {fileID: 0}
   sprite: {fileID: 1268205046981699812}
   projectileSpawner: {fileID: 2144481469997177191}
@@ -212,8 +211,8 @@ MonoBehaviour:
   projectileLifeTime: 2
   despawnLifetime: 2
   fireRate: 2
-  projectileSpeed: 8
-  projectileDamage: 10
+  projectileSpeed: 7
+  projectileDamage: 12
 --- !u!4 &4025599481571181762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7700165263810803607, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
