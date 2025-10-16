@@ -207,7 +207,7 @@ public class EnemyStatic : Character
             {
                 Rigidbody2D projRb = proj.GetComponent<Rigidbody2D>();
                 if (projRb != null)
-                    projRb.velocity = shootDirection * projectileSpeed;
+                    projRb.linearVelocity = shootDirection * projectileSpeed;
             }
         }
 

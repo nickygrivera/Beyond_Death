@@ -82,6 +82,65 @@ public class Player : Character
     private CharacterState _state;
 
 
+    //GETTERS PARA LECTURA DE DATOS
+    public float CurrentHealth
+    {
+        get
+        {
+            return GetHealthActual();
+        }
+    }
+
+    public float MaxHealth
+    {
+        get
+        {
+            return GetHealthMax();
+        }
+    }
+
+    public float DashCooldown
+    {
+        get
+        {
+            return dashCooldown;
+        }
+    }
+
+    public bool CanDash
+    {
+        get
+        {
+            return _canDash;
+        }
+    }
+
+    public bool IsDashing
+    {
+        get
+        {
+            return _isDashing;
+        }
+    }
+
+    public bool IsAttacking
+    {
+        get
+        {
+            return _state == CharacterState.Attack;
+        }
+    }
+
+    public bool IsDead
+    {
+        get
+        {
+            return _state == CharacterState.Die;
+        }
+    }
+
+
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();

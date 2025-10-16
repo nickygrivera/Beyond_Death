@@ -1,12 +1,16 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
-public class PlayerMenu : MonoBehaviour
+public class PlayerMenu : MonoBehaviour,ITriggerEnter
 {
     [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
 
+
+    [SerializeField] public Transform hitAnchor;//punto desde donde sale el ataque ( modificar en la escena)
+    [SerializeField] public Transform bottomAnchor;//punto en los pies (amarillo) 
+    [SerializeField] public Vector2 hitSize;//area del golpe
 
     private readonly int IdleSide = Animator.StringToHash("Player_Idle");
     private readonly int IdleFront = Animator.StringToHash("Player_Idle_Front");
@@ -133,5 +137,17 @@ public class PlayerMenu : MonoBehaviour
         }
 
         _currentHash = targetHash;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(hitAnchor.position, hitSize);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawCube(bottomAnchor.position, new Vector2(0.1f, 0.1f));
+    }
+    public void HitByPlayer(GameObject player)
+    {
+        //Implementar aqui las interracciones con el trigger
     }
 }
