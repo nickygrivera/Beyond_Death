@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c9f2be92e50f24c9c5cdd6f96d5604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 0
+  coolDown: 4
   projectileSpawner: {fileID: 0}
   spawnPoint: {fileID: 0}
   fireP: {fileID: 0}

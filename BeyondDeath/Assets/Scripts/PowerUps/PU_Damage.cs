@@ -9,6 +9,7 @@ public class PU_Damage : MonoBehaviour
     //poner audio
     [SerializeField] private GameObject auraP;
     [SerializeField] private GameObject player;
+    [SerializeField] private Transform auraAnchor;//punto desde donde sale el aura ( modificar en la escena)
 
     private float damageIncial;
     private GameObject gameO = null;
@@ -26,6 +27,12 @@ public class PU_Damage : MonoBehaviour
         if (player == null)
         {
             player = GameObject.FindWithTag("Player");
+        }
+
+        if (auraAnchor == null)
+        {
+            var sr = player != null ? player.GetComponentInChildren<SpriteRenderer>() : null;//buscar el sprite renderer del player
+            auraAnchor = sr != null ? sr.transform : player?.transform;//fallback al transform del player
         }
     }
 
@@ -47,7 +54,7 @@ public class PU_Damage : MonoBehaviour
 
     private void WarScream()
     {
-        if(_onCooldown || _isrunning)//si esta en cooldown o ya se esta ejecutando, salir
+        if (_onCooldown || _isrunning)//si esta en cooldown o ya se esta ejecutando, salir
         {
             return;
         }
@@ -83,9 +90,20 @@ public class PU_Damage : MonoBehaviour
 
         ch.SetDamage(damageIncial * damageInc);
 
-        if (auraP != null)
+        if (auraP != null && auraAnchor != null)
         {
-            gameO = Instantiate(auraP, ch.transform.position, Quaternion.identity, ch.transform);
+            gameO = Instantiate(auraP, auraAnchor);
+            gameO.transform.localPosition = Vector3.zero;
+        }
+
+        var srPlayer = ch.GetComponentInChildren<SpriteRenderer>(true);
+        if (srPlayer != null)
+        {
+            foreach (var sr in gameO.GetComponentsInChildren<SpriteRenderer>(true))
+            {
+                sr.sortingLayerID = srPlayer.sortingLayerID;
+                sr.sortingOrder = srPlayer.sortingOrder + 1; // siempre por encima
+            }
         }
 
         yield return new WaitForSeconds(duration);
@@ -103,3 +121,4 @@ public class PU_Damage : MonoBehaviour
         _onCooldown = false;//quitar cooldown
     }
 }
+//poner en sorting layer para que se vea encima del player(player+1 por ejemplo)

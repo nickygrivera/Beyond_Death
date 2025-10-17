@@ -22,62 +22,54 @@ public class ProjectileSpawner : MonoBehaviour
     [SerializeField] private float projectileDamage = 1f;
 
     private bool _canSpawn = true;
-    
-    private void Start()
-    {
-        InputManager.Instance.AttackDistancePerformed += OnAttackDistance;
-    }
+
 
     //gestiona si necesita crear nuevas instancias o reactivar instancias "durmientes" o si esta en cooldown
-    private void OnAttackDistance()
-    {
-        if (!_canSpawn) return;
 
+    public void SpawnProjectile(Vector2 direction)
+    {
+        SpawnProjectile(direction, false);  // por defecto SIN terremoto
+    }
+
+    public void SpawnProjectile(Vector2 direction, bool withQuake)
+    {
+        if (!_canSpawn)
+        {
+            return;
+        }
         _canSpawn = false;
         StartCoroutine(SpawnCooldown());
 
         GameObject projectile;
-
-        if (projectilePool.childCount <= 0)
+        if (projectilePool.childCount <= 0)//si no hay proyectiles en el pool, crear uno nuevo
         {
-            projectile = Instantiate(projectilePrefab, spawnPoint.position, spawnPoint.rotation);
+            projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
         }
         else
         {
-            projectile = projectilePool.GetChild(0).gameObject;
-            projectile.transform.position = spawnPoint.position;
-            projectile.SetActive(true);
+            projectile = projectilePool.GetChild(0).gameObject;//coger el primer hijo del pool
+            projectile.transform.position = spawnPoint.position;//colocarlo en la posicion del spawnpoint
+            projectile.SetActive(true);//reactivarlo
         }
         projectile.transform.SetParent(activeProjectilePool);
-        StartCoroutine(DestroyProjectile(projectile.GetComponent<Projectile>()));
-    }
 
-    public void SpawnProjectile(Vector2 direction)
-{
-    if (!_canSpawn) return;
-    _canSpawn = false;
-    StartCoroutine(SpawnCooldown());
+        // activar/desactivar el terremoto en este disparo
+        var quake = projectile.GetComponent<QuakeOnImpact>();
+        if (quake != null)
+        {
+            quake.enabled = withQuake;
+        }
 
-    GameObject projectile;
-    if (projectilePool.childCount <= 0)
-    {
-        projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+        Debug.Log($"[Spawner] Spawn withQuake = {withQuake}");
+
+        var projScript = projectile.GetComponent<Projectile>();
+
+        if (projScript != null)
+        {
+            projScript.Init(direction, projectileSpeed, projectileDamage, gameObject.layer);
+            StartCoroutine(DestroyProjectile(projScript));
+        }
     }
-    else
-    {
-        projectile = projectilePool.GetChild(0).gameObject;
-        projectile.transform.position = spawnPoint.position;
-        projectile.SetActive(true);
-    }
-    projectile.transform.SetParent(activeProjectilePool);
-    // Inicializar el proyectil con dirección, velocidad y daño
-    Projectile projScript = projectile.GetComponent<Projectile>();
-    if (projScript != null)
-    {
-        projScript.Init(direction, projectileSpeed, projectileDamage, gameObject.layer);
-        StartCoroutine(DestroyProjectile(projScript));
-    }
-}
 
     //lo que gestiona cada cuanto se puede disparar
     private IEnumerator SpawnCooldown()
@@ -90,13 +82,21 @@ public class ProjectileSpawner : MonoBehaviour
     private IEnumerator DestroyProjectile(Projectile projectile)
     {
         yield return new WaitForSeconds(projectileLifeTime);
+
         if (projectile != null && projectile.gameObject.activeSelf)
         {
             projectile.DestroyProjectile();
         }
         yield return new WaitForSeconds(despawnLifetime);
+
         if (projectile != null)
         {
+            var quake = projectile.GetComponent<QuakeOnImpact>();
+            if (quake != null)
+            {
+                quake.enabled = false;
+            }
+
             projectile.gameObject.SetActive(false);
             projectile.transform.SetParent(projectilePool);
         }

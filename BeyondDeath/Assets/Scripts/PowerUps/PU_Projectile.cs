@@ -6,10 +6,7 @@ public class PU_Projectile : MonoBehaviour
 {
 
 
-
-
     [SerializeField] private float coolDown;
-    /*Solo hacer onda expansiva, y se le mete la componente proyectil para que lo instacie con esta habilidad*/
     [SerializeField] private ProjectileSpawner projectileSpawner;
     [SerializeField] private Transform spawnPoint;
 
@@ -39,7 +36,7 @@ public class PU_Projectile : MonoBehaviour
                 }
             }
         }
-        
+
         /*if (projectileSpawner == null)
         {
             projectileSpawner = GetComponent<ProjectileSpawner>();//fallback por si no se ha asignado el player
@@ -97,7 +94,23 @@ public class PU_Projectile : MonoBehaviour
 
     private IEnumerator ApplyProjectile()
     {
-        player.Attack2(); //funcion de ataque a distancia
+        if (_onCooldown || player == null) yield break;
+
+        // Dirección hacia el puntero
+        Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
+        Vector2 dir = mouseWorld - player.transform.position;
+        if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
+        dir.Normalize();
+
+        // Disparo con TERREMOTO
+        var spawner = player.GetComponent<ProjectileSpawner>();
+        if (spawner != null)
+        {
+            spawner.SpawnProjectile(dir, true); // <- quake SOLO aquí
+            Debug.Log("[PU_Projectile] Disparo CON quake (tecla 3).");
+        }
+
+
         _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
         _onCooldown = false;
@@ -107,7 +120,7 @@ public class PU_Projectile : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            //poner hearthquake
+
         }
     }
 }

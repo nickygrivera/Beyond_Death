@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 488863386952353304}
   - component: {fileID: -4451068868898157828}
   - component: {fileID: -8899703995084319605}
+  - component: {fileID: 3318902337122574753}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -176,3 +177,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3318902337122574753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5122068093936902183}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd40d3621c35a8458c245114adee379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radio: 2.5
+  damage: 25
+  force: 6
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  quakeVFX: {fileID: 8718499633280101561, guid: 7325585699db1504f9a1b9e27e42f403, type: 3}
+  durationVfx: 1.2

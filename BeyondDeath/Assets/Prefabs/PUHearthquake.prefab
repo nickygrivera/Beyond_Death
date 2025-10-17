@@ -49,7 +49,9 @@ MonoBehaviour:
   force: 6
   coolDown: 4
   quakeP: {fileID: 8718499633280101561, guid: 7325585699db1504f9a1b9e27e42f403, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1287024119082005626, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  quakeAnchor: {fileID: 0}
+  quakeDuration: 1.5

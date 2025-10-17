@@ -7,13 +7,15 @@ public class PU_Hearthquake : MonoBehaviour
 
     [SerializeField] private float radio = 2.5f;
     [SerializeField] private float damage = 25f;
-    [SerializeField] private float force=6f;
+    [SerializeField] private float force = 6f;
     [SerializeField] private float coolDown;
     //poner aqui  el audio
     [SerializeField] private GameObject quakeP;
     [SerializeField] private GameObject player;
 
     [SerializeField] private LayerMask enemyLayer;//para detectar solo enemigos
+    [SerializeField] private Transform quakeAnchor;//punto desde donde sale el aura ( modificar en la escena)
+    [SerializeField] private float quakeDuration;
 
     private bool _onCooldown;
 
@@ -26,6 +28,11 @@ public class PU_Hearthquake : MonoBehaviour
         if (player == null)
         {
             player = GameObject.FindWithTag("Player");//fallback por si no se ha asignado el player
+        }
+        if (quakeAnchor == null)
+        {
+            var ch = player != null ? player.GetComponentInChildren<Character>() : null;//buscar el sprite renderer del player
+            quakeAnchor = ch != null && ch.bottomAnchor != null ? ch.bottomAnchor : player?.transform;//fallback al transform del player
         }
     }
     private void OnEnable()//suscripciones
@@ -55,7 +62,7 @@ public class PU_Hearthquake : MonoBehaviour
         {
             player = GameObject.FindWithTag("Player");//fallback por si no se ha asignado el player
         }
-            
+
         if (player == null)//si sigue siendo null, salir
         {
             return;
@@ -63,17 +70,17 @@ public class PU_Hearthquake : MonoBehaviour
 
         StartCoroutine(ApplyHearthquake(player));
     }
-    
+
     private IEnumerator ApplyHearthquake(GameObject player)
     {
-        Vector3 center=player.transform.position;
+        Vector3 center = quakeAnchor != null ? quakeAnchor.position : player.transform.position;
 
         if (quakeP != null)
         {
-            Instantiate(quakeP, center, Quaternion.identity);
+            var vfx = Instantiate(quakeP, center, Quaternion.identity);
+            Destroy(vfx, quakeDuration); // <- ¡importante! así no se quedan superpuestos
         }
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(center, radio,enemyLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(center, radio, enemyLayer);
 
         foreach (var h in hits)
         {
@@ -112,18 +119,18 @@ public class PU_Hearthquake : MonoBehaviour
                 rb.AddForce(dir * force, ForceMode2D.Impulse);
             }
         }
-        
+
         _onCooldown = true;//poner en cooldown
         yield return new WaitForSeconds(coolDown);
         _onCooldown = false;//quitar cooldown
     }
 
-    
-     private void OnDrawGizmosSelected()
+
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, radio);
     }
-     
+
 
 }

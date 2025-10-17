@@ -16,11 +16,13 @@ public class Projectile : MonoBehaviour
         _speed = speed;
         _damage = damage;
         _ownerLayer = ownerLayer;
+
         if (_rb != null)
         {
             _rb.linearVelocity = _direction * _speed;
         }
     }
+
 
     private void Awake()
     {
@@ -35,18 +37,28 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Evita que el proyectil dañe al owner
+
+        var quake = GetComponent<QuakeOnImpact>();
+
+        if (quake != null && quake.enabled && collision.gameObject.layer == LayerMask.NameToLayer("EnemyLayer"))
+        {
+            return; //hará el daño, VFX y desactivará el proyectil
+        }
+
+
         if (collision.gameObject.layer == _ownerLayer)
             return;
-        // Los proyectiles hacen daño si el layer es Player o Enemy
+
         if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerLayer") || collision.gameObject.layer == LayerMask.NameToLayer("EnemyLayer"))
         {
             Character character = collision.GetComponentInParent<Character>();
             if (character != null)
+            {
                 character.TakeDamage(_damage);
+                Debug.Log($"[Projectile] Hit {character.name} por {_damage} dmg");
+            }
             DestroyProjectile();
         }
-        //Se destruyen si choca con algo que no sea enemigo o jugador
         else
         {
             DestroyProjectile();
@@ -56,6 +68,9 @@ public class Projectile : MonoBehaviour
     public void DestroyProjectile()
     {
         if (gameObject.activeSelf)
+        {
+
             gameObject.SetActive(false);
+        }
     }
 }

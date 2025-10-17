@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1302722724804638854}
+    - target: {fileID: -3247035549100362384, guid: 51f170a4f35b5544f9297a3671ce62eb, type: 3}
+      propertyPath: quakeAnchor
+      value: 
+      objectReference: {fileID: 564893546}
     - target: {fileID: 4009190632228794935, guid: 51f170a4f35b5544f9297a3671ce62eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -293,6 +297,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &564893546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 586284080294538304, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+  m_PrefabInstance: {fileID: 272572181935885564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &638919946
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +799,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1302722724804638854}
+    - target: {fileID: 6862889210971339105, guid: 324f702f62b5b0d4a8706d0e233a3521, type: 3}
+      propertyPath: auraAnchor
+      value: 
+      objectReference: {fileID: 564893546}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -825,7 +838,7 @@ Transform:
   m_GameObject: {fileID: 1898395836}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0113604, y: 1.8739755, z: -0.03889412}
+  m_LocalPosition: {x: 0.11, y: -0.34, z: -0.03889412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -905,6 +918,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1901255657}
     m_Modifications:
+    - target: {fileID: 586284080294538304, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 586284080294538304, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.324
+      objectReference: {fileID: 0}
     - target: {fileID: 861011942668574537, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.67
@@ -965,6 +986,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6545831926018213262, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545831926018213262, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 842770613
+      objectReference: {fileID: 0}
     - target: {fileID: 6790050427004134237, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}
       propertyPath: m_Name
       value: ProjectileSpawner
@@ -1001,6 +1030,14 @@ PrefabInstance:
     - target: {fileID: 1211428749993119533, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
       propertyPath: m_Constraints
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268205046981699812, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268205046981699812, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 842770613
       objectReference: {fileID: 0}
     - target: {fileID: 1824676647720137234, guid: 56651acd7105aaa47ad8453c08f00628, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1106,6 +1143,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2193801265354533014}
+    - target: {fileID: 5519204368739539889, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519204368739539889, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 842770613
+      objectReference: {fileID: 0}
     - target: {fileID: 5606536110994603128, guid: e33ac1fa96a7be64c816e02ff3a932d9, type: 3}
       propertyPath: m_Mass
       value: 1000000
