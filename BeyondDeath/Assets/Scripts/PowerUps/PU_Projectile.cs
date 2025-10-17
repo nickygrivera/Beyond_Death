@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class PU_Projectile : MonoBehaviour
 
     //poner audio
     [SerializeField] private GameObject fireP;
+    [SerializeField] private GameObject player;
 
     //Projectil + hearthquake cuando explota
 
@@ -25,14 +27,19 @@ public class PU_Projectile : MonoBehaviour
 
     private void Awake()
     {
-        if (projectileSpawner == null)
+        if (player == null)
+        {
+            player = GameObject.FindWithTag("Player");
+        }
+        
+        /*if (projectileSpawner == null)
         {
             projectileSpawner = GetComponent<ProjectileSpawner>();//fallback por si no se ha asignado el player
         }
         if (spawnPoint == null && projectileSpawner != null)
         {
             spawnPoint = projectileSpawner.transform;//fallback por si no se ha asignado el player
-        }
+        }*/
     }
 
     private void OnEnable()//suscripciones
@@ -53,7 +60,7 @@ public class PU_Projectile : MonoBehaviour
 
     private void FireBall()
     {
-        if (_onCooldown || projectileSpawner == null || spawnPoint == null)//si esta en cooldown o ya se esta ejecutando, salir
+        /*if (_onCooldown || projectileSpawner == null || spawnPoint == null)//si esta en cooldown o ya se esta ejecutando, salir
         {
             return;
         }
@@ -74,7 +81,7 @@ public class PU_Projectile : MonoBehaviour
             Instantiate(fireP, spawnPoint.position, Quaternion.identity);
         }
 
-        projectileSpawner.SpawnProjectile(direction);//llamar al spawner para que cree el proyectil
+        projectileSpawner.SpawnProjectile(direction);//llamar al spawner para que cree el proyectil*/
         StartCoroutine(ApplyProjectile());//iniciar el cooldown
 
 
@@ -82,8 +89,17 @@ public class PU_Projectile : MonoBehaviour
 
     private IEnumerator ApplyProjectile()
     {
+        player.GetComoponent<Attack2>(); //funcion de ataque a distancia
         _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
         _onCooldown = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            //poner hearthquake
+        }
     }
 }

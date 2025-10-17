@@ -122,7 +122,7 @@ public class InputManager : MonoBehaviour
 
         if (plane.Raycast(ray, out float enter)){
             return ray.GetPoint(enter);
-        ็
+        รง
 
         */
         float z = Mathf.Abs(cam.transform.position.z);
