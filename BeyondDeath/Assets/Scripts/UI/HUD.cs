@@ -19,6 +19,7 @@ public class HUD : MonoBehaviour
     private void Update()
     {
         _uiM.UpdateHealth(_healthBar, _healthIndicator);
+        
         //_uiM.UpdateCooldown();
 
         /*if (_uiM._player.hasRevived)
