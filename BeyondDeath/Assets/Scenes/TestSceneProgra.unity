@@ -265,9 +265,10 @@ MonoBehaviour:
   hitAnchor: {fileID: 720423519}
   bottomAnchor: {fileID: 81661554}
   hitSize: {x: 1, y: 1}
-  moveSpeed: 2
+  playerAesthetics: {fileID: 0}
   anim: {fileID: 1106557292}
   spriteRenderer: {fileID: 1106557291}
+  moveSpeed: 2
   dashSpeed: 11
   dashCooldown: 0.5
 --- !u!50 &582271985
@@ -373,6 +374,8 @@ MonoBehaviour:
   projectileLifeTime: 2
   despawnLifetime: 2
   fireRate: 1
+  projectileSpeed: 10
+  projectileDamage: 1
 --- !u!1 &720423518
 GameObject:
   m_ObjectHideFlags: 0
