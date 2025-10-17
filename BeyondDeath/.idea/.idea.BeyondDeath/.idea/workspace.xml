@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ab9f2aea-2811-4ea8-8746-1d160fd8bc04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BeyondDeath/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/TestSceneProgra.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/TestSceneProgra.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Enemy/EnemyStatic.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-Backend notifications": "Backend notifications",
     "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender may affect IDE",
+    "Notification.DoNotAsk-Backend notifications": "true",
     "Notification.DoNotAsk-WindowsDefender": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -155,6 +156,7 @@
       <workItem from="1760647640958" duration="162000" />
       <workItem from="1760685733204" duration="449000" />
       <workItem from="1760720985826" duration="989000" />
+      <workItem from="1760725681976" duration="773000" />
     </task>
     <servers />
   </component>

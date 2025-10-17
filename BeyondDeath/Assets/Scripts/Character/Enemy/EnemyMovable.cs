@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyMovable : Character
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private float speed = 3f;
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer sprite;
-
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float detectionRange = 5f;
+    
     //private enum FacingDirection { Left, Right, Up, Down, UpLeft, UpRight, DownLeft, DownRight }
     private enum FacingDirection { Left, Right, Up, Down }
     private FacingDirection _facingDirection;
@@ -77,8 +78,33 @@ public class EnemyMovable : Character
 
         if (!_isAttacking)
             UpdateRotation();
-
+        
+        //Calcular distancia al player
         float distance = Vector2.Distance(transform.position, player.transform.position);
+        
+        if(distance > detectionRange)
+        {
+            _rb.linearVelocity = Vector2.zero;
+            _state = CharacterState.Idle;
+            switch (_facingDirection)
+            {
+                case FacingDirection.Left:
+                    sprite.flipX = true;
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0f);
+                    break;
+                case FacingDirection.Right:
+                    sprite.flipX = false;
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0f);
+                    break;
+                case FacingDirection.Up:
+                    anim.CrossFadeInFixedTime(_idleFrontAnimState, 0f);
+                    break;
+                case FacingDirection.Down:
+                    anim.CrossFadeInFixedTime(_idleBackAnimState, 0f);
+                    break;
+            }
+            return;
+        }
         
         //Atacar al player
         if (distance <= GetAttackDistance())

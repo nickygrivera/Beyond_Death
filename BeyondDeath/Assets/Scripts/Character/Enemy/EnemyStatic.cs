@@ -10,7 +10,8 @@ public class EnemyStatic : Character
     [SerializeField] private ProjectileSpawner projectileSpawner;
     [SerializeField] private float projectileSpeed = 4f;
     [SerializeField] private float attackRange = 12f;
-
+    [SerializeField] private float detectionRange = 15f;
+    
     private enum FacingDirection { Left, Right, Up, Down, UpLeft, UpRight, DownLeft, DownRight }
     private FacingDirection _facingDirection;
     private CharacterState _state;
@@ -70,7 +71,33 @@ public class EnemyStatic : Character
         if (!_isAttacking)
             UpdateRotation();
 
+        //Calcular distancia al player
         float distance = Vector2.Distance(transform.position, player.transform.position);
+        
+        if(distance > detectionRange)
+        {
+            _rb.linearVelocity = Vector2.zero;
+            _state = CharacterState.Idle;
+            switch (_facingDirection)
+            {
+                case FacingDirection.Left:
+                    sprite.flipX = true;
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0f);
+                    break;
+                case FacingDirection.Right:
+                    sprite.flipX = false;
+                    anim.CrossFadeInFixedTime(_idleAnimState, 0f);
+                    break;
+                case FacingDirection.Up:
+                    anim.CrossFadeInFixedTime(_idleFrontAnimState, 0f);
+                    break;
+                case FacingDirection.Down:
+                    anim.CrossFadeInFixedTime(_idleBackAnimState, 0f);
+                    break;
+            }
+            return;
+        }
+        
         // Atacar al player si está en rango
         if (distance <= attackRange)
         {
