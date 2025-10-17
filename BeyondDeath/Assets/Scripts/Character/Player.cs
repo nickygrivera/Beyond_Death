@@ -487,11 +487,11 @@ public class Player : Character
     //Ataque a distancia
     public void Attack2()
     {
-        if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
+        if (_state == CharacterState.Die) return;
 
-        _state = CharacterState.Attack;
-        _isAttack = false;
-        _rb.linearVelocity = Vector2.zero;
+        //_state = CharacterState.Attack;
+        //_isAttack = false;
+        //_rb.linearVelocity = Vector2.zero;
 
         bool verticalDominant = Mathf.Abs(_animDir.y) >= Mathf.Abs(_animDir.x);
         int atk2Target;
@@ -505,7 +505,7 @@ public class Player : Character
             atk2Target = _attack2AnimState;
         }
         
-        //ESTO NO ESTABA EN EL SCRIPT DEL MAIN
+        
         //------------------------------------------------
         //Calcular direccion hacia el puntero del raton justo antes de disparar
         Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
