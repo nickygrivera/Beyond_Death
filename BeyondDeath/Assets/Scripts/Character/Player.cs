@@ -23,16 +23,30 @@ using UnityEngine;
 public class Player : Character
 {
 
-    [SerializeField] private float moveSpeed = 5f;
-
+    [SerializeField] private Transform playerAesthetics;
     [SerializeField] private Animator anim;//_anim arrastrar aqui el animator de playerAesthetics
     [SerializeField] private SpriteRenderer spriteRenderer;//para que rote visualmente al caminar (ARREGLO DEL SALTO)
 
-
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float dashSpeed = 16f;
     [SerializeField] private float dashCooldown = 0.5f;
 
+    
+    //variables del codigo
+    private Rigidbody2D _rb;
+    private Vector2 _movement;//direccion del input
+    private Vector2 _animDir = Vector2.right;//direccion del raton
+    private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
+    private Vector2 _rawMove;//mira la direccion y prioriza las 4 dir
 
+    private bool _isMoving;
+    private bool _isAttack = true;
+    private bool _isDashing;
+    private bool _canDash = true;
+
+    private CharacterState _state;
+    
+    
     //nombre EXACTOS de los estados
     //Estados de izquierda y derecha
     private readonly int _idleAnimState = Animator.StringToHash("Player_Idle");
@@ -64,21 +78,7 @@ public class Player : Character
 
     private readonly int _hitFrontAnimState = Animator.StringToHash("Player_Hit_Front");
     private readonly int _hitBackAnimState = Animator.StringToHash("Player_Hit_Back");
-
-    //variables del codigo
-    private Rigidbody2D _rb;
-    private Vector2 _movement;//direccion del input
-    private Vector2 _animDir = Vector2.right;//direccion del raton
-    private int _currentLocomotionHash = -1;//recuerda el clip de animacion que usa para poder cambiar
-    private Vector2 _rawMove;//mira la direccion y prioriza las 4 dir
-
-    private bool _isMoving;
-    private bool _isAttack = true;
-    private bool _isDashing;
-    private bool _canDash = true;
-
-    private CharacterState _state;
-
+    
     
     //GETTERS PARA LECTURA DE DATOS
     public float currentHealth => GetHealthActual();
@@ -186,7 +186,7 @@ public class Player : Character
         {
             Vector3 mouseWorld = InputManager.Instance.GetPointerWorldPosition();
 
-            Vector2 dir = mouseWorld - transform.position;
+            Vector2 dir = mouseWorld - playerAesthetics.position;
             if (dir.sqrMagnitude > 0.0001f)
             {
                 _animDir = dir.normalized;
@@ -307,8 +307,8 @@ public class Player : Character
                 forward = spriteRenderer.flipX ? Vector2.left : Vector2.right;
             }
             
-            const float offset = 0.5f;
-            hitAnchor.position = forward * offset;
+            const float offset = 0.7f;
+            hitAnchor.position = playerAesthetics.position + (Vector3)(forward * offset);
         }
     }
 

@@ -156,9 +156,10 @@ MonoBehaviour:
   hitAnchor: {fileID: 861011942668574537}
   bottomAnchor: {fileID: 2798612992451153962}
   hitSize: {x: 1, y: 1}
-  moveSpeed: 2
+  playerAesthetics: {fileID: 8508636280968411756}
   anim: {fileID: 6053607859145367728}
   spriteRenderer: {fileID: 6545831926018213262}
+  moveSpeed: 2
   dashSpeed: 11
   dashCooldown: 0.5
 --- !u!114 &7772503357513954019
