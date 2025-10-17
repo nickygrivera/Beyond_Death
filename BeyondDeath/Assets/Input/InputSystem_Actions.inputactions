@@ -49,6 +49,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Hearthquake",
+                    "type": "Button",
+                    "id": "fdf85800-4454-450b-a34e-12ef0dcdd227",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "WarScream",
+                    "type": "Button",
+                    "id": "e98548b2-0d98-4cdf-b903-6d479b58bbc9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FireBall",
+                    "type": "Button",
+                    "id": "10c2f186-9a9f-4eb8-92aa-37991afa2f97",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -296,17 +323,6 @@
                 },
                 {
                     "name": "",
-                    "id": "b3f66d0b-7751-423f-908b-a11c5bd95930",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "AttackDistance",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c6954e43-e26a-40a6-b15f-1f146a5febd7",
                     "path": "<Keyboard>/shift",
                     "interactions": "",
@@ -318,12 +334,34 @@
                 },
                 {
                     "name": "",
-                    "id": "0a63fda7-8b8b-45c5-9a05-c4f7f379163e",
-                    "path": "<Gamepad>/buttonEast",
+                    "id": "7084d46c-14b4-4f68-9342-419d037cd019",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash",
+                    "action": "Hearthquake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e7b961a5-4c14-4996-b862-64eaa5a430fd",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WarScream",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a04208ff-76a9-467d-a306-c232def760cc",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireBall",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -12,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - PlayerLayer
+  - EnemyLayer
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Character
+    uniqueID: 842770613
+    locked: 0
+  - name: VfxAuraSortingLayer
+    uniqueID: 1351618317
     locked: 0
   m_RenderingLayers:
   - Default

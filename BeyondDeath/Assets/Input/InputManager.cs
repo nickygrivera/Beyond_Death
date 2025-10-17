@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 /*
  * */
 public class InputManager : MonoBehaviour
@@ -11,8 +12,11 @@ public class InputManager : MonoBehaviour
     
     //acciones
     public Action AttackPerformed;
-    public Action AttackDistancePerformed;
+    public Action AttackDistancePerformed; //bola de fuego
     public Action DashPerformed;
+    public Action WarScreamPerformed;
+    public Action HearthquakePerformed;
+    public Action FireBallPerformed;
     
     private void Awake()
     {
@@ -36,6 +40,9 @@ public class InputManager : MonoBehaviour
         _inputSystemActions.Player.Attack.performed += AttackOnPerformed;
         _inputSystemActions.Player.AttackDistance.performed += AttackDistanceOnPerformed;
         _inputSystemActions.Player.Dash.performed += DashOnPerformed;
+        _inputSystemActions.Player.Hearthquake.performed += HearthquakeOnPerformed;
+        _inputSystemActions.Player.WarScream.performed += WarScreamOnPerformed;
+        _inputSystemActions.Player.FireBall.performed +=  FireBallOnPerformed;
 
         // en caso de aniadir pause y onpause
         // _input.Player.Pause.performed += PauseOnPerformed;
@@ -56,6 +63,21 @@ public class InputManager : MonoBehaviour
     {
         DashPerformed?.Invoke();
     }
+    
+    private void HearthquakeOnPerformed(InputAction.CallbackContext obj)
+    {
+        HearthquakePerformed?.Invoke();
+    }
+    
+    private void WarScreamOnPerformed(InputAction.CallbackContext obj)
+    {
+        WarScreamPerformed?.Invoke();
+    }
+    
+    private void FireBallOnPerformed(InputAction.CallbackContext obj)
+    {
+        FireBallPerformed?.Invoke();
+    } 
     
     //lectura de eventos
     public Vector2 GetMovement()
@@ -86,8 +108,23 @@ public class InputManager : MonoBehaviour
         {
             cam = Camera.main;
         }
+        /*
+         if (cam == null){
+            return Vector3.zero;
+        }
+         * */
         Vector2 screen = _inputSystemActions.Player.Look.ReadValue<Vector2>();
 
+        /*
+        // Ray para soportar camaras con perspectiva
+        Ray ray = cam.ScreenPointToRay(new Vector3(screen.x, screen.y, 0f));
+        Plane plane = new Plane(Vector3.forward, new Vector3(0f, 0f, worldZ));
+
+        if (plane.Raycast(ray, out float enter)){
+            return ray.GetPoint(enter);
+        ç
+
+        */
         float z = Mathf.Abs(cam.transform.position.z);
         return cam.ScreenToWorldPoint(new Vector3(screen.x, screen.y, z));
     }

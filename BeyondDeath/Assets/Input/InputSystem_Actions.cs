@@ -136,6 +136,33 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Hearthquake"",
+                    ""type"": ""Button"",
+                    ""id"": ""fdf85800-4454-450b-a34e-12ef0dcdd227"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""WarScream"",
+                    ""type"": ""Button"",
+                    ""id"": ""e98548b2-0d98-4cdf-b903-6d479b58bbc9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FireBall"",
+                    ""type"": ""Button"",
+                    ""id"": ""10c2f186-9a9f-4eb8-92aa-37991afa2f97"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -383,17 +410,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b3f66d0b-7751-423f-908b-a11c5bd95930"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""AttackDistance"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""c6954e43-e26a-40a6-b15f-1f146a5febd7"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
@@ -405,12 +421,34 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0a63fda7-8b8b-45c5-9a05-c4f7f379163e"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""id"": ""7084d46c-14b4-4f68-9342-419d037cd019"",
+                    ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Hearthquake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7b961a5-4c14-4996-b862-64eaa5a430fd"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WarScream"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a04208ff-76a9-467d-a306-c232def760cc"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FireBall"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1003,6 +1041,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_AttackDistance = m_Player.FindAction("AttackDistance", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        m_Player_Hearthquake = m_Player.FindAction("Hearthquake", throwIfNotFound: true);
+        m_Player_WarScream = m_Player.FindAction("WarScream", throwIfNotFound: true);
+        m_Player_FireBall = m_Player.FindAction("FireBall", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1101,6 +1142,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_AttackDistance;
     private readonly InputAction m_Player_Dash;
+    private readonly InputAction m_Player_Hearthquake;
+    private readonly InputAction m_Player_WarScream;
+    private readonly InputAction m_Player_FireBall;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1132,6 +1176,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Dash".
         /// </summary>
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Hearthquake".
+        /// </summary>
+        public InputAction @Hearthquake => m_Wrapper.m_Player_Hearthquake;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/WarScream".
+        /// </summary>
+        public InputAction @WarScream => m_Wrapper.m_Player_WarScream;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/FireBall".
+        /// </summary>
+        public InputAction @FireBall => m_Wrapper.m_Player_FireBall;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1173,6 +1229,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @Hearthquake.started += instance.OnHearthquake;
+            @Hearthquake.performed += instance.OnHearthquake;
+            @Hearthquake.canceled += instance.OnHearthquake;
+            @WarScream.started += instance.OnWarScream;
+            @WarScream.performed += instance.OnWarScream;
+            @WarScream.canceled += instance.OnWarScream;
+            @FireBall.started += instance.OnFireBall;
+            @FireBall.performed += instance.OnFireBall;
+            @FireBall.canceled += instance.OnFireBall;
         }
 
         /// <summary>
@@ -1199,6 +1264,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @Hearthquake.started -= instance.OnHearthquake;
+            @Hearthquake.performed -= instance.OnHearthquake;
+            @Hearthquake.canceled -= instance.OnHearthquake;
+            @WarScream.started -= instance.OnWarScream;
+            @WarScream.performed -= instance.OnWarScream;
+            @WarScream.canceled -= instance.OnWarScream;
+            @FireBall.started -= instance.OnFireBall;
+            @FireBall.performed -= instance.OnFireBall;
+            @FireBall.canceled -= instance.OnFireBall;
         }
 
         /// <summary>
@@ -1534,6 +1608,27 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDash(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Hearthquake" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnHearthquake(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "WarScream" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnWarScream(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "FireBall" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFireBall(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
