@@ -485,7 +485,7 @@ public class Player : Character
 
 
     //Ataque a distancia
-    private void Attack2()
+    public void Attack2()
     {
         if (!_isAttack || _state == CharacterState.Attack || _state == CharacterState.Die) return;
 

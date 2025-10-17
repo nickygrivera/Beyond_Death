@@ -118,12 +118,12 @@ public class PU_Hearthquake : MonoBehaviour
         _onCooldown = false;//quitar cooldown
     }
 
-    /*prueba visual
+    
      private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, radio);
     }
-     * */
+     
 
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5909195694234730684
+--- !u!1 &7287789098442401931
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4009190632228794935}
-  - component: {fileID: -3247035549100362384}
+  - component: {fileID: 5167659771292459287}
+  - component: {fileID: -6879577230164060731}
   m_Layer: 0
-  m_Name: PUHearthquake
+  m_Name: PUProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4009190632228794935
+--- !u!4 &5167659771292459287
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5909195694234730684}
+  m_GameObject: {fileID: 7287789098442401931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.0113604, y: 1.8739755, z: -0.03889412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3247035549100362384
+--- !u!114 &-6879577230164060731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5909195694234730684}
+  m_GameObject: {fileID: 7287789098442401931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287bca49502dac945a04fc08c49b1f85, type: 3}
+  m_Script: {fileID: 11500000, guid: d2c9f2be92e50f24c9c5cdd6f96d5604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radio: 2.5
-  damage: 25
-  force: 6
-  coolDown: 4
-  quakeP: {fileID: 8718499633280101561, guid: 7325585699db1504f9a1b9e27e42f403, type: 3}
+  coolDown: 0
+  projectileSpawner: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  fireP: {fileID: 0}
   player: {fileID: 0}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128

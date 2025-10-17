@@ -15,7 +15,7 @@ public class PU_Projectile : MonoBehaviour
 
     //poner audio
     [SerializeField] private GameObject fireP;
-    [SerializeField] private GameObject player;
+    [SerializeField] private Player player;
 
     //Projectil + hearthquake cuando explota
 
@@ -29,7 +29,15 @@ public class PU_Projectile : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameObject.FindWithTag("Player");
+            if (player == null)
+            {
+                var go = GameObject.FindWithTag("Player");
+
+                if (go != null)
+                {
+                    player = go.GetComponent<Player>();
+                }
+            }
         }
         
         /*if (projectileSpawner == null)
@@ -89,7 +97,7 @@ public class PU_Projectile : MonoBehaviour
 
     private IEnumerator ApplyProjectile()
     {
-        player.GetComoponent<Attack2>(); //funcion de ataque a distancia
+        player.Attack2(); //funcion de ataque a distancia
         _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
         _onCooldown = false;
