@@ -7,12 +7,11 @@ public class UITrigger : MonoBehaviour
 {
     [SerializeField] private GameObject _menu;
     [SerializeField] private GameObject _popUp;
+    [SerializeField] private PlayerMenu pMenu;
     private Animator _popUpAnimator;
-    [SerializeField] private KeyCode _key;
     private bool isInside = false;
     [SerializeField] private bool _exitGame;
     [SerializeField] private string _gameScene;
-    [SerializeField] private PlayerMenu pMenu;
 
 
     //Manual de uso
@@ -42,22 +41,7 @@ public class UITrigger : MonoBehaviour
 
     private void Update()
     {
-        if (isInside && Input.GetKeyDown(KeyCode.E))
-        {
-            if(_menu != null)
-            {
-                UIManager.Instance.ShowMenu(_popUp, false);
-                UIManager.Instance.ShowMenu(_menu, true);
-            }
-            else if (_exitGame)
-            {
-                UIManager.Instance.ExitGame();
-            }
-            else
-            {
-                UIManager.Instance.LoadGame(_gameScene);
-            }
-        }
+        Debug.Log(isInside);
     }
 
     private void ShowPopUp()
@@ -69,6 +53,42 @@ public class UITrigger : MonoBehaviour
         
         _popUpAnimator.SetTrigger("hide");
         
+    }
+
+    public void InteractWithUI()
+    {
+        if (isInside)
+        {
+            if (_menu != null)
+            {
+                UIManager.Instance.ShowMenuAndStopPlayer(_menu, true,pMenu);
+                
+            }
+            else if (_exitGame)
+            {
+                UIManager.Instance.ExitGame();
+            }
+            else
+            {
+                UIManager.Instance.LoadGame(_gameScene);
+            }
+        }
+
+    }
+    private void OnEnable()//suscripciones
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.InteractPerformed += InteractWithUI;
+        }
+    }
+
+    private void OnDisable()//desuscripciones
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.InteractPerformed -= InteractWithUI;
+        }
     }
 
 

@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
     [SerializeField] public Player _player;
+    [SerializeField] public PlayerMenu _pmenu;
 
     private void Awake()
     {
@@ -20,10 +21,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ShowMenu(GameObject menu, bool show)
-    {
-        menu.SetActive(show);
-    }
     public void ExitGame()
     {
         Application.Quit();
@@ -36,6 +33,17 @@ public class UIManager : MonoBehaviour
     {
         healthBar.fillAmount = _player.GetHealthActual() / _player.GetHealthMax();
         healthBarText.text = _player.GetHealthActual().ToString() + " / " + _player.GetHealthMax();
+    }
+
+    public void ShowMenuAndStopPlayer(GameObject menu, bool show, PlayerMenu player)
+    {
+        menu.SetActive(show);
+        player.enabled = !show;
+    }
+    public void ShowMenuAndPlayPlayer(GameObject menu)
+    {
+        menu.SetActive(false);
+        _pmenu.enabled = true;
     }
     /*public float UpdateCooldown(int habilidadType)
     {

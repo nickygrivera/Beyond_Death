@@ -63,6 +63,7 @@ public class PlayerMenu : MonoBehaviour,ITriggerEnter
     private void Interact()
     {
         //TODO: Implentar el funcionamiento de la interaccion
+
     }
 
     private void Update()
