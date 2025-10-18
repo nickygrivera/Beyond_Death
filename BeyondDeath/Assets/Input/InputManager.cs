@@ -17,6 +17,7 @@ public class InputManager : MonoBehaviour
     public Action WarScreamPerformed;
     public Action HearthquakePerformed;
     public Action FireBallPerformed;
+    public Action InteractPerformed;
     
     private void Awake()
     {
@@ -43,6 +44,9 @@ public class InputManager : MonoBehaviour
         _inputSystemActions.Player.Hearthquake.performed += HearthquakeOnPerformed;
         _inputSystemActions.Player.WarScream.performed += WarScreamOnPerformed;
         _inputSystemActions.Player.FireBall.performed +=  FireBallOnPerformed;
+        //Esto habria que ver que al ponerle input actions a player menu funcione
+        //Si se cambia ese Player por PlayerMenu da error
+        _inputSystemActions.Player.Interact.performed +=  InteractOnPerformed; 
 
         // en caso de aniadir pause y onpause
         // _input.Player.Pause.performed += PauseOnPerformed;
@@ -78,6 +82,11 @@ public class InputManager : MonoBehaviour
     {
         FireBallPerformed?.Invoke();
     } 
+    
+    private void InteractOnPerformed(InputAction.CallbackContext obj)
+        {
+            InteractPerformed?.Invoke();
+        } 
     
     //lectura de eventos
     public Vector2 GetMovement()

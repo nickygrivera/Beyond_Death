@@ -85,6 +85,9 @@ MonoBehaviour:
   moveSpeed: 3
   anim: {fileID: 7294873051290570505}
   sprite: {fileID: 7775837839926487607}
+  hitAnchor: {fileID: 0}
+  bottomAnchor: {fileID: 0}
+  hitSize: {x: 0, y: 0}
 --- !u!95 &7294873051290570505 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6053607859145367728, guid: fb47ed250c9c0024eaff946addad4e7f, type: 3}

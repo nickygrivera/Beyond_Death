@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
@@ -41,6 +42,27 @@ public class PlayerMenu : MonoBehaviour,ITriggerEnter
         
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
+    }
+    
+    private void OnEnable()//suscripciones
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.InteractPerformed += Interact;
+        }
+    }
+    
+    private void OnDisable()//desuscripciones
+    {
+        if (InputManager.Instance != null)
+        {
+            InputManager.Instance.InteractPerformed -= Interact;
+        }
+    }
+
+    private void Interact()
+    {
+        //TODO: Implentar el funcionamiento de la interaccion
     }
 
     private void Update()
