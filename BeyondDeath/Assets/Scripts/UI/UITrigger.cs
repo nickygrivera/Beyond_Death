@@ -12,6 +12,7 @@ public class UITrigger : MonoBehaviour
     private bool isInside = false;
     [SerializeField] private bool _exitGame;
     [SerializeField] private string _gameScene;
+    [SerializeField] private PlayerMenu pMenu;
 
 
     //Manual de uso
@@ -41,7 +42,7 @@ public class UITrigger : MonoBehaviour
 
     private void Update()
     {
-        if (isInside && Input.GetKeyDown(_key))
+        if (isInside && Input.GetKeyDown(KeyCode.E))
         {
             if(_menu != null)
             {
