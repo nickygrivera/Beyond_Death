@@ -89,6 +89,7 @@ public class PU_Damage : MonoBehaviour
         damageIncial = ch.GetDamage();
 
         ch.SetDamage(damageIncial * damageInc);
+        SoundManager.Instance.PlayHabilidadGritoPlayer();
 
         if (auraP != null && auraAnchor != null)
         {

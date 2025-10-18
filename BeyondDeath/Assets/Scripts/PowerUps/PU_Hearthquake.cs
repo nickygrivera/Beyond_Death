@@ -74,6 +74,7 @@ public class PU_Hearthquake : MonoBehaviour
     private IEnumerator ApplyHearthquake(GameObject player)
     {
         Vector3 center = quakeAnchor != null ? quakeAnchor.position : player.transform.position;
+        SoundManager.Instance.PlayHabilidadTerremotoPlayer();
 
         if (quakeP != null)
         {

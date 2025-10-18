@@ -102,6 +102,8 @@ public class PU_Projectile : MonoBehaviour
         if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
         dir.Normalize();
 
+        SoundManager.Instance.PlayBolaFuego();
+
         // Disparo con TERREMOTO
         var spawner = player.GetComponent<ProjectileSpawner>();
         if (spawner != null)

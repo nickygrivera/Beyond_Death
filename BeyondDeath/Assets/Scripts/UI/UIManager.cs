@@ -9,6 +9,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] public Player _player;
     [SerializeField] public PlayerMenu _pmenu;
 
+    [Header("Habilidades")]
+    [SerializeField] private PU_Damage _ira;
+    [SerializeField] private PU_Hearthquake terremoto;
+    [SerializeField] private PU_Projectile _bolaFuego;
+
     private void Awake()
     {
         if (Instance == null)
@@ -45,22 +50,22 @@ public class UIManager : MonoBehaviour
         menu.SetActive(false);
         _pmenu.enabled = true;
     }
-    /*public float UpdateCooldown(int habilidadType)
+    public bool UpdateCooldown(int habilidadType)
     {
 
         switch (habilidadType)
         {
             case 0: //Terremoto
-                return _player.terremotoCooldown;
+                return terremoto.IsOnCooldown;
 
             case 1: //Bola de Fuego
-                return _player.bolaFuegoCooldown;
+                return _bolaFuego.IsOnCooldown;
             case 2: //Dash
-                return _player.dashCooldown;
+                return _player.canDash;
             case 3: //Grito
-                return _player.gritoCooldown;
-            default: return 0;
+                return _ira.IsOnCooldown;
+            default: return false;
         }
-    }*/
+    }
 
 }

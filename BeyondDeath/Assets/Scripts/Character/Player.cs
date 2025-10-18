@@ -29,7 +29,7 @@ public class Player : Character
 
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float dashSpeed = 16f;
-    [SerializeField] private float dashCooldown = 0.5f;
+    [SerializeField] public float dashCooldown = 0.5f;
 
     
     //variables del codigo
@@ -367,6 +367,7 @@ public class Player : Character
 
         CrossFadeSafe(dashTarget, _dashAnimState, 0f);
 
+        SoundManager.Instance.PlayDashSound();
 
         _rb.linearVelocity = _movement * dashSpeed;//dash
         yield return new WaitForSeconds(dashCooldown);
