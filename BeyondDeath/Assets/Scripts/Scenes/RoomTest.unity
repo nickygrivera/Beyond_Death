@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 874752614}
   - component: {fileID: 874752615}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Room2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 1068753646}
   - component: {fileID: 1068753647}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 1484427962}
   - component: {fileID: 1484427963}
   m_Layer: 0
-  m_Name: Square
+  m_Name: ROOM1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,10 +411,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1484427962}
   - {fileID: 1898151547}
   - {fileID: 1068753646}
   - {fileID: 1873653178}
+  - {fileID: 1484427962}
   - {fileID: 874752614}
   m_Father: {fileID: 1903686966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 1873653178}
   - component: {fileID: 1873653179}
   m_Layer: 0
-  m_Name: Square (4)
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 1898151547}
   - component: {fileID: 1898151548}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -621,8 +621,8 @@ Transform:
   m_GameObject: {fileID: 1898151546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6447, y: -0.06, z: 0}
-  m_LocalScale: {x: 7.002843, y: 1.9412459, z: 1}
+  m_LocalPosition: {x: 4.7806, y: -0.06, z: 0}
+  m_LocalScale: {x: 6.7311325, y: 1.9412459, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1513630827}
