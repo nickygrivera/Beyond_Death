@@ -488,6 +488,10 @@ public class EnemyMovable : Character
                 break;
             */
         }
+
+        GetComponent<RoomMember>()?.NotifyDeath();
+
+
         Destroy(gameObject, 2f);
     }
 }
