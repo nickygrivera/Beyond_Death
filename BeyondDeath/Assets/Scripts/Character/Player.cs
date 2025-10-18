@@ -538,6 +538,7 @@ public class Player : Character
 
         if (_state == CharacterState.Die)
         {
+            
             return;
         }
 
@@ -545,6 +546,7 @@ public class Player : Character
 
         if (GetHealthActual() <= 0f)
         {
+            
             _state = CharacterState.Die;
             _rb.linearVelocity = Vector2.zero;
 

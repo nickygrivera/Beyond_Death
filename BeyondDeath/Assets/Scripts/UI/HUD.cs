@@ -32,7 +32,8 @@ public class HUD : MonoBehaviour
         _terremotoCooldown.enabled=_uiM.UpdateCooldown(0);
         _iraCooldown.enabled = _uiM.UpdateCooldown(3);
         _bolaFuegoCooldown.enabled = _uiM.UpdateCooldown(1);
-
+        _barraVidaFantasmal.SetActive(_uiM._player.GetHasDied());
+        
 
 
     }

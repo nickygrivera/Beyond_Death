@@ -1,0 +1,990 @@
+fileFormatVersion: 2
+guid: d595fd5affe4cd64fb229c517e05699b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5268100661389853287
+    second: enemigo_melee_flotar_0
+  - first:
+      213: 4370379634955121219
+    second: enemigo_melee_flotar_1
+  - first:
+      213: 5465123149197345636
+    second: enemigo_melee_flotar_2
+  - first:
+      213: -236995149757293832
+    second: enemigo_melee_flotar_3
+  - first:
+      213: -3883877676068579114
+    second: enemigo_melee_flotar_4
+  - first:
+      213: -4837612806462846005
+    second: enemigo_melee_flotar_5
+  - first:
+      213: 4608481493229700810
+    second: enemigo_melee_flotar_6
+  - first:
+      213: -8851292456335087126
+    second: enemigo_melee_flotar_7
+  - first:
+      213: -7332665213313513761
+    second: enemigo_melee_flotar_8
+  - first:
+      213: -4172660082882231819
+    second: enemigo_melee_flotar_9
+  - first:
+      213: -613086866448224895
+    second: enemigo_melee_flotar_10
+  - first:
+      213: -6772253688591770414
+    second: enemigo_melee_flotar_11
+  - first:
+      213: 5856118996564536642
+    second: enemigo_melee_flotar_12
+  - first:
+      213: -6027002164257999493
+    second: enemigo_melee_flotar_13
+  - first:
+      213: -2429309652159041101
+    second: enemigo_melee_flotar_14
+  - first:
+      213: -907166390475598813
+    second: enemigo_melee_flotar_15
+  - first:
+      213: 8908527445043595569
+    second: enemigo_melee_flotar_16
+  - first:
+      213: -573677574527159178
+    second: enemigo_melee_flotar_17
+  - first:
+      213: -286118010527144835
+    second: enemigo_melee_flotar_18
+  - first:
+      213: -8976214360583366871
+    second: enemigo_melee_flotar_19
+  - first:
+      213: 8050729783153328869
+    second: enemigo_melee_flotar_20
+  - first:
+      213: 4168527428593668752
+    second: enemigo_melee_flotar_21
+  - first:
+      213: 6092848296782455279
+    second: enemigo_melee_flotar_22
+  - first:
+      213: 6318332197458031829
+    second: enemigo_melee_flotar_23
+  - first:
+      213: -1884922892954051432
+    second: enemigo_melee_flotar_24
+  - first:
+      213: 5423228913149858893
+    second: enemigo_melee_flotar_25
+  - first:
+      213: 4731003569960733326
+    second: enemigo_melee_flotar_26
+  - first:
+      213: 8094789938871948178
+    second: enemigo_melee_flotar_27
+  - first:
+      213: 2650673917511841351
+    second: enemigo_melee_flotar_28
+  - first:
+      213: 8380299655559829693
+    second: enemigo_melee_flotar_29
+  - first:
+      213: 2835394277883617118
+    second: enemigo_melee_flotar_30
+  - first:
+      213: 8455674040985145415
+    second: enemigo_melee_flotar_31
+  - first:
+      213: -4382376514255073732
+    second: enemigo_melee_flotar_32
+  - first:
+      213: 2428266964794794856
+    second: enemigo_melee_flotar_33
+  - first:
+      213: 1654546762039962221
+    second: enemigo_melee_flotar_34
+  - first:
+      213: -8672716554703493075
+    second: enemigo_melee_flotar_35
+  - first:
+      213: 8456035660566872544
+    second: enemigo_melee_flotar_36
+  - first:
+      213: 8018625549828504877
+    second: enemigo_melee_flotar_37
+  - first:
+      213: -3043110926023245254
+    second: enemigo_melee_flotar_38
+  - first:
+      213: -5504382922635428561
+    second: enemigo_melee_flotar_39
+  - first:
+      213: -4307079746302869990
+    second: enemigo_melee_flotar_40
+  - first:
+      213: 3302022376426973279
+    second: enemigo_melee_flotar_41
+  - first:
+      213: 7302068480347835504
+    second: enemigo_melee_flotar_42
+  - first:
+      213: -4881439695379943123
+    second: enemigo_melee_flotar_43
+  - first:
+      213: 2149765389589009096
+    second: enemigo_melee_flotar_44
+  - first:
+      213: 4430790674735860951
+    second: enemigo_melee_flotar_45
+  - first:
+      213: -3101639054034214304
+    second: enemigo_melee_flotar_46
+  - first:
+      213: -1163474417490926420
+    second: enemigo_melee_flotar_47
+  - first:
+      213: -218664886090809375
+    second: enemigo_melee_flotar_48
+  - first:
+      213: 1858810707227600884
+    second: enemigo_melee_flotar_49
+  - first:
+      213: 5528119069108986772
+    second: enemigo_melee_flotar_50
+  - first:
+      213: -4745178676738620228
+    second: enemigo_melee_flotar_51
+  - first:
+      213: -227993053385013473
+    second: enemigo_melee_flotar_52
+  - first:
+      213: -5225821384299372871
+    second: enemigo_melee_flotar_53
+  - first:
+      213: 5156061528991364380
+    second: enemigo_melee_flotar_54
+  - first:
+      213: -7347620255673735635
+    second: enemigo_melee_flotar_55
+  - first:
+      213: -7235482800240851856
+    second: enemigo_melee_flotar_56
+  - first:
+      213: 4158731366804534292
+    second: enemigo_melee_flotar_57
+  - first:
+      213: 2669140730243561371
+    second: enemigo_melee_flotar_58
+  - first:
+      213: 738566162907624736
+    second: enemigo_melee_flotar_59
+  - first:
+      213: -2273540289816097353
+    second: enemigo_melee_flotar_60
+  - first:
+      213: -5401251626185482856
+    second: enemigo_melee_flotar_61
+  - first:
+      213: -8142264704474932250
+    second: enemigo_melee_flotar_62
+  - first:
+      213: 8164745916617563645
+    second: enemigo_melee_flotar_63
+  - first:
+      213: -4727748298019720639
+    second: enemigo_melee_flotar_64
+  - first:
+      213: -6508982679402138812
+    second: enemigo_melee_flotar_65
+  - first:
+      213: -8203742733102068364
+    second: enemigo_melee_flotar_66
+  - first:
+      213: -7289138773356235161
+    second: enemigo_melee_flotar_67
+  - first:
+      213: 6129846488503693797
+    second: enemigo_melee_flotar_68
+  - first:
+      213: 2021612834244917532
+    second: enemigo_melee_flotar_69
+  - first:
+      213: -2271822918209344619
+    second: enemigo_melee_flotar_70
+  - first:
+      213: 4312518641431195928
+    second: enemigo_melee_flotar_71
+  - first:
+      213: -6156068220053530004
+    second: enemigo_melee_flotar_72
+  - first:
+      213: -7219247943017522733
+    second: enemigo_melee_flotar_73
+  - first:
+      213: -2515691005144917766
+    second: enemigo_melee_flotar_74
+  - first:
+      213: -4563418168307232931
+    second: enemigo_melee_flotar_75
+  - first:
+      213: -6069598464329695879
+    second: enemigo_melee_flotar_76
+  - first:
+      213: -9133258059749287961
+    second: enemigo_melee_flotar_77
+  - first:
+      213: 3010765695045464034
+    second: enemigo_melee_flotar_78
+  - first:
+      213: -204053410299901448
+    second: enemigo_melee_flotar_79
+  - first:
+      213: 7829399085478928204
+    second: enemigo_melee_flotar_80
+  - first:
+      213: 5165256767946973739
+    second: enemigo_melee_flotar_81
+  - first:
+      213: 1060457718211781317
+    second: enemigo_melee_flotar_82
+  - first:
+      213: -5022704562457637151
+    second: enemigo_melee_flotar_83
+  - first:
+      213: 2995842831111394405
+    second: enemigo_melee_flotar_84
+  - first:
+      213: 7740275418978972810
+    second: enemigo_melee_flotar_85
+  - first:
+      213: 3240894837592885586
+    second: enemigo_melee_flotar_86
+  - first:
+      213: -140994732360218918
+    second: enemigo_melee_flotar_87
+  - first:
+      213: -5539888146611258047
+    second: enemigo_melee_flotar_88
+  - first:
+      213: -8805121674634407397
+    second: enemigo_melee_flotar_89
+  - first:
+      213: 1994967792357797677
+    second: enemigo_melee_flotar_90
+  - first:
+      213: 8746748943597356576
+    second: enemigo_melee_flotar_91
+  - first:
+      213: 532627970252939389
+    second: enemigo_melee_flotar_92
+  - first:
+      213: -500081600431754455
+    second: enemigo_melee_flotar_93
+  - first:
+      213: -7139455696202296074
+    second: enemigo_melee_flotar_94
+  - first:
+      213: -6592110360327870220
+    second: enemigo_melee_flotar_95
+  - first:
+      213: 6643067665466665715
+    second: enemigo_melee_flotar_96
+  - first:
+      213: -8831365744479702435
+    second: enemigo_melee_flotar_97
+  - first:
+      213: 6688729694628693882
+    second: enemigo_melee_flotar_98
+  - first:
+      213: 776176160631273740
+    second: enemigo_melee_flotar_99
+  - first:
+      213: 6711221814285679680
+    second: enemigo_melee_flotar_100
+  - first:
+      213: -8464935246917891932
+    second: enemigo_melee_flotar_101
+  - first:
+      213: -6196529045125131067
+    second: enemigo_melee_flotar_102
+  - first:
+      213: -2296343433480553601
+    second: enemigo_melee_flotar_103
+  - first:
+      213: -8625949611687991352
+    second: enemigo_melee_flotar_104
+  - first:
+      213: 8137776897200149658
+    second: enemigo_melee_flotar_105
+  - first:
+      213: 4047684371084696154
+    second: enemigo_melee_flotar_106
+  - first:
+      213: 1748199361724736058
+    second: enemigo_melee_flotar_107
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_0
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7555
+        width: 748
+        height: 1516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d7bdc2c52f3e6b0800000000000000
+      internalID: -5268100661389853287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_2
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 7462
+        width: 748
+        height: 1516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4630ca97c8408db40800000000000000
+      internalID: 5465123149197345636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_3
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 7474
+        width: 748
+        height: 1590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fad93dba2606bcf0800000000000000
+      internalID: -236995149757293832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_6
+      rect:
+        serializedVersion: 2
+        x: 3340
+        y: 7455
+        width: 700
+        height: 1486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac60be5508d94ff30800000000000000
+      internalID: 4608481493229700810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_7
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 7550
+        width: 704
+        height: 1486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae96d093864e92580800000000000000
+      internalID: -8851292456335087126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 5301
+        width: 852
+        height: 1522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d65a8433d154150800000000000000
+      internalID: 5856118996564536642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_13
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 5482
+        width: 852
+        height: 1522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7534eac679cb5ca0800000000000000
+      internalID: -6027002164257999493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_14
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 5513
+        width: 747
+        height: 1490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1f1ad0ebb594ed0800000000000000
+      internalID: -2429309652159041101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_15
+      rect:
+        serializedVersion: 2
+        x: 2995
+        y: 5326
+        width: 745
+        height: 1485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324578769f81963f0800000000000000
+      internalID: -907166390475598813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_16
+      rect:
+        serializedVersion: 2
+        x: 3961
+        y: 5273
+        width: 794
+        height: 1546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13944a9038271ab70800000000000000
+      internalID: 8908527445043595569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_31
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 3039
+        width: 440
+        height: 1516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740596d7db6985570800000000000000
+      internalID: 8455674040985145415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_32
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 3335
+        width: 438
+        height: 1516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ecfc377cbae23c0800000000000000
+      internalID: -4382376514255073732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_34
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 3269
+        width: 462
+        height: 1582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a2aaf838126f610800000000000000
+      internalID: 1654546762039962221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_36
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 3096
+        width: 430
+        height: 1515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1cf1c91afd95570800000000000000
+      internalID: 8456035660566872544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_41
+      rect:
+        serializedVersion: 2
+        x: 4362
+        y: 2905
+        width: 430
+        height: 1516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5822534bd323dd20800000000000000
+      internalID: 3302022376426973279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_78
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1025
+        width: 472
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efed1ba27368c920800000000000000
+      internalID: 3010765695045464034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_79
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1126
+        width: 472
+        height: 1529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f90ed3218e0b2df0800000000000000
+      internalID: -204053410299901448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_81
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 1218
+        width: 473
+        height: 1587
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22692be9adaea740800000000000000
+      internalID: 5165256767946973739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_82
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1203
+        width: 471
+        height: 1519
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2a5591da087be00800000000000000
+      internalID: 1060457718211781317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_melee_flotar_88
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 819
+        width: 470
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14db6dd051d5e13b0800000000000000
+      internalID: -5539888146611258047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 79702d57c16b0d441aa9c53209d8fd60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemigo_melee_flotar_0: -5268100661389853287
+      enemigo_melee_flotar_1: 4370379634955121219
+      enemigo_melee_flotar_10: -613086866448224895
+      enemigo_melee_flotar_100: 6711221814285679680
+      enemigo_melee_flotar_101: -8464935246917891932
+      enemigo_melee_flotar_102: -6196529045125131067
+      enemigo_melee_flotar_103: -2296343433480553601
+      enemigo_melee_flotar_104: -8625949611687991352
+      enemigo_melee_flotar_105: 8137776897200149658
+      enemigo_melee_flotar_106: 4047684371084696154
+      enemigo_melee_flotar_107: 1748199361724736058
+      enemigo_melee_flotar_108: -1240266305
+      enemigo_melee_flotar_11: -6772253688591770414
+      enemigo_melee_flotar_12: 5856118996564536642
+      enemigo_melee_flotar_13: -6027002164257999493
+      enemigo_melee_flotar_14: -2429309652159041101
+      enemigo_melee_flotar_15: -907166390475598813
+      enemigo_melee_flotar_16: 8908527445043595569
+      enemigo_melee_flotar_17: -573677574527159178
+      enemigo_melee_flotar_18: -286118010527144835
+      enemigo_melee_flotar_19: -8976214360583366871
+      enemigo_melee_flotar_2: 5465123149197345636
+      enemigo_melee_flotar_20: 8050729783153328869
+      enemigo_melee_flotar_21: 4168527428593668752
+      enemigo_melee_flotar_22: 6092848296782455279
+      enemigo_melee_flotar_23: 6318332197458031829
+      enemigo_melee_flotar_24: -1884922892954051432
+      enemigo_melee_flotar_25: 5423228913149858893
+      enemigo_melee_flotar_26: 4731003569960733326
+      enemigo_melee_flotar_27: 8094789938871948178
+      enemigo_melee_flotar_28: 2650673917511841351
+      enemigo_melee_flotar_29: 8380299655559829693
+      enemigo_melee_flotar_3: -236995149757293832
+      enemigo_melee_flotar_30: 2835394277883617118
+      enemigo_melee_flotar_31: 8455674040985145415
+      enemigo_melee_flotar_32: -4382376514255073732
+      enemigo_melee_flotar_33: 2428266964794794856
+      enemigo_melee_flotar_34: 1654546762039962221
+      enemigo_melee_flotar_35: -8672716554703493075
+      enemigo_melee_flotar_36: 8456035660566872544
+      enemigo_melee_flotar_37: 8018625549828504877
+      enemigo_melee_flotar_38: -3043110926023245254
+      enemigo_melee_flotar_39: -5504382922635428561
+      enemigo_melee_flotar_4: -3883877676068579114
+      enemigo_melee_flotar_40: -4307079746302869990
+      enemigo_melee_flotar_41: 3302022376426973279
+      enemigo_melee_flotar_42: 7302068480347835504
+      enemigo_melee_flotar_43: -4881439695379943123
+      enemigo_melee_flotar_44: 2149765389589009096
+      enemigo_melee_flotar_45: 4430790674735860951
+      enemigo_melee_flotar_46: -3101639054034214304
+      enemigo_melee_flotar_47: -1163474417490926420
+      enemigo_melee_flotar_48: -218664886090809375
+      enemigo_melee_flotar_49: 1858810707227600884
+      enemigo_melee_flotar_5: -4837612806462846005
+      enemigo_melee_flotar_50: 5528119069108986772
+      enemigo_melee_flotar_51: -4745178676738620228
+      enemigo_melee_flotar_52: -227993053385013473
+      enemigo_melee_flotar_53: -5225821384299372871
+      enemigo_melee_flotar_54: 5156061528991364380
+      enemigo_melee_flotar_55: -7347620255673735635
+      enemigo_melee_flotar_56: -7235482800240851856
+      enemigo_melee_flotar_57: 4158731366804534292
+      enemigo_melee_flotar_58: 2669140730243561371
+      enemigo_melee_flotar_59: 738566162907624736
+      enemigo_melee_flotar_6: 4608481493229700810
+      enemigo_melee_flotar_60: -2273540289816097353
+      enemigo_melee_flotar_61: -5401251626185482856
+      enemigo_melee_flotar_62: -8142264704474932250
+      enemigo_melee_flotar_63: 8164745916617563645
+      enemigo_melee_flotar_64: -4727748298019720639
+      enemigo_melee_flotar_65: -6508982679402138812
+      enemigo_melee_flotar_66: -8203742733102068364
+      enemigo_melee_flotar_67: -7289138773356235161
+      enemigo_melee_flotar_68: 6129846488503693797
+      enemigo_melee_flotar_69: 2021612834244917532
+      enemigo_melee_flotar_7: -8851292456335087126
+      enemigo_melee_flotar_70: -2271822918209344619
+      enemigo_melee_flotar_71: 4312518641431195928
+      enemigo_melee_flotar_72: -6156068220053530004
+      enemigo_melee_flotar_73: -7219247943017522733
+      enemigo_melee_flotar_74: -2515691005144917766
+      enemigo_melee_flotar_75: -4563418168307232931
+      enemigo_melee_flotar_76: -6069598464329695879
+      enemigo_melee_flotar_77: -9133258059749287961
+      enemigo_melee_flotar_78: 3010765695045464034
+      enemigo_melee_flotar_79: -204053410299901448
+      enemigo_melee_flotar_8: -7332665213313513761
+      enemigo_melee_flotar_80: 7829399085478928204
+      enemigo_melee_flotar_81: 5165256767946973739
+      enemigo_melee_flotar_82: 1060457718211781317
+      enemigo_melee_flotar_83: -5022704562457637151
+      enemigo_melee_flotar_84: 2995842831111394405
+      enemigo_melee_flotar_85: 7740275418978972810
+      enemigo_melee_flotar_86: 3240894837592885586
+      enemigo_melee_flotar_87: -140994732360218918
+      enemigo_melee_flotar_88: -5539888146611258047
+      enemigo_melee_flotar_89: -8805121674634407397
+      enemigo_melee_flotar_9: -4172660082882231819
+      enemigo_melee_flotar_90: 1994967792357797677
+      enemigo_melee_flotar_91: 8746748943597356576
+      enemigo_melee_flotar_92: 532627970252939389
+      enemigo_melee_flotar_93: -500081600431754455
+      enemigo_melee_flotar_94: -7139455696202296074
+      enemigo_melee_flotar_95: -6592110360327870220
+      enemigo_melee_flotar_96: 6643067665466665715
+      enemigo_melee_flotar_97: -8831365744479702435
+      enemigo_melee_flotar_98: 6688729694628693882
+      enemigo_melee_flotar_99: 776176160631273740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

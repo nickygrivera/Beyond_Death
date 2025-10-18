@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
     }
     public void UpdateHealth(Image healthBar, Text healthBarText)
     {
-        healthBar.fillAmount = _player.GetHealthActual() / _player.GetHealthMax();
+        healthBar.fillAmount = _player.GetHealthActual() / 100f;
         healthBarText.text = _player.GetHealthActual().ToString() + " / " + _player.GetHealthMax();
     }
 
@@ -67,5 +67,6 @@ public class UIManager : MonoBehaviour
             default: return false;
         }
     }
+    
 
 }
