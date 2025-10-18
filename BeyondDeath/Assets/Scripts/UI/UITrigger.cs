@@ -12,6 +12,7 @@ public class UITrigger : MonoBehaviour
     private bool isInside = false;
     [SerializeField] private bool _exitGame;
     [SerializeField] private string _gameScene;
+    [SerializeField] private int optionsOrCredits;
 
 
     //Manual de uso
@@ -44,14 +45,16 @@ public class UITrigger : MonoBehaviour
         Debug.Log(isInside);
     }
 
-    private void ShowPopUp()
+    public void ShowPopUp()
     {
         _popUpAnimator.SetTrigger("show");
+        SoundManager.Instance.PlayPopUpOpen();
     }
     private void HidePopUp()
     {
         
         _popUpAnimator.SetTrigger("hide");
+        SoundManager.Instance.PlayPopUpClose();
         
     }
 
@@ -61,15 +64,25 @@ public class UITrigger : MonoBehaviour
         {
             if (_menu != null)
             {
-                UIManager.Instance.ShowMenuAndStopPlayer(_menu, true,pMenu);
-                
+                if (optionsOrCredits == 0)
+                {
+                    SoundManager.Instance.PlayOpenBook();
+                }
+                else
+                {
+                    SoundManager.Instance.PlayCama();
+                }
+                UIManager.Instance.ShowMenuAndStopPlayer(_menu, true, pMenu);
+                _popUpAnimator.SetTrigger("hide");
             }
             else if (_exitGame)
             {
+                SoundManager.Instance.PlayAgujero();
                 UIManager.Instance.ExitGame();
             }
             else
             {
+                SoundManager.Instance.PlayCelda();
                 UIManager.Instance.LoadGame(_gameScene);
             }
         }
