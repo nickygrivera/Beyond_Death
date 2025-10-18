@@ -82,8 +82,7 @@ public class UITrigger : MonoBehaviour
             }
             else
             {
-                SoundManager.Instance.PlayCelda();
-                UIManager.Instance.LoadGame(_gameScene);
+                StartCoroutine(changeScene());
             }
         }
 
@@ -104,5 +103,13 @@ public class UITrigger : MonoBehaviour
         }
     }
 
+
+
+    IEnumerator changeScene()
+    {
+        SoundManager.Instance.PlayCelda();
+        yield return new WaitForSeconds(2);
+        UIManager.Instance.LoadGame(_gameScene);
+    }
 
 }
