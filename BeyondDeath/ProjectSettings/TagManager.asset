@@ -49,5 +49,8 @@ TagManager:
   - name: VfxAuraSortingLayer
     uniqueID: 1351618317
     locked: 0
+  - name: Proyectil
+    uniqueID: 832687139
+    locked: 0
   m_RenderingLayers:
   - Default
