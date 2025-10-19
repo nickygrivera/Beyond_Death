@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 5606536110994603128}
   - component: {fileID: 1115555372215131977}
   - component: {fileID: 7354026199052388120}
-  - component: {fileID: -2521642125220519467}
   m_Layer: 0
   m_Name: EnemyMelee
   m_TagString: Untagged
@@ -272,7 +271,7 @@ MonoBehaviour:
   bottomAnchor: {fileID: 2786749322739463451}
   hitSize: {x: 1.35, y: 1.35}
   player: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 7354026199052388120}
   sprite: {fileID: 0}
   speed: 1
   detectionRange: 5
@@ -298,16 +297,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-2521642125220519467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8292354405366153554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d4f55d196c201847a8e20ea11707cda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllers: []

@@ -1,0 +1,697 @@
+fileFormatVersion: 2
+guid: 3da8a61b4d739874face8d34b9cb6e05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -25334862516141509
+    second: enemigo_distancia_ataque_0
+  - first:
+      213: 2751040208736217249
+    second: enemigo_distancia_ataque_1
+  - first:
+      213: -4647244855925246851
+    second: enemigo_distancia_ataque_2
+  - first:
+      213: -8057233157793363983
+    second: enemigo_distancia_ataque_3
+  - first:
+      213: 3377452385234570733
+    second: enemigo_distancia_ataque_4
+  - first:
+      213: 5282981863044585144
+    second: enemigo_distancia_ataque_5
+  - first:
+      213: -5705884834710230015
+    second: enemigo_distancia_ataque_6
+  - first:
+      213: 7155179546022416452
+    second: enemigo_distancia_ataque_7
+  - first:
+      213: 2266532406949195127
+    second: enemigo_distancia_ataque_8
+  - first:
+      213: 2475571079765835989
+    second: enemigo_distancia_ataque_9
+  - first:
+      213: -5377165807669317875
+    second: enemigo_distancia_ataque_10
+  - first:
+      213: 3722898800943556043
+    second: enemigo_distancia_ataque_11
+  - first:
+      213: 4801513627466402870
+    second: enemigo_distancia_ataque_12
+  - first:
+      213: 1430783680287510397
+    second: enemigo_distancia_ataque_13
+  - first:
+      213: -8694375251641203758
+    second: enemigo_distancia_ataque_14
+  - first:
+      213: 8960211271861286758
+    second: enemigo_distancia_ataque_15
+  - first:
+      213: 5448145115476609141
+    second: enemigo_distancia_ataque_16
+  - first:
+      213: 3818051066946945776
+    second: enemigo_distancia_ataque_17
+  - first:
+      213: -2063766688384924764
+    second: enemigo_distancia_ataque_18
+  - first:
+      213: -1552170732569517694
+    second: enemigo_distancia_ataque_19
+  - first:
+      213: 6738255513853743272
+    second: enemigo_distancia_ataque_20
+  - first:
+      213: -8390570874625018666
+    second: enemigo_distancia_ataque_21
+  - first:
+      213: 6078224667173564620
+    second: enemigo_distancia_ataque_22
+  - first:
+      213: -4422344783246856770
+    second: enemigo_distancia_ataque_23
+  - first:
+      213: 2062696761278743291
+    second: enemigo_distancia_ataque_24
+  - first:
+      213: 2338727422825408444
+    second: enemigo_distancia_ataque_25
+  - first:
+      213: -6012885157424817117
+    second: enemigo_distancia_ataque_26
+  - first:
+      213: -949846990141453106
+    second: enemigo_distancia_ataque_27
+  - first:
+      213: 7850134170589539084
+    second: enemigo_distancia_ataque_28
+  - first:
+      213: 957145082595199421
+    second: enemigo_distancia_ataque_29
+  - first:
+      213: 5827130906737776527
+    second: enemigo_distancia_ataque_30
+  - first:
+      213: 8352675919294796936
+    second: enemigo_distancia_ataque_31
+  - first:
+      213: -7339618881757793680
+    second: enemigo_distancia_ataque_32
+  - first:
+      213: 4903847791450387874
+    second: enemigo_distancia_ataque_33
+  - first:
+      213: -6544942607623700444
+    second: enemigo_distancia_ataque_34
+  - first:
+      213: 3962285171956542723
+    second: enemigo_distancia_ataque_35
+  - first:
+      213: -4983240361651297674
+    second: enemigo_distancia_ataque_36
+  - first:
+      213: 710469760842171291
+    second: enemigo_distancia_ataque_37
+  - first:
+      213: -3088887684198872030
+    second: enemigo_distancia_ataque_38
+  - first:
+      213: 4427359802456167749
+    second: enemigo_distancia_ataque_39
+  - first:
+      213: 3859409200702480422
+    second: enemigo_distancia_ataque_40
+  - first:
+      213: 122274697735016705
+    second: enemigo_distancia_ataque_41
+  - first:
+      213: -2492434414329729140
+    second: enemigo_distancia_ataque_42
+  - first:
+      213: 5002847867596814976
+    second: enemigo_distancia_ataque_43
+  - first:
+      213: -8006818534973527007
+    second: enemigo_distancia_ataque_44
+  - first:
+      213: 5158235387612200808
+    second: enemigo_distancia_ataque_45
+  - first:
+      213: -1841172842607363895
+    second: enemigo_distancia_ataque_46
+  - first:
+      213: -1928693425452575116
+    second: enemigo_distancia_ataque_47
+  - first:
+      213: -1477356746186750575
+    second: enemigo_distancia_ataque_48
+  - first:
+      213: -3198682104944357122
+    second: enemigo_distancia_ataque_49
+  - first:
+      213: 2333701770746827696
+    second: enemigo_distancia_ataque_50
+  - first:
+      213: -4194866290683556090
+    second: enemigo_distancia_ataque_51
+  - first:
+      213: -3151905473599161972
+    second: enemigo_distancia_ataque_52
+  - first:
+      213: 295559537963208996
+    second: enemigo_distancia_ataque_53
+  - first:
+      213: -4502171806931563770
+    second: enemigo_distancia_ataque_54
+  - first:
+      213: 1086615257523631573
+    second: enemigo_distancia_ataque_55
+  - first:
+      213: 3362854814787433103
+    second: enemigo_distancia_ataque_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_3
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 8093
+        width: 966
+        height: 1591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f74a3dc125fe2090800000000000000
+      internalID: -8057233157793363983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_5
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 8045
+        width: 944
+        height: 1594
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b69a95930ce05940800000000000000
+      internalID: 5282981863044585144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_8
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 8063
+        width: 582
+        height: 1586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d2e1c2737547f10800000000000000
+      internalID: 2266532406949195127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_10
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 8054
+        width: 439
+        height: 1589
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f6e77ff287065b0800000000000000
+      internalID: -5377165807669317875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_11
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 8057
+        width: 731
+        height: 1576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5e7f41cb46aa330800000000000000
+      internalID: 3722898800943556043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_15
+      rect:
+        serializedVersion: 2
+        x: 5449
+        y: 8005
+        width: 794
+        height: 1572
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6673eb3bda0195c70800000000000000
+      internalID: 8960211271861286758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_22
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 5973
+        width: 944
+        height: 1552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0b5e781213a5450800000000000000
+      internalID: 6078224667173564620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_24
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 6004
+        width: 439
+        height: 1610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf24e5796cb20ac10800000000000000
+      internalID: 2062696761278743291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_25
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 5993
+        width: 582
+        height: 1579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb729ff2334d47020800000000000000
+      internalID: 2338727422825408444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_28
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 5985
+        width: 731
+        height: 1580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b2525bf6741fc60800000000000000
+      internalID: 7850134170589539084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_31
+      rect:
+        serializedVersion: 2
+        x: 4287
+        y: 5885
+        width: 944
+        height: 1643
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88496858e7aaae370800000000000000
+      internalID: 8352675919294796936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_32
+      rect:
+        serializedVersion: 2
+        x: 5509
+        y: 5869
+        width: 794
+        height: 1639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072b316938f642a90800000000000000
+      internalID: -7339618881757793680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_38
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 3849
+        width: 749
+        height: 1654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c4f3054011225d0800000000000000
+      internalID: -3088887684198872030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_40
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 3851
+        width: 749
+        height: 1652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620eeb258306f8530800000000000000
+      internalID: 3859409200702480422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_42
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 3850
+        width: 724
+        height: 1652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8feaeb0b18196dd0800000000000000
+      internalID: -2492434414329729140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_ataque_56
+      rect:
+        serializedVersion: 2
+        x: 4194
+        y: 3847
+        width: 587
+        height: 1592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82fd9a03a24bae20800000000000000
+      internalID: 3362854814787433103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 93c2e829d552e784d919a3db6f80a64a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemigo_distancia_ataque_0: -25334862516141509
+      enemigo_distancia_ataque_1: 2751040208736217249
+      enemigo_distancia_ataque_10: -5377165807669317875
+      enemigo_distancia_ataque_11: 3722898800943556043
+      enemigo_distancia_ataque_12: 4801513627466402870
+      enemigo_distancia_ataque_13: 1430783680287510397
+      enemigo_distancia_ataque_14: -8694375251641203758
+      enemigo_distancia_ataque_15: 8960211271861286758
+      enemigo_distancia_ataque_16: 5448145115476609141
+      enemigo_distancia_ataque_17: 3818051066946945776
+      enemigo_distancia_ataque_18: -2063766688384924764
+      enemigo_distancia_ataque_19: -1552170732569517694
+      enemigo_distancia_ataque_2: -4647244855925246851
+      enemigo_distancia_ataque_20: 6738255513853743272
+      enemigo_distancia_ataque_21: -8390570874625018666
+      enemigo_distancia_ataque_22: 6078224667173564620
+      enemigo_distancia_ataque_23: -4422344783246856770
+      enemigo_distancia_ataque_24: 2062696761278743291
+      enemigo_distancia_ataque_25: 2338727422825408444
+      enemigo_distancia_ataque_26: -6012885157424817117
+      enemigo_distancia_ataque_27: -949846990141453106
+      enemigo_distancia_ataque_28: 7850134170589539084
+      enemigo_distancia_ataque_29: 957145082595199421
+      enemigo_distancia_ataque_3: -8057233157793363983
+      enemigo_distancia_ataque_30: 5827130906737776527
+      enemigo_distancia_ataque_31: 8352675919294796936
+      enemigo_distancia_ataque_32: -7339618881757793680
+      enemigo_distancia_ataque_33: 4903847791450387874
+      enemigo_distancia_ataque_34: -6544942607623700444
+      enemigo_distancia_ataque_35: 3962285171956542723
+      enemigo_distancia_ataque_36: -4983240361651297674
+      enemigo_distancia_ataque_37: 710469760842171291
+      enemigo_distancia_ataque_38: -3088887684198872030
+      enemigo_distancia_ataque_39: 4427359802456167749
+      enemigo_distancia_ataque_4: 3377452385234570733
+      enemigo_distancia_ataque_40: 3859409200702480422
+      enemigo_distancia_ataque_41: 122274697735016705
+      enemigo_distancia_ataque_42: -2492434414329729140
+      enemigo_distancia_ataque_43: 5002847867596814976
+      enemigo_distancia_ataque_44: -8006818534973527007
+      enemigo_distancia_ataque_45: 5158235387612200808
+      enemigo_distancia_ataque_46: -1841172842607363895
+      enemigo_distancia_ataque_47: -1928693425452575116
+      enemigo_distancia_ataque_48: -1477356746186750575
+      enemigo_distancia_ataque_49: -3198682104944357122
+      enemigo_distancia_ataque_5: 5282981863044585144
+      enemigo_distancia_ataque_50: 2333701770746827696
+      enemigo_distancia_ataque_51: -4194866290683556090
+      enemigo_distancia_ataque_52: -3151905473599161972
+      enemigo_distancia_ataque_53: 295559537963208996
+      enemigo_distancia_ataque_54: -4502171806931563770
+      enemigo_distancia_ataque_55: 1086615257523631573
+      enemigo_distancia_ataque_56: 3362854814787433103
+      enemigo_distancia_ataque_6: -5705884834710230015
+      enemigo_distancia_ataque_7: 7155179546022416452
+      enemigo_distancia_ataque_8: 2266532406949195127
+      enemigo_distancia_ataque_9: 2475571079765835989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

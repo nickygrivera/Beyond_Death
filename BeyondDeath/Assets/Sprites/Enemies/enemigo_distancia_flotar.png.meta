@@ -1,0 +1,945 @@
+fileFormatVersion: 2
+guid: ba1e0c77869dd1e45a9c83d6b5a375b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7297108860437202752
+    second: enemigo_distancia_flotar_0
+  - first:
+      213: 6544851075723868607
+    second: enemigo_distancia_flotar_1
+  - first:
+      213: -8883956023199936555
+    second: enemigo_distancia_flotar_2
+  - first:
+      213: -3535970858209355262
+    second: enemigo_distancia_flotar_3
+  - first:
+      213: -77834374885202052
+    second: enemigo_distancia_flotar_4
+  - first:
+      213: -8745206778994353252
+    second: enemigo_distancia_flotar_5
+  - first:
+      213: 69109137823424365
+    second: enemigo_distancia_flotar_6
+  - first:
+      213: -8933338583611431568
+    second: enemigo_distancia_flotar_7
+  - first:
+      213: 8805798897454695082
+    second: enemigo_distancia_flotar_8
+  - first:
+      213: -6829465569537548336
+    second: enemigo_distancia_flotar_9
+  - first:
+      213: -7043798445017510388
+    second: enemigo_distancia_flotar_10
+  - first:
+      213: 845810745446335777
+    second: enemigo_distancia_flotar_11
+  - first:
+      213: -3748453655906277872
+    second: enemigo_distancia_flotar_12
+  - first:
+      213: 4017961716386447764
+    second: enemigo_distancia_flotar_13
+  - first:
+      213: 1279669854974353855
+    second: enemigo_distancia_flotar_14
+  - first:
+      213: -2595935499817197677
+    second: enemigo_distancia_flotar_15
+  - first:
+      213: 1111457221042556675
+    second: enemigo_distancia_flotar_16
+  - first:
+      213: -3353856255796888575
+    second: enemigo_distancia_flotar_17
+  - first:
+      213: 3422273786662874608
+    second: enemigo_distancia_flotar_18
+  - first:
+      213: 2421430373778138161
+    second: enemigo_distancia_flotar_19
+  - first:
+      213: -50053654355373821
+    second: enemigo_distancia_flotar_20
+  - first:
+      213: -1003259800038947504
+    second: enemigo_distancia_flotar_21
+  - first:
+      213: 8815074440087592354
+    second: enemigo_distancia_flotar_22
+  - first:
+      213: -78642903274579483
+    second: enemigo_distancia_flotar_23
+  - first:
+      213: -5083072418800446479
+    second: enemigo_distancia_flotar_24
+  - first:
+      213: 6483510026461103162
+    second: enemigo_distancia_flotar_25
+  - first:
+      213: 4073395811748458744
+    second: enemigo_distancia_flotar_26
+  - first:
+      213: 5810878290323725309
+    second: enemigo_distancia_flotar_27
+  - first:
+      213: -2644857538663473379
+    second: enemigo_distancia_flotar_28
+  - first:
+      213: 4951577885285136
+    second: enemigo_distancia_flotar_29
+  - first:
+      213: 5438934713619168310
+    second: enemigo_distancia_flotar_30
+  - first:
+      213: -9132020760323450723
+    second: enemigo_distancia_flotar_31
+  - first:
+      213: -4762652479463909277
+    second: enemigo_distancia_flotar_32
+  - first:
+      213: 8987476503247852204
+    second: enemigo_distancia_flotar_33
+  - first:
+      213: -7648595917055147239
+    second: enemigo_distancia_flotar_34
+  - first:
+      213: -4320172499753068294
+    second: enemigo_distancia_flotar_35
+  - first:
+      213: -3923537208123138028
+    second: enemigo_distancia_flotar_36
+  - first:
+      213: -5492334155996580278
+    second: enemigo_distancia_flotar_37
+  - first:
+      213: -3091122735764396755
+    second: enemigo_distancia_flotar_38
+  - first:
+      213: -3268727165609236512
+    second: enemigo_distancia_flotar_39
+  - first:
+      213: -4562482793439484843
+    second: enemigo_distancia_flotar_40
+  - first:
+      213: 1572977223786241801
+    second: enemigo_distancia_flotar_41
+  - first:
+      213: 3041589018580188137
+    second: enemigo_distancia_flotar_42
+  - first:
+      213: -8617902383833835218
+    second: enemigo_distancia_flotar_43
+  - first:
+      213: -2792736462555258789
+    second: enemigo_distancia_flotar_44
+  - first:
+      213: 7857836987118718985
+    second: enemigo_distancia_flotar_45
+  - first:
+      213: 4802605128838783657
+    second: enemigo_distancia_flotar_46
+  - first:
+      213: -6315150605853026691
+    second: enemigo_distancia_flotar_47
+  - first:
+      213: -3383023953431695052
+    second: enemigo_distancia_flotar_48
+  - first:
+      213: 5292636083642874297
+    second: enemigo_distancia_flotar_49
+  - first:
+      213: -2139255017717935775
+    second: enemigo_distancia_flotar_50
+  - first:
+      213: -2746916290478616476
+    second: enemigo_distancia_flotar_51
+  - first:
+      213: -4244365788364058188
+    second: enemigo_distancia_flotar_52
+  - first:
+      213: -2679058798400186282
+    second: enemigo_distancia_flotar_53
+  - first:
+      213: -427815640076876735
+    second: enemigo_distancia_flotar_54
+  - first:
+      213: -5092751220151000958
+    second: enemigo_distancia_flotar_55
+  - first:
+      213: -612239984006615130
+    second: enemigo_distancia_flotar_56
+  - first:
+      213: 1563247730448150628
+    second: enemigo_distancia_flotar_57
+  - first:
+      213: -688055841369483717
+    second: enemigo_distancia_flotar_58
+  - first:
+      213: 2341421402165920326
+    second: enemigo_distancia_flotar_59
+  - first:
+      213: 6912472180982019831
+    second: enemigo_distancia_flotar_60
+  - first:
+      213: 4499812419950092539
+    second: enemigo_distancia_flotar_61
+  - first:
+      213: 105585365042047662
+    second: enemigo_distancia_flotar_62
+  - first:
+      213: -4428639264921115743
+    second: enemigo_distancia_flotar_63
+  - first:
+      213: 5372926573142736605
+    second: enemigo_distancia_flotar_64
+  - first:
+      213: 1756976440708061867
+    second: enemigo_distancia_flotar_65
+  - first:
+      213: -5897568281807751854
+    second: enemigo_distancia_flotar_66
+  - first:
+      213: 2305985658123533976
+    second: enemigo_distancia_flotar_67
+  - first:
+      213: -3648995264604600852
+    second: enemigo_distancia_flotar_68
+  - first:
+      213: -362064033497230299
+    second: enemigo_distancia_flotar_69
+  - first:
+      213: 3049104018018516771
+    second: enemigo_distancia_flotar_70
+  - first:
+      213: -1785127777709292924
+    second: enemigo_distancia_flotar_71
+  - first:
+      213: 6556375560211077589
+    second: enemigo_distancia_flotar_72
+  - first:
+      213: -138417652125560070
+    second: enemigo_distancia_flotar_73
+  - first:
+      213: 2027819704701234320
+    second: enemigo_distancia_flotar_74
+  - first:
+      213: -8444872649925229216
+    second: enemigo_distancia_flotar_75
+  - first:
+      213: -197204359250019780
+    second: enemigo_distancia_flotar_76
+  - first:
+      213: -6832611782974683954
+    second: enemigo_distancia_flotar_77
+  - first:
+      213: 6486361497306394277
+    second: enemigo_distancia_flotar_78
+  - first:
+      213: -5389053262733267873
+    second: enemigo_distancia_flotar_79
+  - first:
+      213: 2222338026159730918
+    second: enemigo_distancia_flotar_80
+  - first:
+      213: -3979646350101966811
+    second: enemigo_distancia_flotar_81
+  - first:
+      213: -6743548770527043223
+    second: enemigo_distancia_flotar_82
+  - first:
+      213: -7305490746284500478
+    second: enemigo_distancia_flotar_83
+  - first:
+      213: 5203083446464266052
+    second: enemigo_distancia_flotar_84
+  - first:
+      213: -2952073224498018382
+    second: enemigo_distancia_flotar_85
+  - first:
+      213: -2412430261070388032
+    second: enemigo_distancia_flotar_86
+  - first:
+      213: -5427725345462177977
+    second: enemigo_distancia_flotar_87
+  - first:
+      213: 4855626102019327563
+    second: enemigo_distancia_flotar_88
+  - first:
+      213: -4171727975651179674
+    second: enemigo_distancia_flotar_89
+  - first:
+      213: 3032915411492336547
+    second: enemigo_distancia_flotar_90
+  - first:
+      213: 5729417340079821898
+    second: enemigo_distancia_flotar_91
+  - first:
+      213: 4469733517856998488
+    second: enemigo_distancia_flotar_92
+  - first:
+      213: -781559374930376874
+    second: enemigo_distancia_flotar_93
+  - first:
+      213: 7984834887190349316
+    second: enemigo_distancia_flotar_94
+  - first:
+      213: 4192884992815504091
+    second: enemigo_distancia_flotar_95
+  - first:
+      213: 8152254683661433265
+    second: enemigo_distancia_flotar_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 7993
+        width: 448
+        height: 1712
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a5c442d35bdeec0800000000000000
+      internalID: -3535970858209355262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_4
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 7998
+        width: 448
+        height: 1707
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7727a56c0a7beef0800000000000000
+      internalID: -77834374885202052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_7
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 7954
+        width: 448
+        height: 1755
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075ac8993e7660480800000000000000
+      internalID: -8933338583611431568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_11
+      rect:
+        serializedVersion: 2
+        x: 4294
+        y: 7944
+        width: 448
+        height: 1741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1258985446cecbb00800000000000000
+      internalID: 845810745446335777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_21
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 5929
+        width: 405
+        height: 1778
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055cf310784b312f0800000000000000
+      internalID: -1003259800038947504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_22
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 5931
+        width: 439
+        height: 1779
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2addb0ebf7f655a70800000000000000
+      internalID: 8815074440087592354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_24
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 5936
+        width: 453
+        height: 1768
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f350ddf09c4579b0800000000000000
+      internalID: -5083072418800446479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_25
+      rect:
+        serializedVersion: 2
+        x: 4251
+        y: 5932
+        width: 439
+        height: 1772
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34c5e8940e0af950800000000000000
+      internalID: 6483510026461103162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_26
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 5917
+        width: 424
+        height: 1793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0b4d4b8eb978830800000000000000
+      internalID: 4073395811748458744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_32
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3810
+        width: 724
+        height: 1757
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3689be4bdc8a7edb0800000000000000
+      internalID: -4762652479463909277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_35
+      rect:
+        serializedVersion: 2
+        x: 3954
+        y: 3805
+        width: 724
+        height: 1756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af89ecf200aab04c0800000000000000
+      internalID: -4320172499753068294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_38
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 3797
+        width: 724
+        height: 1766
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2521a1df302a15d0800000000000000
+      internalID: -3091122735764396755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_41
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 3807
+        width: 724
+        height: 1752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f1f87737654d510800000000000000
+      internalID: 1572977223786241801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_44
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3651
+        width: 724
+        height: 1808
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50ec1edbf43e39d0800000000000000
+      internalID: -2792736462555258789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_57
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 1711
+        width: 638
+        height: 1935
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4603c454785c1b510800000000000000
+      internalID: 1563247730448150628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_76
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1711
+        width: 638
+        height: 1880
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a7eba1ea3634df0800000000000000
+      internalID: -197204359250019780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_83
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 1694
+        width: 638
+        height: 1912
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a1fc55fdead9a90800000000000000
+      internalID: -7305490746284500478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_92
+      rect:
+        serializedVersion: 2
+        x: 5053
+        y: 1689
+        width: 638
+        height: 1903
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854068ce3fea70e30800000000000000
+      internalID: 4469733517856998488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_93
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 1686
+        width: 638
+        height: 1915
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657066ea3e75725f0800000000000000
+      internalID: -781559374930376874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo_distancia_flotar_0
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 7988
+        width: 448
+        height: 1731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a40aa130bd2cc489ef44454232b120
+      internalID: -7297108860437202752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0b9d82b574dc3944f9ee22bcf13fe6ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enemigo_distancia_flotar_0: -7297108860437202752
+      enemigo_distancia_flotar_1: 6544851075723868607
+      enemigo_distancia_flotar_10: -7043798445017510388
+      enemigo_distancia_flotar_11: 845810745446335777
+      enemigo_distancia_flotar_12: -3748453655906277872
+      enemigo_distancia_flotar_13: 4017961716386447764
+      enemigo_distancia_flotar_14: 1279669854974353855
+      enemigo_distancia_flotar_15: -2595935499817197677
+      enemigo_distancia_flotar_16: 1111457221042556675
+      enemigo_distancia_flotar_17: -3353856255796888575
+      enemigo_distancia_flotar_18: 3422273786662874608
+      enemigo_distancia_flotar_19: 2421430373778138161
+      enemigo_distancia_flotar_2: -8883956023199936555
+      enemigo_distancia_flotar_20: -50053654355373821
+      enemigo_distancia_flotar_21: -1003259800038947504
+      enemigo_distancia_flotar_22: 8815074440087592354
+      enemigo_distancia_flotar_23: -78642903274579483
+      enemigo_distancia_flotar_24: -5083072418800446479
+      enemigo_distancia_flotar_25: 6483510026461103162
+      enemigo_distancia_flotar_26: 4073395811748458744
+      enemigo_distancia_flotar_27: 5810878290323725309
+      enemigo_distancia_flotar_28: -2644857538663473379
+      enemigo_distancia_flotar_29: 4951577885285136
+      enemigo_distancia_flotar_3: -3535970858209355262
+      enemigo_distancia_flotar_30: 5438934713619168310
+      enemigo_distancia_flotar_31: -9132020760323450723
+      enemigo_distancia_flotar_32: -4762652479463909277
+      enemigo_distancia_flotar_33: 8987476503247852204
+      enemigo_distancia_flotar_34: -7648595917055147239
+      enemigo_distancia_flotar_35: -4320172499753068294
+      enemigo_distancia_flotar_36: -3923537208123138028
+      enemigo_distancia_flotar_37: -5492334155996580278
+      enemigo_distancia_flotar_38: -3091122735764396755
+      enemigo_distancia_flotar_39: -3268727165609236512
+      enemigo_distancia_flotar_4: -77834374885202052
+      enemigo_distancia_flotar_40: -4562482793439484843
+      enemigo_distancia_flotar_41: 1572977223786241801
+      enemigo_distancia_flotar_42: 3041589018580188137
+      enemigo_distancia_flotar_43: -8617902383833835218
+      enemigo_distancia_flotar_44: -2792736462555258789
+      enemigo_distancia_flotar_45: 7857836987118718985
+      enemigo_distancia_flotar_46: 4802605128838783657
+      enemigo_distancia_flotar_47: -6315150605853026691
+      enemigo_distancia_flotar_48: -3383023953431695052
+      enemigo_distancia_flotar_49: 5292636083642874297
+      enemigo_distancia_flotar_5: -8745206778994353252
+      enemigo_distancia_flotar_50: -2139255017717935775
+      enemigo_distancia_flotar_51: -2746916290478616476
+      enemigo_distancia_flotar_52: -4244365788364058188
+      enemigo_distancia_flotar_53: -2679058798400186282
+      enemigo_distancia_flotar_54: -427815640076876735
+      enemigo_distancia_flotar_55: -5092751220151000958
+      enemigo_distancia_flotar_56: -612239984006615130
+      enemigo_distancia_flotar_57: 1563247730448150628
+      enemigo_distancia_flotar_58: -688055841369483717
+      enemigo_distancia_flotar_59: 2341421402165920326
+      enemigo_distancia_flotar_6: 69109137823424365
+      enemigo_distancia_flotar_60: 6912472180982019831
+      enemigo_distancia_flotar_61: 4499812419950092539
+      enemigo_distancia_flotar_62: 105585365042047662
+      enemigo_distancia_flotar_63: -4428639264921115743
+      enemigo_distancia_flotar_64: 5372926573142736605
+      enemigo_distancia_flotar_65: 1756976440708061867
+      enemigo_distancia_flotar_66: -5897568281807751854
+      enemigo_distancia_flotar_67: 2305985658123533976
+      enemigo_distancia_flotar_68: -3648995264604600852
+      enemigo_distancia_flotar_69: -362064033497230299
+      enemigo_distancia_flotar_7: -8933338583611431568
+      enemigo_distancia_flotar_70: 3049104018018516771
+      enemigo_distancia_flotar_71: -1785127777709292924
+      enemigo_distancia_flotar_72: 6556375560211077589
+      enemigo_distancia_flotar_73: -138417652125560070
+      enemigo_distancia_flotar_74: 2027819704701234320
+      enemigo_distancia_flotar_75: -8444872649925229216
+      enemigo_distancia_flotar_76: -197204359250019780
+      enemigo_distancia_flotar_77: -6832611782974683954
+      enemigo_distancia_flotar_78: 6486361497306394277
+      enemigo_distancia_flotar_79: -5389053262733267873
+      enemigo_distancia_flotar_8: 8805798897454695082
+      enemigo_distancia_flotar_80: 2222338026159730918
+      enemigo_distancia_flotar_81: -3979646350101966811
+      enemigo_distancia_flotar_82: -6743548770527043223
+      enemigo_distancia_flotar_83: -7305490746284500478
+      enemigo_distancia_flotar_84: 5203083446464266052
+      enemigo_distancia_flotar_85: -2952073224498018382
+      enemigo_distancia_flotar_86: -2412430261070388032
+      enemigo_distancia_flotar_87: -5427725345462177977
+      enemigo_distancia_flotar_88: 4855626102019327563
+      enemigo_distancia_flotar_89: -4171727975651179674
+      enemigo_distancia_flotar_9: -6829465569537548336
+      enemigo_distancia_flotar_90: 3032915411492336547
+      enemigo_distancia_flotar_91: 5729417340079821898
+      enemigo_distancia_flotar_92: 4469733517856998488
+      enemigo_distancia_flotar_93: -781559374930376874
+      enemigo_distancia_flotar_94: 7984834887190349316
+      enemigo_distancia_flotar_95: 4192884992815504091
+      enemigo_distancia_flotar_96: 8152254683661433265
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
