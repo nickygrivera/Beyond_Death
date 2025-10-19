@@ -489,8 +489,8 @@ public class EnemyMovable : Character
             */
         }
 
-        GetComponent<RoomMember>()?.NotifyDeath();
-
+        var member = GetComponent<RoomMember>();
+        if (member != null) member.NotifyDeath();
 
         Destroy(gameObject, 2f);
     }

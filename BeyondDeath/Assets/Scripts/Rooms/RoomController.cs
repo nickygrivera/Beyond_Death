@@ -1,96 +1,107 @@
 using UnityEngine;
 
-public class RoomControllerObs : MonoBehaviour
+public class RoomController : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private Transform enemiesRoot;      // hijos con tag Enemy
-    [SerializeField] private GameObject[] puertas;       // collider NO trigger: activas = CERRADAS
-    [SerializeField] private GameObject[] limites;       // trigger: activas = ON
-    [SerializeField] private Collider2D roomArea;        // Box/Poly isTrigger que cubre la sala (para leash)
+    [SerializeField] private Transform enemiesRoot;   // contenedor de enemigos de esta sala
+    [SerializeField] private GameObject[] puertas;    // SOLO puertas de SALIDA (colliders ON = cerrada)
+    [SerializeField] private GameObject[] limites;    // paredes de la sala (SetActive true/false)
+    [SerializeField] private Collider2D roomArea;     // opcional (para gizmos/ayudas)
 
-    [Header("Estado inicial")]
-    [SerializeField] private bool activarAlStart = false;  // Room_1 = true
+    [Header("Setup")]
+    [SerializeField] private bool activarAlStart = false;   // Room_1 = true
 
     private int vivos;
     private bool activa;
     private bool cleared;
 
+
+    public bool IsActive => activa;
+    public bool IsCleared => cleared;
+
     private void Awake()
     {
-        // Contar enemigos hijos (aunque estén desactivados)
-        vivos = 0;
-        if (enemiesRoot != null)
-        {
-            var childs = enemiesRoot.GetComponentsInChildren<Transform>(true);
-            for (int i = 0; i < childs.Length; i++)
-                if (childs[i].CompareTag("Enemy")) vivos++;
-        }
+        vivos = ContarEnemigosInicial();
 
-        // Estado inicial de puertas/limites
-        if (activarAlStart)
-        {
-            activa = true;
-            SetPuertasCerradas(true);   // arrancamos cerrada la sala de inicio
-            SetLimitesActivos(true);
-            if (vivos <= 0) AbrirSala();
-        }
-        else
-        {
-            SetPuertasCerradas(false);  // salas no activas: abiertas y sin límites
-            SetLimitesActivos(false);
-        }
-
-        if (roomArea == null)
-            Debug.LogWarning($"[Room] Falta roomArea en {name}");
+        // Estado inicial (sala abierta y sin límites)
+        SetPuertasCerradas(false);
+        SetLimitesActivos(false);
     }
 
+    private int ContarEnemigosInicial()
+    {
+        Transform root = enemiesRoot != null ? enemiesRoot : transform;
+        var miembros = root.GetComponentsInChildren<RoomMember>(true);
+        return miembros.Length;
+    }
+
+    private void Start()
+    {
+        if (activarAlStart) ActivarSala();
+    }
+
+    // Llamada por el EnterTrigger de la sala
     public void ActivarSala()
     {
         if (activa) return;
         activa = true;
 
+        // En combate: cierra puerta de salida y enciende paredes
         SetPuertasCerradas(true);
         SetLimitesActivos(true);
 
-        if (vivos <= 0) AbrirSala();
-    }
-
-    public void NotificarEnemigoMuerto(RoomMember member)
-    {
-        if (member == null) return;
-
-        // comprobar que pertenece a ESTA sala
-        Transform t = member.transform;
-        bool esDeEstaSala = enemiesRoot ? t.IsChildOf(enemiesRoot) : t.IsChildOf(transform);
-        if (!esDeEstaSala) return;
-
-        if (vivos > 0) vivos--;
-
-        if (activa && !cleared && vivos <= 0)
+        if (vivos <= 0)
             AbrirSala();
     }
 
-    public void ApagarLimitesAlSalir() => SetLimitesActivos(false);
+    // Llamada por el ExitTrigger al cruzar la salida
+    public void ApagarLimitesAlSalir()
+    {
+        SetLimitesActivos(false);
+    }
+
+    // Llamada por RoomMember.NotifyDeath() cuando muere un enemigo de esta sala
+    public void NotificarEnemigoMuerto(RoomMember who)
+    {
+        if (!activa || cleared) return;
+
+        if (enemiesRoot != null && who != null && !who.transform.IsChildOf(enemiesRoot))
+            return; // ese enemigo no es de esta sala
+
+        if (vivos > 0) vivos--;
+        if (vivos <= 0) AbrirSala();
+    }
 
     private void AbrirSala()
     {
         if (cleared) return;
         cleared = true;
-        SetPuertasCerradas(false);
-        // límites se apagarán al cruzar el ExitTrigger
+        SetPuertasCerradas(false); // abre salida (colliders OFF)
+        // Los límites siguen activos hasta que el ExitTrigger los apague
     }
 
     private void SetPuertasCerradas(bool cerradas)
     {
         if (puertas == null) return;
-        for (int i = 0; i < puertas.Length; i++)
-            if (puertas[i] != null) puertas[i].SetActive(cerradas);
+
+        foreach (var p in puertas)
+        {
+            if (!p) continue;
+
+            // 1) SOLO colisiones (NO desactivar el GameObject)
+            var cols = p.GetComponentsInChildren<Collider2D>(true);
+            foreach (var c in cols) c.enabled = cerradas;
+
+            // 2) Mantener visible el sprite siempre (para feedback visual)
+            var rends = p.GetComponentsInChildren<Renderer>(true);
+            foreach (var r in rends) r.enabled = true;
+        }
     }
 
     private void SetLimitesActivos(bool activos)
     {
         if (limites == null) return;
-        for (int i = 0; i < limites.Length; i++)
-            if (limites[i] != null) limites[i].SetActive(activos);
+        foreach (var l in limites)
+            if (l) l.SetActive(activos);
     }
 }

@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class RoomMember : MonoBehaviour
 {
-    [SerializeField] private RoomControllerObs room;
+    [SerializeField] private RoomController room;
 
     private void Awake()
     {
-        if (room == null)
-            room = GetComponentInParent<RoomControllerObs>();
+        if (room == null) room = GetComponentInParent<RoomController>();
     }
 
     public void NotifyDeath()

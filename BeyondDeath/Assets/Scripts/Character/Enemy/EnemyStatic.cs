@@ -400,7 +400,8 @@ public class EnemyStatic : Character
                 break;
             */
         }
-        GetComponent<RoomMember>()?.NotifyDeath();
+        var member = GetComponent<RoomMember>();
+        if (member != null) member.NotifyDeath();
 
 
         Destroy(gameObject, 2f);    //Tiempo de espera de 2 segundos antes de que se destruya el gameobject
