@@ -147,7 +147,7 @@ public class Player : Character
         {
             return;
         }
-
+        Debug.Log(isDashing);
         /* //8 DIRECCIONES
          * 
         //lectura de teclas y normaliza para evitar lo de la diagonal
