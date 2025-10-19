@@ -15,8 +15,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] public AudioSource[] _gritoMelee;
     [SerializeField] public AudioSource[] _BolaFuego;
     [SerializeField] public AudioSource _Dash;
-    [SerializeField] public AudioSource _gritoPlayer;
-    [SerializeField] public AudioSource _habilidadTerremoto;
+    [SerializeField] public AudioSource[] _gritoPlayer;
+    [SerializeField] public AudioSource[] _habilidadTerremoto;
     [SerializeField] public AudioSource _desbloqueoHabilidad;
 
     [Header("UI")]
@@ -89,11 +89,13 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayHabilidadGritoPlayer()
     {
-        _gritoPlayer.Play();
+        _gritoPlayer[0].Play();
+        _gritoPlayer[1].Play();
     }
     public void PlayHabilidadTerremotoPlayer()
     {
-        _habilidadTerremoto.Play();
+        int sel = Random.Range(0, _habilidadTerremoto.Length);
+        _habilidadTerremoto[sel].Play();
     }
     public void PlayDesbloqueoHabilidad()
     {

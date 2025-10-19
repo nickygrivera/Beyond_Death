@@ -204,7 +204,7 @@ public class EnemyStatic : Character
                 break;
             */
         }
-
+        SoundManager.Instance.PlayEnemigoAtaqueDistancia();
         yield return new WaitForSeconds(0.15f); //Delay para permitir la animación antes del disparo
 
         //Disparar proyectil usando el spawner

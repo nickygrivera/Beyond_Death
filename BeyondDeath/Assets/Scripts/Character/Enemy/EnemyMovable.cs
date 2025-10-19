@@ -267,7 +267,7 @@ public class EnemyMovable : Character
                 break;
             */
         }
-        
+        SoundManager.Instance.PlayEnemigoAtaqueMelee();
         yield return new WaitForSeconds(0.15f); //Delay para permitir la animación antes del danio
 
         //Area del ataque

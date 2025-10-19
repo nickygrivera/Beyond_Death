@@ -434,7 +434,7 @@ public class Player : Character
         }
 
         CrossFadeSafe(atk1Target, _attack1AnimState, 0f);
-
+        SoundManager.Instance.PlayPlayerHitSound();
         //hitbox melee
         if (hitAnchor != null)
         {
@@ -518,7 +518,7 @@ public class Player : Character
         {
             spawner.SpawnProjectile(shootDir);
         }
-        
+        SoundManager.Instance.PlayBolaPlasma();
         CrossFadeSafe(atk2Target, _attack2AnimState, 0f);
         StartCoroutine(WaitForAnimationToEnd(atk2Target));
         //-------------------------------------------------
