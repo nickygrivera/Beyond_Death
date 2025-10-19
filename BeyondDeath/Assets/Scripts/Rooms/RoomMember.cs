@@ -6,11 +6,17 @@ public class RoomMember : MonoBehaviour
 
     private void Awake()
     {
-        if (room == null) room = GetComponentInParent<RoomController>();
+        if (room == null)
+        {
+            room = GetComponentInParent<RoomController>();
+        }
     }
 
     public void NotifyDeath()
     {
-        if (room != null) room.NotificarEnemigoMuerto(this);
+        if (room != null)
+        {
+            room.NotificarEnemigoMuerto(this);
+        }
     }
 }
