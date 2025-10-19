@@ -119,6 +119,7 @@ public class PU_Damage : MonoBehaviour
         _onCooldown = true;//poner en cooldown
 
         yield return new WaitForSeconds(coolDown);
+        SoundManager.Instance.PlayRegeneraciónHabilidad();
         _onCooldown = false;//quitar cooldown
     }
 }

@@ -115,6 +115,7 @@ public class PU_Projectile : MonoBehaviour
 
         _onCooldown = true;
         yield return new WaitForSeconds(coolDown);
+        SoundManager.Instance.PlayRegeneraciónHabilidad();
         _onCooldown = false;
     }
 

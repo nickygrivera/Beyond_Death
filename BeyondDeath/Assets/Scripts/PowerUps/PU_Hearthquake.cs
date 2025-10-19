@@ -40,6 +40,7 @@ public class PU_Hearthquake : MonoBehaviour
         if (InputManager.Instance != null)
         {
             InputManager.Instance.HearthquakePerformed += Hearthquake;
+            
         }
     }
 
@@ -48,6 +49,7 @@ public class PU_Hearthquake : MonoBehaviour
         if (InputManager.Instance != null)
         {
             InputManager.Instance.HearthquakePerformed -= Hearthquake;
+            
         }
     }
 
@@ -123,6 +125,7 @@ public class PU_Hearthquake : MonoBehaviour
 
         _onCooldown = true;//poner en cooldown
         yield return new WaitForSeconds(coolDown);
+        SoundManager.Instance.PlayRegeneraciónHabilidad();
         _onCooldown = false;//quitar cooldown
     }
 
