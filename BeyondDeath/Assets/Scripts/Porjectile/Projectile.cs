@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -58,6 +59,10 @@ public class Projectile : MonoBehaviour
                 Debug.Log($"[Projectile] Hit {character.name} por {_damage} dmg");
             }
             DestroyProjectile();
+        }
+        if (collision.gameObject.CompareTag ("Avismo"))
+        {
+            return; //para que ignore los avismos
         }
         else
         {
