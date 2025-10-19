@@ -108,7 +108,13 @@ public abstract class Character : MonoBehaviour
             return;
             //TODO: Sacar pantalla de game over o cargar escena de game over
         }
-        
+
+        if (gameObject.CompareTag("Enemy"))
+        {
+            var member = GetComponent<RoomMember>();
+            if (member != null) member.NotifyDeath();
+        }
+
         Destroy(gameObject, 3f);//destruye el objeto despues de 3 segundos
     }
 
