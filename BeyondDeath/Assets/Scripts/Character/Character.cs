@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 /*
@@ -27,6 +28,10 @@ public abstract class Character : MonoBehaviour
     [SerializeField] public Transform hitAnchor;//punto desde donde sale el ataque ( modificar en la escena)
     [SerializeField] public Transform bottomAnchor;//punto en los pies (amarillo) 
     [SerializeField] public Vector2 hitSize;//area del golpe
+
+    [SerializeField] private GameObject canvasMuerte;
+    [SerializeField] public GameObject hudplayer;
+    [SerializeField] public GameObject _sfx;
 
     private bool _hasDied;
 
@@ -105,6 +110,9 @@ public abstract class Character : MonoBehaviour
         {
             SetHealthMax(healthMax*0.5f); //Por lo que se reestablece la vida
             SetHasDied(true);
+            GameObject sfx = GameObject.Instantiate(_sfx, this.transform.position, this.transform.rotation);
+            Destroy(_sfx, 10f);
+            SoundManager.Instance.PlaySonidoRevivir();
             return;
             //TODO: Sacar pantalla de game over o cargar escena de game over
         }
@@ -114,8 +122,14 @@ public abstract class Character : MonoBehaviour
             var member = GetComponent<RoomMember>();
             if (member != null) member.NotifyDeath();
         }
+        if (gameObject.CompareTag("Player") && _hasDied)
+        {
+            StartCoroutine(MorirPlayer());
+            
+        }
 
-        Destroy(gameObject, 3f);//destruye el objeto despues de 3 segundos
+
+        Destroy(gameObject, 7f);//destruye el objeto despues de 3 segundos
     }
 
     public virtual void TakeDamage(float _damage)
@@ -137,4 +151,14 @@ public abstract class Character : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawCube(bottomAnchor.position, new Vector2(0.1f, 0.1f));
     }
+
+
+   IEnumerator MorirPlayer()
+    {
+        yield return new WaitForSeconds(3);
+        hudplayer.SetActive(false);
+        canvasMuerte.SetActive(true);
+
+    }
+
 }

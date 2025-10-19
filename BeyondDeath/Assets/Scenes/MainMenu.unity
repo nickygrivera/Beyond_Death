@@ -2844,8 +2844,10 @@ MonoBehaviour:
   _gritoMelee: []
   _BolaFuego: []
   _Dash: {fileID: 0}
-  _gritoPlayer: {fileID: 0}
-  _habilidadTerremoto: {fileID: 0}
+  _gritoPlayer:
+  - {fileID: 0}
+  _habilidadTerremoto:
+  - {fileID: 0}
   _desbloqueoHabilidad: {fileID: 0}
   _usoHabilidad: {fileID: 0}
   _regeneracionHabilidad: {fileID: 0}
@@ -6486,16 +6488,20 @@ MonoBehaviour:
   m_Text: "\r\n\r\nBEYON DEATH\n\r\n\r\n DEVELOPMENT\r\n\r\nGame Design: Miguel Ortega,
     \xC1lvaro Guti\xE9rrez, Iker Iriondo,Javier Naranjo,Gonzalo Bernal y Luc\xEDa
     Pardo\r\n\r\nStory & Narrative: Miguel Ortega y \xC1lvaro Guti\xE9rrez\r\n\r\nProduction
-    & Coordination: Iker Iriondo y Miguel Ortega\r\n\r\n\n PROGRAMMING\r\n\r\nAI
-    & Enemy Behavior: Marco Adri\xE1n Vidaurre\r\n\r\nPlayer Movement & Physics:
-    \r\n\r\nSystems & Tools: [ Name]\r\n\r\nUI & Game Events: Miguel Ortega, \r\n\r\n\n\nART
-    & DESIGN\r\n\r\n2D Modeling & Environments: Dani Pereda y Natalia Martinez \r\n\r\nTexturing
-    & Materials: Natalia Martinez y Dani Pereda\r\n\r\nAnimation: Natalia Martinez
-    y Dani Pereda\r\n\r\nLighting & Atmosphere: Miguel Ortega y \xC1lvaro Guti\xE9rrez\r\n\r\nVisual
-    Effects (VFX): \xC1lvaro Guti\xE9rrez\r\n\r\nUI Design: Javier Naranjo, Gonzalo
-    Bernal y \xC1lvaro Guti\xE9rrez\r\n\r\n\n\n MUSIC & SOUND\r\n\r\nOriginal Music:
-    Pixabay\r\n\r\nSound Design: \xC1lvaro Guti\xE9rrez\r\n\r\nSound Effects: Pixabay\r\n\r\nAudio
-    Integration: Miguel Ortega y \xC1lvaro Guti\xE9rrez\r\n\r\n\n\n LEVEL DESIGN\r\n\r\nEnvironment
+    & Coordination: Iker Iriondo y Miguel Ortega\r\n\r\n\n PROGRAMMING\r\n\r\nCharacter:
+    Adriana \xC1lamo\n\r\nIA y Enemigos: Marco Adri\xE1n Vidaurre\n\r\nPlayer: Nicole
+    Gurumendi\n\r\nProyectiles y spawner: Adriana \xC1lamo, Nicole Gurumendi y Marco
+    Adri\xE1n Vidaurre\n\r\nPU: Nicole Gurumendi y Adriana \xC1lamo\n\r\nDash: Marco
+    Adri\xE1n Vidaurre\n\r\nInputManager y demas scripts: Adriana \xC1lamo,Marco
+    Adri\xE1n Vidaurre,Nicole Gurumendi\r\n\r\nUI & Game Events: Miguel Ortega, Adriana
+    \xC1lamo,Marco Adri\xE1n Vidaurre,Nicole Gurumendi\r\n\r\n\n\nART & DESIGN\r\n\r\n2D
+    Modeling & Environments: Dani Pereda y Natalia Martinez \r\n\r\nTexturing & Materials:
+    Natalia Martinez y Dani Pereda\r\n\r\nAnimation: Natalia Martinez y Dani Pereda\r\n\r\nLighting
+    & Atmosphere: Miguel Ortega y \xC1lvaro Guti\xE9rrez\r\n\r\nVisual Effects (VFX):
+    \xC1lvaro Guti\xE9rrez\r\n\r\nUI Design: Javier Naranjo, Gonzalo Bernal y \xC1lvaro
+    Guti\xE9rrez\r\n\r\n\n\n MUSIC & SOUND\r\n\r\nOriginal Music: Pixabay\r\n\r\nSound
+    Design: \xC1lvaro Guti\xE9rrez\r\n\r\nSound Effects: Pixabay\r\n\r\nAudio Integration:
+    Miguel Ortega y \xC1lvaro Guti\xE9rrez\r\n\r\n\n\n LEVEL DESIGN\r\n\r\nEnvironment
     Design: \xC1lvaro Guti\xE9rrez\r\n\r\nMechanics Design: Miguel Ortega,\xC1lvaro
     Guti\xE9rrez, Javier Naranjo, Iker Iriondo, Gonzalo Bernal y Luc\xEDa Pardo\r\n\r\n\n\n
     TECHNOLOGY\r\n\r\nGame Engine: Unity\r\n\r\nLanguage: C#\r\n \r\n\r\n\n\n\n\u201CEvery

@@ -36,6 +36,9 @@ public class ScriptTranscionMuerte : MonoBehaviour
         yield return new WaitForSeconds(timer);
         activateAudioGhost.Play();
         messageDead.SetActive(true);
-      
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene("MainMenu");
+
+
     }
 }

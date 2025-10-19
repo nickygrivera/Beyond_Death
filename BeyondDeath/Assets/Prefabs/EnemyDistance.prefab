@@ -299,12 +299,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthMax: 100
   healthActual: 100
-  damage: 17
+  damage: 9
   attackDistance: 1.6
   attackCooldown: 1.2
   hitAnchor: {fileID: 5878185279929823950}
   bottomAnchor: {fileID: 5484290803972732386}
   hitSize: {x: 1.35, y: 1.35}
+  canvasMuerte: {fileID: 0}
+  hudplayer: {fileID: 0}
+  _sfx: {fileID: 0}
   player: {fileID: 0}
   anim: {fileID: 0}
   sprite: {fileID: 0}
@@ -389,6 +392,9 @@ MonoBehaviour:
   hitAnchor: {fileID: 5878185279929823950}
   bottomAnchor: {fileID: 5484290803972732386}
   hitSize: {x: 1, y: 1}
+  canvasMuerte: {fileID: 0}
+  hudplayer: {fileID: 0}
+  _sfx: {fileID: 0}
   player: {fileID: 0}
   anim: {fileID: 0}
   sprite: {fileID: 1042735859273707132}
